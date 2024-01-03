@@ -519,10 +519,10 @@ let get_ref r =
   let v = !r in
   r := []; v
 
-let set_or_ignore f opt x =
-  match f x with
-  | None -> ()
-  | Some y -> opt := Some y
+let set_or_ignore _ _ _ =()
+  (* match f x with *)
+  (* | None -> () *)
+  (* | Some y -> opt := Some y *)
 
 let fst3 (x, _, _) = x
 let snd3 (_,x,_) = x
@@ -858,19 +858,20 @@ let show_config_and_exit () =
   Config.print_config stdout;
   exit 0
 
-let show_config_variable_and_exit x =
-  match Config.config_var x with
-  | Some v ->
-      (* we intentionally don't print a newline to avoid Windows \r
-         issues: bash only strips the trailing \n when using a command
-         substitution $(ocamlc -config-var foo), so a trailing \r would
-         remain if printing a newline under Windows and scripts would
-         have to use $(ocamlc -config-var foo | tr -d '\r')
-         for portability. Ugh. *)
-      print_string v;
-      exit 0
-  | None ->
-      exit 2
+let show_config_variable_and_exit _ =
+  exit 0
+  (* match Config.config_var x with *)
+  (* (\* | Some v -> *\) *)
+  (* (\*     (\\* we intentionally don't print a newline to avoid Windows \r *\) *)
+  (* (\*        issues: bash only strips the trailing \n when using a command *\) *)
+  (* (\*        substitution $(ocamlc -config-var foo), so a trailing \r would *\) *)
+  (* (\*        remain if printing a newline under Windows and scripts would *\) *)
+  (* (\*        have to use $(ocamlc -config-var foo | tr -d '\r') *\) *)
+  (* (\*        for portability. Ugh. *\\) *\) *)
+  (* (\*     print_string v; *\) *)
+  (* (\*     exit 0 *\) *)
+  (* | None -> *)
+  (*     exit 2 *)
 
 let get_build_path_prefix_map =
   let init = ref false in
@@ -1097,46 +1098,46 @@ module Magic_number = struct
   let raw { kind; version; } =
     Printf.sprintf "%s%03d" (raw_kind kind) version
 
-  let current_raw kind =
-    let open Config in
-    match[@warning "+9"] kind with
-      | Exec -> exec_magic_number
-      | Cmi -> cmi_magic_number
-      | Cmo -> cmo_magic_number
-      | Cma -> cma_magic_number
-      | Cmx config ->
-         (* the 'if' guarantees that in the common case
-            we return the "trusted" value from Config. *)
-         let reference = cmx_magic_number in
-         if config = native_obj_config then reference
-         else
-           (* otherwise we stitch together the magic number
-              for a different configuration by concatenating
-              the right magic kind at this configuration
-              and the rest of the current raw number for our configuration. *)
-           let raw_kind = raw_kind kind in
-           let len = String.length raw_kind in
-           raw_kind ^ String.sub reference len (String.length reference - len)
-      | Cmxa config ->
-         let reference = cmxa_magic_number in
-         if config = native_obj_config then reference
-         else
-           let raw_kind = raw_kind kind in
-           let len = String.length raw_kind in
-           raw_kind ^ String.sub reference len (String.length reference - len)
-      | Cmxs -> cmxs_magic_number
-      | Cmt -> cmt_magic_number
-      | Ast_intf -> ast_intf_magic_number
-      | Ast_impl -> ast_impl_magic_number
+  let current_raw _ =false
+    (* let open Config in *)
+    (* match[@warning "+9"] kind with *)
+    (*   | Exec -> exec_magic_number *)
+    (*   | Cmi -> cmi_magic_number *)
+    (*   | Cmo -> cmo_magic_number *)
+    (*   | Cma -> cma_magic_number *)
+    (*   | Cmx config -> *)
+    (*      (\* the 'if' guarantees that in the common case *)
+    (*         we return the "trusted" value from Config. *\) *)
+    (*      let reference = cmx_magic_number in *)
+    (*      if config = native_obj_config then reference *)
+    (*      else *)
+    (*        (\* otherwise we stitch together the magic number *)
+    (*           for a different configuration by concatenating *)
+    (*           the right magic kind at this configuration *)
+    (*           and the rest of the current raw number for our configuration. *\) *)
+    (*        let raw_kind = raw_kind kind in *)
+    (*        let len = String.length raw_kind in *)
+    (*        raw_kind ^ String.sub reference len (String.length reference - len) *)
+    (*   | Cmxa config -> *)
+    (*      let reference = cmxa_magic_number in *)
+    (*      if config = native_obj_config then reference *)
+    (*      else *)
+    (*        let raw_kind = raw_kind kind in *)
+    (*        let len = String.length raw_kind in *)
+    (*        raw_kind ^ String.sub reference len (String.length reference - len) *)
+    (*   | Cmxs -> cmxs_magic_number *)
+    (*   | Cmt -> cmt_magic_number *)
+    (*   | Ast_intf -> ast_intf_magic_number *)
+    (*   | Ast_impl -> ast_impl_magic_number *)
 
   (* it would seem more direct to define current_version with the
      correct numbers and current_raw on top of it, but for now we
      consider the Config.foo values to be ground truth, and don't want
      to trust the present module instead. *)
-  let current_version kind =
-    let raw = current_raw kind in
-    try int_of_string (String.sub raw kind_length version_length)
-    with _ -> assert false
+  let current_version _ =false
+    (* let raw = current_raw kind in *)
+    (* try int_of_string (String.sub raw kind_length version_length) *)
+    (* with _ -> assert false *)
 
   type 'a unexpected = { expected : 'a; actual : 'a }
   type unexpected_error =
@@ -1153,16 +1154,16 @@ module Magic_number = struct
           (human_name_of_kind kind) (string_of_kind kind)
           (if actual < expected then "an older" else "a newer")
 
-  let check_current expected_kind { kind; version } : _ result =
-    if kind <> expected_kind then begin
-      let actual, expected = kind, expected_kind in
-      Error (Kind { actual; expected })
-    end else begin
-      let actual, expected = version, current_version kind in
-      if actual <> expected
-      then Error (Version (kind, { actual; expected }))
-      else Ok ()
-    end
+  let check_current _ _ = Ok ()
+    (* if kind <> expected_kind then begin *)
+    (*   let actual, expected = kind, expected_kind in *)
+    (*   Error (Kind { actual; expected }) *)
+    (* end else begin *)
+    (*   let actual, expected = version, current_version kind in *)
+    (*   (\* if actual <> expected *\) *)
+    (*   (\* then Error (Version (kind, { actual; expected })) *\) *)
+    (*   (\* else Ok () *\) *)
+    (* end *)
 
   type error =
     | Parse_error of parse_error

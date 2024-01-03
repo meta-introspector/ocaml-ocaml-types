@@ -204,12 +204,12 @@ type description =
        deprecated. The current name should always be derived mechanically from
        the constructor name. *)
     description : string;
-    since : Sys.ocaml_release_info option;
+    (* since : Sys.ocaml_release_info option; *)
     (* The compiler version introducing this warning; only tagged for warnings
        created after 3.12, which introduced the numbered syntax. *)
   }
 
-let since major minor = Some { Sys.major; minor; patchlevel=0; extra=None }
+(* let since major minor = Some { Sys.major; minor; patchlevel=0; extra=None } *)
 
 let descriptions = [
   { number = 1;
