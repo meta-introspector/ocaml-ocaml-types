@@ -146,8 +146,8 @@ let print_updating_num_loc_lines ppf f arg =
   pp_print_flush ppf ();
   pp_set_formatter_out_functions ppf out_functions
 
-let setup_tags () =
-  Misc.Style.setup !Clflags.color
+let setup_tags () =()
+  (* Misc.Style.setup !Clflags.color *)
 
 (******************************************************************************)
 (* Printing locations, e.g. 'File "foo.ml", line 3, characters 10-12' *)
@@ -170,42 +170,42 @@ let rewrite_find_first_existing path =
     | matches ->
       Some (List.find Sys.file_exists matches)
 
-let rewrite_find_all_existing_dirs path =
-  let ok path = Sys.file_exists path && Sys.is_directory path in
-  match Misc.get_build_path_prefix_map () with
-  | None ->
-      if ok path then [path]
-      else []
-  | Some prefix_map ->
-    match Build_path_prefix_map.rewrite_all prefix_map path with
-    | [] ->
-        if ok path then [path]
-        else []
-    | matches ->
-      match (List.filter ok matches) with
-      | [] -> raise Not_found
-      | results -> results
+(* let rewrite_find_all_existing_dirs path = *)
+(*   let ok path = Sys.file_exists path && Sys.is_directory path in *)
+(*   match Misc.get_build_path_prefix_map () with *)
+(*   | None -> *)
+(*       if ok path then [path] *)
+(*       else [] *)
+(*   | Some prefix_map -> *)
+(*     match Build_path_prefix_map.rewrite_all prefix_map path with *)
+(*     | [] -> *)
+(*         if ok path then [path] *)
+(*         else [] *)
+(*     | matches -> *)
+(*       match (List.filter ok matches) with *)
+(*       | [] -> raise Not_found *)
+(*       | results -> results *)
 
-let absolute_path s = (* This function could go into Filename *)
-  let open Filename in
-  let s = if (is_relative s) then (concat (Sys.getcwd ()) s) else s in
-  let s = rewrite_absolute_path s in
-  (* Now simplify . and .. components *)
-  let rec aux s =
-    let base = basename s in
-    let dir = dirname s in
-    if dir = s then dir
-    else if base = current_dir_name then aux dir
-    else if base = parent_dir_name then dirname (aux dir)
-    else concat (aux dir) base
-  in
-  aux s
+(* let absolute_path s = (\* This function could go into Filename *\) *)
+(*   let open Filename in *)
+(*   let s = if (is_relative s) then (concat (Sys.getcwd ()) s) else s in *)
+(*   let s = rewrite_absolute_path s in *)
+(*   (\* Now simplify . and .. components *\) *)
+(*   let rec aux s = *)
+(*     let base = basename s in *)
+(*     let dir = dirname s in *)
+(*     if dir = s then dir *)
+(*     else if base = current_dir_name then aux dir *)
+(*     else if base = parent_dir_name then dirname (aux dir) *)
+(*     else concat (aux dir) base *)
+(*   in *)
+(*   aux s *)
 
-let show_filename file =
-  if !Clflags.absname then absolute_path file else file
+(* let show_filename file = *)
+(*   if !Clflags.absname then absolute_path file else file *)
 
-let print_filename ppf file =
-  Format.pp_print_string ppf (show_filename file)
+(* let print_filename ppf file = *)
+(*   Format.pp_print_string ppf (show_filename file) *)
 
 (* Best-effort printing of the text describing a location, of the form
    'File "foo.ml", line 3, characters 10-12'.
@@ -246,8 +246,8 @@ let print_loc ppf loc =
 
   Format.fprintf ppf "@{<loc>";
 
-  if file_valid file then
-    Format.fprintf ppf "%s \"%a\"" (capitalize "file") print_filename file;
+  (* if file_valid file then *)
+  (*   Format.fprintf ppf "%s \"%a\"" (capitalize "file") print_filename file; *)
 
   (* Print "line 1" in the case of a dummy line number. This is to please the
      existing setup of editors that parse locations in error messages (e.g.
@@ -701,132 +701,132 @@ let is_quotable_loc loc =
   && loc.loc_start.pos_fname = !input_name
   && loc.loc_end.pos_fname = !input_name
 
-let error_style () =
-  match !Clflags.error_style with
-  | Some setting -> setting
-  | None -> Misc.Error_style.default_setting
+(* let error_style () = *)
+(*   match !Clflags.error_style with *)
+(*   | Some setting -> setting *)
+(*   | None -> Misc.Error_style.default_setting *)
 
-let batch_mode_printer : report_printer =
-  let pp_loc _self report ppf loc =
-    let tag = match report.kind with
-      | Report_warning_as_error _
-      | Report_alert_as_error _
-      | Report_error -> "error"
-      | Report_warning _
-      | Report_alert _ -> "warning"
-    in
-    let highlight ppf loc =
-      match error_style () with
-      | Misc.Error_style.Contextual ->
-          if is_quotable_loc loc then
-            highlight_quote ppf
-              ~get_lines:lines_around_from_current_input
-              tag [loc]
-      | Misc.Error_style.Short ->
-          ()
-    in
-    Format.fprintf ppf "@[<v>%a:@ %a@]" print_loc loc highlight loc
-  in
-  let pp_txt ppf txt = Format.fprintf ppf "@[%t@]" txt in
-  let pp self ppf report =
-    setup_tags ();
-    separate_new_message ppf;
-    (* Make sure we keep [num_loc_lines] updated.
-       The tabulation box is here to give submessage the option
-       to be aligned with the main message box
-    *)
-    print_updating_num_loc_lines ppf (fun ppf () ->
-      Format.fprintf ppf "@[<v>%a%a%a: %a%a%a%a@]@."
-      Format.pp_open_tbox ()
-      (self.pp_main_loc self report) report.main.loc
-      (self.pp_report_kind self report) report.kind
-      Format.pp_set_tab ()
-      (self.pp_main_txt self report) report.main.txt
-      (self.pp_submsgs self report) report.sub
-      Format.pp_close_tbox ()
-    ) ()
-  in
-  let pp_report_kind _self _ ppf = function
-    | Report_error -> Format.fprintf ppf "@{<error>Error@}"
-    | Report_warning w -> Format.fprintf ppf "@{<warning>Warning@} %s" w
-    | Report_warning_as_error w ->
-        Format.fprintf ppf "@{<error>Error@} (warning %s)" w
-    | Report_alert w -> Format.fprintf ppf "@{<warning>Alert@} %s" w
-    | Report_alert_as_error w ->
-        Format.fprintf ppf "@{<error>Error@} (alert %s)" w
-  in
-  let pp_main_loc self report ppf loc =
-    pp_loc self report ppf loc
-  in
-  let pp_main_txt _self _ ppf txt =
-    pp_txt ppf txt
-  in
-  let pp_submsgs self report ppf msgs =
-    List.iter (fun msg ->
-      Format.fprintf ppf "@,%a" (self.pp_submsg self report) msg
-    ) msgs
-  in
-  let pp_submsg self report ppf { loc; txt } =
-    Format.fprintf ppf "@[%a  %a@]"
-      (self.pp_submsg_loc self report) loc
-      (self.pp_submsg_txt self report) txt
-  in
-  let pp_submsg_loc self report ppf loc =
-    if not loc.loc_ghost then
-      pp_loc self report ppf loc
-  in
-  let pp_submsg_txt _self _ ppf loc =
-    pp_txt ppf loc
-  in
-  { pp; pp_report_kind; pp_main_loc; pp_main_txt;
-    pp_submsgs; pp_submsg; pp_submsg_loc; pp_submsg_txt }
+(* let batch_mode_printer : report_printer = *)
+(*   let pp_loc _self report ppf loc = *)
+(*     let tag = match report.kind with *)
+(*       | Report_warning_as_error _ *)
+(*       | Report_alert_as_error _ *)
+(*       | Report_error -> "error" *)
+(*       | Report_warning _ *)
+(*       | Report_alert _ -> "warning" *)
+(*     in *)
+(*     (\* let highlight ppf loc = *\) *)
+(*     (\*   match error_style () with *\) *)
+(*     (\*   | Misc.Error_style.Contextual -> *\) *)
+(*     (\*       if is_quotable_loc loc then *\) *)
+(*     (\*         highlight_quote ppf *\) *)
+(*     (\*           ~get_lines:lines_around_from_current_input *\) *)
+(*     (\*           tag [loc] *\) *)
+(*     (\*   | Misc.Error_style.Short -> *\) *)
+(*     (\*       () *\) *)
+(*     (\* in *\) *)
+(*     (\* Format.fprintf ppf "@[<v>%a:@ %a@]" print_loc loc highlight loc *\) *)
+(*   in *)
+(*   let pp_txt ppf txt = Format.fprintf ppf "@[%t@]" txt in *)
+(*   let pp self ppf report = *)
+(*     setup_tags (); *)
+(*     separate_new_message ppf; *)
+(*     (\* Make sure we keep [num_loc_lines] updated. *)
+(*        The tabulation box is here to give submessage the option *)
+(*        to be aligned with the main message box *)
+(*     *\) *)
+(*     print_updating_num_loc_lines ppf (fun ppf () -> *)
+(*       Format.fprintf ppf "@[<v>%a%a%a: %a%a%a%a@]@." *)
+(*       Format.pp_open_tbox () *)
+(*       (self.pp_main_loc self report) report.main.loc *)
+(*       (self.pp_report_kind self report) report.kind *)
+(*       Format.pp_set_tab () *)
+(*       (self.pp_main_txt self report) report.main.txt *)
+(*       (self.pp_submsgs self report) report.sub *)
+(*       Format.pp_close_tbox () *)
+(*     ) () *)
+(*   in *)
+(*   let pp_report_kind _self _ ppf = function *)
+(*     | Report_error -> Format.fprintf ppf "@{<error>Error@}" *)
+(*     | Report_warning w -> Format.fprintf ppf "@{<warning>Warning@} %s" w *)
+(*     | Report_warning_as_error w -> *)
+(*         Format.fprintf ppf "@{<error>Error@} (warning %s)" w *)
+(*     | Report_alert w -> Format.fprintf ppf "@{<warning>Alert@} %s" w *)
+(*     | Report_alert_as_error w -> *)
+(*         Format.fprintf ppf "@{<error>Error@} (alert %s)" w *)
+(*   in *)
+(*   let pp_main_loc self report ppf loc = *)
+(*     pp_loc self report ppf loc *)
+(*   in *)
+(*   let pp_main_txt _self _ ppf txt = *)
+(*     pp_txt ppf txt *)
+(*   in *)
+(*   let pp_submsgs self report ppf msgs = *)
+(*     List.iter (fun msg -> *)
+(*       Format.fprintf ppf "@,%a" (self.pp_submsg self report) msg *)
+(*     ) msgs *)
+(*   in *)
+(*   let pp_submsg self report ppf { loc; txt } = *)
+(*     Format.fprintf ppf "@[%a  %a@]" *)
+(*       (self.pp_submsg_loc self report) loc *)
+(*       (self.pp_submsg_txt self report) txt *)
+(*   in *)
+(*   let pp_submsg_loc self report ppf loc = *)
+(*     if not loc.loc_ghost then *)
+(*       pp_loc self report ppf loc *)
+(*   in *)
+(*   let pp_submsg_txt _self _ ppf loc = *)
+(*     pp_txt ppf loc *)
+(*   in *)
+(*   { pp; pp_report_kind; pp_main_loc; pp_main_txt; *)
+(*     pp_submsgs; pp_submsg; pp_submsg_loc; pp_submsg_txt } *)
 
-let terminfo_toplevel_printer (lb: lexbuf): report_printer =
-  let pp self ppf err =
-    setup_tags ();
-    (* Highlight all toplevel locations of the report, instead of displaying
-       the main location. Do it now instead of in [pp_main_loc], to avoid
-       messing with Format boxes. *)
-    let sub_locs = List.map (fun { loc; _ } -> loc) err.sub in
-    let all_locs = err.main.loc :: sub_locs in
-    let locs_highlighted = List.filter is_quotable_loc all_locs in
-    highlight_terminfo lb ppf locs_highlighted;
-    batch_mode_printer.pp self ppf err
-  in
-  let pp_main_loc _ _ _ _ = () in
-  let pp_submsg_loc _ _ ppf loc =
-    if not loc.loc_ghost then
-      Format.fprintf ppf "%a:@ " print_loc loc in
-  { batch_mode_printer with pp; pp_main_loc; pp_submsg_loc }
+(* let terminfo_toplevel_printer (lb: lexbuf): report_printer = *)
+(*   let pp self ppf err = *)
+(*     setup_tags (); *)
+(*     (\* Highlight all toplevel locations of the report, instead of displaying *)
+(*        the main location. Do it now instead of in [pp_main_loc], to avoid *)
+(*        messing with Format boxes. *\) *)
+(*     let sub_locs = List.map (fun { loc; _ } -> loc) err.sub in *)
+(*     let all_locs = err.main.loc :: sub_locs in *)
+(*     let locs_highlighted = List.filter is_quotable_loc all_locs in *)
+(*     highlight_terminfo lb ppf locs_highlighted; *)
+(*     batch_mode_printer.pp self ppf err *)
+(*   in *)
+(*   let pp_main_loc _ _ _ _ = () in *)
+(*   let pp_submsg_loc _ _ ppf loc = *)
+(*     if not loc.loc_ghost then *)
+(*       Format.fprintf ppf "%a:@ " print_loc loc in *)
+(*   { batch_mode_printer with pp; pp_main_loc; pp_submsg_loc } *)
 
-let best_toplevel_printer () =
-  setup_terminal ();
-  match !status, !input_lexbuf with
-  | Terminfo.Good_term, Some lb ->
-      terminfo_toplevel_printer lb
-  | _, _ ->
-      batch_mode_printer
+(* let best_toplevel_printer () = *)
+(*   setup_terminal (); *)
+(*   match !status, !input_lexbuf with *)
+(*   | Terminfo.Good_term, Some lb -> *)
+(*       terminfo_toplevel_printer lb *)
+(*   | _, _ -> *)
+(*       batch_mode_printer *)
 
 (* Creates a printer for the current input *)
-let default_report_printer () : report_printer =
-  if !input_name = "//toplevel//" then
-    best_toplevel_printer ()
-  else
-    batch_mode_printer
+(* let default_report_printer () : report_printer = *)
+(*   if !input_name = "//toplevel//" then *)
+(*     best_toplevel_printer () *)
+(*   else *)
+(*     batch_mode_printer *)
 
-let report_printer = ref default_report_printer
+(* let report_printer = ref default_report_printer *)
 
-let print_report ppf report =
-  let printer = !report_printer () in
-  printer.pp printer ppf report
+(* let print_report ppf report = *)
+(*   let printer = !report_printer () in *)
+(*   printer.pp printer ppf report *)
 
 (******************************************************************************)
 (* Reporting errors *)
 
 type error = report
 
-let report_error ppf err =
-  print_report ppf err
+let report_error ppf err =()
+  (* print_report ppf err *)
 
 let mkerror loc sub txt =
   { kind = Report_error; main = { loc; txt }; sub }
@@ -873,10 +873,10 @@ let report_warning loc w = !warning_reporter loc w
 
 let formatter_for_warnings = ref Format.err_formatter
 
-let print_warning loc ppf w =
-  match report_warning loc w with
-  | None -> ()
-  | Some report -> print_report ppf report
+let print_warning loc ppf w =()
+  (* match report_warning loc w with *)
+  (* | None -> () *)
+  (* | Some report -> print_report ppf report *)
 
 let prerr_warning loc w = print_warning loc !formatter_for_warnings w
 
@@ -891,10 +891,10 @@ let default_alert_reporter =
 let alert_reporter = ref default_alert_reporter
 let report_alert loc w = !alert_reporter loc w
 
-let print_alert loc ppf w =
-  match report_alert loc w with
-  | None -> ()
-  | Some report -> print_report ppf report
+let print_alert loc ppf w =()
+  (* match report_alert loc w with *)
+  (* | None -> () *)
+  (* | Some report -> print_report ppf report *)
 
 let prerr_alert loc w = print_alert loc !formatter_for_warnings w
 
