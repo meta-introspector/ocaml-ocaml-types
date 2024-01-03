@@ -1,0 +1,9 @@
+0.008s 10.3MB 1.37MB 3.13MB lib/longident.ml
+  0.003s 5.96MB 1.22MB 2.98MB typing
+  0.004s 2.12MB 0.15MB 3.13MB generate
+    0.001s 0.12MB ------ ------ compile_phrases
+      ------ 0.12MB ------ ------ scheduling
+    0.002s ------ ------ ------ assemble
+    0.001s 2.00MB 0.15MB 3.13MB other
+  0.001s 2.25MB ------ ------ other
+0.006s 3.04MB 1.76MB ------ other

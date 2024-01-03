@@ -1,0 +1,8 @@
+0.063s  161MB 9.10MB 9.10MB lib/warnings.ml
+  0.003s 6.39MB 2.07MB 2.07MB parsing
+    0.003s 6.39MB 2.07MB 2.07MB parser
+  0.032s 57.1MB 5.84MB 7.91MB typing
+  0.003s 7.28MB 0.28MB 8.19MB transl
+  0.008s 34.5MB 0.71MB 8.91MB generate
+  0.015s 56.2MB 0.18MB 9.10MB other
+0.004s ------ ------ ------ other

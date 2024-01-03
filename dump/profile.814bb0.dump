@@ -1,0 +1,4 @@
+0.004s 6.43MB 2.16MB 2.16MB lib/asttypes.mli
+  0.002s 3.61MB 0.65MB 0.65MB typing
+  0.002s 2.81MB 1.51MB 2.16MB other
+0.004s ------ ------ ------ other

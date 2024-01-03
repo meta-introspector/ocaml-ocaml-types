@@ -1,0 +1,5 @@
+0.004s 2.99MB 1.51MB 1.51MB lib/config.ml
+  0.002s 2.84MB 1.51MB 1.51MB parsing
+    0.002s 2.84MB 1.51MB 1.51MB parser
+  0.001s 0.14MB ------ ------ typing
+0.005s ------ ------ ------ other

@@ -1,0 +1,22 @@
+0.088s  210MB 10.9MB 12.7MB lib/ast_iterator.ml
+  0.002s 5.62MB 0.92MB 2.68MB parsing
+    0.002s 5.62MB 0.92MB 2.68MB parser
+  0.039s 71.5MB 6.71MB 9.40MB typing
+  0.001s 6.11MB 0.12MB 9.52MB transl
+  0.026s 48.9MB 3.06MB 12.5MB generate
+    0.002s 4.56MB 0.34MB 9.87MB cmm
+    0.012s 23.3MB 2.03MB 11.9MB compile_phrases
+      0.001s ------ ------ ------ selection
+      ------ 0.21MB ------ ------ comballoc
+      0.001s 3.18MB 0.34MB 10.2MB cse
+      0.002s 0.67MB ------ ------ liveness
+      0.001s 2.00MB 0.12MB 10.3MB spill
+      0.001s ------ ------ ------ split
+      0.005s 13.2MB 1.15MB 11.4MB regalloc
+      ------ 2.00MB 0.18MB 11.6MB linearize
+      0.001s 2.00MB 0.21MB 11.9MB emit
+      0.001s ------ ------ ------ other
+    0.007s ------ ------ ------ assemble
+    0.005s 21.0MB 0.68MB 12.5MB other
+  0.019s 78.6MB 0.12MB 12.7MB other
+0.006s 3.03MB 1.76MB ------ other

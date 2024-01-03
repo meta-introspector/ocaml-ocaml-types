@@ -1,0 +1,6 @@
+0.004s 3.57MB 0.75MB 2.51MB lib/asttypes.ml
+  0.001s 2.00MB 0.56MB 2.32MB typing
+  0.002s ------ ------ ------ generate
+    0.002s ------ ------ ------ assemble
+  0.001s 1.57MB 0.18MB 2.51MB other
+0.006s 3.04MB 1.76MB ------ other

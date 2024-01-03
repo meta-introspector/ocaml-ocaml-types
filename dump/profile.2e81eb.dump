@@ -1,0 +1,6 @@
+0.007s 14.7MB 2.48MB 2.48MB lib/outcometree.ml
+  0.001s 2.88MB 1.55MB 1.55MB parsing
+    0.001s 2.88MB 1.55MB 1.55MB parser
+  0.003s 3.61MB 0.75MB 2.30MB typing
+  0.002s 8.28MB 0.18MB 2.48MB other
+0.004s ------ ------ ------ other

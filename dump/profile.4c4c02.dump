@@ -1,0 +1,11 @@
+0.015s 28.1MB 1.97MB 3.73MB lib/build_path_prefix_map.ml
+  0.005s 10.2MB 1.21MB 2.97MB typing
+  ------ 2.00MB 0.03MB 3.01MB transl
+  0.006s 8.65MB 0.53MB 3.54MB generate
+    0.002s 2.40MB 0.31MB 3.32MB compile_phrases
+      ------ 0.19MB ------ ------ selection
+      ------ 2.21MB 0.31MB 3.32MB spill
+    0.003s ------ ------ ------ assemble
+    0.001s 6.25MB 0.21MB 3.54MB other
+  0.003s 7.25MB 0.19MB 3.73MB other
+0.006s 3.04MB 1.76MB ------ other

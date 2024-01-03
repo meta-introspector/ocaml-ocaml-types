@@ -1,0 +1,896 @@
+[
+  structure_item (lib/asttypes.ml[16,1079+0]..[21,1224+2])
+    Pstr_attribute "ocaml.text"
+    [
+      structure_item (lib/asttypes.ml[16,1079+0]..[21,1224+2])
+        Pstr_eval
+        expression (lib/asttypes.ml[16,1079+0]..[21,1224+2])
+          Pexp_constant PConst_string(" Auxiliary AST types used by parsetree and typedtree.\n\n  {b Warning:} this module is unstable and part of\n  {{!Compiler_libs}compiler-libs}.\n\n",(lib/asttypes.ml[16,1079+0]..[21,1224+2]),None)
+    ]
+  structure_item (lib/asttypes.ml[23,1228+0]..[30,1420+32])
+    Pstr_type Rec
+    [
+      type_declaration "constant" (lib/asttypes.ml[23,1228+5]..[23,1228+13]) (lib/asttypes.ml[23,1228+0]..[30,1420+32])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/asttypes.ml[24,1244+4]..[24,1244+20])
+                "Const_int" (lib/asttypes.ml[24,1244+4]..[24,1244+13])
+                [
+                  core_type (lib/asttypes.ml[24,1244+17]..[24,1244+20])
+                    Ptyp_constr "int" (lib/asttypes.ml[24,1244+17]..[24,1244+20])
+                    []
+                ]
+                None
+              (lib/asttypes.ml[25,1265+2]..[25,1265+22])
+                "Const_char" (lib/asttypes.ml[25,1265+4]..[25,1265+14])
+                [
+                  core_type (lib/asttypes.ml[25,1265+18]..[25,1265+22])
+                    Ptyp_constr "char" (lib/asttypes.ml[25,1265+18]..[25,1265+22])
+                    []
+                ]
+                None
+              (lib/asttypes.ml[26,1288+2]..[26,1288+55])
+                "Const_string" (lib/asttypes.ml[26,1288+4]..[26,1288+16])
+                [
+                  core_type (lib/asttypes.ml[26,1288+20]..[26,1288+26])
+                    Ptyp_constr "string" (lib/asttypes.ml[26,1288+20]..[26,1288+26])
+                    []
+                  core_type (lib/asttypes.ml[26,1288+29]..[26,1288+39])
+                    Ptyp_constr "Location.t" (lib/asttypes.ml[26,1288+29]..[26,1288+39])
+                    []
+                  core_type (lib/asttypes.ml[26,1288+42]..[26,1288+55])
+                    Ptyp_constr "option" (lib/asttypes.ml[26,1288+49]..[26,1288+55])
+                    [
+                      core_type (lib/asttypes.ml[26,1288+42]..[26,1288+48])
+                        Ptyp_constr "string" (lib/asttypes.ml[26,1288+42]..[26,1288+48])
+                        []
+                    ]
+                ]
+                None
+              (lib/asttypes.ml[27,1344+2]..[27,1344+25])
+                "Const_float" (lib/asttypes.ml[27,1344+4]..[27,1344+15])
+                [
+                  core_type (lib/asttypes.ml[27,1344+19]..[27,1344+25])
+                    Ptyp_constr "string" (lib/asttypes.ml[27,1344+19]..[27,1344+25])
+                    []
+                ]
+                None
+              (lib/asttypes.ml[28,1370+2]..[28,1370+24])
+                "Const_int32" (lib/asttypes.ml[28,1370+4]..[28,1370+15])
+                [
+                  core_type (lib/asttypes.ml[28,1370+19]..[28,1370+24])
+                    Ptyp_constr "int32" (lib/asttypes.ml[28,1370+19]..[28,1370+24])
+                    []
+                ]
+                None
+              (lib/asttypes.ml[29,1395+2]..[29,1395+24])
+                "Const_int64" (lib/asttypes.ml[29,1395+4]..[29,1395+15])
+                [
+                  core_type (lib/asttypes.ml[29,1395+19]..[29,1395+24])
+                    Ptyp_constr "int64" (lib/asttypes.ml[29,1395+19]..[29,1395+24])
+                    []
+                ]
+                None
+              (lib/asttypes.ml[30,1420+2]..[30,1420+32])
+                "Const_nativeint" (lib/asttypes.ml[30,1420+4]..[30,1420+19])
+                [
+                  core_type (lib/asttypes.ml[30,1420+23]..[30,1420+32])
+                    Ptyp_constr "nativeint" (lib/asttypes.ml[30,1420+23]..[30,1420+32])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[32,1454+0]..[32,1454+40])
+    Pstr_type Rec
+    [
+      type_declaration "rec_flag" (lib/asttypes.ml[32,1454+5]..[32,1454+13]) (lib/asttypes.ml[32,1454+0]..[32,1454+40])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/asttypes.ml[32,1454+16]..[32,1454+28])
+                "Nonrecursive" (lib/asttypes.ml[32,1454+16]..[32,1454+28])
+                []
+                None
+              (lib/asttypes.ml[32,1454+29]..[32,1454+40])
+                "Recursive" (lib/asttypes.ml[32,1454+31]..[32,1454+40])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[34,1496+0]..[34,1496+35])
+    Pstr_type Rec
+    [
+      type_declaration "direction_flag" (lib/asttypes.ml[34,1496+5]..[34,1496+19]) (lib/asttypes.ml[34,1496+0]..[34,1496+35])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/asttypes.ml[34,1496+22]..[34,1496+26])
+                "Upto" (lib/asttypes.ml[34,1496+22]..[34,1496+26])
+                []
+                None
+              (lib/asttypes.ml[34,1496+27]..[34,1496+35])
+                "Downto" (lib/asttypes.ml[34,1496+29]..[34,1496+35])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[37,1585+0]..[37,1585+36])
+    Pstr_type Rec
+    [
+      type_declaration "private_flag" (lib/asttypes.ml[37,1585+5]..[37,1585+17]) (lib/asttypes.ml[37,1585+0]..[37,1585+36])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/asttypes.ml[37,1585+20]..[37,1585+27])
+                "Private" (lib/asttypes.ml[37,1585+20]..[37,1585+27])
+                []
+                None
+              (lib/asttypes.ml[37,1585+28]..[37,1585+36])
+                "Public" (lib/asttypes.ml[37,1585+30]..[37,1585+36])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[39,1623+0]..[39,1623+39])
+    Pstr_type Rec
+    [
+      type_declaration "mutable_flag" (lib/asttypes.ml[39,1623+5]..[39,1623+17]) (lib/asttypes.ml[39,1623+0]..[39,1623+39])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/asttypes.ml[39,1623+20]..[39,1623+29])
+                "Immutable" (lib/asttypes.ml[39,1623+20]..[39,1623+29])
+                []
+                None
+              (lib/asttypes.ml[39,1623+30]..[39,1623+39])
+                "Mutable" (lib/asttypes.ml[39,1623+32]..[39,1623+39])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[41,1664+0]..[41,1664+38])
+    Pstr_type Rec
+    [
+      type_declaration "virtual_flag" (lib/asttypes.ml[41,1664+5]..[41,1664+17]) (lib/asttypes.ml[41,1664+0]..[41,1664+38])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/asttypes.ml[41,1664+20]..[41,1664+27])
+                "Virtual" (lib/asttypes.ml[41,1664+20]..[41,1664+27])
+                []
+                None
+              (lib/asttypes.ml[41,1664+28]..[41,1664+38])
+                "Concrete" (lib/asttypes.ml[41,1664+30]..[41,1664+38])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[43,1704+0]..[43,1704+37])
+    Pstr_type Rec
+    [
+      type_declaration "override_flag" (lib/asttypes.ml[43,1704+5]..[43,1704+18]) (lib/asttypes.ml[43,1704+0]..[43,1704+37])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/asttypes.ml[43,1704+21]..[43,1704+29])
+                "Override" (lib/asttypes.ml[43,1704+21]..[43,1704+29])
+                []
+                None
+              (lib/asttypes.ml[43,1704+30]..[43,1704+37])
+                "Fresh" (lib/asttypes.ml[43,1704+32]..[43,1704+37])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[45,1743+0]..[45,1743+32])
+    Pstr_type Rec
+    [
+      type_declaration "closed_flag" (lib/asttypes.ml[45,1743+5]..[45,1743+16]) (lib/asttypes.ml[45,1743+0]..[45,1743+32])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/asttypes.ml[45,1743+19]..[45,1743+25])
+                "Closed" (lib/asttypes.ml[45,1743+19]..[45,1743+25])
+                []
+                None
+              (lib/asttypes.ml[45,1743+26]..[45,1743+32])
+                "Open" (lib/asttypes.ml[45,1743+28]..[45,1743+32])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[47,1777+0]..[47,1777+19])
+    Pstr_type Rec
+    [
+      type_declaration "label" (lib/asttypes.ml[47,1777+5]..[47,1777+10]) (lib/asttypes.ml[47,1777+0]..[47,1777+19])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (lib/asttypes.ml[47,1777+13]..[47,1777+19])
+              Ptyp_constr "string" (lib/asttypes.ml[47,1777+13]..[47,1777+19])
+              []
+    ]
+  structure_item (lib/asttypes.ml[49,1798+0]..[52,1874+22])
+    Pstr_type Rec
+    [
+      type_declaration "arg_label" (lib/asttypes.ml[49,1798+5]..[49,1798+14]) (lib/asttypes.ml[49,1798+0]..[52,1874+22])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/asttypes.ml[50,1815+4]..[50,1815+11])
+                "Nolabel" (lib/asttypes.ml[50,1815+4]..[50,1815+11])
+                []
+                None
+              (lib/asttypes.ml[51,1827+2]..[51,1827+22])
+                "Labelled" (lib/asttypes.ml[51,1827+4]..[51,1827+12])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (lib/asttypes.ml[51,1827+23]..[51,1827+46])
+                      Pstr_eval
+                      expression (lib/asttypes.ml[51,1827+23]..[51,1827+46])
+                        Pexp_constant PConst_string(" [label:T -> ...] ",(lib/asttypes.ml[51,1827+23]..[51,1827+46]),None)
+                  ]
+                [
+                  core_type (lib/asttypes.ml[51,1827+16]..[51,1827+22])
+                    Ptyp_constr "string" (lib/asttypes.ml[51,1827+16]..[51,1827+22])
+                    []
+                ]
+                None
+              (lib/asttypes.ml[52,1874+2]..[52,1874+22])
+                "Optional" (lib/asttypes.ml[52,1874+4]..[52,1874+12])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (lib/asttypes.ml[52,1874+23]..[52,1874+47])
+                      Pstr_eval
+                      expression (lib/asttypes.ml[52,1874+23]..[52,1874+47])
+                        Pexp_constant PConst_string(" [?label:T -> ...] ",(lib/asttypes.ml[52,1874+23]..[52,1874+47]),None)
+                  ]
+                [
+                  core_type (lib/asttypes.ml[52,1874+16]..[52,1874+22])
+                    Ptyp_constr "string" (lib/asttypes.ml[52,1874+16]..[52,1874+22])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[54,1923+0]..[57,1989+1])
+    Pstr_type Rec
+    [
+      type_declaration "loc" (lib/asttypes.ml[54,1923+8]..[54,1923+11]) (lib/asttypes.ml[54,1923+0]..[57,1989+1])
+        ptype_params =
+          [
+            core_type (lib/asttypes.ml[54,1923+5]..[54,1923+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (lib/asttypes.ml[55,1957+2]..[55,1957+11])
+                Immutable
+                "txt" (lib/asttypes.ml[55,1957+2]..[55,1957+5])                core_type (lib/asttypes.ml[55,1957+8]..[55,1957+10])
+                  Ptyp_var a
+              (lib/asttypes.ml[56,1969+2]..[56,1969+19])
+                Immutable
+                "loc" (lib/asttypes.ml[56,1969+2]..[56,1969+5])                core_type (lib/asttypes.ml[56,1969+8]..[56,1969+18])
+                  Ptyp_constr "Location.t" (lib/asttypes.ml[56,1969+8]..[56,1969+18])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (lib/asttypes.ml[54,1923+14]..[54,1923+29])
+              Ptyp_constr "Location.loc" (lib/asttypes.ml[54,1923+17]..[54,1923+29])
+              [
+                core_type (lib/asttypes.ml[54,1923+14]..[54,1923+16])
+                  Ptyp_var a
+              ]
+    ]
+  structure_item (lib/asttypes.ml[60,1993+0]..[63,2041+14])
+    Pstr_type Rec
+    [
+      type_declaration "variance" (lib/asttypes.ml[60,1993+5]..[60,1993+13]) (lib/asttypes.ml[60,1993+0]..[63,2041+14])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/asttypes.ml[61,2009+2]..[61,2009+13])
+                "Covariant" (lib/asttypes.ml[61,2009+4]..[61,2009+13])
+                []
+                None
+              (lib/asttypes.ml[62,2023+2]..[62,2023+17])
+                "Contravariant" (lib/asttypes.ml[62,2023+4]..[62,2023+17])
+                []
+                None
+              (lib/asttypes.ml[63,2041+2]..[63,2041+14])
+                "NoVariance" (lib/asttypes.ml[63,2041+4]..[63,2041+14])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[65,2057+0]..[67,2090+17])
+    Pstr_type Rec
+    [
+      type_declaration "injectivity" (lib/asttypes.ml[65,2057+5]..[65,2057+16]) (lib/asttypes.ml[65,2057+0]..[67,2090+17])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/asttypes.ml[66,2076+2]..[66,2076+13])
+                "Injective" (lib/asttypes.ml[66,2076+4]..[66,2076+13])
+                []
+                None
+              (lib/asttypes.ml[67,2090+2]..[67,2090+17])
+                "NoInjectivity" (lib/asttypes.ml[67,2090+4]..[67,2090+17])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+]
+
+[@@@ocaml.text
+  " Auxiliary AST types used by parsetree and typedtree.\n\n  {b Warning:} this module is unstable and part of\n  {{!Compiler_libs}compiler-libs}.\n\n"]
+type constant =
+  | Const_int of int 
+  | Const_char of char 
+  | Const_string of string * Location.t * string option 
+  | Const_float of string 
+  | Const_int32 of int32 
+  | Const_int64 of int64 
+  | Const_nativeint of nativeint 
+type rec_flag =
+  | Nonrecursive 
+  | Recursive 
+type direction_flag =
+  | Upto 
+  | Downto 
+type private_flag =
+  | Private 
+  | Public 
+type mutable_flag =
+  | Immutable 
+  | Mutable 
+type virtual_flag =
+  | Virtual 
+  | Concrete 
+type override_flag =
+  | Override 
+  | Fresh 
+type closed_flag =
+  | Closed 
+  | Open 
+type label = string
+type arg_label =
+  | Nolabel 
+  | Labelled of string [@ocaml.doc " [label:T -> ...] "]
+  | Optional of string [@ocaml.doc " [?label:T -> ...] "]
+type 'a loc = 'a Location.loc = {
+  txt: 'a ;
+  loc: Location.t }
+type variance =
+  | Covariant 
+  | Contravariant 
+  | NoVariance 
+type injectivity =
+  | Injective 
+  | NoInjectivity 
+[
+  structure_item (lib/asttypes.ml[16,1079+0]..lib/asttypes.ml[21,1224+2])
+    Tstr_attribute "ocaml.text"
+    [
+      structure_item (lib/asttypes.ml[16,1079+0]..[21,1224+2])
+        Pstr_eval
+        expression (lib/asttypes.ml[16,1079+0]..[21,1224+2])
+          Pexp_constant PConst_string(" Auxiliary AST types used by parsetree and typedtree.\n\n  {b Warning:} this module is unstable and part of\n  {{!Compiler_libs}compiler-libs}.\n\n",(lib/asttypes.ml[16,1079+0]..[21,1224+2]),None)
+    ]
+  structure_item (lib/asttypes.ml[23,1228+0]..lib/asttypes.ml[30,1420+32])
+    Tstr_type Rec
+    [
+      type_declaration constant/291 (lib/asttypes.ml[23,1228+0]..lib/asttypes.ml[30,1420+32])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/asttypes.ml[24,1244+4]..lib/asttypes.ml[24,1244+20])
+                Const_int/292
+                [
+                  core_type (lib/asttypes.ml[24,1244+17]..lib/asttypes.ml[24,1244+20])
+                    Ttyp_constr "int/1!"
+                    []
+                ]
+                None
+              (lib/asttypes.ml[25,1265+2]..lib/asttypes.ml[25,1265+22])
+                Const_char/293
+                [
+                  core_type (lib/asttypes.ml[25,1265+18]..lib/asttypes.ml[25,1265+22])
+                    Ttyp_constr "char/2!"
+                    []
+                ]
+                None
+              (lib/asttypes.ml[26,1288+2]..lib/asttypes.ml[26,1288+55])
+                Const_string/294
+                [
+                  core_type (lib/asttypes.ml[26,1288+20]..lib/asttypes.ml[26,1288+26])
+                    Ttyp_constr "string/15!"
+                    []
+                  core_type (lib/asttypes.ml[26,1288+29]..lib/asttypes.ml[26,1288+39])
+                    Ttyp_constr "Ocaml_ocaml_types!.Location.t"
+                    []
+                  core_type (lib/asttypes.ml[26,1288+42]..lib/asttypes.ml[26,1288+55])
+                    Ttyp_constr "option/10!"
+                    [
+                      core_type (lib/asttypes.ml[26,1288+42]..lib/asttypes.ml[26,1288+48])
+                        Ttyp_constr "string/15!"
+                        []
+                    ]
+                ]
+                None
+              (lib/asttypes.ml[27,1344+2]..lib/asttypes.ml[27,1344+25])
+                Const_float/372
+                [
+                  core_type (lib/asttypes.ml[27,1344+19]..lib/asttypes.ml[27,1344+25])
+                    Ttyp_constr "string/15!"
+                    []
+                ]
+                None
+              (lib/asttypes.ml[28,1370+2]..lib/asttypes.ml[28,1370+24])
+                Const_int32/373
+                [
+                  core_type (lib/asttypes.ml[28,1370+19]..lib/asttypes.ml[28,1370+24])
+                    Ttyp_constr "int32/12!"
+                    []
+                ]
+                None
+              (lib/asttypes.ml[29,1395+2]..lib/asttypes.ml[29,1395+24])
+                Const_int64/374
+                [
+                  core_type (lib/asttypes.ml[29,1395+19]..lib/asttypes.ml[29,1395+24])
+                    Ttyp_constr "int64/13!"
+                    []
+                ]
+                None
+              (lib/asttypes.ml[30,1420+2]..lib/asttypes.ml[30,1420+32])
+                Const_nativeint/375
+                [
+                  core_type (lib/asttypes.ml[30,1420+23]..lib/asttypes.ml[30,1420+32])
+                    Ttyp_constr "nativeint/11!"
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[32,1454+0]..lib/asttypes.ml[32,1454+40])
+    Tstr_type Rec
+    [
+      type_declaration rec_flag/466 (lib/asttypes.ml[32,1454+0]..lib/asttypes.ml[32,1454+40])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/asttypes.ml[32,1454+16]..lib/asttypes.ml[32,1454+28])
+                Nonrecursive/467
+                []
+                None
+              (lib/asttypes.ml[32,1454+29]..lib/asttypes.ml[32,1454+40])
+                Recursive/468
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[34,1496+0]..lib/asttypes.ml[34,1496+35])
+    Tstr_type Rec
+    [
+      type_declaration direction_flag/469 (lib/asttypes.ml[34,1496+0]..lib/asttypes.ml[34,1496+35])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/asttypes.ml[34,1496+22]..lib/asttypes.ml[34,1496+26])
+                Upto/470
+                []
+                None
+              (lib/asttypes.ml[34,1496+27]..lib/asttypes.ml[34,1496+35])
+                Downto/471
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[37,1585+0]..lib/asttypes.ml[37,1585+36])
+    Tstr_type Rec
+    [
+      type_declaration private_flag/472 (lib/asttypes.ml[37,1585+0]..lib/asttypes.ml[37,1585+36])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/asttypes.ml[37,1585+20]..lib/asttypes.ml[37,1585+27])
+                Private/473
+                []
+                None
+              (lib/asttypes.ml[37,1585+28]..lib/asttypes.ml[37,1585+36])
+                Public/474
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[39,1623+0]..lib/asttypes.ml[39,1623+39])
+    Tstr_type Rec
+    [
+      type_declaration mutable_flag/475 (lib/asttypes.ml[39,1623+0]..lib/asttypes.ml[39,1623+39])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/asttypes.ml[39,1623+20]..lib/asttypes.ml[39,1623+29])
+                Immutable/476
+                []
+                None
+              (lib/asttypes.ml[39,1623+30]..lib/asttypes.ml[39,1623+39])
+                Mutable/477
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[41,1664+0]..lib/asttypes.ml[41,1664+38])
+    Tstr_type Rec
+    [
+      type_declaration virtual_flag/478 (lib/asttypes.ml[41,1664+0]..lib/asttypes.ml[41,1664+38])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/asttypes.ml[41,1664+20]..lib/asttypes.ml[41,1664+27])
+                Virtual/479
+                []
+                None
+              (lib/asttypes.ml[41,1664+28]..lib/asttypes.ml[41,1664+38])
+                Concrete/480
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[43,1704+0]..lib/asttypes.ml[43,1704+37])
+    Tstr_type Rec
+    [
+      type_declaration override_flag/481 (lib/asttypes.ml[43,1704+0]..lib/asttypes.ml[43,1704+37])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/asttypes.ml[43,1704+21]..lib/asttypes.ml[43,1704+29])
+                Override/482
+                []
+                None
+              (lib/asttypes.ml[43,1704+30]..lib/asttypes.ml[43,1704+37])
+                Fresh/483
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[45,1743+0]..lib/asttypes.ml[45,1743+32])
+    Tstr_type Rec
+    [
+      type_declaration closed_flag/484 (lib/asttypes.ml[45,1743+0]..lib/asttypes.ml[45,1743+32])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/asttypes.ml[45,1743+19]..lib/asttypes.ml[45,1743+25])
+                Closed/485
+                []
+                None
+              (lib/asttypes.ml[45,1743+26]..lib/asttypes.ml[45,1743+32])
+                Open/486
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[47,1777+0]..lib/asttypes.ml[47,1777+19])
+    Tstr_type Rec
+    [
+      type_declaration label/487 (lib/asttypes.ml[47,1777+0]..lib/asttypes.ml[47,1777+19])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (lib/asttypes.ml[47,1777+13]..lib/asttypes.ml[47,1777+19])
+              Ttyp_constr "string/15!"
+              []
+    ]
+  structure_item (lib/asttypes.ml[49,1798+0]..lib/asttypes.ml[52,1874+22])
+    Tstr_type Rec
+    [
+      type_declaration arg_label/488 (lib/asttypes.ml[49,1798+0]..lib/asttypes.ml[52,1874+22])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/asttypes.ml[50,1815+4]..lib/asttypes.ml[50,1815+11])
+                Nolabel/489
+                []
+                None
+              (lib/asttypes.ml[51,1827+2]..lib/asttypes.ml[51,1827+22])
+                Labelled/490
+                attribute "ocaml.doc"
+                  [
+                    structure_item (lib/asttypes.ml[51,1827+23]..[51,1827+46])
+                      Pstr_eval
+                      expression (lib/asttypes.ml[51,1827+23]..[51,1827+46])
+                        Pexp_constant PConst_string(" [label:T -> ...] ",(lib/asttypes.ml[51,1827+23]..[51,1827+46]),None)
+                  ]
+                [
+                  core_type (lib/asttypes.ml[51,1827+16]..lib/asttypes.ml[51,1827+22])
+                    Ttyp_constr "string/15!"
+                    []
+                ]
+                None
+              (lib/asttypes.ml[52,1874+2]..lib/asttypes.ml[52,1874+22])
+                Optional/491
+                attribute "ocaml.doc"
+                  [
+                    structure_item (lib/asttypes.ml[52,1874+23]..[52,1874+47])
+                      Pstr_eval
+                      expression (lib/asttypes.ml[52,1874+23]..[52,1874+47])
+                        Pexp_constant PConst_string(" [?label:T -> ...] ",(lib/asttypes.ml[52,1874+23]..[52,1874+47]),None)
+                  ]
+                [
+                  core_type (lib/asttypes.ml[52,1874+16]..lib/asttypes.ml[52,1874+22])
+                    Ttyp_constr "string/15!"
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[54,1923+0]..lib/asttypes.ml[57,1989+1])
+    Tstr_type Rec
+    [
+      type_declaration loc/492 (lib/asttypes.ml[54,1923+0]..lib/asttypes.ml[57,1989+1])
+        ptype_params =
+          [
+            core_type (lib/asttypes.ml[54,1923+5]..lib/asttypes.ml[54,1923+7])
+              Ttyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_record
+            [
+              (lib/asttypes.ml[55,1957+2]..lib/asttypes.ml[55,1957+11])
+                Immutable
+                txt/493                core_type (lib/asttypes.ml[55,1957+8]..lib/asttypes.ml[55,1957+10])
+                  Ttyp_poly
+                  core_type (lib/asttypes.ml[55,1957+8]..lib/asttypes.ml[55,1957+10])
+                    Ttyp_var a
+              (lib/asttypes.ml[56,1969+2]..lib/asttypes.ml[56,1969+19])
+                Immutable
+                loc/494                core_type (lib/asttypes.ml[56,1969+8]..lib/asttypes.ml[56,1969+18])
+                  Ttyp_poly
+                  core_type (lib/asttypes.ml[56,1969+8]..lib/asttypes.ml[56,1969+18])
+                    Ttyp_constr "Ocaml_ocaml_types!.Location.t"
+                    []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (lib/asttypes.ml[54,1923+14]..lib/asttypes.ml[54,1923+29])
+              Ttyp_constr "Ocaml_ocaml_types!.Location.loc"
+              [
+                core_type (lib/asttypes.ml[54,1923+14]..lib/asttypes.ml[54,1923+16])
+                  Ttyp_var a
+              ]
+    ]
+  structure_item (lib/asttypes.ml[60,1993+0]..lib/asttypes.ml[63,2041+14])
+    Tstr_type Rec
+    [
+      type_declaration variance/572 (lib/asttypes.ml[60,1993+0]..lib/asttypes.ml[63,2041+14])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/asttypes.ml[61,2009+2]..lib/asttypes.ml[61,2009+13])
+                Covariant/573
+                []
+                None
+              (lib/asttypes.ml[62,2023+2]..lib/asttypes.ml[62,2023+17])
+                Contravariant/574
+                []
+                None
+              (lib/asttypes.ml[63,2041+2]..lib/asttypes.ml[63,2041+14])
+                NoVariance/575
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/asttypes.ml[65,2057+0]..lib/asttypes.ml[67,2090+17])
+    Tstr_type Rec
+    [
+      type_declaration injectivity/576 (lib/asttypes.ml[65,2057+0]..lib/asttypes.ml[67,2090+17])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/asttypes.ml[66,2076+2]..lib/asttypes.ml[66,2076+13])
+                Injective/577
+                []
+                None
+              (lib/asttypes.ml[67,2090+2]..lib/asttypes.ml[67,2090+17])
+                NoInjectivity/578
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+]
+
+{<Ocaml_ocaml_types__Asttypes>
+ "arg_label"[type] -> <Ocaml_ocaml_types__Asttypes.30>;
+ "closed_flag"[type] -> <Ocaml_ocaml_types__Asttypes.26>;
+ "constant"[type] -> <Ocaml_ocaml_types__Asttypes.0>;
+ "direction_flag"[type] -> <Ocaml_ocaml_types__Asttypes.11>;
+ "injectivity"[type] -> <Ocaml_ocaml_types__Asttypes.41>;
+ "label"[type] -> <Ocaml_ocaml_types__Asttypes.29>;
+ "loc"[type] -> <Ocaml_ocaml_types__Asttypes.34>;
+ "mutable_flag"[type] -> <Ocaml_ocaml_types__Asttypes.17>;
+ "override_flag"[type] -> <Ocaml_ocaml_types__Asttypes.23>;
+ "private_flag"[type] -> <Ocaml_ocaml_types__Asttypes.14>;
+ "rec_flag"[type] -> <Ocaml_ocaml_types__Asttypes.8>;
+ "variance"[type] -> <Ocaml_ocaml_types__Asttypes.37>;
+ "virtual_flag"[type] -> <Ocaml_ocaml_types__Asttypes.20>;
+ }
+
+0
+0

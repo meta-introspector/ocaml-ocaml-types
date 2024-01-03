@@ -1,0 +1,8 @@
+0.020s 50.0MB 2.86MB 4.62MB lib/parsetree.ml
+  0.002s 3.39MB 0.51MB 2.27MB parsing
+    0.002s 3.39MB 0.51MB 2.27MB parser
+  0.007s 13.1MB 2.00MB 4.27MB typing
+  0.002s ------ ------ ------ generate
+    0.002s ------ ------ ------ assemble
+  0.009s 33.5MB 0.34MB 4.62MB other
+0.006s 3.03MB 1.76MB ------ other

@@ -1,0 +1,9 @@
+0.013s 16.6MB 3.44MB 5.20MB lib/attr_helper.ml
+  0.009s 13.1MB 3.37MB 5.13MB typing
+  0.003s 2.10MB 0.06MB 5.20MB generate
+    ------ 0.10MB ------ ------ compile_phrases
+      ------ 0.10MB ------ ------ liveness
+    0.002s ------ ------ ------ assemble
+    0.001s 2.00MB 0.06MB 5.20MB other
+  0.001s 1.40MB ------ ------ other
+0.006s 3.03MB 1.76MB ------ other

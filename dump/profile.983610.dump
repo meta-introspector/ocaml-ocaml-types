@@ -1,0 +1,6 @@
+0.004s 2.17MB 0.39MB 2.15MB lib/config.ml
+  0.001s 0.17MB ------ ------ typing
+  0.002s 2.00MB 0.39MB 2.15MB generate
+    0.002s ------ ------ ------ assemble
+    ------ 2.00MB 0.39MB 2.15MB other
+0.006s 3.04MB 1.76MB ------ other

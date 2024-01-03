@@ -1,0 +1,7 @@
+0.013s 22.6MB 3.23MB 3.23MB lib/arg_helper.ml
+  0.002s 2.87MB 1.54MB 1.54MB parsing
+    0.002s 2.87MB 1.54MB 1.54MB parser
+  0.007s 7.62MB 1.59MB 3.14MB typing
+  0.001s 4.09MB 0.03MB 3.17MB generate
+  0.002s 8.05MB 0.06MB 3.23MB other
+0.008s ------ ------ ------ other

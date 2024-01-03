@@ -1,0 +1,5 @@
+0.006s 8.25MB 1.93MB 1.93MB lib/terminfo.ml
+  0.003s 3.38MB 0.43MB 0.43MB typing
+  0.001s 2.00MB ------ ------ generate
+  0.002s 2.87MB 1.49MB 1.93MB other
+0.004s ------ ------ ------ other

@@ -1,0 +1,4 @@
+0.005s 6.75MB 2.44MB 2.44MB lib/syntaxerr.ml
+  0.003s 3.67MB 0.93MB 0.93MB typing
+  0.002s 3.08MB 1.51MB 2.44MB other
+0.004s ------ ------ ------ other

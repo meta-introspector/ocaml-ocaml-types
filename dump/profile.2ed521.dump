@@ -1,0 +1,8 @@
+0.024s 51.5MB 6.08MB 6.08MB lib/primitive.ml
+  0.002s 2.89MB 1.58MB 1.58MB parsing
+    0.002s 2.89MB 1.58MB 1.58MB parser
+  0.016s 23.3MB 4.21MB 5.80MB typing
+  0.001s 4.04MB 0.09MB 5.90MB transl
+  0.002s 8.11MB 0.09MB 5.99MB generate
+  0.004s 13.1MB 0.09MB 6.08MB other
+0.004s ------ ------ ------ other

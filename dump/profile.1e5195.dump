@@ -1,0 +1,15 @@
+0.020s 44.8MB 3.38MB 5.14MB lib/path.ml
+  ------ 0.01MB ------ ------ parsing
+    ------ 0.01MB ------ ------ parser
+  0.009s 17.8MB 2.65MB 4.41MB typing
+  ------ 2.01MB ------ ------ transl
+  0.006s 8.61MB 0.43MB 4.85MB generate
+    ------ 0.21MB ------ ------ cmm
+    0.002s 4.15MB 0.43MB 4.85MB compile_phrases
+      ------ 2.00MB 0.15MB 4.57MB liveness
+      ------ 0.15MB ------ ------ regalloc
+      ------ 2.00MB 0.28MB 4.85MB linearize
+    0.003s ------ ------ ------ assemble
+    0.001s 4.24MB ------ ------ other
+  0.004s 16.3MB 0.29MB 5.14MB other
+0.005s 3.04MB 1.76MB ------ other

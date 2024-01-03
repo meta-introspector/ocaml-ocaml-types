@@ -1,0 +1,12 @@
+0.036s 22.8MB 3.07MB 3.07MB lib/ocaml_ocaml_types.cmxs
+  0.001s ------ ------ ------ selection
+  ------ 0.07MB ------ ------ cse
+  0.001s 2.12MB 0.12MB 0.12MB liveness
+  0.001s 2.00MB 0.12MB 0.25MB spill
+  0.005s 11.2MB 2.34MB 2.59MB regalloc
+  ------ 1.15MB 0.09MB 2.68MB linearize
+  0.001s 0.37MB ------ ------ emit
+  0.003s ------ ------ ------ assemble
+  0.019s ------ ------ ------ c-linker
+  0.004s 5.84MB 0.39MB 3.07MB other
+0.004s ------ ------ ------ other

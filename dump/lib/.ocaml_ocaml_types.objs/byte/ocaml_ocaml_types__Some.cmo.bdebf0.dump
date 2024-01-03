@@ -1,0 +1,12 @@
+[]
+
+
+[]
+
+{<Ocaml_ocaml_types__Some>
+ }
+
+(setglobal Ocaml_ocaml_types__Some!
+  (pseudo <unknown location> (makeblock 0)))
+(setglobal Ocaml_ocaml_types__Some!
+  (pseudo <unknown location> (makeblock 0)))

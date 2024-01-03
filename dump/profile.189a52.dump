@@ -1,0 +1,7 @@
+0.030s 66.4MB 5.71MB 5.71MB lib/docstrings.ml
+  0.002s 2.89MB 1.56MB 1.56MB parsing
+    0.002s 2.89MB 1.56MB 1.56MB parser
+  0.018s 25.0MB 3.68MB 5.24MB typing
+  0.004s 14.2MB 0.12MB 5.37MB generate
+  0.006s 24.2MB 0.34MB 5.71MB other
+0.004s ------ ------ ------ other

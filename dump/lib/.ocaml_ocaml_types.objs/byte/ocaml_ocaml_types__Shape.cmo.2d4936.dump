@@ -1,0 +1,3207 @@
+[
+  structure_item (lib/shape.ml[16,1080+0]..[64,2482+3])
+    Pstr_module
+    "Uid" (lib/shape.ml[16,1080+7]..[16,1080+10])
+      module_expr (lib/shape.ml[16,1080+13]..[64,2482+3])
+        Pmod_structure
+        [
+          structure_item (lib/shape.ml[17,1100+2]..[21,1204+22])
+            Pstr_type Rec
+            [
+              type_declaration "t" (lib/shape.ml[17,1100+7]..[17,1100+8]) (lib/shape.ml[17,1100+2]..[21,1204+22])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_variant
+                    [
+                      (lib/shape.ml[18,1111+4]..[18,1111+32])
+                        "Compilation_unit" (lib/shape.ml[18,1111+6]..[18,1111+22])
+                        [
+                          core_type (lib/shape.ml[18,1111+26]..[18,1111+32])
+                            Ptyp_constr "string" (lib/shape.ml[18,1111+26]..[18,1111+32])
+                            []
+                        ]
+                        None
+                      (lib/shape.ml[19,1144+4]..[19,1144+44])
+                        "Item" (lib/shape.ml[19,1144+6]..[19,1144+10])
+                        [
+                          (lib/shape.ml[19,1144+16]..[19,1144+34])
+                            Immutable
+                            "comp_unit" (lib/shape.ml[19,1144+16]..[19,1144+25])                            core_type (lib/shape.ml[19,1144+27]..[19,1144+33])
+                              Ptyp_constr "string" (lib/shape.ml[19,1144+27]..[19,1144+33])
+                              []
+                          (lib/shape.ml[19,1144+35]..[19,1144+42])
+                            Immutable
+                            "id" (lib/shape.ml[19,1144+35]..[19,1144+37])                            core_type (lib/shape.ml[19,1144+39]..[19,1144+42])
+                              Ptyp_constr "int" (lib/shape.ml[19,1144+39]..[19,1144+42])
+                              []
+                        ]
+                        None
+                      (lib/shape.ml[20,1189+4]..[20,1189+14])
+                        "Internal" (lib/shape.ml[20,1189+6]..[20,1189+14])
+                        []
+                        None
+                      (lib/shape.ml[21,1204+4]..[21,1204+22])
+                        "Predef" (lib/shape.ml[21,1204+6]..[21,1204+12])
+                        [
+                          core_type (lib/shape.ml[21,1204+16]..[21,1204+22])
+                            Ptyp_constr "string" (lib/shape.ml[21,1204+16]..[21,1204+22])
+                            []
+                        ]
+                        None
+                    ]
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          structure_item (lib/shape.ml[41,1867+2]..[41,1867+19])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[41,1867+6]..[41,1867+8])
+                  Ppat_var "id" (lib/shape.ml[41,1867+6]..[41,1867+8])
+                expression (lib/shape.ml[41,1867+11]..[41,1867+19])
+                  Pexp_apply
+                  expression (lib/shape.ml[41,1867+11]..[41,1867+14])
+                    Pexp_ident "ref" (lib/shape.ml[41,1867+11]..[41,1867+14])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (lib/shape.ml[41,1867+15]..[41,1867+19])
+                        Pexp_constant PConst_int (-1,None)
+                  ]
+            ]
+          structure_item (lib/shape.ml[43,1888+2]..[43,1888+28])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[43,1888+6]..[43,1888+12])
+                  Ppat_var "reinit" (lib/shape.ml[43,1888+6]..[43,1888+12])
+                expression (lib/shape.ml[43,1888+13]..[43,1888+28]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/shape.ml[43,1888+13]..[43,1888+15])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[43,1888+13]..[43,1888+15])
+                        Ppat_construct "()" (lib/shape.ml[43,1888+13]..[43,1888+15])
+                        None
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/shape.ml[43,1888+18]..[43,1888+28])
+                      Pexp_apply
+                      expression (lib/shape.ml[43,1888+21]..[43,1888+23])
+                        Pexp_ident ":=" (lib/shape.ml[43,1888+21]..[43,1888+23])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[43,1888+18]..[43,1888+20])
+                            Pexp_ident "id" (lib/shape.ml[43,1888+18]..[43,1888+20])
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[43,1888+24]..[43,1888+28])
+                            Pexp_constant PConst_int (-1,None)
+                      ]
+            ]
+          structure_item (lib/shape.ml[45,1918+2]..[47,1959+49])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[45,1918+6]..[45,1918+8])
+                  Ppat_var "mk" (lib/shape.ml[45,1918+6]..[45,1918+8])
+                expression (lib/shape.ml[45,1918+10]..[47,1959+49]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/shape.ml[45,1918+10]..[45,1918+23])
+                      Labelled "current_unit"
+                      None
+                      pattern (lib/shape.ml[45,1918+11]..[45,1918+23])
+                        Ppat_var "current_unit" (lib/shape.ml[45,1918+11]..[45,1918+23])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/shape.ml[46,1944+6]..[47,1959+49])
+                      Pexp_sequence
+                      expression (lib/shape.ml[46,1944+6]..[46,1944+13])
+                        Pexp_apply
+                        expression (lib/shape.ml[46,1944+6]..[46,1944+10])
+                          Pexp_ident "incr" (lib/shape.ml[46,1944+6]..[46,1944+10])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[46,1944+11]..[46,1944+13])
+                              Pexp_ident "id" (lib/shape.ml[46,1944+11]..[46,1944+13])
+                        ]
+                      expression (lib/shape.ml[47,1959+6]..[47,1959+49])
+                        Pexp_construct "Item" (lib/shape.ml[47,1959+6]..[47,1959+10])
+                        Some
+                          expression (lib/shape.ml[47,1959+11]..[47,1959+49])
+                            Pexp_record
+                            [
+                              "comp_unit" (lib/shape.ml[47,1959+13]..[47,1959+22])
+                                expression (lib/shape.ml[47,1959+25]..[47,1959+37])
+                                  Pexp_ident "current_unit" (lib/shape.ml[47,1959+25]..[47,1959+37])
+                              "id" (lib/shape.ml[47,1959+39]..[47,1959+41])
+                                expression (lib/shape.ml[47,1959+44]..[47,1959+47])
+                                  Pexp_apply
+                                  expression (lib/shape.ml[47,1959+44]..[47,1959+45])
+                                    Pexp_ident "!" (lib/shape.ml[47,1959+44]..[47,1959+45])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/shape.ml[47,1959+45]..[47,1959+47])
+                                        Pexp_ident "id" (lib/shape.ml[47,1959+45]..[47,1959+47])
+                                  ]
+                            ]
+                            None
+            ]
+          structure_item (lib/shape.ml[49,2010+2]..[52,2161+36])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[49,2010+6]..[49,2010+28])
+                  Ppat_var "of_compilation_unit_id" (lib/shape.ml[49,2010+6]..[49,2010+28])
+                expression (lib/shape.ml[49,2010+29]..[52,2161+36]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/shape.ml[49,2010+29]..[49,2010+31])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[49,2010+29]..[49,2010+31])
+                        Ppat_var "id" (lib/shape.ml[49,2010+29]..[49,2010+31])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/shape.ml[50,2044+4]..[52,2161+36])
+                      Pexp_sequence
+                      expression (lib/shape.ml[50,2044+4]..[51,2082+77])
+                        Pexp_ifthenelse
+                        expression (lib/shape.ml[50,2044+7]..[50,2044+32])
+                          Pexp_apply
+                          expression (lib/shape.ml[50,2044+7]..[50,2044+10])
+                            Pexp_ident "not" (lib/shape.ml[50,2044+7]..[50,2044+10])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (lib/shape.ml[50,2044+11]..[50,2044+32])
+                                Pexp_apply
+                                expression (lib/shape.ml[50,2044+12]..[50,2044+28])
+                                  Pexp_ident "Ident.persistent" (lib/shape.ml[50,2044+12]..[50,2044+28])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (lib/shape.ml[50,2044+29]..[50,2044+31])
+                                      Pexp_ident "id" (lib/shape.ml[50,2044+29]..[50,2044+31])
+                                ]
+                          ]
+                        expression (lib/shape.ml[51,2082+6]..[51,2082+77])
+                          Pexp_apply
+                          expression (lib/shape.ml[51,2082+6]..[51,2082+23])
+                            Pexp_ident "Misc.fatal_errorf" (lib/shape.ml[51,2082+6]..[51,2082+23])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (lib/shape.ml[51,2082+24]..[51,2082+61])
+                                Pexp_constant PConst_string("Types.Uid.of_compilation_unit_id %S",(lib/shape.ml[51,2082+25]..[51,2082+60]),None)
+                            <arg>
+                            Nolabel
+                              expression (lib/shape.ml[51,2082+62]..[51,2082+77])
+                                Pexp_apply
+                                expression (lib/shape.ml[51,2082+63]..[51,2082+73])
+                                  Pexp_ident "Ident.name" (lib/shape.ml[51,2082+63]..[51,2082+73])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (lib/shape.ml[51,2082+74]..[51,2082+76])
+                                      Pexp_ident "id" (lib/shape.ml[51,2082+74]..[51,2082+76])
+                                ]
+                          ]
+                        None
+                      expression (lib/shape.ml[52,2161+4]..[52,2161+36])
+                        Pexp_construct "Compilation_unit" (lib/shape.ml[52,2161+4]..[52,2161+20])
+                        Some
+                          expression (lib/shape.ml[52,2161+21]..[52,2161+36])
+                            Pexp_apply
+                            expression (lib/shape.ml[52,2161+22]..[52,2161+32])
+                              Pexp_ident "Ident.name" (lib/shape.ml[52,2161+22]..[52,2161+32])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[52,2161+33]..[52,2161+35])
+                                  Pexp_ident "id" (lib/shape.ml[52,2161+33]..[52,2161+35])
+                            ]
+            ]
+          structure_item (lib/shape.ml[54,2199+2]..[57,2329+26])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[54,2199+6]..[54,2199+18])
+                  Ppat_var "of_predef_id" (lib/shape.ml[54,2199+6]..[54,2199+18])
+                expression (lib/shape.ml[54,2199+19]..[57,2329+26]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/shape.ml[54,2199+19]..[54,2199+21])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[54,2199+19]..[54,2199+21])
+                        Ppat_var "id" (lib/shape.ml[54,2199+19]..[54,2199+21])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/shape.ml[55,2223+4]..[57,2329+26])
+                      Pexp_sequence
+                      expression (lib/shape.ml[55,2223+4]..[56,2260+67])
+                        Pexp_ifthenelse
+                        expression (lib/shape.ml[55,2223+7]..[55,2223+31])
+                          Pexp_apply
+                          expression (lib/shape.ml[55,2223+7]..[55,2223+10])
+                            Pexp_ident "not" (lib/shape.ml[55,2223+7]..[55,2223+10])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (lib/shape.ml[55,2223+11]..[55,2223+31])
+                                Pexp_apply
+                                expression (lib/shape.ml[55,2223+12]..[55,2223+27])
+                                  Pexp_ident "Ident.is_predef" (lib/shape.ml[55,2223+12]..[55,2223+27])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (lib/shape.ml[55,2223+28]..[55,2223+30])
+                                      Pexp_ident "id" (lib/shape.ml[55,2223+28]..[55,2223+30])
+                                ]
+                          ]
+                        expression (lib/shape.ml[56,2260+6]..[56,2260+67])
+                          Pexp_apply
+                          expression (lib/shape.ml[56,2260+6]..[56,2260+23])
+                            Pexp_ident "Misc.fatal_errorf" (lib/shape.ml[56,2260+6]..[56,2260+23])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (lib/shape.ml[56,2260+24]..[56,2260+51])
+                                Pexp_constant PConst_string("Types.Uid.of_predef_id %S",(lib/shape.ml[56,2260+25]..[56,2260+50]),None)
+                            <arg>
+                            Nolabel
+                              expression (lib/shape.ml[56,2260+52]..[56,2260+67])
+                                Pexp_apply
+                                expression (lib/shape.ml[56,2260+53]..[56,2260+63])
+                                  Pexp_ident "Ident.name" (lib/shape.ml[56,2260+53]..[56,2260+63])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (lib/shape.ml[56,2260+64]..[56,2260+66])
+                                      Pexp_ident "id" (lib/shape.ml[56,2260+64]..[56,2260+66])
+                                ]
+                          ]
+                        None
+                      expression (lib/shape.ml[57,2329+4]..[57,2329+26])
+                        Pexp_construct "Predef" (lib/shape.ml[57,2329+4]..[57,2329+10])
+                        Some
+                          expression (lib/shape.ml[57,2329+11]..[57,2329+26])
+                            Pexp_apply
+                            expression (lib/shape.ml[57,2329+12]..[57,2329+22])
+                              Pexp_ident "Ident.name" (lib/shape.ml[57,2329+12]..[57,2329+22])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[57,2329+23]..[57,2329+25])
+                                  Pexp_ident "id" (lib/shape.ml[57,2329+23]..[57,2329+25])
+                            ]
+            ]
+          structure_item (lib/shape.ml[59,2357+2]..[59,2357+45])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[59,2357+6]..[59,2357+34])
+                  Ppat_var "internal_not_actually_unique" (lib/shape.ml[59,2357+6]..[59,2357+34])
+                expression (lib/shape.ml[59,2357+37]..[59,2357+45])
+                  Pexp_construct "Internal" (lib/shape.ml[59,2357+37]..[59,2357+45])
+                  None
+            ]
+          structure_item (lib/shape.ml[61,2404+2]..[63,2465+16])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[61,2404+6]..[61,2404+28])
+                  Ppat_var "for_actual_declaration" (lib/shape.ml[61,2404+6]..[61,2404+28])
+                expression (lib/shape.ml[61,2404+31]..[63,2465+16])
+                  Pexp_function
+                  []
+                  None
+                  Pfunction_cases (lib/shape.ml[61,2404+31]..[63,2465+16])
+                    [
+                      <case>
+                        pattern (lib/shape.ml[62,2444+6]..[62,2444+12])
+                          Ppat_construct "Item" (lib/shape.ml[62,2444+6]..[62,2444+10])
+                          Some
+                            []
+                            pattern (lib/shape.ml[62,2444+11]..[62,2444+12])
+                              Ppat_any
+                        expression (lib/shape.ml[62,2444+16]..[62,2444+20])
+                          Pexp_construct "true" (lib/shape.ml[62,2444+16]..[62,2444+20])
+                          None
+                      <case>
+                        pattern (lib/shape.ml[63,2465+6]..[63,2465+7])
+                          Ppat_any
+                        expression (lib/shape.ml[63,2465+11]..[63,2465+16])
+                          Pexp_construct "false" (lib/shape.ml[63,2465+11]..[63,2465+16])
+                          None
+                    ]
+            ]
+        ]
+  structure_item (lib/shape.ml[66,2487+0]..[95,3069+3])
+    Pstr_module
+    "Sig_component_kind" (lib/shape.ml[66,2487+7]..[66,2487+25])
+      module_expr (lib/shape.ml[66,2487+28]..[95,3069+3])
+        Pmod_structure
+        [
+          structure_item (lib/shape.ml[67,2522+2]..[74,2627+16])
+            Pstr_type Rec
+            [
+              type_declaration "t" (lib/shape.ml[67,2522+7]..[67,2522+8]) (lib/shape.ml[67,2522+2]..[74,2627+16])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_variant
+                    [
+                      (lib/shape.ml[68,2533+4]..[68,2533+11])
+                        "Value" (lib/shape.ml[68,2533+6]..[68,2533+11])
+                        []
+                        None
+                      (lib/shape.ml[69,2545+4]..[69,2545+10])
+                        "Type" (lib/shape.ml[69,2545+6]..[69,2545+10])
+                        []
+                        None
+                      (lib/shape.ml[70,2556+4]..[70,2556+12])
+                        "Module" (lib/shape.ml[70,2556+6]..[70,2556+12])
+                        []
+                        None
+                      (lib/shape.ml[71,2569+4]..[71,2569+17])
+                        "Module_type" (lib/shape.ml[71,2569+6]..[71,2569+17])
+                        []
+                        None
+                      (lib/shape.ml[72,2587+4]..[72,2587+27])
+                        "Extension_constructor" (lib/shape.ml[72,2587+6]..[72,2587+27])
+                        []
+                        None
+                      (lib/shape.ml[73,2615+4]..[73,2615+11])
+                        "Class" (lib/shape.ml[73,2615+6]..[73,2615+11])
+                        []
+                        None
+                      (lib/shape.ml[74,2627+4]..[74,2627+16])
+                        "Class_type" (lib/shape.ml[74,2627+6]..[74,2627+16])
+                        []
+                        None
+                    ]
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          structure_item (lib/shape.ml[76,2645+2]..[83,2854+32])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[76,2645+6]..[76,2645+15])
+                  Ppat_var "to_string" (lib/shape.ml[76,2645+6]..[76,2645+15])
+                expression (lib/shape.ml[76,2645+18]..[83,2854+32])
+                  Pexp_function
+                  []
+                  None
+                  Pfunction_cases (lib/shape.ml[76,2645+18]..[83,2854+32])
+                    [
+                      <case>
+                        pattern (lib/shape.ml[77,2672+6]..[77,2672+11])
+                          Ppat_construct "Value" (lib/shape.ml[77,2672+6]..[77,2672+11])
+                          None
+                        expression (lib/shape.ml[77,2672+15]..[77,2672+22])
+                          Pexp_constant PConst_string("value",(lib/shape.ml[77,2672+16]..[77,2672+21]),None)
+                      <case>
+                        pattern (lib/shape.ml[78,2695+6]..[78,2695+10])
+                          Ppat_construct "Type" (lib/shape.ml[78,2695+6]..[78,2695+10])
+                          None
+                        expression (lib/shape.ml[78,2695+14]..[78,2695+20])
+                          Pexp_constant PConst_string("type",(lib/shape.ml[78,2695+15]..[78,2695+19]),None)
+                      <case>
+                        pattern (lib/shape.ml[79,2716+6]..[79,2716+12])
+                          Ppat_construct "Module" (lib/shape.ml[79,2716+6]..[79,2716+12])
+                          None
+                        expression (lib/shape.ml[79,2716+16]..[79,2716+24])
+                          Pexp_constant PConst_string("module",(lib/shape.ml[79,2716+17]..[79,2716+23]),None)
+                      <case>
+                        pattern (lib/shape.ml[80,2741+6]..[80,2741+17])
+                          Ppat_construct "Module_type" (lib/shape.ml[80,2741+6]..[80,2741+17])
+                          None
+                        expression (lib/shape.ml[80,2741+21]..[80,2741+34])
+                          Pexp_constant PConst_string("module type",(lib/shape.ml[80,2741+22]..[80,2741+33]),None)
+                      <case>
+                        pattern (lib/shape.ml[81,2776+6]..[81,2776+27])
+                          Ppat_construct "Extension_constructor" (lib/shape.ml[81,2776+6]..[81,2776+27])
+                          None
+                        expression (lib/shape.ml[81,2776+31]..[81,2776+54])
+                          Pexp_constant PConst_string("extension constructor",(lib/shape.ml[81,2776+32]..[81,2776+53]),None)
+                      <case>
+                        pattern (lib/shape.ml[82,2831+6]..[82,2831+11])
+                          Ppat_construct "Class" (lib/shape.ml[82,2831+6]..[82,2831+11])
+                          None
+                        expression (lib/shape.ml[82,2831+15]..[82,2831+22])
+                          Pexp_constant PConst_string("class",(lib/shape.ml[82,2831+16]..[82,2831+21]),None)
+                      <case>
+                        pattern (lib/shape.ml[83,2854+6]..[83,2854+16])
+                          Ppat_construct "Class_type" (lib/shape.ml[83,2854+6]..[83,2854+16])
+                          None
+                        expression (lib/shape.ml[83,2854+20]..[83,2854+32])
+                          Pexp_constant PConst_string("class type",(lib/shape.ml[83,2854+21]..[83,2854+31]),None)
+                    ]
+            ]
+          structure_item (lib/shape.ml[85,2888+2]..[94,3056+12])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[85,2888+6]..[85,2888+25])
+                  Ppat_var "can_appear_in_types" (lib/shape.ml[85,2888+6]..[85,2888+25])
+                expression (lib/shape.ml[85,2888+28]..[94,3056+12])
+                  Pexp_function
+                  []
+                  None
+                  Pfunction_cases (lib/shape.ml[85,2888+28]..[94,3056+12])
+                    [
+                      <case>
+                        pattern (lib/shape.ml[86,2925+6]..[87,2937+27])
+                          Ppat_or
+                          pattern (lib/shape.ml[86,2925+6]..[86,2925+11])
+                            Ppat_construct "Value" (lib/shape.ml[86,2925+6]..[86,2925+11])
+                            None
+                          pattern (lib/shape.ml[87,2937+6]..[87,2937+27])
+                            Ppat_construct "Extension_constructor" (lib/shape.ml[87,2937+6]..[87,2937+27])
+                            None
+                        expression (lib/shape.ml[88,2968+8]..[88,2968+13])
+                          Pexp_construct "false" (lib/shape.ml[88,2968+8]..[88,2968+13])
+                          None
+                      <case>
+                        pattern (lib/shape.ml[89,2982+6]..[93,3036+16])
+                          Ppat_or
+                          pattern (lib/shape.ml[89,2982+6]..[92,3024+11])
+                            Ppat_or
+                            pattern (lib/shape.ml[89,2982+6]..[91,3006+17])
+                              Ppat_or
+                              pattern (lib/shape.ml[89,2982+6]..[90,2993+12])
+                                Ppat_or
+                                pattern (lib/shape.ml[89,2982+6]..[89,2982+10])
+                                  Ppat_construct "Type" (lib/shape.ml[89,2982+6]..[89,2982+10])
+                                  None
+                                pattern (lib/shape.ml[90,2993+6]..[90,2993+12])
+                                  Ppat_construct "Module" (lib/shape.ml[90,2993+6]..[90,2993+12])
+                                  None
+                              pattern (lib/shape.ml[91,3006+6]..[91,3006+17])
+                                Ppat_construct "Module_type" (lib/shape.ml[91,3006+6]..[91,3006+17])
+                                None
+                            pattern (lib/shape.ml[92,3024+6]..[92,3024+11])
+                              Ppat_construct "Class" (lib/shape.ml[92,3024+6]..[92,3024+11])
+                              None
+                          pattern (lib/shape.ml[93,3036+6]..[93,3036+16])
+                            Ppat_construct "Class_type" (lib/shape.ml[93,3036+6]..[93,3036+16])
+                            None
+                        expression (lib/shape.ml[94,3056+8]..[94,3056+12])
+                          Pexp_construct "true" (lib/shape.ml[94,3056+8]..[94,3056+12])
+                          None
+                    ]
+            ]
+        ]
+  structure_item (lib/shape.ml[97,3074+0]..[124,3872+3])
+    Pstr_module
+    "Item" (lib/shape.ml[97,3074+7]..[97,3074+11])
+      module_expr (lib/shape.ml[97,3074+14]..[124,3872+3])
+        Pmod_structure
+        [
+          structure_item (lib/shape.ml[98,3095+2]..[119,3825+5])
+            Pstr_module
+            "T" (lib/shape.ml[98,3095+9]..[98,3095+10])
+              module_expr (lib/shape.ml[98,3095+13]..[119,3825+5])
+                Pmod_structure
+                [
+                  structure_item (lib/shape.ml[99,3115+4]..[99,3115+42])
+                    Pstr_type Rec
+                    [
+                      type_declaration "t" (lib/shape.ml[99,3115+9]..[99,3115+10]) (lib/shape.ml[99,3115+4]..[99,3115+42])
+                        ptype_params =
+                          []
+                        ptype_cstrs =
+                          []
+                        ptype_kind =
+                          Ptype_abstract
+                        ptype_private = Public
+                        ptype_manifest =
+                          Some
+                            core_type (lib/shape.ml[99,3115+13]..[99,3115+42])
+                              Ptyp_tuple
+                              [
+                                core_type (lib/shape.ml[99,3115+13]..[99,3115+19])
+                                  Ptyp_constr "string" (lib/shape.ml[99,3115+13]..[99,3115+19])
+                                  []
+                                core_type (lib/shape.ml[99,3115+22]..[99,3115+42])
+                                  Ptyp_constr "Sig_component_kind.t" (lib/shape.ml[99,3115+22]..[99,3115+42])
+                                  []
+                              ]
+                    ]
+                  structure_item (lib/shape.ml[100,3158+4]..[100,3158+25])
+                    Pstr_value Nonrec
+                    [
+                      <def>
+                        pattern (lib/shape.ml[100,3158+8]..[100,3158+15])
+                          Ppat_var "compare" (lib/shape.ml[100,3158+8]..[100,3158+15])
+                        expression (lib/shape.ml[100,3158+18]..[100,3158+25])
+                          Pexp_ident "compare" (lib/shape.ml[100,3158+18]..[100,3158+25])
+                    ]
+                  structure_item (lib/shape.ml[102,3185+4]..[102,3185+29])
+                    Pstr_value Nonrec
+                    [
+                      <def>
+                        pattern (lib/shape.ml[102,3185+8]..[102,3185+12])
+                          Ppat_var "make" (lib/shape.ml[102,3185+8]..[102,3185+12])
+                        expression (lib/shape.ml[102,3185+13]..[102,3185+29]) ghost
+                          Pexp_function
+                          [
+                            Pparam_val (lib/shape.ml[102,3185+13]..[102,3185+16])
+                              Nolabel
+                              None
+                              pattern (lib/shape.ml[102,3185+13]..[102,3185+16])
+                                Ppat_var "str" (lib/shape.ml[102,3185+13]..[102,3185+16])
+                            Pparam_val (lib/shape.ml[102,3185+17]..[102,3185+19])
+                              Nolabel
+                              None
+                              pattern (lib/shape.ml[102,3185+17]..[102,3185+19])
+                                Ppat_var "ns" (lib/shape.ml[102,3185+17]..[102,3185+19])
+                          ]
+                          None
+                          Pfunction_body
+                            expression (lib/shape.ml[102,3185+22]..[102,3185+29])
+                              Pexp_tuple
+                              [
+                                expression (lib/shape.ml[102,3185+22]..[102,3185+25])
+                                  Pexp_ident "str" (lib/shape.ml[102,3185+22]..[102,3185+25])
+                                expression (lib/shape.ml[102,3185+27]..[102,3185+29])
+                                  Pexp_ident "ns" (lib/shape.ml[102,3185+27]..[102,3185+29])
+                              ]
+                    ]
+                  structure_item (lib/shape.ml[104,3216+4]..[104,3216+58])
+                    Pstr_value Nonrec
+                    [
+                      <def>
+                        pattern (lib/shape.ml[104,3216+8]..[104,3216+13])
+                          Ppat_var "value" (lib/shape.ml[104,3216+8]..[104,3216+13])
+                        expression (lib/shape.ml[104,3216+14]..[104,3216+58]) ghost
+                          Pexp_function
+                          [
+                            Pparam_val (lib/shape.ml[104,3216+14]..[104,3216+16])
+                              Nolabel
+                              None
+                              pattern (lib/shape.ml[104,3216+14]..[104,3216+16])
+                                Ppat_var "id" (lib/shape.ml[104,3216+14]..[104,3216+16])
+                          ]
+                          None
+                          Pfunction_body
+                            expression (lib/shape.ml[104,3216+19]..[104,3216+58])
+                              Pexp_tuple
+                              [
+                                expression (lib/shape.ml[104,3216+19]..[104,3216+32])
+                                  Pexp_apply
+                                  expression (lib/shape.ml[104,3216+19]..[104,3216+29])
+                                    Pexp_ident "Ident.name" (lib/shape.ml[104,3216+19]..[104,3216+29])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/shape.ml[104,3216+30]..[104,3216+32])
+                                        Pexp_ident "id" (lib/shape.ml[104,3216+30]..[104,3216+32])
+                                  ]
+                                expression (lib/shape.ml[104,3216+34]..[104,3216+58])
+                                  Pexp_construct "Sig_component_kind.Value" (lib/shape.ml[104,3216+34]..[104,3216+58])
+                                  None
+                              ]
+                    ]
+                  structure_item (lib/shape.ml[105,3275+4]..[105,3275+57])
+                    Pstr_value Nonrec
+                    [
+                      <def>
+                        pattern (lib/shape.ml[105,3275+8]..[105,3275+13])
+                          Ppat_var "type_" (lib/shape.ml[105,3275+8]..[105,3275+13])
+                        expression (lib/shape.ml[105,3275+14]..[105,3275+57]) ghost
+                          Pexp_function
+                          [
+                            Pparam_val (lib/shape.ml[105,3275+14]..[105,3275+16])
+                              Nolabel
+                              None
+                              pattern (lib/shape.ml[105,3275+14]..[105,3275+16])
+                                Ppat_var "id" (lib/shape.ml[105,3275+14]..[105,3275+16])
+                          ]
+                          None
+                          Pfunction_body
+                            expression (lib/shape.ml[105,3275+19]..[105,3275+57])
+                              Pexp_tuple
+                              [
+                                expression (lib/shape.ml[105,3275+19]..[105,3275+32])
+                                  Pexp_apply
+                                  expression (lib/shape.ml[105,3275+19]..[105,3275+29])
+                                    Pexp_ident "Ident.name" (lib/shape.ml[105,3275+19]..[105,3275+29])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/shape.ml[105,3275+30]..[105,3275+32])
+                                        Pexp_ident "id" (lib/shape.ml[105,3275+30]..[105,3275+32])
+                                  ]
+                                expression (lib/shape.ml[105,3275+34]..[105,3275+57])
+                                  Pexp_construct "Sig_component_kind.Type" (lib/shape.ml[105,3275+34]..[105,3275+57])
+                                  None
+                              ]
+                    ]
+                  structure_item (lib/shape.ml[106,3333+4]..[106,3333+61])
+                    Pstr_value Nonrec
+                    [
+                      <def>
+                        pattern (lib/shape.ml[106,3333+8]..[106,3333+15])
+                          Ppat_var "module_" (lib/shape.ml[106,3333+8]..[106,3333+15])
+                        expression (lib/shape.ml[106,3333+16]..[106,3333+61]) ghost
+                          Pexp_function
+                          [
+                            Pparam_val (lib/shape.ml[106,3333+16]..[106,3333+18])
+                              Nolabel
+                              None
+                              pattern (lib/shape.ml[106,3333+16]..[106,3333+18])
+                                Ppat_var "id" (lib/shape.ml[106,3333+16]..[106,3333+18])
+                          ]
+                          None
+                          Pfunction_body
+                            expression (lib/shape.ml[106,3333+21]..[106,3333+61])
+                              Pexp_tuple
+                              [
+                                expression (lib/shape.ml[106,3333+21]..[106,3333+34])
+                                  Pexp_apply
+                                  expression (lib/shape.ml[106,3333+21]..[106,3333+31])
+                                    Pexp_ident "Ident.name" (lib/shape.ml[106,3333+21]..[106,3333+31])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/shape.ml[106,3333+32]..[106,3333+34])
+                                        Pexp_ident "id" (lib/shape.ml[106,3333+32]..[106,3333+34])
+                                  ]
+                                expression (lib/shape.ml[106,3333+36]..[106,3333+61])
+                                  Pexp_construct "Sig_component_kind.Module" (lib/shape.ml[106,3333+36]..[106,3333+61])
+                                  None
+                              ]
+                    ]
+                  structure_item (lib/shape.ml[107,3395+4]..[107,3395+70])
+                    Pstr_value Nonrec
+                    [
+                      <def>
+                        pattern (lib/shape.ml[107,3395+8]..[107,3395+19])
+                          Ppat_var "module_type" (lib/shape.ml[107,3395+8]..[107,3395+19])
+                        expression (lib/shape.ml[107,3395+20]..[107,3395+70]) ghost
+                          Pexp_function
+                          [
+                            Pparam_val (lib/shape.ml[107,3395+20]..[107,3395+22])
+                              Nolabel
+                              None
+                              pattern (lib/shape.ml[107,3395+20]..[107,3395+22])
+                                Ppat_var "id" (lib/shape.ml[107,3395+20]..[107,3395+22])
+                          ]
+                          None
+                          Pfunction_body
+                            expression (lib/shape.ml[107,3395+25]..[107,3395+70])
+                              Pexp_tuple
+                              [
+                                expression (lib/shape.ml[107,3395+25]..[107,3395+38])
+                                  Pexp_apply
+                                  expression (lib/shape.ml[107,3395+25]..[107,3395+35])
+                                    Pexp_ident "Ident.name" (lib/shape.ml[107,3395+25]..[107,3395+35])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/shape.ml[107,3395+36]..[107,3395+38])
+                                        Pexp_ident "id" (lib/shape.ml[107,3395+36]..[107,3395+38])
+                                  ]
+                                expression (lib/shape.ml[107,3395+40]..[107,3395+70])
+                                  Pexp_construct "Sig_component_kind.Module_type" (lib/shape.ml[107,3395+40]..[107,3395+70])
+                                  None
+                              ]
+                    ]
+                  structure_item (lib/shape.ml[108,3466+4]..[109,3501+61])
+                    Pstr_value Nonrec
+                    [
+                      <def>
+                        pattern (lib/shape.ml[108,3466+8]..[108,3466+29])
+                          Ppat_var "extension_constructor" (lib/shape.ml[108,3466+8]..[108,3466+29])
+                        expression (lib/shape.ml[108,3466+30]..[109,3501+61]) ghost
+                          Pexp_function
+                          [
+                            Pparam_val (lib/shape.ml[108,3466+30]..[108,3466+32])
+                              Nolabel
+                              None
+                              pattern (lib/shape.ml[108,3466+30]..[108,3466+32])
+                                Ppat_var "id" (lib/shape.ml[108,3466+30]..[108,3466+32])
+                          ]
+                          None
+                          Pfunction_body
+                            expression (lib/shape.ml[109,3501+6]..[109,3501+61])
+                              Pexp_tuple
+                              [
+                                expression (lib/shape.ml[109,3501+6]..[109,3501+19])
+                                  Pexp_apply
+                                  expression (lib/shape.ml[109,3501+6]..[109,3501+16])
+                                    Pexp_ident "Ident.name" (lib/shape.ml[109,3501+6]..[109,3501+16])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/shape.ml[109,3501+17]..[109,3501+19])
+                                        Pexp_ident "id" (lib/shape.ml[109,3501+17]..[109,3501+19])
+                                  ]
+                                expression (lib/shape.ml[109,3501+21]..[109,3501+61])
+                                  Pexp_construct "Sig_component_kind.Extension_constructor" (lib/shape.ml[109,3501+21]..[109,3501+61])
+                                  None
+                              ]
+                    ]
+                  structure_item (lib/shape.ml[110,3563+4]..[111,3583+45])
+                    Pstr_value Nonrec
+                    [
+                      <def>
+                        pattern (lib/shape.ml[110,3563+8]..[110,3563+14])
+                          Ppat_var "class_" (lib/shape.ml[110,3563+8]..[110,3563+14])
+                        expression (lib/shape.ml[110,3563+15]..[111,3583+45]) ghost
+                          Pexp_function
+                          [
+                            Pparam_val (lib/shape.ml[110,3563+15]..[110,3563+17])
+                              Nolabel
+                              None
+                              pattern (lib/shape.ml[110,3563+15]..[110,3563+17])
+                                Ppat_var "id" (lib/shape.ml[110,3563+15]..[110,3563+17])
+                          ]
+                          None
+                          Pfunction_body
+                            expression (lib/shape.ml[111,3583+6]..[111,3583+45])
+                              Pexp_tuple
+                              [
+                                expression (lib/shape.ml[111,3583+6]..[111,3583+19])
+                                  Pexp_apply
+                                  expression (lib/shape.ml[111,3583+6]..[111,3583+16])
+                                    Pexp_ident "Ident.name" (lib/shape.ml[111,3583+6]..[111,3583+16])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/shape.ml[111,3583+17]..[111,3583+19])
+                                        Pexp_ident "id" (lib/shape.ml[111,3583+17]..[111,3583+19])
+                                  ]
+                                expression (lib/shape.ml[111,3583+21]..[111,3583+45])
+                                  Pexp_construct "Sig_component_kind.Class" (lib/shape.ml[111,3583+21]..[111,3583+45])
+                                  None
+                              ]
+                    ]
+                  structure_item (lib/shape.ml[112,3629+4]..[113,3653+50])
+                    Pstr_value Nonrec
+                    [
+                      <def>
+                        pattern (lib/shape.ml[112,3629+8]..[112,3629+18])
+                          Ppat_var "class_type" (lib/shape.ml[112,3629+8]..[112,3629+18])
+                        expression (lib/shape.ml[112,3629+19]..[113,3653+50]) ghost
+                          Pexp_function
+                          [
+                            Pparam_val (lib/shape.ml[112,3629+19]..[112,3629+21])
+                              Nolabel
+                              None
+                              pattern (lib/shape.ml[112,3629+19]..[112,3629+21])
+                                Ppat_var "id" (lib/shape.ml[112,3629+19]..[112,3629+21])
+                          ]
+                          None
+                          Pfunction_body
+                            expression (lib/shape.ml[113,3653+6]..[113,3653+50])
+                              Pexp_tuple
+                              [
+                                expression (lib/shape.ml[113,3653+6]..[113,3653+19])
+                                  Pexp_apply
+                                  expression (lib/shape.ml[113,3653+6]..[113,3653+16])
+                                    Pexp_ident "Ident.name" (lib/shape.ml[113,3653+6]..[113,3653+16])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/shape.ml[113,3653+17]..[113,3653+19])
+                                        Pexp_ident "id" (lib/shape.ml[113,3653+17]..[113,3653+19])
+                                  ]
+                                expression (lib/shape.ml[113,3653+21]..[113,3653+50])
+                                  Pexp_construct "Sig_component_kind.Class_type" (lib/shape.ml[113,3653+21]..[113,3653+50])
+                                  None
+                              ]
+                    ]
+                  structure_item (lib/shape.ml[115,3705+4]..[118,3783+41])
+                    Pstr_value Nonrec
+                    [
+                      <def>
+                        pattern (lib/shape.ml[115,3705+8]..[115,3705+13])
+                          Ppat_var "print" (lib/shape.ml[115,3705+8]..[115,3705+13])
+                        expression (lib/shape.ml[115,3705+14]..[118,3783+41]) ghost
+                          Pexp_function
+                          [
+                            Pparam_val (lib/shape.ml[115,3705+14]..[115,3705+17])
+                              Nolabel
+                              None
+                              pattern (lib/shape.ml[115,3705+14]..[115,3705+17])
+                                Ppat_var "fmt" (lib/shape.ml[115,3705+14]..[115,3705+17])
+                            Pparam_val (lib/shape.ml[115,3705+18]..[115,3705+28])
+                              Nolabel
+                              None
+                              pattern (lib/shape.ml[115,3705+18]..[115,3705+28])
+                                Ppat_tuple
+                                [
+                                  pattern (lib/shape.ml[115,3705+19]..[115,3705+23])
+                                    Ppat_var "name" (lib/shape.ml[115,3705+19]..[115,3705+23])
+                                  pattern (lib/shape.ml[115,3705+25]..[115,3705+27])
+                                    Ppat_var "ns" (lib/shape.ml[115,3705+25]..[115,3705+27])
+                                ]
+                          ]
+                          None
+                          Pfunction_body
+                            expression (lib/shape.ml[116,3736+6]..[118,3783+41])
+                              Pexp_apply
+                              expression (lib/shape.ml[116,3736+6]..[116,3736+20])
+                                Pexp_ident "Format.fprintf" (lib/shape.ml[116,3736+6]..[116,3736+20])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/shape.ml[116,3736+21]..[116,3736+24])
+                                    Pexp_ident "fmt" (lib/shape.ml[116,3736+21]..[116,3736+24])
+                                <arg>
+                                Nolabel
+                                  expression (lib/shape.ml[116,3736+25]..[116,3736+33])
+                                    Pexp_constant PConst_string("%S[%s]",(lib/shape.ml[116,3736+26]..[116,3736+32]),None)
+                                <arg>
+                                Nolabel
+                                  expression (lib/shape.ml[117,3770+8]..[117,3770+12])
+                                    Pexp_ident "name" (lib/shape.ml[117,3770+8]..[117,3770+12])
+                                <arg>
+                                Nolabel
+                                  expression (lib/shape.ml[118,3783+8]..[118,3783+41])
+                                    Pexp_apply
+                                    expression (lib/shape.ml[118,3783+9]..[118,3783+37])
+                                      Pexp_ident "Sig_component_kind.to_string" (lib/shape.ml[118,3783+9]..[118,3783+37])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (lib/shape.ml[118,3783+38]..[118,3783+40])
+                                          Pexp_ident "ns" (lib/shape.ml[118,3783+38]..[118,3783+40])
+                                    ]
+                              ]
+                    ]
+                ]
+          structure_item (lib/shape.ml[121,3832+2]..[121,3832+11])
+            Pstr_include            module_expr (lib/shape.ml[121,3832+10]..[121,3832+11])
+              Pmod_ident "T" (lib/shape.ml[121,3832+10]..[121,3832+11])
+          structure_item (lib/shape.ml[123,3845+2]..[123,3845+26])
+            Pstr_module
+            "Map" (lib/shape.ml[123,3845+9]..[123,3845+12])
+              module_expr (lib/shape.ml[123,3845+15]..[123,3845+26])
+                Pmod_apply
+                module_expr (lib/shape.ml[123,3845+15]..[123,3845+23])
+                  Pmod_ident "Map.Make" (lib/shape.ml[123,3845+15]..[123,3845+23])
+                module_expr (lib/shape.ml[123,3845+24]..[123,3845+25])
+                  Pmod_ident "T" (lib/shape.ml[123,3845+24]..[123,3845+25])
+        ]
+  structure_item (lib/shape.ml[126,3877+0]..[126,3877+18])
+    Pstr_type Rec
+    [
+      type_declaration "var" (lib/shape.ml[126,3877+5]..[126,3877+8]) (lib/shape.ml[126,3877+0]..[126,3877+18])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (lib/shape.ml[126,3877+11]..[126,3877+18])
+              Ptyp_constr "Ident.t" (lib/shape.ml[126,3877+11]..[126,3877+18])
+              []
+    ]
+  structure_item (lib/shape.ml[127,3896+0]..[135,4060+23])
+    Pstr_type Rec
+    [
+      type_declaration "t" (lib/shape.ml[127,3896+5]..[127,3896+6]) (lib/shape.ml[127,3896+0]..[127,3896+42])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (lib/shape.ml[127,3896+11]..[127,3896+29])
+                Immutable
+                "uid" (lib/shape.ml[127,3896+11]..[127,3896+14])                core_type (lib/shape.ml[127,3896+16]..[127,3896+28])
+                  Ptyp_constr "option" (lib/shape.ml[127,3896+22]..[127,3896+28])
+                  [
+                    core_type (lib/shape.ml[127,3896+16]..[127,3896+21])
+                      Ptyp_constr "Uid.t" (lib/shape.ml[127,3896+16]..[127,3896+21])
+                      []
+                  ]
+              (lib/shape.ml[127,3896+30]..[127,3896+40])
+                Immutable
+                "desc" (lib/shape.ml[127,3896+30]..[127,3896+34])                core_type (lib/shape.ml[127,3896+36]..[127,3896+40])
+                  Ptyp_constr "desc" (lib/shape.ml[127,3896+36]..[127,3896+40])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "desc" (lib/shape.ml[128,3939+4]..[128,3939+8]) (lib/shape.ml[128,3939+0]..[135,4060+23])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/shape.ml[129,3950+2]..[129,3950+14])
+                "Var" (lib/shape.ml[129,3950+4]..[129,3950+7])
+                [
+                  core_type (lib/shape.ml[129,3950+11]..[129,3950+14])
+                    Ptyp_constr "var" (lib/shape.ml[129,3950+11]..[129,3950+14])
+                    []
+                ]
+                None
+              (lib/shape.ml[130,3965+2]..[130,3965+18])
+                "Abs" (lib/shape.ml[130,3965+4]..[130,3965+7])
+                [
+                  core_type (lib/shape.ml[130,3965+11]..[130,3965+14])
+                    Ptyp_constr "var" (lib/shape.ml[130,3965+11]..[130,3965+14])
+                    []
+                  core_type (lib/shape.ml[130,3965+17]..[130,3965+18])
+                    Ptyp_constr "t" (lib/shape.ml[130,3965+17]..[130,3965+18])
+                    []
+                ]
+                None
+              (lib/shape.ml[131,3984+2]..[131,3984+16])
+                "App" (lib/shape.ml[131,3984+4]..[131,3984+7])
+                [
+                  core_type (lib/shape.ml[131,3984+11]..[131,3984+12])
+                    Ptyp_constr "t" (lib/shape.ml[131,3984+11]..[131,3984+12])
+                    []
+                  core_type (lib/shape.ml[131,3984+15]..[131,3984+16])
+                    Ptyp_constr "t" (lib/shape.ml[131,3984+15]..[131,3984+16])
+                    []
+                ]
+                None
+              (lib/shape.ml[132,4001+2]..[132,4001+26])
+                "Struct" (lib/shape.ml[132,4001+4]..[132,4001+10])
+                [
+                  core_type (lib/shape.ml[132,4001+14]..[132,4001+26])
+                    Ptyp_constr "Item.Map.t" (lib/shape.ml[132,4001+16]..[132,4001+26])
+                    [
+                      core_type (lib/shape.ml[132,4001+14]..[132,4001+15])
+                        Ptyp_constr "t" (lib/shape.ml[132,4001+14]..[132,4001+15])
+                        []
+                    ]
+                ]
+                None
+              (lib/shape.ml[133,4028+2]..[133,4028+8])
+                "Leaf" (lib/shape.ml[133,4028+4]..[133,4028+8])
+                []
+                None
+              (lib/shape.ml[134,4037+2]..[134,4037+22])
+                "Proj" (lib/shape.ml[134,4037+4]..[134,4037+8])
+                [
+                  core_type (lib/shape.ml[134,4037+12]..[134,4037+13])
+                    Ptyp_constr "t" (lib/shape.ml[134,4037+12]..[134,4037+13])
+                    []
+                  core_type (lib/shape.ml[134,4037+16]..[134,4037+22])
+                    Ptyp_constr "Item.t" (lib/shape.ml[134,4037+16]..[134,4037+22])
+                    []
+                ]
+                None
+              (lib/shape.ml[135,4060+2]..[135,4060+23])
+                "Comp_unit" (lib/shape.ml[135,4060+4]..[135,4060+13])
+                [
+                  core_type (lib/shape.ml[135,4060+17]..[135,4060+23])
+                    Ptyp_constr "string" (lib/shape.ml[135,4060+17]..[135,4060+23])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/shape.ml[190,6170+0]..[192,6249+41])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/shape.ml[190,6170+4]..[190,6170+13])
+          Ppat_var "fresh_var" (lib/shape.ml[190,6170+4]..[190,6170+13])
+        expression (lib/shape.ml[190,6170+14]..[192,6249+41]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/shape.ml[190,6170+14]..[190,6170+33])
+              Optional "name"
+              Some
+                expression (lib/shape.ml[190,6170+21]..[190,6170+32])
+                  Pexp_constant PConst_string("shape-var",(lib/shape.ml[190,6170+22]..[190,6170+31]),None)
+              pattern (lib/shape.ml[190,6170+16]..[190,6170+20])
+                Ppat_var "name" (lib/shape.ml[190,6170+16]..[190,6170+20])
+            Pparam_val (lib/shape.ml[190,6170+34]..[190,6170+37])
+              Nolabel
+              None
+              pattern (lib/shape.ml[190,6170+34]..[190,6170+37])
+                Ppat_var "uid" (lib/shape.ml[190,6170+34]..[190,6170+37])
+          ]
+          None
+          Pfunction_body
+            expression (lib/shape.ml[191,6210+2]..[192,6249+41])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (lib/shape.ml[191,6210+6]..[191,6210+9])
+                    Ppat_var "var" (lib/shape.ml[191,6210+6]..[191,6210+9])
+                  expression (lib/shape.ml[191,6210+12]..[191,6210+35])
+                    Pexp_apply
+                    expression (lib/shape.ml[191,6210+12]..[191,6210+30])
+                      Pexp_ident "Ident.create_local" (lib/shape.ml[191,6210+12]..[191,6210+30])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (lib/shape.ml[191,6210+31]..[191,6210+35])
+                          Pexp_ident "name" (lib/shape.ml[191,6210+31]..[191,6210+35])
+                    ]
+              ]
+              expression (lib/shape.ml[192,6249+2]..[192,6249+41])
+                Pexp_tuple
+                [
+                  expression (lib/shape.ml[192,6249+2]..[192,6249+5])
+                    Pexp_ident "var" (lib/shape.ml[192,6249+2]..[192,6249+5])
+                  expression (lib/shape.ml[192,6249+7]..[192,6249+41])
+                    Pexp_record
+                    [
+                      "uid" (lib/shape.ml[192,6249+9]..[192,6249+12])
+                        expression (lib/shape.ml[192,6249+15]..[192,6249+23])
+                          Pexp_construct "Some" (lib/shape.ml[192,6249+15]..[192,6249+19])
+                          Some
+                            expression (lib/shape.ml[192,6249+20]..[192,6249+23])
+                              Pexp_ident "uid" (lib/shape.ml[192,6249+20]..[192,6249+23])
+                      "desc" (lib/shape.ml[192,6249+25]..[192,6249+29])
+                        expression (lib/shape.ml[192,6249+32]..[192,6249+39])
+                          Pexp_construct "Var" (lib/shape.ml[192,6249+32]..[192,6249+35])
+                          Some
+                            expression (lib/shape.ml[192,6249+36]..[192,6249+39])
+                              Pexp_ident "var" (lib/shape.ml[192,6249+36]..[192,6249+39])
+                    ]
+                    None
+                ]
+    ]
+  structure_item (lib/shape.ml[194,6292+0]..[194,6292+55])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/shape.ml[194,6292+4]..[194,6292+29])
+          Ppat_var "for_unnamed_functor_param" (lib/shape.ml[194,6292+4]..[194,6292+29])
+        expression (lib/shape.ml[194,6292+32]..[194,6292+55])
+          Pexp_apply
+          expression (lib/shape.ml[194,6292+32]..[194,6292+50])
+            Pexp_ident "Ident.create_local" (lib/shape.ml[194,6292+32]..[194,6292+50])
+          [
+            <arg>
+            Nolabel
+              expression (lib/shape.ml[194,6292+51]..[194,6292+55])
+                Pexp_constant PConst_string("()",(lib/shape.ml[194,6292+52]..[194,6292+54]),None)
+          ]
+    ]
+  structure_item (lib/shape.ml[196,6349+0]..[197,6366+35])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/shape.ml[196,6349+4]..[196,6349+7])
+          Ppat_var "var" (lib/shape.ml[196,6349+4]..[196,6349+7])
+        expression (lib/shape.ml[196,6349+8]..[197,6366+35]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/shape.ml[196,6349+8]..[196,6349+11])
+              Nolabel
+              None
+              pattern (lib/shape.ml[196,6349+8]..[196,6349+11])
+                Ppat_var "uid" (lib/shape.ml[196,6349+8]..[196,6349+11])
+            Pparam_val (lib/shape.ml[196,6349+12]..[196,6349+14])
+              Nolabel
+              None
+              pattern (lib/shape.ml[196,6349+12]..[196,6349+14])
+                Ppat_var "id" (lib/shape.ml[196,6349+12]..[196,6349+14])
+          ]
+          None
+          Pfunction_body
+            expression (lib/shape.ml[197,6366+2]..[197,6366+35])
+              Pexp_record
+              [
+                "uid" (lib/shape.ml[197,6366+4]..[197,6366+7])
+                  expression (lib/shape.ml[197,6366+10]..[197,6366+18])
+                    Pexp_construct "Some" (lib/shape.ml[197,6366+10]..[197,6366+14])
+                    Some
+                      expression (lib/shape.ml[197,6366+15]..[197,6366+18])
+                        Pexp_ident "uid" (lib/shape.ml[197,6366+15]..[197,6366+18])
+                "desc" (lib/shape.ml[197,6366+20]..[197,6366+24])
+                  expression (lib/shape.ml[197,6366+27]..[197,6366+33])
+                    Pexp_construct "Var" (lib/shape.ml[197,6366+27]..[197,6366+30])
+                    Some
+                      expression (lib/shape.ml[197,6366+31]..[197,6366+33])
+                        Pexp_ident "id" (lib/shape.ml[197,6366+31]..[197,6366+33])
+              ]
+              None
+    ]
+  structure_item (lib/shape.ml[199,6403+0]..[200,6427+33])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/shape.ml[199,6403+4]..[199,6403+7])
+          Ppat_var "abs" (lib/shape.ml[199,6403+4]..[199,6403+7])
+        expression (lib/shape.ml[199,6403+8]..[200,6427+33]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/shape.ml[199,6403+8]..[199,6403+12])
+              Optional "uid"
+              None
+              pattern (lib/shape.ml[199,6403+9]..[199,6403+12])
+                Ppat_var "uid" (lib/shape.ml[199,6403+9]..[199,6403+12])
+            Pparam_val (lib/shape.ml[199,6403+13]..[199,6403+16])
+              Nolabel
+              None
+              pattern (lib/shape.ml[199,6403+13]..[199,6403+16])
+                Ppat_var "var" (lib/shape.ml[199,6403+13]..[199,6403+16])
+            Pparam_val (lib/shape.ml[199,6403+17]..[199,6403+21])
+              Nolabel
+              None
+              pattern (lib/shape.ml[199,6403+17]..[199,6403+21])
+                Ppat_var "body" (lib/shape.ml[199,6403+17]..[199,6403+21])
+          ]
+          None
+          Pfunction_body
+            expression (lib/shape.ml[200,6427+2]..[200,6427+33])
+              Pexp_record
+              [
+                "uid" (lib/shape.ml[200,6427+4]..[200,6427+7]) ghost
+                  expression (lib/shape.ml[200,6427+4]..[200,6427+7])
+                    Pexp_ident "uid" (lib/shape.ml[200,6427+4]..[200,6427+7])
+                "desc" (lib/shape.ml[200,6427+9]..[200,6427+13])
+                  expression (lib/shape.ml[200,6427+16]..[200,6427+31])
+                    Pexp_construct "Abs" (lib/shape.ml[200,6427+16]..[200,6427+19])
+                    Some
+                      expression (lib/shape.ml[200,6427+20]..[200,6427+31])
+                        Pexp_tuple
+                        [
+                          expression (lib/shape.ml[200,6427+21]..[200,6427+24])
+                            Pexp_ident "var" (lib/shape.ml[200,6427+21]..[200,6427+24])
+                          expression (lib/shape.ml[200,6427+26]..[200,6427+30])
+                            Pexp_ident "body" (lib/shape.ml[200,6427+26]..[200,6427+30])
+                        ]
+              ]
+              None
+    ]
+  structure_item (lib/shape.ml[202,6462+0]..[203,6481+28])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/shape.ml[202,6462+4]..[202,6462+7])
+          Ppat_var "str" (lib/shape.ml[202,6462+4]..[202,6462+7])
+        expression (lib/shape.ml[202,6462+8]..[203,6481+28]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/shape.ml[202,6462+8]..[202,6462+12])
+              Optional "uid"
+              None
+              pattern (lib/shape.ml[202,6462+9]..[202,6462+12])
+                Ppat_var "uid" (lib/shape.ml[202,6462+9]..[202,6462+12])
+            Pparam_val (lib/shape.ml[202,6462+13]..[202,6462+16])
+              Nolabel
+              None
+              pattern (lib/shape.ml[202,6462+13]..[202,6462+16])
+                Ppat_var "map" (lib/shape.ml[202,6462+13]..[202,6462+16])
+          ]
+          None
+          Pfunction_body
+            expression (lib/shape.ml[203,6481+2]..[203,6481+28])
+              Pexp_record
+              [
+                "uid" (lib/shape.ml[203,6481+4]..[203,6481+7]) ghost
+                  expression (lib/shape.ml[203,6481+4]..[203,6481+7])
+                    Pexp_ident "uid" (lib/shape.ml[203,6481+4]..[203,6481+7])
+                "desc" (lib/shape.ml[203,6481+9]..[203,6481+13])
+                  expression (lib/shape.ml[203,6481+16]..[203,6481+26])
+                    Pexp_construct "Struct" (lib/shape.ml[203,6481+16]..[203,6481+22])
+                    Some
+                      expression (lib/shape.ml[203,6481+23]..[203,6481+26])
+                        Pexp_ident "map" (lib/shape.ml[203,6481+23]..[203,6481+26])
+              ]
+              None
+    ]
+  structure_item (lib/shape.ml[205,6511+0]..[206,6526+33])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/shape.ml[205,6511+4]..[205,6511+8])
+          Ppat_var "leaf" (lib/shape.ml[205,6511+4]..[205,6511+8])
+        expression (lib/shape.ml[205,6511+9]..[206,6526+33]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/shape.ml[205,6511+9]..[205,6511+12])
+              Nolabel
+              None
+              pattern (lib/shape.ml[205,6511+9]..[205,6511+12])
+                Ppat_var "uid" (lib/shape.ml[205,6511+9]..[205,6511+12])
+          ]
+          None
+          Pfunction_body
+            expression (lib/shape.ml[206,6526+2]..[206,6526+33])
+              Pexp_record
+              [
+                "uid" (lib/shape.ml[206,6526+4]..[206,6526+7])
+                  expression (lib/shape.ml[206,6526+10]..[206,6526+18])
+                    Pexp_construct "Some" (lib/shape.ml[206,6526+10]..[206,6526+14])
+                    Some
+                      expression (lib/shape.ml[206,6526+15]..[206,6526+18])
+                        Pexp_ident "uid" (lib/shape.ml[206,6526+15]..[206,6526+18])
+                "desc" (lib/shape.ml[206,6526+20]..[206,6526+24])
+                  expression (lib/shape.ml[206,6526+27]..[206,6526+31])
+                    Pexp_construct "Leaf" (lib/shape.ml[206,6526+27]..[206,6526+31])
+                    None
+              ]
+              None
+    ]
+  structure_item (lib/shape.ml[208,6561+0]..[219,6841+36])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/shape.ml[208,6561+4]..[208,6561+8])
+          Ppat_var "proj" (lib/shape.ml[208,6561+4]..[208,6561+8])
+        expression (lib/shape.ml[208,6561+9]..[219,6841+36]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/shape.ml[208,6561+9]..[208,6561+13])
+              Optional "uid"
+              None
+              pattern (lib/shape.ml[208,6561+10]..[208,6561+13])
+                Ppat_var "uid" (lib/shape.ml[208,6561+10]..[208,6561+13])
+            Pparam_val (lib/shape.ml[208,6561+14]..[208,6561+15])
+              Nolabel
+              None
+              pattern (lib/shape.ml[208,6561+14]..[208,6561+15])
+                Ppat_var "t" (lib/shape.ml[208,6561+14]..[208,6561+15])
+            Pparam_val (lib/shape.ml[208,6561+16]..[208,6561+20])
+              Nolabel
+              None
+              pattern (lib/shape.ml[208,6561+16]..[208,6561+20])
+                Ppat_var "item" (lib/shape.ml[208,6561+16]..[208,6561+20])
+          ]
+          None
+          Pfunction_body
+            expression (lib/shape.ml[209,6584+2]..[219,6841+36])
+              Pexp_match
+              expression (lib/shape.ml[209,6584+8]..[209,6584+14])
+                Pexp_field
+                expression (lib/shape.ml[209,6584+8]..[209,6584+9])
+                  Pexp_ident "t" (lib/shape.ml[209,6584+8]..[209,6584+9])
+                "desc" (lib/shape.ml[209,6584+10]..[209,6584+14])
+              [
+                <case>
+                  pattern (lib/shape.ml[210,6604+4]..[210,6604+8])
+                    Ppat_construct "Leaf" (lib/shape.ml[210,6604+4]..[210,6604+8])
+                    None
+                  expression (lib/shape.ml[213,6707+6]..[213,6707+7])
+                    Pexp_ident "t" (lib/shape.ml[213,6707+6]..[213,6707+7])
+                <case>
+                  pattern (lib/shape.ml[214,6715+4]..[214,6715+14])
+                    Ppat_construct "Struct" (lib/shape.ml[214,6715+4]..[214,6715+10])
+                    Some
+                      []
+                      pattern (lib/shape.ml[214,6715+11]..[214,6715+14])
+                        Ppat_var "map" (lib/shape.ml[214,6715+11]..[214,6715+14])
+                  expression (lib/shape.ml[215,6733+6]..[217,6822+9])
+                    Pexp_try
+                    expression (lib/shape.ml[215,6733+16]..[215,6733+38])
+                      Pexp_apply
+                      expression (lib/shape.ml[215,6733+16]..[215,6733+29])
+                        Pexp_ident "Item.Map.find" (lib/shape.ml[215,6733+16]..[215,6733+29])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[215,6733+30]..[215,6733+34])
+                            Pexp_ident "item" (lib/shape.ml[215,6733+30]..[215,6733+34])
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[215,6733+35]..[215,6733+38])
+                            Pexp_ident "map" (lib/shape.ml[215,6733+35]..[215,6733+38])
+                      ]
+                    [
+                      <case>
+                        pattern (lib/shape.ml[216,6772+11]..[216,6772+20])
+                          Ppat_construct "Not_found" (lib/shape.ml[216,6772+11]..[216,6772+20])
+                          None
+                        expression (lib/shape.ml[216,6772+24]..[216,6772+25])
+                          Pexp_ident "t" (lib/shape.ml[216,6772+24]..[216,6772+25])
+                    ]
+                <case>
+                  pattern (lib/shape.ml[218,6832+4]..[218,6832+5])
+                    Ppat_any
+                  expression (lib/shape.ml[219,6841+6]..[219,6841+36])
+                    Pexp_record
+                    [
+                      "uid" (lib/shape.ml[219,6841+8]..[219,6841+11]) ghost
+                        expression (lib/shape.ml[219,6841+8]..[219,6841+11])
+                          Pexp_ident "uid" (lib/shape.ml[219,6841+8]..[219,6841+11])
+                      "desc" (lib/shape.ml[219,6841+13]..[219,6841+17])
+                        expression (lib/shape.ml[219,6841+20]..[219,6841+34])
+                          Pexp_construct "Proj" (lib/shape.ml[219,6841+20]..[219,6841+24])
+                          Some
+                            expression (lib/shape.ml[219,6841+25]..[219,6841+34])
+                              Pexp_tuple
+                              [
+                                expression (lib/shape.ml[219,6841+26]..[219,6841+27])
+                                  Pexp_ident "t" (lib/shape.ml[219,6841+26]..[219,6841+27])
+                                expression (lib/shape.ml[219,6841+29]..[219,6841+33])
+                                  Pexp_ident "item" (lib/shape.ml[219,6841+29]..[219,6841+33])
+                              ]
+                    ]
+                    None
+              ]
+    ]
+  structure_item (lib/shape.ml[221,6879+0]..[222,6901+34])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/shape.ml[221,6879+4]..[221,6879+7])
+          Ppat_var "app" (lib/shape.ml[221,6879+4]..[221,6879+7])
+        expression (lib/shape.ml[221,6879+8]..[222,6901+34]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/shape.ml[221,6879+8]..[221,6879+12])
+              Optional "uid"
+              None
+              pattern (lib/shape.ml[221,6879+9]..[221,6879+12])
+                Ppat_var "uid" (lib/shape.ml[221,6879+9]..[221,6879+12])
+            Pparam_val (lib/shape.ml[221,6879+13]..[221,6879+14])
+              Nolabel
+              None
+              pattern (lib/shape.ml[221,6879+13]..[221,6879+14])
+                Ppat_var "f" (lib/shape.ml[221,6879+13]..[221,6879+14])
+            Pparam_val (lib/shape.ml[221,6879+15]..[221,6879+19])
+              Labelled "arg"
+              None
+              pattern (lib/shape.ml[221,6879+16]..[221,6879+19])
+                Ppat_var "arg" (lib/shape.ml[221,6879+16]..[221,6879+19])
+          ]
+          None
+          Pfunction_body
+            expression (lib/shape.ml[222,6901+6]..[222,6901+34])
+              Pexp_record
+              [
+                "uid" (lib/shape.ml[222,6901+8]..[222,6901+11]) ghost
+                  expression (lib/shape.ml[222,6901+8]..[222,6901+11])
+                    Pexp_ident "uid" (lib/shape.ml[222,6901+8]..[222,6901+11])
+                "desc" (lib/shape.ml[222,6901+13]..[222,6901+17])
+                  expression (lib/shape.ml[222,6901+20]..[222,6901+32])
+                    Pexp_construct "App" (lib/shape.ml[222,6901+20]..[222,6901+23])
+                    Some
+                      expression (lib/shape.ml[222,6901+24]..[222,6901+32])
+                        Pexp_tuple
+                        [
+                          expression (lib/shape.ml[222,6901+25]..[222,6901+26])
+                            Pexp_ident "f" (lib/shape.ml[222,6901+25]..[222,6901+26])
+                          expression (lib/shape.ml[222,6901+28]..[222,6901+31])
+                            Pexp_ident "arg" (lib/shape.ml[222,6901+28]..[222,6901+31])
+                        ]
+              ]
+              None
+    ]
+  structure_item (lib/shape.ml[224,6937+0]..[227,7009+13])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/shape.ml[224,6937+4]..[224,6937+17])
+          Ppat_var "decompose_abs" (lib/shape.ml[224,6937+4]..[224,6937+17])
+        expression (lib/shape.ml[224,6937+18]..[227,7009+13]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/shape.ml[224,6937+18]..[224,6937+19])
+              Nolabel
+              None
+              pattern (lib/shape.ml[224,6937+18]..[224,6937+19])
+                Ppat_var "t" (lib/shape.ml[224,6937+18]..[224,6937+19])
+          ]
+          None
+          Pfunction_body
+            expression (lib/shape.ml[225,6959+2]..[227,7009+13])
+              Pexp_match
+              expression (lib/shape.ml[225,6959+8]..[225,6959+14])
+                Pexp_field
+                expression (lib/shape.ml[225,6959+8]..[225,6959+9])
+                  Pexp_ident "t" (lib/shape.ml[225,6959+8]..[225,6959+9])
+                "desc" (lib/shape.ml[225,6959+10]..[225,6959+14])
+              [
+                <case>
+                  pattern (lib/shape.ml[226,6979+4]..[226,6979+14])
+                    Ppat_construct "Abs" (lib/shape.ml[226,6979+4]..[226,6979+7])
+                    Some
+                      []
+                      pattern (lib/shape.ml[226,6979+8]..[226,6979+14])
+                        Ppat_tuple
+                        [
+                          pattern (lib/shape.ml[226,6979+9]..[226,6979+10])
+                            Ppat_var "x" (lib/shape.ml[226,6979+9]..[226,6979+10])
+                          pattern (lib/shape.ml[226,6979+12]..[226,6979+13])
+                            Ppat_var "t" (lib/shape.ml[226,6979+12]..[226,6979+13])
+                        ]
+                  expression (lib/shape.ml[226,6979+18]..[226,6979+29])
+                    Pexp_construct "Some" (lib/shape.ml[226,6979+18]..[226,6979+22])
+                    Some
+                      expression (lib/shape.ml[226,6979+23]..[226,6979+29])
+                        Pexp_tuple
+                        [
+                          expression (lib/shape.ml[226,6979+24]..[226,6979+25])
+                            Pexp_ident "x" (lib/shape.ml[226,6979+24]..[226,6979+25])
+                          expression (lib/shape.ml[226,6979+27]..[226,6979+28])
+                            Pexp_ident "t" (lib/shape.ml[226,6979+27]..[226,6979+28])
+                        ]
+                <case>
+                  pattern (lib/shape.ml[227,7009+4]..[227,7009+5])
+                    Ppat_any
+                  expression (lib/shape.ml[227,7009+9]..[227,7009+13])
+                    Pexp_construct "None" (lib/shape.ml[227,7009+9]..[227,7009+13])
+                    None
+              ]
+    ]
+  structure_item (lib/shape.ml[452,16926+0]..[463,17412+6])
+    Pstr_module
+    "Local_reduce" (lib/shape.ml[452,16926+7]..[452,16926+19])
+      module_expr (lib/shape.ml[458,17263+2]..[463,17412+6])
+        Pmod_apply
+        module_expr (lib/shape.ml[458,17263+2]..[458,17263+13])
+          Pmod_ident "Make_reduce" (lib/shape.ml[458,17263+2]..[458,17263+13])
+        module_expr (lib/shape.ml[458,17263+14]..[463,17412+5])
+          Pmod_structure
+          [
+            structure_item (lib/shape.ml[459,17284+4]..[459,17284+19])
+              Pstr_type Rec
+              [
+                type_declaration "env" (lib/shape.ml[459,17284+9]..[459,17284+12]) (lib/shape.ml[459,17284+4]..[459,17284+19])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    Some
+                      core_type (lib/shape.ml[459,17284+15]..[459,17284+19])
+                        Ptyp_constr "unit" (lib/shape.ml[459,17284+15]..[459,17284+19])
+                        []
+              ]
+            structure_item (lib/shape.ml[460,17304+4]..[460,17304+17])
+              Pstr_value Nonrec
+              [
+                <def>
+                  pattern (lib/shape.ml[460,17304+8]..[460,17304+12])
+                    Ppat_var "fuel" (lib/shape.ml[460,17304+8]..[460,17304+12])
+                  expression (lib/shape.ml[460,17304+15]..[460,17304+17])
+                    Pexp_constant PConst_int (10,None)
+              ]
+            structure_item (lib/shape.ml[461,17322+4]..[461,17322+43])
+              Pstr_value Nonrec
+              [
+                <def>
+                  pattern (lib/shape.ml[461,17322+8]..[461,17322+23])
+                    Ppat_var "read_unit_shape" (lib/shape.ml[461,17322+8]..[461,17322+23])
+                  expression (lib/shape.ml[461,17322+24]..[461,17322+43]) ghost
+                    Pexp_function
+                    [
+                      Pparam_val (lib/shape.ml[461,17322+24]..[461,17322+36])
+                        Labelled "unit_name"
+                        None
+                        pattern (lib/shape.ml[461,17322+35]..[461,17322+36])
+                          Ppat_any
+                    ]
+                    None
+                    Pfunction_body
+                      expression (lib/shape.ml[461,17322+39]..[461,17322+43])
+                        Pexp_construct "None" (lib/shape.ml[461,17322+39]..[461,17322+43])
+                        None
+              ]
+            structure_item (lib/shape.ml[462,17366+4]..[462,17366+45])
+              Pstr_value Nonrec
+              [
+                <def>
+                  pattern (lib/shape.ml[462,17366+8]..[462,17366+18])
+                    Ppat_var "find_shape" (lib/shape.ml[462,17366+8]..[462,17366+18])
+                  expression (lib/shape.ml[462,17366+19]..[462,17366+45]) ghost
+                    Pexp_function
+                    [
+                      Pparam_val (lib/shape.ml[462,17366+19]..[462,17366+23])
+                        Nolabel
+                        None
+                        pattern (lib/shape.ml[462,17366+19]..[462,17366+23])
+                          Ppat_var "_env" (lib/shape.ml[462,17366+19]..[462,17366+23])
+                      Pparam_val (lib/shape.ml[462,17366+24]..[462,17366+27])
+                        Nolabel
+                        None
+                        pattern (lib/shape.ml[462,17366+24]..[462,17366+27])
+                          Ppat_var "_id" (lib/shape.ml[462,17366+24]..[462,17366+27])
+                    ]
+                    None
+                    Pfunction_body
+                      expression (lib/shape.ml[462,17366+30]..[462,17366+45])
+                        Pexp_apply
+                        expression (lib/shape.ml[462,17366+30]..[462,17366+35])
+                          Pexp_ident "raise" (lib/shape.ml[462,17366+30]..[462,17366+35])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[462,17366+36]..[462,17366+45])
+                              Pexp_construct "Not_found" (lib/shape.ml[462,17366+36]..[462,17366+45])
+                              None
+                        ]
+              ]
+          ]
+  structure_item (lib/shape.ml[465,17420+0]..[466,17445+30])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/shape.ml[465,17420+4]..[465,17420+16])
+          Ppat_var "local_reduce" (lib/shape.ml[465,17420+4]..[465,17420+16])
+        expression (lib/shape.ml[465,17420+17]..[466,17445+30]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/shape.ml[465,17420+17]..[465,17420+22])
+              Nolabel
+              None
+              pattern (lib/shape.ml[465,17420+17]..[465,17420+22])
+                Ppat_var "shape" (lib/shape.ml[465,17420+17]..[465,17420+22])
+          ]
+          None
+          Pfunction_body
+            expression (lib/shape.ml[466,17445+2]..[466,17445+30])
+              Pexp_apply
+              expression (lib/shape.ml[466,17445+2]..[466,17445+21])
+                Pexp_ident "Local_reduce.reduce" (lib/shape.ml[466,17445+2]..[466,17445+21])
+              [
+                <arg>
+                Nolabel
+                  expression (lib/shape.ml[466,17445+22]..[466,17445+24])
+                    Pexp_construct "()" (lib/shape.ml[466,17445+22]..[466,17445+24])
+                    None
+                <arg>
+                Nolabel
+                  expression (lib/shape.ml[466,17445+25]..[466,17445+30])
+                    Pexp_ident "shape" (lib/shape.ml[466,17445+25]..[466,17445+30])
+              ]
+    ]
+  structure_item (lib/shape.ml[468,17477+0]..[468,17477+60])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/shape.ml[468,17477+4]..[468,17477+13])
+          Ppat_var "dummy_mod" (lib/shape.ml[468,17477+4]..[468,17477+13])
+        expression (lib/shape.ml[468,17477+16]..[468,17477+60])
+          Pexp_record
+          [
+            "uid" (lib/shape.ml[468,17477+18]..[468,17477+21])
+              expression (lib/shape.ml[468,17477+24]..[468,17477+28])
+                Pexp_construct "None" (lib/shape.ml[468,17477+24]..[468,17477+28])
+                None
+            "desc" (lib/shape.ml[468,17477+30]..[468,17477+34])
+              expression (lib/shape.ml[468,17477+37]..[468,17477+58])
+                Pexp_construct "Struct" (lib/shape.ml[468,17477+37]..[468,17477+43])
+                Some
+                  expression (lib/shape.ml[468,17477+44]..[468,17477+58])
+                    Pexp_ident "Item.Map.empty" (lib/shape.ml[468,17477+44]..[468,17477+58])
+          ]
+          None
+    ]
+  structure_item (lib/shape.ml[470,17539+0]..[481,17981+15])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/shape.ml[470,17539+4]..[470,17539+11])
+          Ppat_var "of_path" (lib/shape.ml[470,17539+4]..[470,17539+11])
+        expression (lib/shape.ml[470,17539+12]..[481,17981+15]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/shape.ml[470,17539+12]..[470,17539+23])
+              Labelled "find_shape"
+              None
+              pattern (lib/shape.ml[470,17539+13]..[470,17539+23])
+                Ppat_var "find_shape" (lib/shape.ml[470,17539+13]..[470,17539+23])
+            Pparam_val (lib/shape.ml[470,17539+24]..[470,17539+34])
+              Labelled "namespace"
+              None
+              pattern (lib/shape.ml[470,17539+25]..[470,17539+34])
+                Ppat_var "namespace" (lib/shape.ml[470,17539+25]..[470,17539+34])
+          ]
+          None
+          Pfunction_body
+            expression (lib/shape.ml[471,17576+2]..[481,17981+15])
+              Pexp_let Rec
+              [
+                <def>
+                  pattern (lib/shape.ml[471,17576+10]..[471,17576+13])
+                    Ppat_var "aux" (lib/shape.ml[471,17576+10]..[471,17576+13])
+                  core_type (lib/shape.ml[471,17576+16]..[471,17576+51])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (lib/shape.ml[471,17576+16]..[471,17576+36])
+                      Ptyp_constr "Sig_component_kind.t" (lib/shape.ml[471,17576+16]..[471,17576+36])
+                      []
+                    core_type (lib/shape.ml[471,17576+40]..[471,17576+51])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (lib/shape.ml[471,17576+40]..[471,17576+46])
+                        Ptyp_constr "Path.t" (lib/shape.ml[471,17576+40]..[471,17576+46])
+                        []
+                      core_type (lib/shape.ml[471,17576+50]..[471,17576+51])
+                        Ptyp_constr "t" (lib/shape.ml[471,17576+50]..[471,17576+51])
+                        []
+                  expression (lib/shape.ml[471,17576+54]..[479,17966+9])
+                    Pexp_function
+                    [
+                      Pparam_val (lib/shape.ml[471,17576+58]..[471,17576+60])
+                        Nolabel
+                        None
+                        pattern (lib/shape.ml[471,17576+58]..[471,17576+60])
+                          Ppat_var "ns" (lib/shape.ml[471,17576+58]..[471,17576+60])
+                    ]
+                    None
+                    Pfunction_cases (lib/shape.ml[471,17576+64]..[479,17966+9])
+                      [
+                        <case>
+                          pattern (lib/shape.ml[472,17649+6]..[472,17649+15])
+                            Ppat_construct "Pident" (lib/shape.ml[472,17649+6]..[472,17649+12])
+                            Some
+                              []
+                              pattern (lib/shape.ml[472,17649+13]..[472,17649+15])
+                                Ppat_var "id" (lib/shape.ml[472,17649+13]..[472,17649+15])
+                          expression (lib/shape.ml[472,17649+19]..[472,17649+35])
+                            Pexp_apply
+                            expression (lib/shape.ml[472,17649+19]..[472,17649+29])
+                              Pexp_ident "find_shape" (lib/shape.ml[472,17649+19]..[472,17649+29])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[472,17649+30]..[472,17649+32])
+                                  Pexp_ident "ns" (lib/shape.ml[472,17649+30]..[472,17649+32])
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[472,17649+33]..[472,17649+35])
+                                  Pexp_ident "id" (lib/shape.ml[472,17649+33]..[472,17649+35])
+                            ]
+                        <case>
+                          pattern (lib/shape.ml[473,17685+6]..[473,17685+23])
+                            Ppat_construct "Pdot" (lib/shape.ml[473,17685+6]..[473,17685+10])
+                            Some
+                              []
+                              pattern (lib/shape.ml[473,17685+11]..[473,17685+23])
+                                Ppat_tuple
+                                [
+                                  pattern (lib/shape.ml[473,17685+12]..[473,17685+16])
+                                    Ppat_var "path" (lib/shape.ml[473,17685+12]..[473,17685+16])
+                                  pattern (lib/shape.ml[473,17685+18]..[473,17685+22])
+                                    Ppat_var "name" (lib/shape.ml[473,17685+18]..[473,17685+22])
+                                ]
+                          expression (lib/shape.ml[473,17685+27]..[473,17685+60])
+                            Pexp_apply
+                            expression (lib/shape.ml[473,17685+27]..[473,17685+31])
+                              Pexp_ident "proj" (lib/shape.ml[473,17685+27]..[473,17685+31])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[473,17685+32]..[473,17685+49])
+                                  Pexp_apply
+                                  expression (lib/shape.ml[473,17685+33]..[473,17685+36])
+                                    Pexp_ident "aux" (lib/shape.ml[473,17685+33]..[473,17685+36])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/shape.ml[473,17685+37]..[473,17685+43])
+                                        Pexp_construct "Module" (lib/shape.ml[473,17685+37]..[473,17685+43])
+                                        None
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/shape.ml[473,17685+44]..[473,17685+48])
+                                        Pexp_ident "path" (lib/shape.ml[473,17685+44]..[473,17685+48])
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[473,17685+50]..[473,17685+60])
+                                  Pexp_tuple
+                                  [
+                                    expression (lib/shape.ml[473,17685+51]..[473,17685+55])
+                                      Pexp_ident "name" (lib/shape.ml[473,17685+51]..[473,17685+55])
+                                    expression (lib/shape.ml[473,17685+57]..[473,17685+59])
+                                      Pexp_ident "ns" (lib/shape.ml[473,17685+57]..[473,17685+59])
+                                  ]
+                            ]
+                        <case>
+                          pattern (lib/shape.ml[474,17746+6]..[474,17746+21])
+                            Ppat_construct "Papply" (lib/shape.ml[474,17746+6]..[474,17746+12])
+                            Some
+                              []
+                              pattern (lib/shape.ml[474,17746+13]..[474,17746+21])
+                                Ppat_tuple
+                                [
+                                  pattern (lib/shape.ml[474,17746+14]..[474,17746+16])
+                                    Ppat_var "p1" (lib/shape.ml[474,17746+14]..[474,17746+16])
+                                  pattern (lib/shape.ml[474,17746+18]..[474,17746+20])
+                                    Ppat_var "p2" (lib/shape.ml[474,17746+18]..[474,17746+20])
+                                ]
+                          expression (lib/shape.ml[474,17746+25]..[474,17746+65])
+                            Pexp_apply
+                            expression (lib/shape.ml[474,17746+25]..[474,17746+28])
+                              Pexp_ident "app" (lib/shape.ml[474,17746+25]..[474,17746+28])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[474,17746+29]..[474,17746+44])
+                                  Pexp_apply
+                                  expression (lib/shape.ml[474,17746+30]..[474,17746+33])
+                                    Pexp_ident "aux" (lib/shape.ml[474,17746+30]..[474,17746+33])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/shape.ml[474,17746+34]..[474,17746+40])
+                                        Pexp_construct "Module" (lib/shape.ml[474,17746+34]..[474,17746+40])
+                                        None
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/shape.ml[474,17746+41]..[474,17746+43])
+                                        Pexp_ident "p1" (lib/shape.ml[474,17746+41]..[474,17746+43])
+                                  ]
+                              <arg>
+                              Labelled "arg"
+                                expression (lib/shape.ml[474,17746+50]..[474,17746+65])
+                                  Pexp_apply
+                                  expression (lib/shape.ml[474,17746+51]..[474,17746+54])
+                                    Pexp_ident "aux" (lib/shape.ml[474,17746+51]..[474,17746+54])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/shape.ml[474,17746+55]..[474,17746+61])
+                                        Pexp_construct "Module" (lib/shape.ml[474,17746+55]..[474,17746+61])
+                                        None
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/shape.ml[474,17746+62]..[474,17746+64])
+                                        Pexp_ident "p2" (lib/shape.ml[474,17746+62]..[474,17746+64])
+                                  ]
+                            ]
+                        <case>
+                          pattern (lib/shape.ml[475,17812+6]..[475,17812+29])
+                            Ppat_construct "Pextra_ty" (lib/shape.ml[475,17812+6]..[475,17812+15])
+                            Some
+                              []
+                              pattern (lib/shape.ml[475,17812+16]..[475,17812+29])
+                                Ppat_tuple
+                                [
+                                  pattern (lib/shape.ml[475,17812+17]..[475,17812+21])
+                                    Ppat_var "path" (lib/shape.ml[475,17812+17]..[475,17812+21])
+                                  pattern (lib/shape.ml[475,17812+23]..[475,17812+28])
+                                    Ppat_var "extra" (lib/shape.ml[475,17812+23]..[475,17812+28])
+                                ]
+                          expression (lib/shape.ml[475,17812+33]..[479,17966+9])
+                            Pexp_match
+                            expression (lib/shape.ml[476,17851+14]..[476,17851+19])
+                              Pexp_ident "extra" (lib/shape.ml[476,17851+14]..[476,17851+19])
+                            [
+                              <case>
+                                pattern (lib/shape.ml[477,17876+10]..[477,17876+20])
+                                  Ppat_construct "Pcstr_ty" (lib/shape.ml[477,17876+10]..[477,17876+18])
+                                  Some
+                                    []
+                                    pattern (lib/shape.ml[477,17876+19]..[477,17876+20])
+                                      Ppat_any
+                                expression (lib/shape.ml[477,17876+24]..[477,17876+37])
+                                  Pexp_apply
+                                  expression (lib/shape.ml[477,17876+24]..[477,17876+27])
+                                    Pexp_ident "aux" (lib/shape.ml[477,17876+24]..[477,17876+27])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/shape.ml[477,17876+28]..[477,17876+32])
+                                        Pexp_construct "Type" (lib/shape.ml[477,17876+28]..[477,17876+32])
+                                        None
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/shape.ml[477,17876+33]..[477,17876+37])
+                                        Pexp_ident "path" (lib/shape.ml[477,17876+33]..[477,17876+37])
+                                  ]
+                              <case>
+                                pattern (lib/shape.ml[478,17914+10]..[478,17914+17])
+                                  Ppat_construct "Pext_ty" (lib/shape.ml[478,17914+10]..[478,17914+17])
+                                  None
+                                expression (lib/shape.ml[478,17914+21]..[478,17914+51])
+                                  Pexp_apply
+                                  expression (lib/shape.ml[478,17914+21]..[478,17914+24])
+                                    Pexp_ident "aux" (lib/shape.ml[478,17914+21]..[478,17914+24])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/shape.ml[478,17914+25]..[478,17914+46])
+                                        Pexp_construct "Extension_constructor" (lib/shape.ml[478,17914+25]..[478,17914+46])
+                                        None
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/shape.ml[478,17914+47]..[478,17914+51])
+                                        Pexp_ident "path" (lib/shape.ml[478,17914+47]..[478,17914+51])
+                                  ]
+                            ]
+                      ]
+              ]
+              expression (lib/shape.ml[481,17981+2]..[481,17981+15])
+                Pexp_apply
+                expression (lib/shape.ml[481,17981+2]..[481,17981+5])
+                  Pexp_ident "aux" (lib/shape.ml[481,17981+2]..[481,17981+5])
+                [
+                  <arg>
+                  Nolabel
+                    expression (lib/shape.ml[481,17981+6]..[481,17981+15])
+                      Pexp_ident "namespace" (lib/shape.ml[481,17981+6]..[481,17981+15])
+                ]
+    ]
+  structure_item (lib/shape.ml[483,17998+0]..[485,18099+24])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/shape.ml[483,17998+4]..[483,17998+23])
+          Ppat_var "for_persistent_unit" (lib/shape.ml[483,17998+4]..[483,17998+23])
+        expression (lib/shape.ml[483,17998+24]..[485,18099+24]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/shape.ml[483,17998+24]..[483,17998+25])
+              Nolabel
+              None
+              pattern (lib/shape.ml[483,17998+24]..[483,17998+25])
+                Ppat_var "s" (lib/shape.ml[483,17998+24]..[483,17998+25])
+          ]
+          None
+          Pfunction_body
+            expression (lib/shape.ml[484,18026+2]..[485,18099+24])
+              Pexp_record
+              [
+                "uid" (lib/shape.ml[484,18026+4]..[484,18026+7])
+                  expression (lib/shape.ml[484,18026+10]..[484,18026+71])
+                    Pexp_construct "Some" (lib/shape.ml[484,18026+10]..[484,18026+14])
+                    Some
+                      expression (lib/shape.ml[484,18026+15]..[484,18026+71])
+                        Pexp_apply
+                        expression (lib/shape.ml[484,18026+16]..[484,18026+42])
+                          Pexp_ident "Uid.of_compilation_unit_id" (lib/shape.ml[484,18026+16]..[484,18026+42])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[484,18026+43]..[484,18026+70])
+                              Pexp_apply
+                              expression (lib/shape.ml[484,18026+44]..[484,18026+67])
+                                Pexp_ident "Ident.create_persistent" (lib/shape.ml[484,18026+44]..[484,18026+67])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/shape.ml[484,18026+68]..[484,18026+69])
+                                    Pexp_ident "s" (lib/shape.ml[484,18026+68]..[484,18026+69])
+                              ]
+                        ]
+                "desc" (lib/shape.ml[485,18099+4]..[485,18099+8])
+                  expression (lib/shape.ml[485,18099+11]..[485,18099+22])
+                    Pexp_construct "Comp_unit" (lib/shape.ml[485,18099+11]..[485,18099+20])
+                    Some
+                      expression (lib/shape.ml[485,18099+21]..[485,18099+22])
+                        Pexp_ident "s" (lib/shape.ml[485,18099+21]..[485,18099+22])
+              ]
+              None
+    ]
+  structure_item (lib/shape.ml[487,18125+0]..[487,18125+49])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/shape.ml[487,18125+4]..[487,18125+19])
+          Ppat_var "leaf_for_unpack" (lib/shape.ml[487,18125+4]..[487,18125+19])
+        expression (lib/shape.ml[487,18125+22]..[487,18125+49])
+          Pexp_record
+          [
+            "uid" (lib/shape.ml[487,18125+24]..[487,18125+27])
+              expression (lib/shape.ml[487,18125+30]..[487,18125+34])
+                Pexp_construct "None" (lib/shape.ml[487,18125+30]..[487,18125+34])
+                None
+            "desc" (lib/shape.ml[487,18125+36]..[487,18125+40])
+              expression (lib/shape.ml[487,18125+43]..[487,18125+47])
+                Pexp_construct "Leaf" (lib/shape.ml[487,18125+43]..[487,18125+47])
+                None
+          ]
+          None
+    ]
+  structure_item (lib/shape.ml[489,18176+0]..[492,18261+10])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/shape.ml[489,18176+4]..[489,18176+19])
+          Ppat_var "set_uid_if_none" (lib/shape.ml[489,18176+4]..[489,18176+19])
+        expression (lib/shape.ml[489,18176+20]..[492,18261+10]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/shape.ml[489,18176+20]..[489,18176+21])
+              Nolabel
+              None
+              pattern (lib/shape.ml[489,18176+20]..[489,18176+21])
+                Ppat_var "t" (lib/shape.ml[489,18176+20]..[489,18176+21])
+            Pparam_val (lib/shape.ml[489,18176+22]..[489,18176+25])
+              Nolabel
+              None
+              pattern (lib/shape.ml[489,18176+22]..[489,18176+25])
+                Ppat_var "uid" (lib/shape.ml[489,18176+22]..[489,18176+25])
+          ]
+          None
+          Pfunction_body
+            expression (lib/shape.ml[490,18204+2]..[492,18261+10])
+              Pexp_match
+              expression (lib/shape.ml[490,18204+8]..[490,18204+13])
+                Pexp_field
+                expression (lib/shape.ml[490,18204+8]..[490,18204+9])
+                  Pexp_ident "t" (lib/shape.ml[490,18204+8]..[490,18204+9])
+                "uid" (lib/shape.ml[490,18204+10]..[490,18204+13])
+              [
+                <case>
+                  pattern (lib/shape.ml[491,18223+4]..[491,18223+8])
+                    Ppat_construct "None" (lib/shape.ml[491,18223+4]..[491,18223+8])
+                    None
+                  expression (lib/shape.ml[491,18223+12]..[491,18223+37])
+                    Pexp_record
+                    [
+                      "uid" (lib/shape.ml[491,18223+21]..[491,18223+24])
+                        expression (lib/shape.ml[491,18223+27]..[491,18223+35])
+                          Pexp_construct "Some" (lib/shape.ml[491,18223+27]..[491,18223+31])
+                          Some
+                            expression (lib/shape.ml[491,18223+32]..[491,18223+35])
+                              Pexp_ident "uid" (lib/shape.ml[491,18223+32]..[491,18223+35])
+                    ]
+                    Some
+                      expression (lib/shape.ml[491,18223+14]..[491,18223+15])
+                        Pexp_ident "t" (lib/shape.ml[491,18223+14]..[491,18223+15])
+                <case>
+                  pattern (lib/shape.ml[492,18261+4]..[492,18261+5])
+                    Ppat_any
+                  expression (lib/shape.ml[492,18261+9]..[492,18261+10])
+                    Pexp_ident "t" (lib/shape.ml[492,18261+9]..[492,18261+10])
+              ]
+    ]
+  structure_item (lib/shape.ml[494,18273+0]..[538,19760+3])
+    Pstr_module
+    "Map" (lib/shape.ml[494,18273+7]..[494,18273+10])
+      module_expr (lib/shape.ml[494,18273+13]..[538,19760+3])
+        Pmod_structure
+        [
+          structure_item (lib/shape.ml[495,18293+2]..[495,18293+16])
+            Pstr_type Rec
+            [
+              type_declaration "shape" (lib/shape.ml[495,18293+7]..[495,18293+12]) (lib/shape.ml[495,18293+2]..[495,18293+16])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (lib/shape.ml[495,18293+15]..[495,18293+16])
+                      Ptyp_constr "t" (lib/shape.ml[495,18293+15]..[495,18293+16])
+                      []
+            ]
+          structure_item (lib/shape.ml[496,18310+2]..[496,18310+30])
+            Pstr_type Nonrec
+            [
+              type_declaration "t" (lib/shape.ml[496,18310+14]..[496,18310+15]) (lib/shape.ml[496,18310+2]..[496,18310+30])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (lib/shape.ml[496,18310+18]..[496,18310+30])
+                      Ptyp_constr "Item.Map.t" (lib/shape.ml[496,18310+20]..[496,18310+30])
+                      [
+                        core_type (lib/shape.ml[496,18310+18]..[496,18310+19])
+                          Ptyp_constr "t" (lib/shape.ml[496,18310+18]..[496,18310+19])
+                          []
+                      ]
+            ]
+          structure_item (lib/shape.ml[498,18342+2]..[498,18342+28])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[498,18342+6]..[498,18342+11])
+                  Ppat_var "empty" (lib/shape.ml[498,18342+6]..[498,18342+11])
+                expression (lib/shape.ml[498,18342+14]..[498,18342+28])
+                  Pexp_ident "Item.Map.empty" (lib/shape.ml[498,18342+14]..[498,18342+28])
+            ]
+          structure_item (lib/shape.ml[500,18372+2]..[500,18372+50])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[500,18372+6]..[500,18372+9])
+                  Ppat_var "add" (lib/shape.ml[500,18372+6]..[500,18372+9])
+                expression (lib/shape.ml[500,18372+10]..[500,18372+50]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/shape.ml[500,18372+10]..[500,18372+11])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[500,18372+10]..[500,18372+11])
+                        Ppat_var "t" (lib/shape.ml[500,18372+10]..[500,18372+11])
+                    Pparam_val (lib/shape.ml[500,18372+12]..[500,18372+16])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[500,18372+12]..[500,18372+16])
+                        Ppat_var "item" (lib/shape.ml[500,18372+12]..[500,18372+16])
+                    Pparam_val (lib/shape.ml[500,18372+17]..[500,18372+22])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[500,18372+17]..[500,18372+22])
+                        Ppat_var "shape" (lib/shape.ml[500,18372+17]..[500,18372+22])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/shape.ml[500,18372+25]..[500,18372+50])
+                      Pexp_apply
+                      expression (lib/shape.ml[500,18372+25]..[500,18372+37])
+                        Pexp_ident "Item.Map.add" (lib/shape.ml[500,18372+25]..[500,18372+37])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[500,18372+38]..[500,18372+42])
+                            Pexp_ident "item" (lib/shape.ml[500,18372+38]..[500,18372+42])
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[500,18372+43]..[500,18372+48])
+                            Pexp_ident "shape" (lib/shape.ml[500,18372+43]..[500,18372+48])
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[500,18372+49]..[500,18372+50])
+                            Pexp_ident "t" (lib/shape.ml[500,18372+49]..[500,18372+50])
+                      ]
+            ]
+          structure_item (lib/shape.ml[502,18424+2]..[502,18424+68])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[502,18424+6]..[502,18424+15])
+                  Ppat_var "add_value" (lib/shape.ml[502,18424+6]..[502,18424+15])
+                expression (lib/shape.ml[502,18424+16]..[502,18424+68]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/shape.ml[502,18424+16]..[502,18424+17])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[502,18424+16]..[502,18424+17])
+                        Ppat_var "t" (lib/shape.ml[502,18424+16]..[502,18424+17])
+                    Pparam_val (lib/shape.ml[502,18424+18]..[502,18424+20])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[502,18424+18]..[502,18424+20])
+                        Ppat_var "id" (lib/shape.ml[502,18424+18]..[502,18424+20])
+                    Pparam_val (lib/shape.ml[502,18424+21]..[502,18424+24])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[502,18424+21]..[502,18424+24])
+                        Ppat_var "uid" (lib/shape.ml[502,18424+21]..[502,18424+24])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/shape.ml[502,18424+27]..[502,18424+68])
+                      Pexp_apply
+                      expression (lib/shape.ml[502,18424+27]..[502,18424+39])
+                        Pexp_ident "Item.Map.add" (lib/shape.ml[502,18424+27]..[502,18424+39])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[502,18424+40]..[502,18424+55])
+                            Pexp_apply
+                            expression (lib/shape.ml[502,18424+41]..[502,18424+51])
+                              Pexp_ident "Item.value" (lib/shape.ml[502,18424+41]..[502,18424+51])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[502,18424+52]..[502,18424+54])
+                                  Pexp_ident "id" (lib/shape.ml[502,18424+52]..[502,18424+54])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[502,18424+56]..[502,18424+66])
+                            Pexp_apply
+                            expression (lib/shape.ml[502,18424+57]..[502,18424+61])
+                              Pexp_ident "leaf" (lib/shape.ml[502,18424+57]..[502,18424+61])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[502,18424+62]..[502,18424+65])
+                                  Pexp_ident "uid" (lib/shape.ml[502,18424+62]..[502,18424+65])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[502,18424+67]..[502,18424+68])
+                            Pexp_ident "t" (lib/shape.ml[502,18424+67]..[502,18424+68])
+                      ]
+            ]
+          structure_item (lib/shape.ml[503,18493+2]..[505,18559+41])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[503,18493+6]..[503,18493+20])
+                  Ppat_var "add_value_proj" (lib/shape.ml[503,18493+6]..[503,18493+20])
+                expression (lib/shape.ml[503,18493+21]..[505,18559+41]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/shape.ml[503,18493+21]..[503,18493+22])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[503,18493+21]..[503,18493+22])
+                        Ppat_var "t" (lib/shape.ml[503,18493+21]..[503,18493+22])
+                    Pparam_val (lib/shape.ml[503,18493+23]..[503,18493+25])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[503,18493+23]..[503,18493+25])
+                        Ppat_var "id" (lib/shape.ml[503,18493+23]..[503,18493+25])
+                    Pparam_val (lib/shape.ml[503,18493+26]..[503,18493+31])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[503,18493+26]..[503,18493+31])
+                        Ppat_var "shape" (lib/shape.ml[503,18493+26]..[503,18493+31])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/shape.ml[504,18527+4]..[505,18559+41])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (lib/shape.ml[504,18527+8]..[504,18527+12])
+                            Ppat_var "item" (lib/shape.ml[504,18527+8]..[504,18527+12])
+                          expression (lib/shape.ml[504,18527+15]..[504,18527+28])
+                            Pexp_apply
+                            expression (lib/shape.ml[504,18527+15]..[504,18527+25])
+                              Pexp_ident "Item.value" (lib/shape.ml[504,18527+15]..[504,18527+25])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[504,18527+26]..[504,18527+28])
+                                  Pexp_ident "id" (lib/shape.ml[504,18527+26]..[504,18527+28])
+                            ]
+                      ]
+                      expression (lib/shape.ml[505,18559+4]..[505,18559+41])
+                        Pexp_apply
+                        expression (lib/shape.ml[505,18559+4]..[505,18559+16])
+                          Pexp_ident "Item.Map.add" (lib/shape.ml[505,18559+4]..[505,18559+16])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[505,18559+17]..[505,18559+21])
+                              Pexp_ident "item" (lib/shape.ml[505,18559+17]..[505,18559+21])
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[505,18559+22]..[505,18559+39])
+                              Pexp_apply
+                              expression (lib/shape.ml[505,18559+23]..[505,18559+27])
+                                Pexp_ident "proj" (lib/shape.ml[505,18559+23]..[505,18559+27])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/shape.ml[505,18559+28]..[505,18559+33])
+                                    Pexp_ident "shape" (lib/shape.ml[505,18559+28]..[505,18559+33])
+                                <arg>
+                                Nolabel
+                                  expression (lib/shape.ml[505,18559+34]..[505,18559+38])
+                                    Pexp_ident "item" (lib/shape.ml[505,18559+34]..[505,18559+38])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[505,18559+40]..[505,18559+41])
+                              Pexp_ident "t" (lib/shape.ml[505,18559+40]..[505,18559+41])
+                        ]
+            ]
+          structure_item (lib/shape.ml[507,18602+2]..[507,18602+67])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[507,18602+6]..[507,18602+14])
+                  Ppat_var "add_type" (lib/shape.ml[507,18602+6]..[507,18602+14])
+                expression (lib/shape.ml[507,18602+15]..[507,18602+67]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/shape.ml[507,18602+15]..[507,18602+16])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[507,18602+15]..[507,18602+16])
+                        Ppat_var "t" (lib/shape.ml[507,18602+15]..[507,18602+16])
+                    Pparam_val (lib/shape.ml[507,18602+17]..[507,18602+19])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[507,18602+17]..[507,18602+19])
+                        Ppat_var "id" (lib/shape.ml[507,18602+17]..[507,18602+19])
+                    Pparam_val (lib/shape.ml[507,18602+20]..[507,18602+23])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[507,18602+20]..[507,18602+23])
+                        Ppat_var "uid" (lib/shape.ml[507,18602+20]..[507,18602+23])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/shape.ml[507,18602+26]..[507,18602+67])
+                      Pexp_apply
+                      expression (lib/shape.ml[507,18602+26]..[507,18602+38])
+                        Pexp_ident "Item.Map.add" (lib/shape.ml[507,18602+26]..[507,18602+38])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[507,18602+39]..[507,18602+54])
+                            Pexp_apply
+                            expression (lib/shape.ml[507,18602+40]..[507,18602+50])
+                              Pexp_ident "Item.type_" (lib/shape.ml[507,18602+40]..[507,18602+50])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[507,18602+51]..[507,18602+53])
+                                  Pexp_ident "id" (lib/shape.ml[507,18602+51]..[507,18602+53])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[507,18602+55]..[507,18602+65])
+                            Pexp_apply
+                            expression (lib/shape.ml[507,18602+56]..[507,18602+60])
+                              Pexp_ident "leaf" (lib/shape.ml[507,18602+56]..[507,18602+60])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[507,18602+61]..[507,18602+64])
+                                  Pexp_ident "uid" (lib/shape.ml[507,18602+61]..[507,18602+64])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[507,18602+66]..[507,18602+67])
+                            Pexp_ident "t" (lib/shape.ml[507,18602+66]..[507,18602+67])
+                      ]
+            ]
+          structure_item (lib/shape.ml[508,18670+2]..[510,18735+41])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[508,18670+6]..[508,18670+19])
+                  Ppat_var "add_type_proj" (lib/shape.ml[508,18670+6]..[508,18670+19])
+                expression (lib/shape.ml[508,18670+20]..[510,18735+41]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/shape.ml[508,18670+20]..[508,18670+21])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[508,18670+20]..[508,18670+21])
+                        Ppat_var "t" (lib/shape.ml[508,18670+20]..[508,18670+21])
+                    Pparam_val (lib/shape.ml[508,18670+22]..[508,18670+24])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[508,18670+22]..[508,18670+24])
+                        Ppat_var "id" (lib/shape.ml[508,18670+22]..[508,18670+24])
+                    Pparam_val (lib/shape.ml[508,18670+25]..[508,18670+30])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[508,18670+25]..[508,18670+30])
+                        Ppat_var "shape" (lib/shape.ml[508,18670+25]..[508,18670+30])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/shape.ml[509,18703+4]..[510,18735+41])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (lib/shape.ml[509,18703+8]..[509,18703+12])
+                            Ppat_var "item" (lib/shape.ml[509,18703+8]..[509,18703+12])
+                          expression (lib/shape.ml[509,18703+15]..[509,18703+28])
+                            Pexp_apply
+                            expression (lib/shape.ml[509,18703+15]..[509,18703+25])
+                              Pexp_ident "Item.type_" (lib/shape.ml[509,18703+15]..[509,18703+25])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[509,18703+26]..[509,18703+28])
+                                  Pexp_ident "id" (lib/shape.ml[509,18703+26]..[509,18703+28])
+                            ]
+                      ]
+                      expression (lib/shape.ml[510,18735+4]..[510,18735+41])
+                        Pexp_apply
+                        expression (lib/shape.ml[510,18735+4]..[510,18735+16])
+                          Pexp_ident "Item.Map.add" (lib/shape.ml[510,18735+4]..[510,18735+16])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[510,18735+17]..[510,18735+21])
+                              Pexp_ident "item" (lib/shape.ml[510,18735+17]..[510,18735+21])
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[510,18735+22]..[510,18735+39])
+                              Pexp_apply
+                              expression (lib/shape.ml[510,18735+23]..[510,18735+27])
+                                Pexp_ident "proj" (lib/shape.ml[510,18735+23]..[510,18735+27])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/shape.ml[510,18735+28]..[510,18735+33])
+                                    Pexp_ident "shape" (lib/shape.ml[510,18735+28]..[510,18735+33])
+                                <arg>
+                                Nolabel
+                                  expression (lib/shape.ml[510,18735+34]..[510,18735+38])
+                                    Pexp_ident "item" (lib/shape.ml[510,18735+34]..[510,18735+38])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[510,18735+40]..[510,18735+41])
+                              Pexp_ident "t" (lib/shape.ml[510,18735+40]..[510,18735+41])
+                        ]
+            ]
+          structure_item (lib/shape.ml[512,18778+2]..[512,18778+68])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[512,18778+6]..[512,18778+16])
+                  Ppat_var "add_module" (lib/shape.ml[512,18778+6]..[512,18778+16])
+                expression (lib/shape.ml[512,18778+17]..[512,18778+68]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/shape.ml[512,18778+17]..[512,18778+18])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[512,18778+17]..[512,18778+18])
+                        Ppat_var "t" (lib/shape.ml[512,18778+17]..[512,18778+18])
+                    Pparam_val (lib/shape.ml[512,18778+19]..[512,18778+21])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[512,18778+19]..[512,18778+21])
+                        Ppat_var "id" (lib/shape.ml[512,18778+19]..[512,18778+21])
+                    Pparam_val (lib/shape.ml[512,18778+22]..[512,18778+27])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[512,18778+22]..[512,18778+27])
+                        Ppat_var "shape" (lib/shape.ml[512,18778+22]..[512,18778+27])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/shape.ml[512,18778+30]..[512,18778+68])
+                      Pexp_apply
+                      expression (lib/shape.ml[512,18778+30]..[512,18778+42])
+                        Pexp_ident "Item.Map.add" (lib/shape.ml[512,18778+30]..[512,18778+42])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[512,18778+43]..[512,18778+60])
+                            Pexp_apply
+                            expression (lib/shape.ml[512,18778+44]..[512,18778+56])
+                              Pexp_ident "Item.module_" (lib/shape.ml[512,18778+44]..[512,18778+56])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[512,18778+57]..[512,18778+59])
+                                  Pexp_ident "id" (lib/shape.ml[512,18778+57]..[512,18778+59])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[512,18778+61]..[512,18778+66])
+                            Pexp_ident "shape" (lib/shape.ml[512,18778+61]..[512,18778+66])
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[512,18778+67]..[512,18778+68])
+                            Pexp_ident "t" (lib/shape.ml[512,18778+67]..[512,18778+68])
+                      ]
+            ]
+          structure_item (lib/shape.ml[513,18847+2]..[515,18916+41])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[513,18847+6]..[513,18847+21])
+                  Ppat_var "add_module_proj" (lib/shape.ml[513,18847+6]..[513,18847+21])
+                expression (lib/shape.ml[513,18847+22]..[515,18916+41]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/shape.ml[513,18847+22]..[513,18847+23])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[513,18847+22]..[513,18847+23])
+                        Ppat_var "t" (lib/shape.ml[513,18847+22]..[513,18847+23])
+                    Pparam_val (lib/shape.ml[513,18847+24]..[513,18847+26])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[513,18847+24]..[513,18847+26])
+                        Ppat_var "id" (lib/shape.ml[513,18847+24]..[513,18847+26])
+                    Pparam_val (lib/shape.ml[513,18847+27]..[513,18847+32])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[513,18847+27]..[513,18847+32])
+                        Ppat_var "shape" (lib/shape.ml[513,18847+27]..[513,18847+32])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/shape.ml[514,18882+4]..[515,18916+41])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (lib/shape.ml[514,18882+8]..[514,18882+12])
+                            Ppat_var "item" (lib/shape.ml[514,18882+8]..[514,18882+12])
+                          expression (lib/shape.ml[514,18882+15]..[514,18882+30])
+                            Pexp_apply
+                            expression (lib/shape.ml[514,18882+15]..[514,18882+27])
+                              Pexp_ident "Item.module_" (lib/shape.ml[514,18882+15]..[514,18882+27])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[514,18882+28]..[514,18882+30])
+                                  Pexp_ident "id" (lib/shape.ml[514,18882+28]..[514,18882+30])
+                            ]
+                      ]
+                      expression (lib/shape.ml[515,18916+4]..[515,18916+41])
+                        Pexp_apply
+                        expression (lib/shape.ml[515,18916+4]..[515,18916+16])
+                          Pexp_ident "Item.Map.add" (lib/shape.ml[515,18916+4]..[515,18916+16])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[515,18916+17]..[515,18916+21])
+                              Pexp_ident "item" (lib/shape.ml[515,18916+17]..[515,18916+21])
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[515,18916+22]..[515,18916+39])
+                              Pexp_apply
+                              expression (lib/shape.ml[515,18916+23]..[515,18916+27])
+                                Pexp_ident "proj" (lib/shape.ml[515,18916+23]..[515,18916+27])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/shape.ml[515,18916+28]..[515,18916+33])
+                                    Pexp_ident "shape" (lib/shape.ml[515,18916+28]..[515,18916+33])
+                                <arg>
+                                Nolabel
+                                  expression (lib/shape.ml[515,18916+34]..[515,18916+38])
+                                    Pexp_ident "item" (lib/shape.ml[515,18916+34]..[515,18916+38])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[515,18916+40]..[515,18916+41])
+                              Pexp_ident "t" (lib/shape.ml[515,18916+40]..[515,18916+41])
+                        ]
+            ]
+          structure_item (lib/shape.ml[517,18959+2]..[518,18992+51])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[517,18959+6]..[517,18959+21])
+                  Ppat_var "add_module_type" (lib/shape.ml[517,18959+6]..[517,18959+21])
+                expression (lib/shape.ml[517,18959+22]..[518,18992+51]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/shape.ml[517,18959+22]..[517,18959+23])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[517,18959+22]..[517,18959+23])
+                        Ppat_var "t" (lib/shape.ml[517,18959+22]..[517,18959+23])
+                    Pparam_val (lib/shape.ml[517,18959+24]..[517,18959+26])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[517,18959+24]..[517,18959+26])
+                        Ppat_var "id" (lib/shape.ml[517,18959+24]..[517,18959+26])
+                    Pparam_val (lib/shape.ml[517,18959+27]..[517,18959+30])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[517,18959+27]..[517,18959+30])
+                        Ppat_var "uid" (lib/shape.ml[517,18959+27]..[517,18959+30])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/shape.ml[518,18992+4]..[518,18992+51])
+                      Pexp_apply
+                      expression (lib/shape.ml[518,18992+4]..[518,18992+16])
+                        Pexp_ident "Item.Map.add" (lib/shape.ml[518,18992+4]..[518,18992+16])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[518,18992+17]..[518,18992+38])
+                            Pexp_apply
+                            expression (lib/shape.ml[518,18992+18]..[518,18992+34])
+                              Pexp_ident "Item.module_type" (lib/shape.ml[518,18992+18]..[518,18992+34])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[518,18992+35]..[518,18992+37])
+                                  Pexp_ident "id" (lib/shape.ml[518,18992+35]..[518,18992+37])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[518,18992+39]..[518,18992+49])
+                            Pexp_apply
+                            expression (lib/shape.ml[518,18992+40]..[518,18992+44])
+                              Pexp_ident "leaf" (lib/shape.ml[518,18992+40]..[518,18992+44])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[518,18992+45]..[518,18992+48])
+                                  Pexp_ident "uid" (lib/shape.ml[518,18992+45]..[518,18992+48])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[518,18992+50]..[518,18992+51])
+                            Pexp_ident "t" (lib/shape.ml[518,18992+50]..[518,18992+51])
+                      ]
+            ]
+          structure_item (lib/shape.ml[519,19044+2]..[521,19122+41])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[519,19044+6]..[519,19044+26])
+                  Ppat_var "add_module_type_proj" (lib/shape.ml[519,19044+6]..[519,19044+26])
+                expression (lib/shape.ml[519,19044+27]..[521,19122+41]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/shape.ml[519,19044+27]..[519,19044+28])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[519,19044+27]..[519,19044+28])
+                        Ppat_var "t" (lib/shape.ml[519,19044+27]..[519,19044+28])
+                    Pparam_val (lib/shape.ml[519,19044+29]..[519,19044+31])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[519,19044+29]..[519,19044+31])
+                        Ppat_var "id" (lib/shape.ml[519,19044+29]..[519,19044+31])
+                    Pparam_val (lib/shape.ml[519,19044+32]..[519,19044+37])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[519,19044+32]..[519,19044+37])
+                        Ppat_var "shape" (lib/shape.ml[519,19044+32]..[519,19044+37])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/shape.ml[520,19084+4]..[521,19122+41])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (lib/shape.ml[520,19084+8]..[520,19084+12])
+                            Ppat_var "item" (lib/shape.ml[520,19084+8]..[520,19084+12])
+                          expression (lib/shape.ml[520,19084+15]..[520,19084+34])
+                            Pexp_apply
+                            expression (lib/shape.ml[520,19084+15]..[520,19084+31])
+                              Pexp_ident "Item.module_type" (lib/shape.ml[520,19084+15]..[520,19084+31])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[520,19084+32]..[520,19084+34])
+                                  Pexp_ident "id" (lib/shape.ml[520,19084+32]..[520,19084+34])
+                            ]
+                      ]
+                      expression (lib/shape.ml[521,19122+4]..[521,19122+41])
+                        Pexp_apply
+                        expression (lib/shape.ml[521,19122+4]..[521,19122+16])
+                          Pexp_ident "Item.Map.add" (lib/shape.ml[521,19122+4]..[521,19122+16])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[521,19122+17]..[521,19122+21])
+                              Pexp_ident "item" (lib/shape.ml[521,19122+17]..[521,19122+21])
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[521,19122+22]..[521,19122+39])
+                              Pexp_apply
+                              expression (lib/shape.ml[521,19122+23]..[521,19122+27])
+                                Pexp_ident "proj" (lib/shape.ml[521,19122+23]..[521,19122+27])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/shape.ml[521,19122+28]..[521,19122+33])
+                                    Pexp_ident "shape" (lib/shape.ml[521,19122+28]..[521,19122+33])
+                                <arg>
+                                Nolabel
+                                  expression (lib/shape.ml[521,19122+34]..[521,19122+38])
+                                    Pexp_ident "item" (lib/shape.ml[521,19122+34]..[521,19122+38])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[521,19122+40]..[521,19122+41])
+                              Pexp_ident "t" (lib/shape.ml[521,19122+40]..[521,19122+41])
+                        ]
+            ]
+          structure_item (lib/shape.ml[523,19165+2]..[524,19194+61])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[523,19165+6]..[523,19165+17])
+                  Ppat_var "add_extcons" (lib/shape.ml[523,19165+6]..[523,19165+17])
+                expression (lib/shape.ml[523,19165+18]..[524,19194+61]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/shape.ml[523,19165+18]..[523,19165+19])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[523,19165+18]..[523,19165+19])
+                        Ppat_var "t" (lib/shape.ml[523,19165+18]..[523,19165+19])
+                    Pparam_val (lib/shape.ml[523,19165+20]..[523,19165+22])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[523,19165+20]..[523,19165+22])
+                        Ppat_var "id" (lib/shape.ml[523,19165+20]..[523,19165+22])
+                    Pparam_val (lib/shape.ml[523,19165+23]..[523,19165+26])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[523,19165+23]..[523,19165+26])
+                        Ppat_var "uid" (lib/shape.ml[523,19165+23]..[523,19165+26])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/shape.ml[524,19194+4]..[524,19194+61])
+                      Pexp_apply
+                      expression (lib/shape.ml[524,19194+4]..[524,19194+16])
+                        Pexp_ident "Item.Map.add" (lib/shape.ml[524,19194+4]..[524,19194+16])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[524,19194+17]..[524,19194+48])
+                            Pexp_apply
+                            expression (lib/shape.ml[524,19194+18]..[524,19194+44])
+                              Pexp_ident "Item.extension_constructor" (lib/shape.ml[524,19194+18]..[524,19194+44])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[524,19194+45]..[524,19194+47])
+                                  Pexp_ident "id" (lib/shape.ml[524,19194+45]..[524,19194+47])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[524,19194+49]..[524,19194+59])
+                            Pexp_apply
+                            expression (lib/shape.ml[524,19194+50]..[524,19194+54])
+                              Pexp_ident "leaf" (lib/shape.ml[524,19194+50]..[524,19194+54])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[524,19194+55]..[524,19194+58])
+                                  Pexp_ident "uid" (lib/shape.ml[524,19194+55]..[524,19194+58])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[524,19194+60]..[524,19194+61])
+                            Pexp_ident "t" (lib/shape.ml[524,19194+60]..[524,19194+61])
+                      ]
+            ]
+          structure_item (lib/shape.ml[525,19256+2]..[527,19340+41])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[525,19256+6]..[525,19256+22])
+                  Ppat_var "add_extcons_proj" (lib/shape.ml[525,19256+6]..[525,19256+22])
+                expression (lib/shape.ml[525,19256+23]..[527,19340+41]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/shape.ml[525,19256+23]..[525,19256+24])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[525,19256+23]..[525,19256+24])
+                        Ppat_var "t" (lib/shape.ml[525,19256+23]..[525,19256+24])
+                    Pparam_val (lib/shape.ml[525,19256+25]..[525,19256+27])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[525,19256+25]..[525,19256+27])
+                        Ppat_var "id" (lib/shape.ml[525,19256+25]..[525,19256+27])
+                    Pparam_val (lib/shape.ml[525,19256+28]..[525,19256+33])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[525,19256+28]..[525,19256+33])
+                        Ppat_var "shape" (lib/shape.ml[525,19256+28]..[525,19256+33])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/shape.ml[526,19292+4]..[527,19340+41])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (lib/shape.ml[526,19292+8]..[526,19292+12])
+                            Ppat_var "item" (lib/shape.ml[526,19292+8]..[526,19292+12])
+                          expression (lib/shape.ml[526,19292+15]..[526,19292+44])
+                            Pexp_apply
+                            expression (lib/shape.ml[526,19292+15]..[526,19292+41])
+                              Pexp_ident "Item.extension_constructor" (lib/shape.ml[526,19292+15]..[526,19292+41])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[526,19292+42]..[526,19292+44])
+                                  Pexp_ident "id" (lib/shape.ml[526,19292+42]..[526,19292+44])
+                            ]
+                      ]
+                      expression (lib/shape.ml[527,19340+4]..[527,19340+41])
+                        Pexp_apply
+                        expression (lib/shape.ml[527,19340+4]..[527,19340+16])
+                          Pexp_ident "Item.Map.add" (lib/shape.ml[527,19340+4]..[527,19340+16])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[527,19340+17]..[527,19340+21])
+                              Pexp_ident "item" (lib/shape.ml[527,19340+17]..[527,19340+21])
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[527,19340+22]..[527,19340+39])
+                              Pexp_apply
+                              expression (lib/shape.ml[527,19340+23]..[527,19340+27])
+                                Pexp_ident "proj" (lib/shape.ml[527,19340+23]..[527,19340+27])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/shape.ml[527,19340+28]..[527,19340+33])
+                                    Pexp_ident "shape" (lib/shape.ml[527,19340+28]..[527,19340+33])
+                                <arg>
+                                Nolabel
+                                  expression (lib/shape.ml[527,19340+34]..[527,19340+38])
+                                    Pexp_ident "item" (lib/shape.ml[527,19340+34]..[527,19340+38])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[527,19340+40]..[527,19340+41])
+                              Pexp_ident "t" (lib/shape.ml[527,19340+40]..[527,19340+41])
+                        ]
+            ]
+          structure_item (lib/shape.ml[529,19383+2]..[529,19383+69])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[529,19383+6]..[529,19383+15])
+                  Ppat_var "add_class" (lib/shape.ml[529,19383+6]..[529,19383+15])
+                expression (lib/shape.ml[529,19383+16]..[529,19383+69]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/shape.ml[529,19383+16]..[529,19383+17])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[529,19383+16]..[529,19383+17])
+                        Ppat_var "t" (lib/shape.ml[529,19383+16]..[529,19383+17])
+                    Pparam_val (lib/shape.ml[529,19383+18]..[529,19383+20])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[529,19383+18]..[529,19383+20])
+                        Ppat_var "id" (lib/shape.ml[529,19383+18]..[529,19383+20])
+                    Pparam_val (lib/shape.ml[529,19383+21]..[529,19383+24])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[529,19383+21]..[529,19383+24])
+                        Ppat_var "uid" (lib/shape.ml[529,19383+21]..[529,19383+24])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/shape.ml[529,19383+27]..[529,19383+69])
+                      Pexp_apply
+                      expression (lib/shape.ml[529,19383+27]..[529,19383+39])
+                        Pexp_ident "Item.Map.add" (lib/shape.ml[529,19383+27]..[529,19383+39])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[529,19383+40]..[529,19383+56])
+                            Pexp_apply
+                            expression (lib/shape.ml[529,19383+41]..[529,19383+52])
+                              Pexp_ident "Item.class_" (lib/shape.ml[529,19383+41]..[529,19383+52])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[529,19383+53]..[529,19383+55])
+                                  Pexp_ident "id" (lib/shape.ml[529,19383+53]..[529,19383+55])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[529,19383+57]..[529,19383+67])
+                            Pexp_apply
+                            expression (lib/shape.ml[529,19383+58]..[529,19383+62])
+                              Pexp_ident "leaf" (lib/shape.ml[529,19383+58]..[529,19383+62])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[529,19383+63]..[529,19383+66])
+                                  Pexp_ident "uid" (lib/shape.ml[529,19383+63]..[529,19383+66])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[529,19383+68]..[529,19383+69])
+                            Pexp_ident "t" (lib/shape.ml[529,19383+68]..[529,19383+69])
+                      ]
+            ]
+          structure_item (lib/shape.ml[530,19453+2]..[532,19520+41])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[530,19453+6]..[530,19453+20])
+                  Ppat_var "add_class_proj" (lib/shape.ml[530,19453+6]..[530,19453+20])
+                expression (lib/shape.ml[530,19453+21]..[532,19520+41]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/shape.ml[530,19453+21]..[530,19453+22])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[530,19453+21]..[530,19453+22])
+                        Ppat_var "t" (lib/shape.ml[530,19453+21]..[530,19453+22])
+                    Pparam_val (lib/shape.ml[530,19453+23]..[530,19453+25])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[530,19453+23]..[530,19453+25])
+                        Ppat_var "id" (lib/shape.ml[530,19453+23]..[530,19453+25])
+                    Pparam_val (lib/shape.ml[530,19453+26]..[530,19453+31])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[530,19453+26]..[530,19453+31])
+                        Ppat_var "shape" (lib/shape.ml[530,19453+26]..[530,19453+31])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/shape.ml[531,19487+4]..[532,19520+41])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (lib/shape.ml[531,19487+8]..[531,19487+12])
+                            Ppat_var "item" (lib/shape.ml[531,19487+8]..[531,19487+12])
+                          expression (lib/shape.ml[531,19487+15]..[531,19487+29])
+                            Pexp_apply
+                            expression (lib/shape.ml[531,19487+15]..[531,19487+26])
+                              Pexp_ident "Item.class_" (lib/shape.ml[531,19487+15]..[531,19487+26])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[531,19487+27]..[531,19487+29])
+                                  Pexp_ident "id" (lib/shape.ml[531,19487+27]..[531,19487+29])
+                            ]
+                      ]
+                      expression (lib/shape.ml[532,19520+4]..[532,19520+41])
+                        Pexp_apply
+                        expression (lib/shape.ml[532,19520+4]..[532,19520+16])
+                          Pexp_ident "Item.Map.add" (lib/shape.ml[532,19520+4]..[532,19520+16])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[532,19520+17]..[532,19520+21])
+                              Pexp_ident "item" (lib/shape.ml[532,19520+17]..[532,19520+21])
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[532,19520+22]..[532,19520+39])
+                              Pexp_apply
+                              expression (lib/shape.ml[532,19520+23]..[532,19520+27])
+                                Pexp_ident "proj" (lib/shape.ml[532,19520+23]..[532,19520+27])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/shape.ml[532,19520+28]..[532,19520+33])
+                                    Pexp_ident "shape" (lib/shape.ml[532,19520+28]..[532,19520+33])
+                                <arg>
+                                Nolabel
+                                  expression (lib/shape.ml[532,19520+34]..[532,19520+38])
+                                    Pexp_ident "item" (lib/shape.ml[532,19520+34]..[532,19520+38])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[532,19520+40]..[532,19520+41])
+                              Pexp_ident "t" (lib/shape.ml[532,19520+40]..[532,19520+41])
+                        ]
+            ]
+          structure_item (lib/shape.ml[534,19563+2]..[534,19563+78])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[534,19563+6]..[534,19563+20])
+                  Ppat_var "add_class_type" (lib/shape.ml[534,19563+6]..[534,19563+20])
+                expression (lib/shape.ml[534,19563+21]..[534,19563+78]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/shape.ml[534,19563+21]..[534,19563+22])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[534,19563+21]..[534,19563+22])
+                        Ppat_var "t" (lib/shape.ml[534,19563+21]..[534,19563+22])
+                    Pparam_val (lib/shape.ml[534,19563+23]..[534,19563+25])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[534,19563+23]..[534,19563+25])
+                        Ppat_var "id" (lib/shape.ml[534,19563+23]..[534,19563+25])
+                    Pparam_val (lib/shape.ml[534,19563+26]..[534,19563+29])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[534,19563+26]..[534,19563+29])
+                        Ppat_var "uid" (lib/shape.ml[534,19563+26]..[534,19563+29])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/shape.ml[534,19563+32]..[534,19563+78])
+                      Pexp_apply
+                      expression (lib/shape.ml[534,19563+32]..[534,19563+44])
+                        Pexp_ident "Item.Map.add" (lib/shape.ml[534,19563+32]..[534,19563+44])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[534,19563+45]..[534,19563+65])
+                            Pexp_apply
+                            expression (lib/shape.ml[534,19563+46]..[534,19563+61])
+                              Pexp_ident "Item.class_type" (lib/shape.ml[534,19563+46]..[534,19563+61])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[534,19563+62]..[534,19563+64])
+                                  Pexp_ident "id" (lib/shape.ml[534,19563+62]..[534,19563+64])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[534,19563+66]..[534,19563+76])
+                            Pexp_apply
+                            expression (lib/shape.ml[534,19563+67]..[534,19563+71])
+                              Pexp_ident "leaf" (lib/shape.ml[534,19563+67]..[534,19563+71])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[534,19563+72]..[534,19563+75])
+                                  Pexp_ident "uid" (lib/shape.ml[534,19563+72]..[534,19563+75])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (lib/shape.ml[534,19563+77]..[534,19563+78])
+                            Pexp_ident "t" (lib/shape.ml[534,19563+77]..[534,19563+78])
+                      ]
+            ]
+          structure_item (lib/shape.ml[535,19642+2]..[537,19718+41])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/shape.ml[535,19642+6]..[535,19642+25])
+                  Ppat_var "add_class_type_proj" (lib/shape.ml[535,19642+6]..[535,19642+25])
+                expression (lib/shape.ml[535,19642+26]..[537,19718+41]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/shape.ml[535,19642+26]..[535,19642+27])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[535,19642+26]..[535,19642+27])
+                        Ppat_var "t" (lib/shape.ml[535,19642+26]..[535,19642+27])
+                    Pparam_val (lib/shape.ml[535,19642+28]..[535,19642+30])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[535,19642+28]..[535,19642+30])
+                        Ppat_var "id" (lib/shape.ml[535,19642+28]..[535,19642+30])
+                    Pparam_val (lib/shape.ml[535,19642+31]..[535,19642+36])
+                      Nolabel
+                      None
+                      pattern (lib/shape.ml[535,19642+31]..[535,19642+36])
+                        Ppat_var "shape" (lib/shape.ml[535,19642+31]..[535,19642+36])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/shape.ml[536,19681+4]..[537,19718+41])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (lib/shape.ml[536,19681+8]..[536,19681+12])
+                            Ppat_var "item" (lib/shape.ml[536,19681+8]..[536,19681+12])
+                          expression (lib/shape.ml[536,19681+15]..[536,19681+33])
+                            Pexp_apply
+                            expression (lib/shape.ml[536,19681+15]..[536,19681+30])
+                              Pexp_ident "Item.class_type" (lib/shape.ml[536,19681+15]..[536,19681+30])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/shape.ml[536,19681+31]..[536,19681+33])
+                                  Pexp_ident "id" (lib/shape.ml[536,19681+31]..[536,19681+33])
+                            ]
+                      ]
+                      expression (lib/shape.ml[537,19718+4]..[537,19718+41])
+                        Pexp_apply
+                        expression (lib/shape.ml[537,19718+4]..[537,19718+16])
+                          Pexp_ident "Item.Map.add" (lib/shape.ml[537,19718+4]..[537,19718+16])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[537,19718+17]..[537,19718+21])
+                              Pexp_ident "item" (lib/shape.ml[537,19718+17]..[537,19718+21])
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[537,19718+22]..[537,19718+39])
+                              Pexp_apply
+                              expression (lib/shape.ml[537,19718+23]..[537,19718+27])
+                                Pexp_ident "proj" (lib/shape.ml[537,19718+23]..[537,19718+27])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/shape.ml[537,19718+28]..[537,19718+33])
+                                    Pexp_ident "shape" (lib/shape.ml[537,19718+28]..[537,19718+33])
+                                <arg>
+                                Nolabel
+                                  expression (lib/shape.ml[537,19718+34]..[537,19718+38])
+                                    Pexp_ident "item" (lib/shape.ml[537,19718+34]..[537,19718+38])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (lib/shape.ml[537,19718+40]..[537,19718+41])
+                              Pexp_ident "t" (lib/shape.ml[537,19718+40]..[537,19718+41])
+                        ]
+            ]
+        ]
+]
+
+module Uid =
+  struct
+    type t =
+      | Compilation_unit of string 
+      | Item of {
+      comp_unit: string ;
+      id: int } 
+      | Internal 
+      | Predef of string 
+    let id = ref (-1)
+    let reinit () = id := (-1)
+    let mk ~current_unit =
+      incr id; Item { comp_unit = current_unit; id = (!id) }
+    let of_compilation_unit_id id =
+      if not (Ident.persistent id)
+      then
+        Misc.fatal_errorf "Types.Uid.of_compilation_unit_id %S"
+          (Ident.name id);
+      Compilation_unit (Ident.name id)
+    let of_predef_id id =
+      if not (Ident.is_predef id)
+      then Misc.fatal_errorf "Types.Uid.of_predef_id %S" (Ident.name id);
+      Predef (Ident.name id)
+    let internal_not_actually_unique = Internal
+    let for_actual_declaration = function | Item _ -> true | _ -> false
+  end
+module Sig_component_kind =
+  struct
+    type t =
+      | Value 
+      | Type 
+      | Module 
+      | Module_type 
+      | Extension_constructor 
+      | Class 
+      | Class_type 
+    let to_string =
+      function
+      | Value -> "value"
+      | Type -> "type"
+      | Module -> "module"
+      | Module_type -> "module type"
+      | Extension_constructor -> "extension constructor"
+      | Class -> "class"
+      | Class_type -> "class type"
+    let can_appear_in_types =
+      function
+      | Value | Extension_constructor -> false
+      | Type | Module | Module_type | Class | Class_type -> true
+  end
+module Item =
+  struct
+    module T =
+      struct
+        type t = (string * Sig_component_kind.t)
+        let compare = compare
+        let make str ns = (str, ns)
+        let value id = ((Ident.name id), Sig_component_kind.Value)
+        let type_ id = ((Ident.name id), Sig_component_kind.Type)
+        let module_ id = ((Ident.name id), Sig_component_kind.Module)
+        let module_type id =
+          ((Ident.name id), Sig_component_kind.Module_type)
+        let extension_constructor id =
+          ((Ident.name id), Sig_component_kind.Extension_constructor)
+        let class_ id = ((Ident.name id), Sig_component_kind.Class)
+        let class_type id = ((Ident.name id), Sig_component_kind.Class_type)
+        let print fmt (name, ns) =
+          Format.fprintf fmt "%S[%s]" name (Sig_component_kind.to_string ns)
+      end
+    include T
+    module Map = (Map.Make)(T)
+  end
+type var = Ident.t
+type t = {
+  uid: Uid.t option ;
+  desc: desc }
+and desc =
+  | Var of var 
+  | Abs of var * t 
+  | App of t * t 
+  | Struct of t Item.Map.t 
+  | Leaf 
+  | Proj of t * Item.t 
+  | Comp_unit of string 
+let fresh_var ?(name= "shape-var") uid =
+  let var = Ident.create_local name in
+  (var, { uid = (Some uid); desc = (Var var) })
+let for_unnamed_functor_param = Ident.create_local "()"
+let var uid id = { uid = (Some uid); desc = (Var id) }
+let abs ?uid var body = { uid; desc = (Abs (var, body)) }
+let str ?uid map = { uid; desc = (Struct map) }
+let leaf uid = { uid = (Some uid); desc = Leaf }
+let proj ?uid t item =
+  match t.desc with
+  | Leaf -> t
+  | Struct map -> (try Item.Map.find item map with | Not_found -> t)
+  | _ -> { uid; desc = (Proj (t, item)) }
+let app ?uid f ~arg = { uid; desc = (App (f, arg)) }
+let decompose_abs t =
+  match t.desc with | Abs (x, t) -> Some (x, t) | _ -> None
+module Local_reduce =
+  (Make_reduce)(struct
+                  type env = unit
+                  let fuel = 10
+                  let read_unit_shape ~unit_name:_ = None
+                  let find_shape _env _id = raise Not_found
+                end)
+let local_reduce shape = Local_reduce.reduce () shape
+let dummy_mod = { uid = None; desc = (Struct Item.Map.empty) }
+let of_path ~find_shape ~namespace =
+  let rec aux : Sig_component_kind.t -> Path.t -> t =
+    fun ns ->
+      function
+      | Pident id -> find_shape ns id
+      | Pdot (path, name) -> proj (aux Module path) (name, ns)
+      | Papply (p1, p2) -> app (aux Module p1) ~arg:(aux Module p2)
+      | Pextra_ty (path, extra) ->
+          (match extra with
+           | Pcstr_ty _ -> aux Type path
+           | Pext_ty -> aux Extension_constructor path) in
+  aux namespace
+let for_persistent_unit s =
+  {
+    uid = (Some (Uid.of_compilation_unit_id (Ident.create_persistent s)));
+    desc = (Comp_unit s)
+  }
+let leaf_for_unpack = { uid = None; desc = Leaf }
+let set_uid_if_none t uid =
+  match t.uid with | None -> { t with uid = (Some uid) } | _ -> t
+module Map =
+  struct
+    type shape = t
+    type nonrec t = t Item.Map.t
+    let empty = Item.Map.empty
+    let add t item shape = Item.Map.add item shape t
+    let add_value t id uid = Item.Map.add (Item.value id) (leaf uid) t
+    let add_value_proj t id shape =
+      let item = Item.value id in Item.Map.add item (proj shape item) t
+    let add_type t id uid = Item.Map.add (Item.type_ id) (leaf uid) t
+    let add_type_proj t id shape =
+      let item = Item.type_ id in Item.Map.add item (proj shape item) t
+    let add_module t id shape = Item.Map.add (Item.module_ id) shape t
+    let add_module_proj t id shape =
+      let item = Item.module_ id in Item.Map.add item (proj shape item) t
+    let add_module_type t id uid =
+      Item.Map.add (Item.module_type id) (leaf uid) t
+    let add_module_type_proj t id shape =
+      let item = Item.module_type id in Item.Map.add item (proj shape item) t
+    let add_extcons t id uid =
+      Item.Map.add (Item.extension_constructor id) (leaf uid) t
+    let add_extcons_proj t id shape =
+      let item = Item.extension_constructor id in
+      Item.Map.add item (proj shape item) t
+    let add_class t id uid = Item.Map.add (Item.class_ id) (leaf uid) t
+    let add_class_proj t id shape =
+      let item = Item.class_ id in Item.Map.add item (proj shape item) t
+    let add_class_type t id uid =
+      Item.Map.add (Item.class_type id) (leaf uid) t
+    let add_class_type_proj t id shape =
+      let item = Item.class_type id in Item.Map.add item (proj shape item) t
+  end

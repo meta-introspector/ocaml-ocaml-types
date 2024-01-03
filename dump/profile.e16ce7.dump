@@ -1,0 +1,13 @@
+0.024s 51.0MB 4.16MB 5.92MB lib/clflags.ml
+  0.001s 0.05MB ------ ------ parsing
+    0.001s 0.05MB ------ ------ parser
+  0.005s 10.4MB 1.34MB 3.10MB typing
+  0.012s 20.9MB 2.15MB 5.26MB generate
+    0.007s 14.7MB 1.65MB 4.76MB compile_phrases
+      ------ 0.04MB ------ ------ selection
+      0.001s 3.34MB 0.46MB 3.57MB spill
+      0.005s 11.3MB 1.18MB 4.76MB regalloc
+    0.003s ------ ------ ------ assemble
+    0.002s 6.19MB 0.50MB 5.26MB other
+  0.005s 19.6MB 0.66MB 5.92MB other
+0.006s 3.04MB 1.76MB ------ other

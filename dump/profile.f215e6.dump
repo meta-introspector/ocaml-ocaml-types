@@ -1,0 +1,5 @@
+0.008s 10.9MB 2.69MB 2.69MB lib/longident.ml
+  0.004s 3.95MB 0.78MB 0.78MB typing
+  0.001s 2.15MB 0.03MB 0.81MB generate
+  0.003s 4.84MB 1.88MB 2.69MB other
+0.004s ------ ------ ------ other

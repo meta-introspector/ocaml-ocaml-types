@@ -1,0 +1,8 @@
+0.035s 88.1MB 6.46MB 6.46MB lib/ident.ml
+  0.003s 4.89MB 1.87MB 1.87MB parsing
+    0.002s 4.89MB 1.87MB 1.87MB parser
+  0.020s 35.6MB 4.34MB 6.21MB typing
+  0.001s 2.03MB 0.03MB 6.24MB transl
+  0.004s 18.2MB 0.21MB 6.46MB generate
+  0.008s 27.3MB ------ ------ other
+0.004s ------ ------ ------ other

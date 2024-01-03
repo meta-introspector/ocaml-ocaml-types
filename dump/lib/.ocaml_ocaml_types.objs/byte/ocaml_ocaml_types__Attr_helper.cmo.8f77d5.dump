@@ -1,0 +1,515 @@
+[
+  structure_item (lib/attr_helper.ml[16,1079+0]..[16,1079+13])
+    Pstr_open Fresh
+    module_expr (lib/attr_helper.ml[16,1079+5]..[16,1079+13])
+      Pmod_ident "Asttypes" (lib/attr_helper.ml[16,1079+5]..[16,1079+13])
+  structure_item (lib/attr_helper.ml[17,1093+0]..[17,1093+14])
+    Pstr_open Fresh
+    module_expr (lib/attr_helper.ml[17,1093+5]..[17,1093+14])
+      Pmod_ident "Parsetree" (lib/attr_helper.ml[17,1093+5]..[17,1093+14])
+  structure_item (lib/attr_helper.ml[19,1109+0]..[19,1109+25])
+    Pstr_module
+    "Style" (lib/attr_helper.ml[19,1109+7]..[19,1109+12])
+      module_expr (lib/attr_helper.ml[19,1109+15]..[19,1109+25])
+        Pmod_ident "Misc.Style" (lib/attr_helper.ml[19,1109+15]..[19,1109+25])
+  structure_item (lib/attr_helper.ml[21,1136+0]..[23,1183+33])
+    Pstr_type Rec
+    [
+      type_declaration "error" (lib/attr_helper.ml[21,1136+5]..[21,1136+10]) (lib/attr_helper.ml[21,1136+0]..[23,1183+33])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/attr_helper.ml[22,1149+2]..[22,1149+33])
+                "Multiple_attributes" (lib/attr_helper.ml[22,1149+4]..[22,1149+23])
+                [
+                  core_type (lib/attr_helper.ml[22,1149+27]..[22,1149+33])
+                    Ptyp_constr "string" (lib/attr_helper.ml[22,1149+27]..[22,1149+33])
+                    []
+                ]
+                None
+              (lib/attr_helper.ml[23,1183+2]..[23,1183+33])
+                "No_payload_expected" (lib/attr_helper.ml[23,1183+4]..[23,1183+23])
+                [
+                  core_type (lib/attr_helper.ml[23,1183+27]..[23,1183+33])
+                    Ptyp_constr "string" (lib/attr_helper.ml[23,1183+27]..[23,1183+33])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/attr_helper.ml[25,1218+0]..[25,1218+37])
+    Pstr_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (lib/attr_helper.ml[25,1218+0]..[25,1218+37])
+          pext_name = "Error"
+          pext_kind =
+            Pext_decl
+              [
+                core_type (lib/attr_helper.ml[25,1218+19]..[25,1218+29])
+                  Ptyp_constr "Location.t" (lib/attr_helper.ml[25,1218+19]..[25,1218+29])
+                  []
+                core_type (lib/attr_helper.ml[25,1218+32]..[25,1218+37])
+                  Ptyp_constr "error" (lib/attr_helper.ml[25,1218+32]..[25,1218+37])
+                  []
+              ]
+              None
+  structure_item (lib/attr_helper.ml[27,1257+0]..[35,1638+58])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/attr_helper.ml[27,1257+4]..[27,1257+28])
+          Ppat_var "get_no_payload_attribute" (lib/attr_helper.ml[27,1257+4]..[27,1257+28])
+        expression (lib/attr_helper.ml[27,1257+29]..[35,1638+58]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/attr_helper.ml[27,1257+29]..[27,1257+31])
+              Nolabel
+              None
+              pattern (lib/attr_helper.ml[27,1257+29]..[27,1257+31])
+                Ppat_var "nm" (lib/attr_helper.ml[27,1257+29]..[27,1257+31])
+            Pparam_val (lib/attr_helper.ml[27,1257+32]..[27,1257+37])
+              Nolabel
+              None
+              pattern (lib/attr_helper.ml[27,1257+32]..[27,1257+37])
+                Ppat_var "attrs" (lib/attr_helper.ml[27,1257+32]..[27,1257+37])
+          ]
+          None
+          Pfunction_body
+            expression (lib/attr_helper.ml[28,1297+2]..[35,1638+58])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (lib/attr_helper.ml[28,1297+6]..[28,1297+13])
+                    Ppat_var "actions" (lib/attr_helper.ml[28,1297+6]..[28,1297+13])
+                  expression (lib/attr_helper.ml[28,1297+16]..[28,1297+49])
+                    Pexp_construct "::" (lib/attr_helper.ml[28,1297+17]..[28,1297+49]) ghost
+                    Some
+                      expression (lib/attr_helper.ml[28,1297+17]..[28,1297+49]) ghost
+                        Pexp_tuple
+                        [
+                          expression (lib/attr_helper.ml[28,1297+17]..[28,1297+48])
+                            Pexp_tuple
+                            [
+                              expression (lib/attr_helper.ml[28,1297+18]..[28,1297+20])
+                                Pexp_ident "nm" (lib/attr_helper.ml[28,1297+18]..[28,1297+20])
+                              expression (lib/attr_helper.ml[28,1297+22]..[28,1297+47])
+                                Pexp_construct "Builtin_attributes.Return" (lib/attr_helper.ml[28,1297+22]..[28,1297+47])
+                                None
+                            ]
+                          expression (lib/attr_helper.ml[28,1297+48]..[28,1297+49]) ghost
+                            Pexp_construct "[]" (lib/attr_helper.ml[28,1297+48]..[28,1297+49]) ghost
+                            None
+                        ]
+              ]
+              expression (lib/attr_helper.ml[29,1350+2]..[35,1638+58])
+                Pexp_match
+                expression (lib/attr_helper.ml[29,1350+8]..[29,1350+58])
+                  Pexp_apply
+                  expression (lib/attr_helper.ml[29,1350+8]..[29,1350+44])
+                    Pexp_ident "Builtin_attributes.select_attributes" (lib/attr_helper.ml[29,1350+8]..[29,1350+44])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (lib/attr_helper.ml[29,1350+45]..[29,1350+52])
+                        Pexp_ident "actions" (lib/attr_helper.ml[29,1350+45]..[29,1350+52])
+                    <arg>
+                    Nolabel
+                      expression (lib/attr_helper.ml[29,1350+53]..[29,1350+58])
+                        Pexp_ident "attrs" (lib/attr_helper.ml[29,1350+53]..[29,1350+58])
+                  ]
+                [
+                  <case>
+                    pattern (lib/attr_helper.ml[30,1414+4]..[30,1414+6])
+                      Ppat_construct "[]" (lib/attr_helper.ml[30,1414+4]..[30,1414+6])
+                      None
+                    expression (lib/attr_helper.ml[30,1414+10]..[30,1414+14])
+                      Pexp_construct "None" (lib/attr_helper.ml[30,1414+10]..[30,1414+14])
+                      None
+                  <case>
+                    pattern (lib/attr_helper.ml[31,1429+4]..[31,1429+64])
+                      Ppat_construct "::" (lib/attr_helper.ml[31,1429+6]..[31,1429+64]) ghost
+                      Some
+                        []
+                        pattern (lib/attr_helper.ml[31,1429+6]..[31,1429+64]) ghost
+                          Ppat_tuple
+                          [
+                            pattern (lib/attr_helper.ml[31,1429+6]..[31,1429+62])
+                              Ppat_record Closed
+                              [
+                                "attr_name" (lib/attr_helper.ml[31,1429+7]..[31,1429+16])
+                                  pattern (lib/attr_helper.ml[31,1429+19]..[31,1429+23])
+                                    Ppat_var "name" (lib/attr_helper.ml[31,1429+19]..[31,1429+23])
+                                "attr_payload" (lib/attr_helper.ml[31,1429+25]..[31,1429+37])
+                                  pattern (lib/attr_helper.ml[31,1429+40]..[31,1429+47])
+                                    Ppat_construct "PStr" (lib/attr_helper.ml[31,1429+40]..[31,1429+44])
+                                    Some
+                                      []
+                                      pattern (lib/attr_helper.ml[31,1429+45]..[31,1429+47])
+                                        Ppat_construct "[]" (lib/attr_helper.ml[31,1429+45]..[31,1429+47])
+                                        None
+                                "attr_loc" (lib/attr_helper.ml[31,1429+49]..[31,1429+57])
+                                  pattern (lib/attr_helper.ml[31,1429+60]..[31,1429+61])
+                                    Ppat_any
+                              ]
+                            pattern (lib/attr_helper.ml[31,1429+63]..[31,1429+64]) ghost
+                              Ppat_construct "[]" (lib/attr_helper.ml[31,1429+63]..[31,1429+64]) ghost
+                              None
+                          ]
+                    expression (lib/attr_helper.ml[31,1429+68]..[31,1429+77])
+                      Pexp_construct "Some" (lib/attr_helper.ml[31,1429+68]..[31,1429+72])
+                      Some
+                        expression (lib/attr_helper.ml[31,1429+73]..[31,1429+77])
+                          Pexp_ident "name" (lib/attr_helper.ml[31,1429+73]..[31,1429+77])
+                  <case>
+                    pattern (lib/attr_helper.ml[32,1507+4]..[32,1507+29])
+                      Ppat_construct "::" (lib/attr_helper.ml[32,1507+6]..[32,1507+29]) ghost
+                      Some
+                        []
+                        pattern (lib/attr_helper.ml[32,1507+6]..[32,1507+29]) ghost
+                          Ppat_tuple
+                          [
+                            pattern (lib/attr_helper.ml[32,1507+6]..[32,1507+27])
+                              Ppat_record Open
+                              [
+                                "attr_name" (lib/attr_helper.ml[32,1507+7]..[32,1507+16])
+                                  pattern (lib/attr_helper.ml[32,1507+19]..[32,1507+23])
+                                    Ppat_var "name" (lib/attr_helper.ml[32,1507+19]..[32,1507+23])
+                              ]
+                            pattern (lib/attr_helper.ml[32,1507+28]..[32,1507+29]) ghost
+                              Ppat_construct "[]" (lib/attr_helper.ml[32,1507+28]..[32,1507+29]) ghost
+                              None
+                          ]
+                    expression (lib/attr_helper.ml[33,1540+4]..[33,1540+58])
+                      Pexp_apply
+                      expression (lib/attr_helper.ml[33,1540+4]..[33,1540+9])
+                        Pexp_ident "raise" (lib/attr_helper.ml[33,1540+4]..[33,1540+9])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (lib/attr_helper.ml[33,1540+10]..[33,1540+58])
+                            Pexp_construct "Error" (lib/attr_helper.ml[33,1540+11]..[33,1540+16])
+                            Some
+                              expression (lib/attr_helper.ml[33,1540+17]..[33,1540+57])
+                                Pexp_tuple
+                                [
+                                  expression (lib/attr_helper.ml[33,1540+18]..[33,1540+26])
+                                    Pexp_field
+                                    expression (lib/attr_helper.ml[33,1540+18]..[33,1540+22])
+                                      Pexp_ident "name" (lib/attr_helper.ml[33,1540+18]..[33,1540+22])
+                                    "loc" (lib/attr_helper.ml[33,1540+23]..[33,1540+26])
+                                  expression (lib/attr_helper.ml[33,1540+28]..[33,1540+56])
+                                    Pexp_construct "No_payload_expected" (lib/attr_helper.ml[33,1540+28]..[33,1540+47])
+                                    Some
+                                      expression (lib/attr_helper.ml[33,1540+48]..[33,1540+56])
+                                        Pexp_field
+                                        expression (lib/attr_helper.ml[33,1540+48]..[33,1540+52])
+                                          Pexp_ident "name" (lib/attr_helper.ml[33,1540+48]..[33,1540+52])
+                                        "txt" (lib/attr_helper.ml[33,1540+53]..[33,1540+56])
+                                ]
+                      ]
+                  <case>
+                    pattern (lib/attr_helper.ml[34,1599+4]..[34,1599+35])
+                      Ppat_construct "::" (lib/attr_helper.ml[34,1599+6]..[34,1599+8])
+                      Some
+                        []
+                        pattern (lib/attr_helper.ml[34,1599+4]..[34,1599+35]) ghost
+                          Ppat_tuple
+                          [
+                            pattern (lib/attr_helper.ml[34,1599+4]..[34,1599+5])
+                              Ppat_any
+                            pattern (lib/attr_helper.ml[34,1599+9]..[34,1599+35])
+                              Ppat_construct "::" (lib/attr_helper.ml[34,1599+31]..[34,1599+33])
+                              Some
+                                []
+                                pattern (lib/attr_helper.ml[34,1599+9]..[34,1599+35]) ghost
+                                  Ppat_tuple
+                                  [
+                                    pattern (lib/attr_helper.ml[34,1599+9]..[34,1599+30])
+                                      Ppat_record Open
+                                      [
+                                        "attr_name" (lib/attr_helper.ml[34,1599+10]..[34,1599+19])
+                                          pattern (lib/attr_helper.ml[34,1599+22]..[34,1599+26])
+                                            Ppat_var "name" (lib/attr_helper.ml[34,1599+22]..[34,1599+26])
+                                      ]
+                                    pattern (lib/attr_helper.ml[34,1599+34]..[34,1599+35])
+                                      Ppat_any
+                                  ]
+                          ]
+                    expression (lib/attr_helper.ml[35,1638+4]..[35,1638+58])
+                      Pexp_apply
+                      expression (lib/attr_helper.ml[35,1638+4]..[35,1638+9])
+                        Pexp_ident "raise" (lib/attr_helper.ml[35,1638+4]..[35,1638+9])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (lib/attr_helper.ml[35,1638+10]..[35,1638+58])
+                            Pexp_construct "Error" (lib/attr_helper.ml[35,1638+11]..[35,1638+16])
+                            Some
+                              expression (lib/attr_helper.ml[35,1638+17]..[35,1638+57])
+                                Pexp_tuple
+                                [
+                                  expression (lib/attr_helper.ml[35,1638+18]..[35,1638+26])
+                                    Pexp_field
+                                    expression (lib/attr_helper.ml[35,1638+18]..[35,1638+22])
+                                      Pexp_ident "name" (lib/attr_helper.ml[35,1638+18]..[35,1638+22])
+                                    "loc" (lib/attr_helper.ml[35,1638+23]..[35,1638+26])
+                                  expression (lib/attr_helper.ml[35,1638+28]..[35,1638+56])
+                                    Pexp_construct "Multiple_attributes" (lib/attr_helper.ml[35,1638+28]..[35,1638+47])
+                                    Some
+                                      expression (lib/attr_helper.ml[35,1638+48]..[35,1638+56])
+                                        Pexp_field
+                                        expression (lib/attr_helper.ml[35,1638+48]..[35,1638+52])
+                                          Pexp_ident "name" (lib/attr_helper.ml[35,1638+48]..[35,1638+52])
+                                        "txt" (lib/attr_helper.ml[35,1638+53]..[35,1638+56])
+                                ]
+                      ]
+                ]
+    ]
+  structure_item (lib/attr_helper.ml[37,1698+0]..[40,1819+18])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/attr_helper.ml[37,1698+4]..[37,1698+28])
+          Ppat_var "has_no_payload_attribute" (lib/attr_helper.ml[37,1698+4]..[37,1698+28])
+        expression (lib/attr_helper.ml[37,1698+29]..[40,1819+18]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/attr_helper.ml[37,1698+29]..[37,1698+38])
+              Nolabel
+              None
+              pattern (lib/attr_helper.ml[37,1698+29]..[37,1698+38])
+                Ppat_var "alt_names" (lib/attr_helper.ml[37,1698+29]..[37,1698+38])
+            Pparam_val (lib/attr_helper.ml[37,1698+39]..[37,1698+44])
+              Nolabel
+              None
+              pattern (lib/attr_helper.ml[37,1698+39]..[37,1698+44])
+                Ppat_var "attrs" (lib/attr_helper.ml[37,1698+39]..[37,1698+44])
+          ]
+          None
+          Pfunction_body
+            expression (lib/attr_helper.ml[38,1745+2]..[40,1819+18])
+              Pexp_match
+              expression (lib/attr_helper.ml[38,1745+8]..[38,1745+48])
+                Pexp_apply
+                expression (lib/attr_helper.ml[38,1745+8]..[38,1745+32])
+                  Pexp_ident "get_no_payload_attribute" (lib/attr_helper.ml[38,1745+8]..[38,1745+32])
+                [
+                  <arg>
+                  Nolabel
+                    expression (lib/attr_helper.ml[38,1745+33]..[38,1745+42])
+                      Pexp_ident "alt_names" (lib/attr_helper.ml[38,1745+33]..[38,1745+42])
+                  <arg>
+                  Nolabel
+                    expression (lib/attr_helper.ml[38,1745+43]..[38,1745+48])
+                      Pexp_ident "attrs" (lib/attr_helper.ml[38,1745+43]..[38,1745+48])
+                ]
+              [
+                <case>
+                  pattern (lib/attr_helper.ml[39,1799+4]..[39,1799+8])
+                    Ppat_construct "None" (lib/attr_helper.ml[39,1799+4]..[39,1799+8])
+                    None
+                  expression (lib/attr_helper.ml[39,1799+14]..[39,1799+19])
+                    Pexp_construct "false" (lib/attr_helper.ml[39,1799+14]..[39,1799+19])
+                    None
+                <case>
+                  pattern (lib/attr_helper.ml[40,1819+4]..[40,1819+10])
+                    Ppat_construct "Some" (lib/attr_helper.ml[40,1819+4]..[40,1819+8])
+                    Some
+                      []
+                      pattern (lib/attr_helper.ml[40,1819+9]..[40,1819+10])
+                        Ppat_any
+                  expression (lib/attr_helper.ml[40,1819+14]..[40,1819+18])
+                    Pexp_construct "true" (lib/attr_helper.ml[40,1819+14]..[40,1819+18])
+                    None
+              ]
+    ]
+  structure_item (lib/attr_helper.ml[42,1839+0]..[42,1839+11])
+    Pstr_open Fresh
+    module_expr (lib/attr_helper.ml[42,1839+5]..[42,1839+11])
+      Pmod_ident "Format" (lib/attr_helper.ml[42,1839+5]..[42,1839+11])
+  structure_item (lib/attr_helper.ml[44,1852+0]..[48,2012+79])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/attr_helper.ml[44,1852+4]..[44,1852+16])
+          Ppat_var "report_error" (lib/attr_helper.ml[44,1852+4]..[44,1852+16])
+        expression (lib/attr_helper.ml[44,1852+17]..[48,2012+79]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/attr_helper.ml[44,1852+17]..[44,1852+20])
+              Nolabel
+              None
+              pattern (lib/attr_helper.ml[44,1852+17]..[44,1852+20])
+                Ppat_var "ppf" (lib/attr_helper.ml[44,1852+17]..[44,1852+20])
+          ]
+          None
+          Pfunction_cases (lib/attr_helper.ml[44,1852+23]..[48,2012+79])
+            [
+              <case>
+                pattern (lib/attr_helper.ml[45,1884+4]..[45,1884+28])
+                  Ppat_construct "Multiple_attributes" (lib/attr_helper.ml[45,1884+4]..[45,1884+23])
+                  Some
+                    []
+                    pattern (lib/attr_helper.ml[45,1884+24]..[45,1884+28])
+                      Ppat_var "name" (lib/attr_helper.ml[45,1884+24]..[45,1884+28])
+                expression (lib/attr_helper.ml[46,1916+4]..[46,1916+63])
+                  Pexp_apply
+                  expression (lib/attr_helper.ml[46,1916+4]..[46,1916+11])
+                    Pexp_ident "fprintf" (lib/attr_helper.ml[46,1916+4]..[46,1916+11])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (lib/attr_helper.ml[46,1916+12]..[46,1916+15])
+                        Pexp_ident "ppf" (lib/attr_helper.ml[46,1916+12]..[46,1916+15])
+                    <arg>
+                    Nolabel
+                      expression (lib/attr_helper.ml[46,1916+16]..[46,1916+40])
+                        Pexp_constant PConst_string("Too many %a attributes",(lib/attr_helper.ml[46,1916+17]..[46,1916+39]),None)
+                    <arg>
+                    Nolabel
+                      expression (lib/attr_helper.ml[46,1916+41]..[46,1916+58])
+                        Pexp_ident "Style.inline_code" (lib/attr_helper.ml[46,1916+41]..[46,1916+58])
+                    <arg>
+                    Nolabel
+                      expression (lib/attr_helper.ml[46,1916+59]..[46,1916+63])
+                        Pexp_ident "name" (lib/attr_helper.ml[46,1916+59]..[46,1916+63])
+                  ]
+              <case>
+                pattern (lib/attr_helper.ml[47,1980+4]..[47,1980+28])
+                  Ppat_construct "No_payload_expected" (lib/attr_helper.ml[47,1980+4]..[47,1980+23])
+                  Some
+                    []
+                    pattern (lib/attr_helper.ml[47,1980+24]..[47,1980+28])
+                      Ppat_var "name" (lib/attr_helper.ml[47,1980+24]..[47,1980+28])
+                expression (lib/attr_helper.ml[48,2012+4]..[48,2012+79])
+                  Pexp_apply
+                  expression (lib/attr_helper.ml[48,2012+4]..[48,2012+11])
+                    Pexp_ident "fprintf" (lib/attr_helper.ml[48,2012+4]..[48,2012+11])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (lib/attr_helper.ml[48,2012+12]..[48,2012+15])
+                        Pexp_ident "ppf" (lib/attr_helper.ml[48,2012+12]..[48,2012+15])
+                    <arg>
+                    Nolabel
+                      expression (lib/attr_helper.ml[48,2012+16]..[48,2012+56])
+                        Pexp_constant PConst_string("Attribute %a does not accept a payload",(lib/attr_helper.ml[48,2012+17]..[48,2012+55]),None)
+                    <arg>
+                    Nolabel
+                      expression (lib/attr_helper.ml[48,2012+57]..[48,2012+74])
+                        Pexp_ident "Style.inline_code" (lib/attr_helper.ml[48,2012+57]..[48,2012+74])
+                    <arg>
+                    Nolabel
+                      expression (lib/attr_helper.ml[48,2012+75]..[48,2012+79])
+                        Pexp_ident "name" (lib/attr_helper.ml[48,2012+75]..[48,2012+79])
+                  ]
+            ]
+    ]
+  structure_item (lib/attr_helper.ml[50,2093+0]..[57,2266+5])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/attr_helper.ml[50,2093+4]..[50,2093+6])
+          Ppat_construct "()" (lib/attr_helper.ml[50,2093+4]..[50,2093+6])
+          None
+        expression (lib/attr_helper.ml[51,2102+2]..[57,2266+5])
+          Pexp_apply
+          expression (lib/attr_helper.ml[51,2102+2]..[51,2102+32])
+            Pexp_ident "Location.register_error_of_exn" (lib/attr_helper.ml[51,2102+2]..[51,2102+32])
+          [
+            <arg>
+            Nolabel
+              expression (lib/attr_helper.ml[52,2135+4]..[57,2266+5])
+                Pexp_function
+                []
+                None
+                Pfunction_cases (lib/attr_helper.ml[52,2135+5]..[56,2253+12])
+                  [
+                    <case>
+                      pattern (lib/attr_helper.ml[53,2149+8]..[53,2149+24])
+                        Ppat_construct "Error" (lib/attr_helper.ml[53,2149+8]..[53,2149+13])
+                        Some
+                          []
+                          pattern (lib/attr_helper.ml[53,2149+14]..[53,2149+24])
+                            Ppat_tuple
+                            [
+                              pattern (lib/attr_helper.ml[53,2149+15]..[53,2149+18])
+                                Ppat_var "loc" (lib/attr_helper.ml[53,2149+15]..[53,2149+18])
+                              pattern (lib/attr_helper.ml[53,2149+20]..[53,2149+23])
+                                Ppat_var "err" (lib/attr_helper.ml[53,2149+20]..[53,2149+23])
+                            ]
+                      expression (lib/attr_helper.ml[54,2177+8]..[54,2177+62])
+                        Pexp_construct "Some" (lib/attr_helper.ml[54,2177+8]..[54,2177+12])
+                        Some
+                          expression (lib/attr_helper.ml[54,2177+13]..[54,2177+62])
+                            Pexp_apply
+                            expression (lib/attr_helper.ml[54,2177+14]..[54,2177+39])
+                              Pexp_ident "Location.error_of_printer" (lib/attr_helper.ml[54,2177+14]..[54,2177+39])
+                            [
+                              <arg>
+                              Labelled "loc"
+                                expression (lib/attr_helper.ml[54,2177+41]..[54,2177+44])
+                                  Pexp_ident "loc" (lib/attr_helper.ml[54,2177+41]..[54,2177+44])
+                              <arg>
+                              Nolabel
+                                expression (lib/attr_helper.ml[54,2177+45]..[54,2177+57])
+                                  Pexp_ident "report_error" (lib/attr_helper.ml[54,2177+45]..[54,2177+57])
+                              <arg>
+                              Nolabel
+                                expression (lib/attr_helper.ml[54,2177+58]..[54,2177+61])
+                                  Pexp_ident "err" (lib/attr_helper.ml[54,2177+58]..[54,2177+61])
+                            ]
+                    <case>
+                      pattern (lib/attr_helper.ml[55,2240+8]..[55,2240+9])
+                        Ppat_any
+                      expression (lib/attr_helper.ml[56,2253+8]..[56,2253+12])
+                        Pexp_construct "None" (lib/attr_helper.ml[56,2253+8]..[56,2253+12])
+                        None
+                  ]
+          ]
+    ]
+]
+
+open Asttypes
+open Parsetree
+module Style = Misc.Style
+type error =
+  | Multiple_attributes of string 
+  | No_payload_expected of string 
+exception Error of Location.t * error 
+let get_no_payload_attribute nm attrs =
+  let actions = [(nm, Builtin_attributes.Return)] in
+  match Builtin_attributes.select_attributes actions attrs with
+  | [] -> None
+  | { attr_name = name; attr_payload = PStr []; attr_loc = _ }::[] ->
+      Some name
+  | { attr_name = name;_}::[] ->
+      raise (Error ((name.loc), (No_payload_expected (name.txt))))
+  | _::{ attr_name = name;_}::_ ->
+      raise (Error ((name.loc), (Multiple_attributes (name.txt))))
+let has_no_payload_attribute alt_names attrs =
+  match get_no_payload_attribute alt_names attrs with
+  | None -> false
+  | Some _ -> true
+open Format
+let report_error ppf =
+  function
+  | Multiple_attributes name ->
+      fprintf ppf "Too many %a attributes" Style.inline_code name
+  | No_payload_expected name ->
+      fprintf ppf "Attribute %a does not accept a payload" Style.inline_code
+        name
+let () =
+  Location.register_error_of_exn
+    (function
+     | Error (loc, err) ->
+         Some (Location.error_of_printer ~loc report_error err)
+     | _ -> None)

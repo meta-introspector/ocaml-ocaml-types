@@ -1,0 +1,7 @@
+0.050s  111MB 10.2MB 10.2MB lib/identifiable.ml
+  0.002s 2.84MB 1.51MB 1.51MB parsing
+    0.002s 2.84MB 1.51MB 1.51MB parser
+  0.036s 63.8MB 8.21MB 9.72MB typing
+  0.004s 14.3MB 0.28MB 10.0MB generate
+  0.007s 30.2MB 0.21MB 10.2MB other
+0.003s ------ ------ ------ other

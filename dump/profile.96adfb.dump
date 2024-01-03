@@ -1,0 +1,7 @@
+0.015s 32.9MB 3.42MB 3.42MB lib/clflags.ml
+  0.002s 2.91MB 1.58MB 1.58MB parsing
+    0.002s 2.91MB 1.58MB 1.58MB parser
+  0.008s 11.5MB 1.46MB 3.05MB typing
+  0.001s 4.10MB 0.09MB 3.14MB generate
+  0.004s 14.3MB 0.28MB 3.42MB other
+0.004s ------ ------ ------ other

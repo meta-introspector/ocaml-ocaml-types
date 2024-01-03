@@ -1,0 +1,1367 @@
+[
+  structure_item (lib/longident.ml[16,1079+0]..[19,1132+19])
+    Pstr_type Rec
+    [
+      type_declaration "t" (lib/longident.ml[16,1079+5]..[16,1079+6]) (lib/longident.ml[16,1079+0]..[19,1132+19])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/longident.ml[17,1088+4]..[17,1088+20])
+                "Lident" (lib/longident.ml[17,1088+4]..[17,1088+10])
+                [
+                  core_type (lib/longident.ml[17,1088+14]..[17,1088+20])
+                    Ptyp_constr "string" (lib/longident.ml[17,1088+14]..[17,1088+20])
+                    []
+                ]
+                None
+              (lib/longident.ml[18,1109+2]..[18,1109+22])
+                "Ldot" (lib/longident.ml[18,1109+4]..[18,1109+8])
+                [
+                  core_type (lib/longident.ml[18,1109+12]..[18,1109+13])
+                    Ptyp_constr "t" (lib/longident.ml[18,1109+12]..[18,1109+13])
+                    []
+                  core_type (lib/longident.ml[18,1109+16]..[18,1109+22])
+                    Ptyp_constr "string" (lib/longident.ml[18,1109+16]..[18,1109+22])
+                    []
+                ]
+                None
+              (lib/longident.ml[19,1132+2]..[19,1132+19])
+                "Lapply" (lib/longident.ml[19,1132+4]..[19,1132+10])
+                [
+                  core_type (lib/longident.ml[19,1132+14]..[19,1132+15])
+                    Ptyp_constr "t" (lib/longident.ml[19,1132+14]..[19,1132+15])
+                    []
+                  core_type (lib/longident.ml[19,1132+18]..[19,1132+19])
+                    Ptyp_constr "t" (lib/longident.ml[19,1132+18]..[19,1132+19])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/longident.ml[21,1153+0]..[24,1249+53])
+    Pstr_value Rec
+    [
+      <def>
+        pattern (lib/longident.ml[21,1153+8]..[21,1153+12])
+          Ppat_var "flat" (lib/longident.ml[21,1153+8]..[21,1153+12])
+        expression (lib/longident.ml[21,1153+13]..[24,1249+53]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/longident.ml[21,1153+13]..[21,1153+17])
+              Nolabel
+              None
+              pattern (lib/longident.ml[21,1153+13]..[21,1153+17])
+                Ppat_var "accu" (lib/longident.ml[21,1153+13]..[21,1153+17])
+          ]
+          None
+          Pfunction_cases (lib/longident.ml[21,1153+20]..[24,1249+53])
+            [
+              <case>
+                pattern (lib/longident.ml[22,1182+4]..[22,1182+12])
+                  Ppat_construct "Lident" (lib/longident.ml[22,1182+4]..[22,1182+10])
+                  Some
+                    []
+                    pattern (lib/longident.ml[22,1182+11]..[22,1182+12])
+                      Ppat_var "s" (lib/longident.ml[22,1182+11]..[22,1182+12])
+                expression (lib/longident.ml[22,1182+16]..[22,1182+25])
+                  Pexp_construct "::" (lib/longident.ml[22,1182+18]..[22,1182+20])
+                  Some
+                    expression (lib/longident.ml[22,1182+16]..[22,1182+25]) ghost
+                      Pexp_tuple
+                      [
+                        expression (lib/longident.ml[22,1182+16]..[22,1182+17])
+                          Pexp_ident "s" (lib/longident.ml[22,1182+16]..[22,1182+17])
+                        expression (lib/longident.ml[22,1182+21]..[22,1182+25])
+                          Pexp_ident "accu" (lib/longident.ml[22,1182+21]..[22,1182+25])
+                      ]
+              <case>
+                pattern (lib/longident.ml[23,1208+4]..[23,1208+16])
+                  Ppat_construct "Ldot" (lib/longident.ml[23,1208+4]..[23,1208+8])
+                  Some
+                    []
+                    pattern (lib/longident.ml[23,1208+8]..[23,1208+16])
+                      Ppat_tuple
+                      [
+                        pattern (lib/longident.ml[23,1208+9]..[23,1208+12])
+                          Ppat_var "lid" (lib/longident.ml[23,1208+9]..[23,1208+12])
+                        pattern (lib/longident.ml[23,1208+14]..[23,1208+15])
+                          Ppat_var "s" (lib/longident.ml[23,1208+14]..[23,1208+15])
+                      ]
+                expression (lib/longident.ml[23,1208+20]..[23,1208+40])
+                  Pexp_apply
+                  expression (lib/longident.ml[23,1208+20]..[23,1208+24])
+                    Pexp_ident "flat" (lib/longident.ml[23,1208+20]..[23,1208+24])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (lib/longident.ml[23,1208+25]..[23,1208+36])
+                        Pexp_construct "::" (lib/longident.ml[23,1208+28]..[23,1208+30])
+                        Some
+                          expression (lib/longident.ml[23,1208+26]..[23,1208+35]) ghost
+                            Pexp_tuple
+                            [
+                              expression (lib/longident.ml[23,1208+26]..[23,1208+27])
+                                Pexp_ident "s" (lib/longident.ml[23,1208+26]..[23,1208+27])
+                              expression (lib/longident.ml[23,1208+31]..[23,1208+35])
+                                Pexp_ident "accu" (lib/longident.ml[23,1208+31]..[23,1208+35])
+                            ]
+                    <arg>
+                    Nolabel
+                      expression (lib/longident.ml[23,1208+37]..[23,1208+40])
+                        Pexp_ident "lid" (lib/longident.ml[23,1208+37]..[23,1208+40])
+                  ]
+              <case>
+                pattern (lib/longident.ml[24,1249+4]..[24,1249+16])
+                  Ppat_construct "Lapply" (lib/longident.ml[24,1249+4]..[24,1249+10])
+                  Some
+                    []
+                    pattern (lib/longident.ml[24,1249+10]..[24,1249+16])
+                      Ppat_tuple
+                      [
+                        pattern (lib/longident.ml[24,1249+11]..[24,1249+12])
+                          Ppat_any
+                        pattern (lib/longident.ml[24,1249+14]..[24,1249+15])
+                          Ppat_any
+                      ]
+                expression (lib/longident.ml[24,1249+20]..[24,1249+53])
+                  Pexp_apply
+                  expression (lib/longident.ml[24,1249+20]..[24,1249+36])
+                    Pexp_ident "Misc.fatal_error" (lib/longident.ml[24,1249+20]..[24,1249+36])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (lib/longident.ml[24,1249+37]..[24,1249+53])
+                        Pexp_constant PConst_string("Longident.flat",(lib/longident.ml[24,1249+38]..[24,1249+52]),None)
+                  ]
+            ]
+    ]
+  structure_item (lib/longident.ml[26,1304+0]..[26,1304+29])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/longident.ml[26,1304+4]..[26,1304+11])
+          Ppat_var "flatten" (lib/longident.ml[26,1304+4]..[26,1304+11])
+        expression (lib/longident.ml[26,1304+12]..[26,1304+29]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/longident.ml[26,1304+12]..[26,1304+15])
+              Nolabel
+              None
+              pattern (lib/longident.ml[26,1304+12]..[26,1304+15])
+                Ppat_var "lid" (lib/longident.ml[26,1304+12]..[26,1304+15])
+          ]
+          None
+          Pfunction_body
+            expression (lib/longident.ml[26,1304+18]..[26,1304+29])
+              Pexp_apply
+              expression (lib/longident.ml[26,1304+18]..[26,1304+22])
+                Pexp_ident "flat" (lib/longident.ml[26,1304+18]..[26,1304+22])
+              [
+                <arg>
+                Nolabel
+                  expression (lib/longident.ml[26,1304+23]..[26,1304+25])
+                    Pexp_construct "[]" (lib/longident.ml[26,1304+23]..[26,1304+25])
+                    None
+                <arg>
+                Nolabel
+                  expression (lib/longident.ml[26,1304+26]..[26,1304+29])
+                    Pexp_ident "lid" (lib/longident.ml[26,1304+26]..[26,1304+29])
+              ]
+    ]
+  structure_item (lib/longident.ml[28,1335+0]..[31,1393+53])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/longident.ml[28,1335+4]..[28,1335+8])
+          Ppat_var "last" (lib/longident.ml[28,1335+4]..[28,1335+8])
+        expression (lib/longident.ml[28,1335+11]..[31,1393+53])
+          Pexp_function
+          []
+          None
+          Pfunction_cases (lib/longident.ml[28,1335+11]..[31,1393+53])
+            [
+              <case>
+                pattern (lib/longident.ml[29,1355+4]..[29,1355+12])
+                  Ppat_construct "Lident" (lib/longident.ml[29,1355+4]..[29,1355+10])
+                  Some
+                    []
+                    pattern (lib/longident.ml[29,1355+11]..[29,1355+12])
+                      Ppat_var "s" (lib/longident.ml[29,1355+11]..[29,1355+12])
+                expression (lib/longident.ml[29,1355+16]..[29,1355+17])
+                  Pexp_ident "s" (lib/longident.ml[29,1355+16]..[29,1355+17])
+              <case>
+                pattern (lib/longident.ml[30,1373+4]..[30,1373+14])
+                  Ppat_construct "Ldot" (lib/longident.ml[30,1373+4]..[30,1373+8])
+                  Some
+                    []
+                    pattern (lib/longident.ml[30,1373+8]..[30,1373+14])
+                      Ppat_tuple
+                      [
+                        pattern (lib/longident.ml[30,1373+9]..[30,1373+10])
+                          Ppat_any
+                        pattern (lib/longident.ml[30,1373+12]..[30,1373+13])
+                          Ppat_var "s" (lib/longident.ml[30,1373+12]..[30,1373+13])
+                      ]
+                expression (lib/longident.ml[30,1373+18]..[30,1373+19])
+                  Pexp_ident "s" (lib/longident.ml[30,1373+18]..[30,1373+19])
+              <case>
+                pattern (lib/longident.ml[31,1393+4]..[31,1393+16])
+                  Ppat_construct "Lapply" (lib/longident.ml[31,1393+4]..[31,1393+10])
+                  Some
+                    []
+                    pattern (lib/longident.ml[31,1393+10]..[31,1393+16])
+                      Ppat_tuple
+                      [
+                        pattern (lib/longident.ml[31,1393+11]..[31,1393+12])
+                          Ppat_any
+                        pattern (lib/longident.ml[31,1393+14]..[31,1393+15])
+                          Ppat_any
+                      ]
+                expression (lib/longident.ml[31,1393+20]..[31,1393+53])
+                  Pexp_apply
+                  expression (lib/longident.ml[31,1393+20]..[31,1393+36])
+                    Pexp_ident "Misc.fatal_error" (lib/longident.ml[31,1393+20]..[31,1393+36])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (lib/longident.ml[31,1393+37]..[31,1393+53])
+                        Pexp_constant PConst_string("Longident.last",(lib/longident.ml[31,1393+38]..[31,1393+52]),None)
+                  ]
+            ]
+    ]
+  structure_item (lib/longident.ml[34,1449+0]..[39,1612+46])
+    Pstr_value Rec
+    [
+      <def>
+        pattern (lib/longident.ml[34,1449+8]..[34,1449+21])
+          Ppat_var "split_at_dots" (lib/longident.ml[34,1449+8]..[34,1449+21])
+        expression (lib/longident.ml[34,1449+22]..[39,1612+46]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/longident.ml[34,1449+22]..[34,1449+23])
+              Nolabel
+              None
+              pattern (lib/longident.ml[34,1449+22]..[34,1449+23])
+                Ppat_var "s" (lib/longident.ml[34,1449+22]..[34,1449+23])
+            Pparam_val (lib/longident.ml[34,1449+24]..[34,1449+27])
+              Nolabel
+              None
+              pattern (lib/longident.ml[34,1449+24]..[34,1449+27])
+                Ppat_var "pos" (lib/longident.ml[34,1449+24]..[34,1449+27])
+          ]
+          None
+          Pfunction_body
+            expression (lib/longident.ml[35,1479+2]..[39,1612+46])
+              Pexp_try
+              expression (lib/longident.ml[36,1485+4]..[37,1530+61])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (lib/longident.ml[36,1485+8]..[36,1485+11])
+                      Ppat_var "dot" (lib/longident.ml[36,1485+8]..[36,1485+11])
+                    expression (lib/longident.ml[36,1485+14]..[36,1485+41])
+                      Pexp_apply
+                      expression (lib/longident.ml[36,1485+14]..[36,1485+31])
+                        Pexp_ident "String.index_from" (lib/longident.ml[36,1485+14]..[36,1485+31])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (lib/longident.ml[36,1485+32]..[36,1485+33])
+                            Pexp_ident "s" (lib/longident.ml[36,1485+32]..[36,1485+33])
+                        <arg>
+                        Nolabel
+                          expression (lib/longident.ml[36,1485+34]..[36,1485+37])
+                            Pexp_ident "pos" (lib/longident.ml[36,1485+34]..[36,1485+37])
+                        <arg>
+                        Nolabel
+                          expression (lib/longident.ml[36,1485+38]..[36,1485+41])
+                            Pexp_constant PConst_char 2e
+                      ]
+                ]
+                expression (lib/longident.ml[37,1530+4]..[37,1530+61])
+                  Pexp_construct "::" (lib/longident.ml[37,1530+33]..[37,1530+35])
+                  Some
+                    expression (lib/longident.ml[37,1530+4]..[37,1530+61]) ghost
+                      Pexp_tuple
+                      [
+                        expression (lib/longident.ml[37,1530+4]..[37,1530+32])
+                          Pexp_apply
+                          expression (lib/longident.ml[37,1530+4]..[37,1530+14])
+                            Pexp_ident "String.sub" (lib/longident.ml[37,1530+4]..[37,1530+14])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (lib/longident.ml[37,1530+15]..[37,1530+16])
+                                Pexp_ident "s" (lib/longident.ml[37,1530+15]..[37,1530+16])
+                            <arg>
+                            Nolabel
+                              expression (lib/longident.ml[37,1530+17]..[37,1530+20])
+                                Pexp_ident "pos" (lib/longident.ml[37,1530+17]..[37,1530+20])
+                            <arg>
+                            Nolabel
+                              expression (lib/longident.ml[37,1530+21]..[37,1530+32])
+                                Pexp_apply
+                                expression (lib/longident.ml[37,1530+26]..[37,1530+27])
+                                  Pexp_ident "-" (lib/longident.ml[37,1530+26]..[37,1530+27])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (lib/longident.ml[37,1530+22]..[37,1530+25])
+                                      Pexp_ident "dot" (lib/longident.ml[37,1530+22]..[37,1530+25])
+                                  <arg>
+                                  Nolabel
+                                    expression (lib/longident.ml[37,1530+28]..[37,1530+31])
+                                      Pexp_ident "pos" (lib/longident.ml[37,1530+28]..[37,1530+31])
+                                ]
+                          ]
+                        expression (lib/longident.ml[37,1530+36]..[37,1530+61])
+                          Pexp_apply
+                          expression (lib/longident.ml[37,1530+36]..[37,1530+49])
+                            Pexp_ident "split_at_dots" (lib/longident.ml[37,1530+36]..[37,1530+49])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (lib/longident.ml[37,1530+50]..[37,1530+51])
+                                Pexp_ident "s" (lib/longident.ml[37,1530+50]..[37,1530+51])
+                            <arg>
+                            Nolabel
+                              expression (lib/longident.ml[37,1530+52]..[37,1530+61])
+                                Pexp_apply
+                                expression (lib/longident.ml[37,1530+57]..[37,1530+58])
+                                  Pexp_ident "+" (lib/longident.ml[37,1530+57]..[37,1530+58])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (lib/longident.ml[37,1530+53]..[37,1530+56])
+                                      Pexp_ident "dot" (lib/longident.ml[37,1530+53]..[37,1530+56])
+                                  <arg>
+                                  Nolabel
+                                    expression (lib/longident.ml[37,1530+59]..[37,1530+60])
+                                      Pexp_constant PConst_int (1,None)
+                                ]
+                          ]
+                      ]
+              [
+                <case>
+                  pattern (lib/longident.ml[38,1592+7]..[38,1592+16])
+                    Ppat_construct "Not_found" (lib/longident.ml[38,1592+7]..[38,1592+16])
+                    None
+                  expression (lib/longident.ml[39,1612+4]..[39,1612+46])
+                    Pexp_construct "::" (lib/longident.ml[39,1612+5]..[39,1612+46]) ghost
+                    Some
+                      expression (lib/longident.ml[39,1612+5]..[39,1612+46]) ghost
+                        Pexp_tuple
+                        [
+                          expression (lib/longident.ml[39,1612+5]..[39,1612+45])
+                            Pexp_apply
+                            expression (lib/longident.ml[39,1612+5]..[39,1612+15])
+                              Pexp_ident "String.sub" (lib/longident.ml[39,1612+5]..[39,1612+15])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/longident.ml[39,1612+16]..[39,1612+17])
+                                  Pexp_ident "s" (lib/longident.ml[39,1612+16]..[39,1612+17])
+                              <arg>
+                              Nolabel
+                                expression (lib/longident.ml[39,1612+18]..[39,1612+21])
+                                  Pexp_ident "pos" (lib/longident.ml[39,1612+18]..[39,1612+21])
+                              <arg>
+                              Nolabel
+                                expression (lib/longident.ml[39,1612+22]..[39,1612+45])
+                                  Pexp_apply
+                                  expression (lib/longident.ml[39,1612+39]..[39,1612+40])
+                                    Pexp_ident "-" (lib/longident.ml[39,1612+39]..[39,1612+40])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/longident.ml[39,1612+23]..[39,1612+38])
+                                        Pexp_apply
+                                        expression (lib/longident.ml[39,1612+23]..[39,1612+36])
+                                          Pexp_ident "String.length" (lib/longident.ml[39,1612+23]..[39,1612+36])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (lib/longident.ml[39,1612+37]..[39,1612+38])
+                                              Pexp_ident "s" (lib/longident.ml[39,1612+37]..[39,1612+38])
+                                        ]
+                                    <arg>
+                                    Nolabel
+                                      expression (lib/longident.ml[39,1612+41]..[39,1612+44])
+                                        Pexp_ident "pos" (lib/longident.ml[39,1612+41]..[39,1612+44])
+                                  ]
+                            ]
+                          expression (lib/longident.ml[39,1612+45]..[39,1612+46]) ghost
+                            Pexp_construct "[]" (lib/longident.ml[39,1612+45]..[39,1612+46]) ghost
+                            None
+                        ]
+              ]
+    ]
+  structure_item (lib/longident.ml[41,1660+0]..[44,1708+76])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/longident.ml[41,1660+4]..[41,1660+13])
+          Ppat_var "unflatten" (lib/longident.ml[41,1660+4]..[41,1660+13])
+        expression (lib/longident.ml[41,1660+14]..[44,1708+76]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/longident.ml[41,1660+14]..[41,1660+15])
+              Nolabel
+              None
+              pattern (lib/longident.ml[41,1660+14]..[41,1660+15])
+                Ppat_var "l" (lib/longident.ml[41,1660+14]..[41,1660+15])
+          ]
+          None
+          Pfunction_body
+            expression (lib/longident.ml[42,1678+2]..[44,1708+76])
+              Pexp_match
+              expression (lib/longident.ml[42,1678+8]..[42,1678+9])
+                Pexp_ident "l" (lib/longident.ml[42,1678+8]..[42,1678+9])
+              [
+                <case>
+                  pattern (lib/longident.ml[43,1693+4]..[43,1693+6])
+                    Ppat_construct "[]" (lib/longident.ml[43,1693+4]..[43,1693+6])
+                    None
+                  expression (lib/longident.ml[43,1693+10]..[43,1693+14])
+                    Pexp_construct "None" (lib/longident.ml[43,1693+10]..[43,1693+14])
+                    None
+                <case>
+                  pattern (lib/longident.ml[44,1708+4]..[44,1708+12])
+                    Ppat_construct "::" (lib/longident.ml[44,1708+7]..[44,1708+9])
+                    Some
+                      []
+                      pattern (lib/longident.ml[44,1708+4]..[44,1708+12]) ghost
+                        Ppat_tuple
+                        [
+                          pattern (lib/longident.ml[44,1708+4]..[44,1708+6])
+                            Ppat_var "hd" (lib/longident.ml[44,1708+4]..[44,1708+6])
+                          pattern (lib/longident.ml[44,1708+10]..[44,1708+12])
+                            Ppat_var "tl" (lib/longident.ml[44,1708+10]..[44,1708+12])
+                        ]
+                  expression (lib/longident.ml[44,1708+16]..[44,1708+76])
+                    Pexp_construct "Some" (lib/longident.ml[44,1708+16]..[44,1708+20])
+                    Some
+                      expression (lib/longident.ml[44,1708+21]..[44,1708+76])
+                        Pexp_apply
+                        expression (lib/longident.ml[44,1708+22]..[44,1708+36])
+                          Pexp_ident "List.fold_left" (lib/longident.ml[44,1708+22]..[44,1708+36])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/longident.ml[44,1708+37]..[44,1708+60])
+                              Pexp_function
+                              [
+                                Pparam_val (lib/longident.ml[44,1708+42]..[44,1708+43])
+                                  Nolabel
+                                  None
+                                  pattern (lib/longident.ml[44,1708+42]..[44,1708+43])
+                                    Ppat_var "p" (lib/longident.ml[44,1708+42]..[44,1708+43])
+                                Pparam_val (lib/longident.ml[44,1708+44]..[44,1708+45])
+                                  Nolabel
+                                  None
+                                  pattern (lib/longident.ml[44,1708+44]..[44,1708+45])
+                                    Ppat_var "s" (lib/longident.ml[44,1708+44]..[44,1708+45])
+                              ]
+                              None
+                              Pfunction_body
+                                expression (lib/longident.ml[44,1708+49]..[44,1708+59])
+                                  Pexp_construct "Ldot" (lib/longident.ml[44,1708+49]..[44,1708+53])
+                                  Some
+                                    expression (lib/longident.ml[44,1708+53]..[44,1708+59])
+                                      Pexp_tuple
+                                      [
+                                        expression (lib/longident.ml[44,1708+54]..[44,1708+55])
+                                          Pexp_ident "p" (lib/longident.ml[44,1708+54]..[44,1708+55])
+                                        expression (lib/longident.ml[44,1708+57]..[44,1708+58])
+                                          Pexp_ident "s" (lib/longident.ml[44,1708+57]..[44,1708+58])
+                                      ]
+                          <arg>
+                          Nolabel
+                            expression (lib/longident.ml[44,1708+61]..[44,1708+72])
+                              Pexp_construct "Lident" (lib/longident.ml[44,1708+62]..[44,1708+68])
+                              Some
+                                expression (lib/longident.ml[44,1708+69]..[44,1708+71])
+                                  Pexp_ident "hd" (lib/longident.ml[44,1708+69]..[44,1708+71])
+                          <arg>
+                          Nolabel
+                            expression (lib/longident.ml[44,1708+73]..[44,1708+75])
+                              Pexp_ident "tl" (lib/longident.ml[44,1708+73]..[44,1708+75])
+                        ]
+              ]
+    ]
+  structure_item (lib/longident.ml[46,1786+0]..[50,1994+15])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/longident.ml[46,1786+4]..[46,1786+9])
+          Ppat_var "parse" (lib/longident.ml[46,1786+4]..[46,1786+9])
+        expression (lib/longident.ml[46,1786+10]..[50,1994+15]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/longident.ml[46,1786+10]..[46,1786+11])
+              Nolabel
+              None
+              pattern (lib/longident.ml[46,1786+10]..[46,1786+11])
+                Ppat_var "s" (lib/longident.ml[46,1786+10]..[46,1786+11])
+          ]
+          None
+          Pfunction_body
+            expression (lib/longident.ml[47,1800+2]..[50,1994+15])
+              Pexp_match
+              expression (lib/longident.ml[47,1800+8]..[47,1800+37])
+                Pexp_apply
+                expression (lib/longident.ml[47,1800+8]..[47,1800+17])
+                  Pexp_ident "unflatten" (lib/longident.ml[47,1800+8]..[47,1800+17])
+                [
+                  <arg>
+                  Nolabel
+                    expression (lib/longident.ml[47,1800+18]..[47,1800+37])
+                      Pexp_apply
+                      expression (lib/longident.ml[47,1800+19]..[47,1800+32])
+                        Pexp_ident "split_at_dots" (lib/longident.ml[47,1800+19]..[47,1800+32])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (lib/longident.ml[47,1800+33]..[47,1800+34])
+                            Pexp_ident "s" (lib/longident.ml[47,1800+33]..[47,1800+34])
+                        <arg>
+                        Nolabel
+                          expression (lib/longident.ml[47,1800+35]..[47,1800+36])
+                            Pexp_constant PConst_int (0,None)
+                      ]
+                ]
+              [
+                <case>
+                  pattern (lib/longident.ml[48,1843+4]..[48,1843+8])
+                    Ppat_construct "None" (lib/longident.ml[48,1843+4]..[48,1843+8])
+                    None
+                  expression (lib/longident.ml[48,1843+12]..[48,1843+21])
+                    Pexp_construct "Lident" (lib/longident.ml[48,1843+12]..[48,1843+18])
+                    Some
+                      expression (lib/longident.ml[48,1843+19]..[48,1843+21])
+                        Pexp_constant PConst_string("",(lib/longident.ml[48,1843+20]..[48,1843+20]),None)
+                <case>
+                  pattern (lib/longident.ml[50,1994+4]..[50,1994+10])
+                    Ppat_construct "Some" (lib/longident.ml[50,1994+4]..[50,1994+8])
+                    Some
+                      []
+                      pattern (lib/longident.ml[50,1994+9]..[50,1994+10])
+                        Ppat_var "v" (lib/longident.ml[50,1994+9]..[50,1994+10])
+                  expression (lib/longident.ml[50,1994+14]..[50,1994+15])
+                    Pexp_ident "v" (lib/longident.ml[50,1994+14]..[50,1994+15])
+              ]
+    ]
+]
+
+type t =
+  | Lident of string 
+  | Ldot of t * string 
+  | Lapply of t * t 
+let rec flat accu =
+  function
+  | Lident s -> s :: accu
+  | Ldot (lid, s) -> flat (s :: accu) lid
+  | Lapply (_, _) -> Misc.fatal_error "Longident.flat"
+let flatten lid = flat [] lid
+let last =
+  function
+  | Lident s -> s
+  | Ldot (_, s) -> s
+  | Lapply (_, _) -> Misc.fatal_error "Longident.last"
+let rec split_at_dots s pos =
+  try
+    let dot = String.index_from s pos '.' in (String.sub s pos (dot - pos))
+      :: (split_at_dots s (dot + 1))
+  with | Not_found -> [String.sub s pos ((String.length s) - pos)]
+let unflatten l =
+  match l with
+  | [] -> None
+  | hd::tl -> Some (List.fold_left (fun p s -> Ldot (p, s)) (Lident hd) tl)
+let parse s =
+  match unflatten (split_at_dots s 0) with | None -> Lident "" | Some v -> v
+[
+  structure_item (lib/longident.ml[16,1079+0]..lib/longident.ml[19,1132+19])
+    Tstr_type Rec
+    [
+      type_declaration t/295 (lib/longident.ml[16,1079+0]..lib/longident.ml[19,1132+19])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/longident.ml[17,1088+4]..lib/longident.ml[17,1088+20])
+                Lident/296
+                [
+                  core_type (lib/longident.ml[17,1088+14]..lib/longident.ml[17,1088+20])
+                    Ttyp_constr "string/15!"
+                    []
+                ]
+                None
+              (lib/longident.ml[18,1109+2]..lib/longident.ml[18,1109+22])
+                Ldot/297
+                [
+                  core_type (lib/longident.ml[18,1109+12]..lib/longident.ml[18,1109+13])
+                    Ttyp_constr "t/295"
+                    []
+                  core_type (lib/longident.ml[18,1109+16]..lib/longident.ml[18,1109+22])
+                    Ttyp_constr "string/15!"
+                    []
+                ]
+                None
+              (lib/longident.ml[19,1132+2]..lib/longident.ml[19,1132+19])
+                Lapply/298
+                [
+                  core_type (lib/longident.ml[19,1132+14]..lib/longident.ml[19,1132+15])
+                    Ttyp_constr "t/295"
+                    []
+                  core_type (lib/longident.ml[19,1132+18]..lib/longident.ml[19,1132+19])
+                    Ttyp_constr "t/295"
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/longident.ml[21,1153+0]..lib/longident.ml[24,1249+53])
+    Tstr_value Rec
+    [
+      <def>
+        pattern (lib/longident.ml[21,1153+8]..lib/longident.ml[21,1153+12])
+          Tpat_var "flat/299"
+        expression (lib/longident.ml[21,1153+13]..lib/longident.ml[24,1249+53]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/longident.ml[21,1153+13]..lib/longident.ml[21,1153+17])
+                Tpat_var "accu/300"
+          ]
+          Tfunction_cases (lib/longident.ml[21,1153+20]..lib/longident.ml[24,1249+53])
+            [
+              <case>
+                pattern (lib/longident.ml[22,1182+4]..lib/longident.ml[22,1182+12])
+                  Tpat_construct "Lident"
+                  [
+                    pattern (lib/longident.ml[22,1182+11]..lib/longident.ml[22,1182+12])
+                      Tpat_var "s/301"
+                  ]
+                  None
+                expression (lib/longident.ml[22,1182+16]..lib/longident.ml[22,1182+25])
+                  Texp_construct "::"
+                  [
+                    expression (lib/longident.ml[22,1182+16]..lib/longident.ml[22,1182+17])
+                      Texp_ident "s/301"
+                    expression (lib/longident.ml[22,1182+21]..lib/longident.ml[22,1182+25])
+                      Texp_ident "accu/300"
+                  ]
+              <case>
+                pattern (lib/longident.ml[23,1208+4]..lib/longident.ml[23,1208+16])
+                  Tpat_construct "Ldot"
+                  [
+                    pattern (lib/longident.ml[23,1208+9]..lib/longident.ml[23,1208+12])
+                      Tpat_var "lid/302"
+                    pattern (lib/longident.ml[23,1208+14]..lib/longident.ml[23,1208+15])
+                      Tpat_var "s/303"
+                  ]
+                  None
+                expression (lib/longident.ml[23,1208+20]..lib/longident.ml[23,1208+40])
+                  Texp_apply
+                  expression (lib/longident.ml[23,1208+20]..lib/longident.ml[23,1208+24])
+                    Texp_ident "flat/299"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (lib/longident.ml[23,1208+25]..lib/longident.ml[23,1208+36])
+                        Texp_construct "::"
+                        [
+                          expression (lib/longident.ml[23,1208+26]..lib/longident.ml[23,1208+27])
+                            Texp_ident "s/303"
+                          expression (lib/longident.ml[23,1208+31]..lib/longident.ml[23,1208+35])
+                            Texp_ident "accu/300"
+                        ]
+                    <arg>
+                      Nolabel
+                      expression (lib/longident.ml[23,1208+37]..lib/longident.ml[23,1208+40])
+                        Texp_ident "lid/302"
+                  ]
+              <case>
+                pattern (lib/longident.ml[24,1249+4]..lib/longident.ml[24,1249+16])
+                  Tpat_construct "Lapply"
+                  [
+                    pattern (lib/longident.ml[24,1249+11]..lib/longident.ml[24,1249+12])
+                      Tpat_any
+                    pattern (lib/longident.ml[24,1249+14]..lib/longident.ml[24,1249+15])
+                      Tpat_any
+                  ]
+                  None
+                expression (lib/longident.ml[24,1249+20]..lib/longident.ml[24,1249+53])
+                  Texp_apply
+                  expression (lib/longident.ml[24,1249+20]..lib/longident.ml[24,1249+36])
+                    Texp_ident "Ocaml_ocaml_types!.Misc.fatal_error"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (lib/longident.ml[24,1249+37]..lib/longident.ml[24,1249+53])
+                        Texp_constant Const_string("Longident.flat",(lib/longident.ml[24,1249+38]..lib/longident.ml[24,1249+52]),None)
+                  ]
+            ]
+    ]
+  structure_item (lib/longident.ml[26,1304+0]..lib/longident.ml[26,1304+29])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/longident.ml[26,1304+4]..lib/longident.ml[26,1304+11])
+          Tpat_var "flatten/380"
+        expression (lib/longident.ml[26,1304+12]..lib/longident.ml[26,1304+29]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/longident.ml[26,1304+12]..lib/longident.ml[26,1304+15])
+                Tpat_var "lid/382"
+          ]
+          Tfunction_body
+            expression (lib/longident.ml[26,1304+18]..lib/longident.ml[26,1304+29])
+              Texp_apply
+              expression (lib/longident.ml[26,1304+18]..lib/longident.ml[26,1304+22])
+                Texp_ident "flat/299"
+              [
+                <arg>
+                  Nolabel
+                  expression (lib/longident.ml[26,1304+23]..lib/longident.ml[26,1304+25])
+                    Texp_construct "[]"
+                    []
+                <arg>
+                  Nolabel
+                  expression (lib/longident.ml[26,1304+26]..lib/longident.ml[26,1304+29])
+                    Texp_ident "lid/382"
+              ]
+    ]
+  structure_item (lib/longident.ml[28,1335+0]..lib/longident.ml[31,1393+53])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/longident.ml[28,1335+4]..lib/longident.ml[28,1335+8])
+          Tpat_var "last/383"
+        expression (lib/longident.ml[28,1335+11]..lib/longident.ml[31,1393+53])
+          Texp_function
+          []
+          Tfunction_cases (lib/longident.ml[28,1335+11]..lib/longident.ml[31,1393+53])
+            [
+              <case>
+                pattern (lib/longident.ml[29,1355+4]..lib/longident.ml[29,1355+12])
+                  Tpat_construct "Lident"
+                  [
+                    pattern (lib/longident.ml[29,1355+11]..lib/longident.ml[29,1355+12])
+                      Tpat_var "s/385"
+                  ]
+                  None
+                expression (lib/longident.ml[29,1355+16]..lib/longident.ml[29,1355+17])
+                  Texp_ident "s/385"
+              <case>
+                pattern (lib/longident.ml[30,1373+4]..lib/longident.ml[30,1373+14])
+                  Tpat_construct "Ldot"
+                  [
+                    pattern (lib/longident.ml[30,1373+9]..lib/longident.ml[30,1373+10])
+                      Tpat_any
+                    pattern (lib/longident.ml[30,1373+12]..lib/longident.ml[30,1373+13])
+                      Tpat_var "s/386"
+                  ]
+                  None
+                expression (lib/longident.ml[30,1373+18]..lib/longident.ml[30,1373+19])
+                  Texp_ident "s/386"
+              <case>
+                pattern (lib/longident.ml[31,1393+4]..lib/longident.ml[31,1393+16])
+                  Tpat_construct "Lapply"
+                  [
+                    pattern (lib/longident.ml[31,1393+11]..lib/longident.ml[31,1393+12])
+                      Tpat_any
+                    pattern (lib/longident.ml[31,1393+14]..lib/longident.ml[31,1393+15])
+                      Tpat_any
+                  ]
+                  None
+                expression (lib/longident.ml[31,1393+20]..lib/longident.ml[31,1393+53])
+                  Texp_apply
+                  expression (lib/longident.ml[31,1393+20]..lib/longident.ml[31,1393+36])
+                    Texp_ident "Ocaml_ocaml_types!.Misc.fatal_error"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (lib/longident.ml[31,1393+37]..lib/longident.ml[31,1393+53])
+                        Texp_constant Const_string("Longident.last",(lib/longident.ml[31,1393+38]..lib/longident.ml[31,1393+52]),None)
+                  ]
+            ]
+    ]
+  structure_item (lib/longident.ml[34,1449+0]..lib/longident.ml[39,1612+46])
+    Tstr_value Rec
+    [
+      <def>
+        pattern (lib/longident.ml[34,1449+8]..lib/longident.ml[34,1449+21])
+          Tpat_var "split_at_dots/388"
+        expression (lib/longident.ml[34,1449+22]..lib/longident.ml[39,1612+46]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/longident.ml[34,1449+22]..lib/longident.ml[34,1449+23])
+                Tpat_var "s/389"
+            Nolabel
+            Param_pat
+              pattern (lib/longident.ml[34,1449+24]..lib/longident.ml[34,1449+27])
+                Tpat_var "pos/390"
+          ]
+          Tfunction_body
+            expression (lib/longident.ml[35,1479+2]..lib/longident.ml[39,1612+46])
+              Texp_try
+              expression (lib/longident.ml[36,1485+4]..lib/longident.ml[37,1530+61])
+                Texp_let Nonrec
+                [
+                  <def>
+                    pattern (lib/longident.ml[36,1485+8]..lib/longident.ml[36,1485+11])
+                      Tpat_var "dot/391"
+                    expression (lib/longident.ml[36,1485+14]..lib/longident.ml[36,1485+41])
+                      Texp_apply
+                      expression (lib/longident.ml[36,1485+14]..lib/longident.ml[36,1485+31])
+                        Texp_ident "Stdlib!.String.index_from"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (lib/longident.ml[36,1485+32]..lib/longident.ml[36,1485+33])
+                            Texp_ident "s/389"
+                        <arg>
+                          Nolabel
+                          expression (lib/longident.ml[36,1485+34]..lib/longident.ml[36,1485+37])
+                            Texp_ident "pos/390"
+                        <arg>
+                          Nolabel
+                          expression (lib/longident.ml[36,1485+38]..lib/longident.ml[36,1485+41])
+                            Texp_constant Const_char 2e
+                      ]
+                ]
+                expression (lib/longident.ml[37,1530+4]..lib/longident.ml[37,1530+61])
+                  Texp_construct "::"
+                  [
+                    expression (lib/longident.ml[37,1530+4]..lib/longident.ml[37,1530+32])
+                      Texp_apply
+                      expression (lib/longident.ml[37,1530+4]..lib/longident.ml[37,1530+14])
+                        Texp_ident "Stdlib!.String.sub"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (lib/longident.ml[37,1530+15]..lib/longident.ml[37,1530+16])
+                            Texp_ident "s/389"
+                        <arg>
+                          Nolabel
+                          expression (lib/longident.ml[37,1530+17]..lib/longident.ml[37,1530+20])
+                            Texp_ident "pos/390"
+                        <arg>
+                          Nolabel
+                          expression (lib/longident.ml[37,1530+21]..lib/longident.ml[37,1530+32])
+                            Texp_apply
+                            expression (lib/longident.ml[37,1530+26]..lib/longident.ml[37,1530+27])
+                              Texp_ident "Stdlib!.-"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (lib/longident.ml[37,1530+22]..lib/longident.ml[37,1530+25])
+                                  Texp_ident "dot/391"
+                              <arg>
+                                Nolabel
+                                expression (lib/longident.ml[37,1530+28]..lib/longident.ml[37,1530+31])
+                                  Texp_ident "pos/390"
+                            ]
+                      ]
+                    expression (lib/longident.ml[37,1530+36]..lib/longident.ml[37,1530+61])
+                      Texp_apply
+                      expression (lib/longident.ml[37,1530+36]..lib/longident.ml[37,1530+49])
+                        Texp_ident "split_at_dots/388"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (lib/longident.ml[37,1530+50]..lib/longident.ml[37,1530+51])
+                            Texp_ident "s/389"
+                        <arg>
+                          Nolabel
+                          expression (lib/longident.ml[37,1530+52]..lib/longident.ml[37,1530+61])
+                            Texp_apply
+                            expression (lib/longident.ml[37,1530+57]..lib/longident.ml[37,1530+58])
+                              Texp_ident "Stdlib!.+"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (lib/longident.ml[37,1530+53]..lib/longident.ml[37,1530+56])
+                                  Texp_ident "dot/391"
+                              <arg>
+                                Nolabel
+                                expression (lib/longident.ml[37,1530+59]..lib/longident.ml[37,1530+60])
+                                  Texp_constant Const_int 1
+                            ]
+                      ]
+                  ]
+              [
+                <case>
+                  pattern (lib/longident.ml[38,1592+7]..lib/longident.ml[38,1592+16])
+                    Tpat_construct "Not_found"
+                    []
+                    None
+                  expression (lib/longident.ml[39,1612+4]..lib/longident.ml[39,1612+46])
+                    Texp_construct "::"
+                    [
+                      expression (lib/longident.ml[39,1612+5]..lib/longident.ml[39,1612+45])
+                        Texp_apply
+                        expression (lib/longident.ml[39,1612+5]..lib/longident.ml[39,1612+15])
+                          Texp_ident "Stdlib!.String.sub"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (lib/longident.ml[39,1612+16]..lib/longident.ml[39,1612+17])
+                              Texp_ident "s/389"
+                          <arg>
+                            Nolabel
+                            expression (lib/longident.ml[39,1612+18]..lib/longident.ml[39,1612+21])
+                              Texp_ident "pos/390"
+                          <arg>
+                            Nolabel
+                            expression (lib/longident.ml[39,1612+22]..lib/longident.ml[39,1612+45])
+                              Texp_apply
+                              expression (lib/longident.ml[39,1612+39]..lib/longident.ml[39,1612+40])
+                                Texp_ident "Stdlib!.-"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (lib/longident.ml[39,1612+23]..lib/longident.ml[39,1612+38])
+                                    Texp_apply
+                                    expression (lib/longident.ml[39,1612+23]..lib/longident.ml[39,1612+36])
+                                      Texp_ident "Stdlib!.String.length"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (lib/longident.ml[39,1612+37]..lib/longident.ml[39,1612+38])
+                                          Texp_ident "s/389"
+                                    ]
+                                <arg>
+                                  Nolabel
+                                  expression (lib/longident.ml[39,1612+41]..lib/longident.ml[39,1612+44])
+                                    Texp_ident "pos/390"
+                              ]
+                        ]
+                      expression (lib/longident.ml[39,1612+45]..lib/longident.ml[39,1612+46]) ghost
+                        Texp_construct "[]"
+                        []
+                    ]
+              ]
+    ]
+  structure_item (lib/longident.ml[41,1660+0]..lib/longident.ml[44,1708+76])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/longident.ml[41,1660+4]..lib/longident.ml[41,1660+13])
+          Tpat_var "unflatten/461"
+        expression (lib/longident.ml[41,1660+14]..lib/longident.ml[44,1708+76]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/longident.ml[41,1660+14]..lib/longident.ml[41,1660+15])
+                Tpat_var "l/463"
+          ]
+          Tfunction_body
+            expression (lib/longident.ml[42,1678+2]..lib/longident.ml[44,1708+76])
+              Texp_match
+              expression (lib/longident.ml[42,1678+8]..lib/longident.ml[42,1678+9])
+                Texp_ident "l/463"
+              [
+                <case>
+                  pattern (lib/longident.ml[43,1693+4]..lib/longident.ml[43,1693+6])
+                    Tpat_value
+                    pattern (lib/longident.ml[43,1693+4]..lib/longident.ml[43,1693+6])
+                      Tpat_construct "[]"
+                      []
+                      None
+                  expression (lib/longident.ml[43,1693+10]..lib/longident.ml[43,1693+14])
+                    Texp_construct "None"
+                    []
+                <case>
+                  pattern (lib/longident.ml[44,1708+4]..lib/longident.ml[44,1708+12])
+                    Tpat_value
+                    pattern (lib/longident.ml[44,1708+4]..lib/longident.ml[44,1708+12])
+                      Tpat_construct "::"
+                      [
+                        pattern (lib/longident.ml[44,1708+4]..lib/longident.ml[44,1708+6])
+                          Tpat_var "hd/464"
+                        pattern (lib/longident.ml[44,1708+10]..lib/longident.ml[44,1708+12])
+                          Tpat_var "tl/465"
+                      ]
+                      None
+                  expression (lib/longident.ml[44,1708+16]..lib/longident.ml[44,1708+76])
+                    Texp_construct "Some"
+                    [
+                      expression (lib/longident.ml[44,1708+21]..lib/longident.ml[44,1708+76])
+                        Texp_apply
+                        expression (lib/longident.ml[44,1708+22]..lib/longident.ml[44,1708+36])
+                          Texp_ident "Stdlib!.List.fold_left"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (lib/longident.ml[44,1708+37]..lib/longident.ml[44,1708+60])
+                              Texp_function
+                              [
+                                Nolabel
+                                Param_pat
+                                  pattern (lib/longident.ml[44,1708+42]..lib/longident.ml[44,1708+43])
+                                    Tpat_var "p/532"
+                                Nolabel
+                                Param_pat
+                                  pattern (lib/longident.ml[44,1708+44]..lib/longident.ml[44,1708+45])
+                                    Tpat_var "s/533"
+                              ]
+                              Tfunction_body
+                                expression (lib/longident.ml[44,1708+49]..lib/longident.ml[44,1708+59])
+                                  Texp_construct "Ldot"
+                                  [
+                                    expression (lib/longident.ml[44,1708+54]..lib/longident.ml[44,1708+55])
+                                      Texp_ident "p/532"
+                                    expression (lib/longident.ml[44,1708+57]..lib/longident.ml[44,1708+58])
+                                      Texp_ident "s/533"
+                                  ]
+                          <arg>
+                            Nolabel
+                            expression (lib/longident.ml[44,1708+61]..lib/longident.ml[44,1708+72])
+                              Texp_construct "Lident"
+                              [
+                                expression (lib/longident.ml[44,1708+69]..lib/longident.ml[44,1708+71])
+                                  Texp_ident "hd/464"
+                              ]
+                          <arg>
+                            Nolabel
+                            expression (lib/longident.ml[44,1708+73]..lib/longident.ml[44,1708+75])
+                              Texp_ident "tl/465"
+                        ]
+                    ]
+              ]
+    ]
+  structure_item (lib/longident.ml[46,1786+0]..lib/longident.ml[50,1994+15])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/longident.ml[46,1786+4]..lib/longident.ml[46,1786+9])
+          Tpat_var "parse/534"
+        expression (lib/longident.ml[46,1786+10]..lib/longident.ml[50,1994+15]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/longident.ml[46,1786+10]..lib/longident.ml[46,1786+11])
+                Tpat_var "s/536"
+          ]
+          Tfunction_body
+            expression (lib/longident.ml[47,1800+2]..lib/longident.ml[50,1994+15])
+              Texp_match
+              expression (lib/longident.ml[47,1800+8]..lib/longident.ml[47,1800+37])
+                Texp_apply
+                expression (lib/longident.ml[47,1800+8]..lib/longident.ml[47,1800+17])
+                  Texp_ident "unflatten/461"
+                [
+                  <arg>
+                    Nolabel
+                    expression (lib/longident.ml[47,1800+18]..lib/longident.ml[47,1800+37])
+                      Texp_apply
+                      expression (lib/longident.ml[47,1800+19]..lib/longident.ml[47,1800+32])
+                        Texp_ident "split_at_dots/388"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (lib/longident.ml[47,1800+33]..lib/longident.ml[47,1800+34])
+                            Texp_ident "s/536"
+                        <arg>
+                          Nolabel
+                          expression (lib/longident.ml[47,1800+35]..lib/longident.ml[47,1800+36])
+                            Texp_constant Const_int 0
+                      ]
+                ]
+              [
+                <case>
+                  pattern (lib/longident.ml[48,1843+4]..lib/longident.ml[48,1843+8])
+                    Tpat_value
+                    pattern (lib/longident.ml[48,1843+4]..lib/longident.ml[48,1843+8])
+                      Tpat_construct "None"
+                      []
+                      None
+                  expression (lib/longident.ml[48,1843+12]..lib/longident.ml[48,1843+21])
+                    Texp_construct "Lident"
+                    [
+                      expression (lib/longident.ml[48,1843+19]..lib/longident.ml[48,1843+21])
+                        Texp_constant Const_string("",(lib/longident.ml[48,1843+20]..lib/longident.ml[48,1843+20]),None)
+                    ]
+                <case>
+                  pattern (lib/longident.ml[50,1994+4]..lib/longident.ml[50,1994+10])
+                    Tpat_value
+                    pattern (lib/longident.ml[50,1994+4]..lib/longident.ml[50,1994+10])
+                      Tpat_construct "Some"
+                      [
+                        pattern (lib/longident.ml[50,1994+9]..lib/longident.ml[50,1994+10])
+                          Tpat_var "v/537"
+                      ]
+                      None
+                  expression (lib/longident.ml[50,1994+14]..lib/longident.ml[50,1994+15])
+                    Texp_ident "v/537"
+              ]
+    ]
+]
+
+{<Ocaml_ocaml_types__Longident>
+ "flat"[value] -> <Ocaml_ocaml_types__Longident.4>;
+ "flatten"[value] -> <Ocaml_ocaml_types__Longident.9>;
+ "last"[value] -> <Ocaml_ocaml_types__Longident.11>;
+ "parse"[value] -> <Ocaml_ocaml_types__Longident.24>;
+ "split_at_dots"[value] -> <Ocaml_ocaml_types__Longident.14>;
+ "t"[type] -> <Ocaml_ocaml_types__Longident.0>;
+ "unflatten"[value] -> <Ocaml_ocaml_types__Longident.18>;
+ }
+
+(setglobal Ocaml_ocaml_types__Longident!
+  (letrec
+    (flat/299
+       (function accu/300 param/379
+         (funct-body Ocaml_ocaml_types__Longident.flat lib/longident.ml(21)<ghost>:1166-1302
+           (switch* param/379
+            case tag 0:
+             (let (s/301 =a (field_imm 0 param/379))
+               (before Ocaml_ocaml_types__Longident.flat lib/longident.ml(22):1198-1207
+                 (makeblock 0 s/301 accu/300)))
+            case tag 1:
+             (let
+               (s/303 =a (field_imm 1 param/379)
+                lid/302 =a (field_imm 0 param/379))
+               (before Ocaml_ocaml_types__Longident.flat lib/longident.ml(23):1228-1248
+                 (after Ocaml_ocaml_types__Longident.flat lib/longident.ml(23):1228-1248
+                   (apply flat/299 (makeblock 0 s/303 accu/300) lid/302))))
+            case tag 2:
+             (let
+               (*match*/761 =a (field_imm 1 param/379)
+                *match*/760 =a (field_imm 0 param/379))
+               (before Ocaml_ocaml_types__Longident.flat lib/longident.ml(24):1269-1302
+                 (after Ocaml_ocaml_types__Longident.flat lib/longident.ml(24):1269-1302
+                   (apply (field_imm 2 (global Ocaml_ocaml_types__Misc!))
+                     "Longident.flat"))))))))
+    (let
+      (flatten/380 =
+         (function lid/382
+           (funct-body Ocaml_ocaml_types__Longident.flatten lib/longident.ml(26)<ghost>:1316-1333
+             (before Ocaml_ocaml_types__Longident.flatten lib/longident.ml(26):1322-1333
+               (after Ocaml_ocaml_types__Longident.flatten lib/longident.ml(26):1322-1333
+                 (apply flat/299 0 lid/382)))))
+       last/383 =
+         (function param/387
+           (funct-body Ocaml_ocaml_types__Longident.last lib/longident.ml(28):1346-1446
+             (switch* param/387
+              case tag 0:
+               (let (s/385 =a (field_imm 0 param/387))
+                 (before Ocaml_ocaml_types__Longident.last lib/longident.ml(29):1371-1372
+                   s/385))
+              case tag 1:
+               (let
+                 (s/386 =a (field_imm 1 param/387)
+                  *match*/762 =a (field_imm 0 param/387))
+                 (before Ocaml_ocaml_types__Longident.last lib/longident.ml(30):1391-1392
+                   s/386))
+              case tag 2:
+               (let
+                 (*match*/764 =a (field_imm 1 param/387)
+                  *match*/763 =a (field_imm 0 param/387))
+                 (before Ocaml_ocaml_types__Longident.last lib/longident.ml(31):1413-1446
+                   (after Ocaml_ocaml_types__Longident.last lib/longident.ml(31):1413-1446
+                     (apply (field_imm 2 (global Ocaml_ocaml_types__Misc!))
+                       "Longident.last"))))))))
+      (letrec
+        (split_at_dots/388
+           (function s/389 pos/390[int]
+             (funct-body Ocaml_ocaml_types__Longident.split_at_dots lib/longident.ml(34)<ghost>:1471-1658
+               (before Ocaml_ocaml_types__Longident.split_at_dots lib/longident.ml(35):1481-1658
+                 (try
+                   (let
+                     (dot/391 =[int]
+                        (after Ocaml_ocaml_types__Longident.split_at_dots lib/longident.ml(36):1499-1526
+                          (apply (field_imm 31 (global Stdlib__String!))
+                            s/389 pos/390 '.')))
+                     (before Ocaml_ocaml_types__Longident.split_at_dots lib/longident.ml(37):1534-1591
+                       (makeblock 0
+                         (after Ocaml_ocaml_types__Longident.split_at_dots lib/longident.ml(37):1534-1562
+                           (apply (field_imm 15 (global Stdlib__String!))
+                             s/389 pos/390 (- dot/391 pos/390)))
+                         (after Ocaml_ocaml_types__Longident.split_at_dots lib/longident.ml(37):1566-1591
+                           (apply split_at_dots/388 s/389 (+ dot/391 1))))))
+                  with exn/765
+                   (catch
+                     (if (== exn/765 (field_imm 7 (global Stdlib!)))
+                       (before Ocaml_ocaml_types__Longident.split_at_dots lib/longident.ml(39):1616-1658
+                         (makeblock 0
+                           (after Ocaml_ocaml_types__Longident.split_at_dots lib/longident.ml(39):1617-1657
+                             (apply (field_imm 15 (global Stdlib__String!))
+                               s/389 pos/390
+                               (- (string.length s/389) pos/390)))
+                           0))
+                       (exit 1))
+                    with (1) (reraise exn/765)))))))
+        (let
+          (unflatten/461 =
+             (function l/463
+               (funct-body Ocaml_ocaml_types__Longident.unflatten lib/longident.ml(41)<ghost>:1674-1784
+                 (before Ocaml_ocaml_types__Longident.unflatten lib/longident.ml(42):1680-1784
+                   (if l/463
+                     (let
+                       (tl/465 =a (field_imm 1 l/463)
+                        hd/464 =a (field_imm 0 l/463))
+                       (before Ocaml_ocaml_types__Longident.unflatten lib/longident.ml(44):1724-1784
+                         (makeblock 0
+                           (after Ocaml_ocaml_types__Longident.unflatten lib/longident.ml(44):1729-1784
+                             (apply (field_imm 25 (global Stdlib__List!))
+                               (function p/532 s/533
+                                 (funct-body Ocaml_ocaml_types__Longident.unflatten.(fun) lib/longident.ml(44):1745-1768
+                                   (before Ocaml_ocaml_types__Longident.unflatten.(fun) lib/longident.ml(44):1757-1767
+                                     (makeblock 1 p/532 s/533))))
+                               (makeblock 0 hd/464) tl/465)))))
+                     (before Ocaml_ocaml_types__Longident.unflatten lib/longident.ml(43):1703-1707
+                       0)))))
+           parse/534 =
+             (function s/536
+               (funct-body Ocaml_ocaml_types__Longident.parse lib/longident.ml(46)<ghost>:1796-2009
+                 (before Ocaml_ocaml_types__Longident.parse lib/longident.ml(47):1802-2009
+                   (let
+                     (*match*/766 =
+                        (after Ocaml_ocaml_types__Longident.parse lib/longident.ml(47):1808-1837
+                          (apply unflatten/461
+                            (after Ocaml_ocaml_types__Longident.parse lib/longident.ml(47):1818-1837
+                              (apply split_at_dots/388 s/536 0)))))
+                     (if *match*/766
+                       (let (v/537 =a (field_imm 0 *match*/766))
+                         (before Ocaml_ocaml_types__Longident.parse lib/longident.ml(50):2008-2009
+                           v/537))
+                       (before Ocaml_ocaml_types__Longident.parse lib/longident.ml(48):1855-1864
+                         [0: ""])))))))
+          (pseudo <unknown location>
+            (makeblock 0 flat/299 flatten/380 last/383 split_at_dots/388
+              unflatten/461 parse/534)))))))
+(setglobal Ocaml_ocaml_types__Longident!
+  (letrec
+    (flat/299
+       (function accu/300 param/379
+         (funct-body Ocaml_ocaml_types__Longident.flat lib/longident.ml(21)<ghost>:1166-1302
+           (switch* param/379
+            case tag 0:
+             (let (s/301 =a (field_imm 0 param/379))
+               (before Ocaml_ocaml_types__Longident.flat lib/longident.ml(22):1198-1207
+                 (makeblock 0 s/301 accu/300)))
+            case tag 1:
+             (let
+               (s/303 =a (field_imm 1 param/379)
+                lid/302 =a (field_imm 0 param/379))
+               (before Ocaml_ocaml_types__Longident.flat lib/longident.ml(23):1228-1248
+                 (after Ocaml_ocaml_types__Longident.flat lib/longident.ml(23):1228-1248
+                   (apply flat/299 (makeblock 0 s/303 accu/300) lid/302))))
+            case tag 2:
+             (before Ocaml_ocaml_types__Longident.flat lib/longident.ml(24):1269-1302
+               (after Ocaml_ocaml_types__Longident.flat lib/longident.ml(24):1269-1302
+                 (apply (field_imm 2 (global Ocaml_ocaml_types__Misc!))
+                   "Longident.flat")))))))
+    (let
+      (flatten/380 =
+         (function lid/382
+           (funct-body Ocaml_ocaml_types__Longident.flatten lib/longident.ml(26)<ghost>:1316-1333
+             (before Ocaml_ocaml_types__Longident.flatten lib/longident.ml(26):1322-1333
+               (after Ocaml_ocaml_types__Longident.flatten lib/longident.ml(26):1322-1333
+                 (apply flat/299 0 lid/382)))))
+       last/383 =
+         (function param/387
+           (funct-body Ocaml_ocaml_types__Longident.last lib/longident.ml(28):1346-1446
+             (switch* param/387
+              case tag 0:
+               (let (s/385 =a (field_imm 0 param/387))
+                 (before Ocaml_ocaml_types__Longident.last lib/longident.ml(29):1371-1372
+                   s/385))
+              case tag 1:
+               (let (s/386 =a (field_imm 1 param/387))
+                 (before Ocaml_ocaml_types__Longident.last lib/longident.ml(30):1391-1392
+                   s/386))
+              case tag 2:
+               (before Ocaml_ocaml_types__Longident.last lib/longident.ml(31):1413-1446
+                 (after Ocaml_ocaml_types__Longident.last lib/longident.ml(31):1413-1446
+                   (apply (field_imm 2 (global Ocaml_ocaml_types__Misc!))
+                     "Longident.last")))))))
+      (letrec
+        (split_at_dots/388
+           (function s/389 pos/390[int]
+             (funct-body Ocaml_ocaml_types__Longident.split_at_dots lib/longident.ml(34)<ghost>:1471-1658
+               (before Ocaml_ocaml_types__Longident.split_at_dots lib/longident.ml(35):1481-1658
+                 (try
+                   (let
+                     (dot/391 =[int]
+                        (after Ocaml_ocaml_types__Longident.split_at_dots lib/longident.ml(36):1499-1526
+                          (apply (field_imm 31 (global Stdlib__String!))
+                            s/389 pos/390 '.')))
+                     (before Ocaml_ocaml_types__Longident.split_at_dots lib/longident.ml(37):1534-1591
+                       (makeblock 0
+                         (after Ocaml_ocaml_types__Longident.split_at_dots lib/longident.ml(37):1534-1562
+                           (apply (field_imm 15 (global Stdlib__String!))
+                             s/389 pos/390 (- dot/391 pos/390)))
+                         (after Ocaml_ocaml_types__Longident.split_at_dots lib/longident.ml(37):1566-1591
+                           (apply split_at_dots/388 s/389 (+ dot/391 1))))))
+                  with exn/765
+                   (if (== exn/765 (field_imm 7 (global Stdlib!)))
+                     (before Ocaml_ocaml_types__Longident.split_at_dots lib/longident.ml(39):1616-1658
+                       (makeblock 0
+                         (after Ocaml_ocaml_types__Longident.split_at_dots lib/longident.ml(39):1617-1657
+                           (apply (field_imm 15 (global Stdlib__String!))
+                             s/389 pos/390 (- (string.length s/389) pos/390)))
+                         0))
+                     (reraise exn/765)))))))
+        (let
+          (unflatten/461 =
+             (function l/463
+               (funct-body Ocaml_ocaml_types__Longident.unflatten lib/longident.ml(41)<ghost>:1674-1784
+                 (before Ocaml_ocaml_types__Longident.unflatten lib/longident.ml(42):1680-1784
+                   (if l/463
+                     (let
+                       (tl/465 =a (field_imm 1 l/463)
+                        hd/464 =a (field_imm 0 l/463))
+                       (before Ocaml_ocaml_types__Longident.unflatten lib/longident.ml(44):1724-1784
+                         (makeblock 0
+                           (after Ocaml_ocaml_types__Longident.unflatten lib/longident.ml(44):1729-1784
+                             (apply (field_imm 25 (global Stdlib__List!))
+                               (function p/532 s/533
+                                 (funct-body Ocaml_ocaml_types__Longident.unflatten.(fun) lib/longident.ml(44):1745-1768
+                                   (before Ocaml_ocaml_types__Longident.unflatten.(fun) lib/longident.ml(44):1757-1767
+                                     (makeblock 1 p/532 s/533))))
+                               (makeblock 0 hd/464) tl/465)))))
+                     (before Ocaml_ocaml_types__Longident.unflatten lib/longident.ml(43):1703-1707
+                       0)))))
+           parse/534 =
+             (function s/536
+               (funct-body Ocaml_ocaml_types__Longident.parse lib/longident.ml(46)<ghost>:1796-2009
+                 (before Ocaml_ocaml_types__Longident.parse lib/longident.ml(47):1802-2009
+                   (let
+                     (*match*/766 =
+                        (after Ocaml_ocaml_types__Longident.parse lib/longident.ml(47):1808-1837
+                          (apply unflatten/461
+                            (after Ocaml_ocaml_types__Longident.parse lib/longident.ml(47):1818-1837
+                              (apply split_at_dots/388 s/536 0)))))
+                     (if *match*/766
+                       (let (v/537 =a (field_imm 0 *match*/766))
+                         (before Ocaml_ocaml_types__Longident.parse lib/longident.ml(50):2008-2009
+                           v/537))
+                       (before Ocaml_ocaml_types__Longident.parse lib/longident.ml(48):1855-1864
+                         [0: ""])))))))
+          (pseudo <unknown location>
+            (makeblock 0 flat/299 flatten/380 last/383 split_at_dots/388
+              unflatten/461 parse/534)))))))

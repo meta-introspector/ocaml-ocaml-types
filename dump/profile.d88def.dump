@@ -1,0 +1,5 @@
+0.008s 14.6MB 2.34MB 2.34MB lib/local_store.ml
+  0.004s 3.67MB 0.68MB 0.68MB typing
+  0.001s 2.02MB ------ ------ generate
+  0.003s 8.92MB 1.65MB 2.34MB other
+0.007s ------ ------ ------ other

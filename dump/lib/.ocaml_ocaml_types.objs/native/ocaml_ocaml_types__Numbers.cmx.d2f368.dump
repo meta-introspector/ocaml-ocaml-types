@@ -1,0 +1,1932 @@
+[
+  structure_item (lib/numbers.ml[17,1156+0]..[25,1370+4])
+    Pstr_module
+    "Int_base" (lib/numbers.ml[17,1156+7]..[17,1156+15])
+      module_expr (lib/numbers.ml[17,1156+18]..[25,1370+4])
+        Pmod_apply
+        module_expr (lib/numbers.ml[17,1156+18]..[17,1156+35])
+          Pmod_ident "Identifiable.Make" (lib/numbers.ml[17,1156+18]..[17,1156+35])
+        module_expr (lib/numbers.ml[17,1156+37]..[25,1370+3])
+          Pmod_structure
+          [
+            structure_item (lib/numbers.ml[18,1200+2]..[18,1200+14])
+              Pstr_type Rec
+              [
+                type_declaration "t" (lib/numbers.ml[18,1200+7]..[18,1200+8]) (lib/numbers.ml[18,1200+2]..[18,1200+14])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    Some
+                      core_type (lib/numbers.ml[18,1200+11]..[18,1200+14])
+                        Ptyp_constr "int" (lib/numbers.ml[18,1200+11]..[18,1200+14])
+                        []
+              ]
+            structure_item (lib/numbers.ml[20,1216+2]..[20,1216+25])
+              Pstr_value Nonrec
+              [
+                <def>
+                  pattern (lib/numbers.ml[20,1216+6]..[20,1216+13])
+                    Ppat_var "compare" (lib/numbers.ml[20,1216+6]..[20,1216+13])
+                  expression (lib/numbers.ml[20,1216+14]..[20,1216+25]) ghost
+                    Pexp_function
+                    [
+                      Pparam_val (lib/numbers.ml[20,1216+14]..[20,1216+15])
+                        Nolabel
+                        None
+                        pattern (lib/numbers.ml[20,1216+14]..[20,1216+15])
+                          Ppat_var "x" (lib/numbers.ml[20,1216+14]..[20,1216+15])
+                      Pparam_val (lib/numbers.ml[20,1216+16]..[20,1216+17])
+                        Nolabel
+                        None
+                        pattern (lib/numbers.ml[20,1216+16]..[20,1216+17])
+                          Ppat_var "y" (lib/numbers.ml[20,1216+16]..[20,1216+17])
+                    ]
+                    None
+                    Pfunction_body
+                      expression (lib/numbers.ml[20,1216+20]..[20,1216+25])
+                        Pexp_apply
+                        expression (lib/numbers.ml[20,1216+22]..[20,1216+23])
+                          Pexp_ident "-" (lib/numbers.ml[20,1216+22]..[20,1216+23])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[20,1216+20]..[20,1216+21])
+                              Pexp_ident "x" (lib/numbers.ml[20,1216+20]..[20,1216+21])
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[20,1216+24]..[20,1216+25])
+                              Pexp_ident "y" (lib/numbers.ml[20,1216+24]..[20,1216+25])
+                        ]
+              ]
+            structure_item (lib/numbers.ml[21,1242+2]..[21,1242+44])
+              Pstr_value Nonrec
+              [
+                <def>
+                  pattern (lib/numbers.ml[21,1242+6]..[21,1242+12])
+                    Ppat_var "output" (lib/numbers.ml[21,1242+6]..[21,1242+12])
+                  expression (lib/numbers.ml[21,1242+13]..[21,1242+44]) ghost
+                    Pexp_function
+                    [
+                      Pparam_val (lib/numbers.ml[21,1242+13]..[21,1242+15])
+                        Nolabel
+                        None
+                        pattern (lib/numbers.ml[21,1242+13]..[21,1242+15])
+                          Ppat_var "oc" (lib/numbers.ml[21,1242+13]..[21,1242+15])
+                      Pparam_val (lib/numbers.ml[21,1242+16]..[21,1242+17])
+                        Nolabel
+                        None
+                        pattern (lib/numbers.ml[21,1242+16]..[21,1242+17])
+                          Ppat_var "x" (lib/numbers.ml[21,1242+16]..[21,1242+17])
+                    ]
+                    None
+                    Pfunction_body
+                      expression (lib/numbers.ml[21,1242+20]..[21,1242+44])
+                        Pexp_apply
+                        expression (lib/numbers.ml[21,1242+20]..[21,1242+34])
+                          Pexp_ident "Printf.fprintf" (lib/numbers.ml[21,1242+20]..[21,1242+34])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[21,1242+35]..[21,1242+37])
+                              Pexp_ident "oc" (lib/numbers.ml[21,1242+35]..[21,1242+37])
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[21,1242+38]..[21,1242+42])
+                              Pexp_constant PConst_string("%i",(lib/numbers.ml[21,1242+39]..[21,1242+41]),None)
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[21,1242+43]..[21,1242+44])
+                              Pexp_ident "x" (lib/numbers.ml[21,1242+43]..[21,1242+44])
+                        ]
+              ]
+            structure_item (lib/numbers.ml[22,1287+2]..[22,1287+16])
+              Pstr_value Nonrec
+              [
+                <def>
+                  pattern (lib/numbers.ml[22,1287+6]..[22,1287+10])
+                    Ppat_var "hash" (lib/numbers.ml[22,1287+6]..[22,1287+10])
+                  expression (lib/numbers.ml[22,1287+11]..[22,1287+16]) ghost
+                    Pexp_function
+                    [
+                      Pparam_val (lib/numbers.ml[22,1287+11]..[22,1287+12])
+                        Nolabel
+                        None
+                        pattern (lib/numbers.ml[22,1287+11]..[22,1287+12])
+                          Ppat_var "i" (lib/numbers.ml[22,1287+11]..[22,1287+12])
+                    ]
+                    None
+                    Pfunction_body
+                      expression (lib/numbers.ml[22,1287+15]..[22,1287+16])
+                        Pexp_ident "i" (lib/numbers.ml[22,1287+15]..[22,1287+16])
+              ]
+            structure_item (lib/numbers.ml[23,1304+2]..[23,1304+31])
+              Pstr_value Nonrec
+              [
+                <def>
+                  pattern (lib/numbers.ml[23,1304+6]..[23,1304+11])
+                    Ppat_var "equal" (lib/numbers.ml[23,1304+6]..[23,1304+11])
+                  expression (lib/numbers.ml[23,1304+12]..[23,1304+31]) ghost
+                    Pexp_function
+                    [
+                      Pparam_val (lib/numbers.ml[23,1304+12]..[23,1304+21])
+                        Nolabel
+                        None
+                        pattern (lib/numbers.ml[23,1304+12]..[23,1304+21])
+                          Ppat_constraint
+                          pattern (lib/numbers.ml[23,1304+13]..[23,1304+14])
+                            Ppat_var "i" (lib/numbers.ml[23,1304+13]..[23,1304+14])
+                          core_type (lib/numbers.ml[23,1304+17]..[23,1304+20])
+                            Ptyp_constr "int" (lib/numbers.ml[23,1304+17]..[23,1304+20])
+                            []
+                      Pparam_val (lib/numbers.ml[23,1304+22]..[23,1304+23])
+                        Nolabel
+                        None
+                        pattern (lib/numbers.ml[23,1304+22]..[23,1304+23])
+                          Ppat_var "j" (lib/numbers.ml[23,1304+22]..[23,1304+23])
+                    ]
+                    None
+                    Pfunction_body
+                      expression (lib/numbers.ml[23,1304+26]..[23,1304+31])
+                        Pexp_apply
+                        expression (lib/numbers.ml[23,1304+28]..[23,1304+29])
+                          Pexp_ident "=" (lib/numbers.ml[23,1304+28]..[23,1304+29])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[23,1304+26]..[23,1304+27])
+                              Pexp_ident "i" (lib/numbers.ml[23,1304+26]..[23,1304+27])
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[23,1304+30]..[23,1304+31])
+                              Pexp_ident "j" (lib/numbers.ml[23,1304+30]..[23,1304+31])
+                        ]
+              ]
+            structure_item (lib/numbers.ml[24,1336+2]..[24,1336+33])
+              Pstr_value Nonrec
+              [
+                <def>
+                  pattern (lib/numbers.ml[24,1336+6]..[24,1336+11])
+                    Ppat_var "print" (lib/numbers.ml[24,1336+6]..[24,1336+11])
+                  expression (lib/numbers.ml[24,1336+14]..[24,1336+33])
+                    Pexp_ident "Format.pp_print_int" (lib/numbers.ml[24,1336+14]..[24,1336+33])
+              ]
+          ]
+  structure_item (lib/numbers.ml[27,1376+0]..[36,1572+3])
+    Pstr_module
+    "Int" (lib/numbers.ml[27,1376+7]..[27,1376+10])
+      module_expr (lib/numbers.ml[27,1376+13]..[36,1572+3])
+        Pmod_structure
+        [
+          structure_item (lib/numbers.ml[28,1396+2]..[28,1396+14])
+            Pstr_type Rec
+            [
+              type_declaration "t" (lib/numbers.ml[28,1396+7]..[28,1396+8]) (lib/numbers.ml[28,1396+2]..[28,1396+14])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (lib/numbers.ml[28,1396+11]..[28,1396+14])
+                      Ptyp_constr "int" (lib/numbers.ml[28,1396+11]..[28,1396+14])
+                      []
+            ]
+          structure_item (lib/numbers.ml[35,1536+2]..[35,1536+35])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[35,1536+6]..[35,1536+15])
+                  Ppat_var "to_string" (lib/numbers.ml[35,1536+6]..[35,1536+15])
+                expression (lib/numbers.ml[35,1536+16]..[35,1536+35]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/numbers.ml[35,1536+16]..[35,1536+17])
+                      Nolabel
+                      None
+                      pattern (lib/numbers.ml[35,1536+16]..[35,1536+17])
+                        Ppat_var "n" (lib/numbers.ml[35,1536+16]..[35,1536+17])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/numbers.ml[35,1536+20]..[35,1536+35])
+                      Pexp_apply
+                      expression (lib/numbers.ml[35,1536+20]..[35,1536+33])
+                        Pexp_ident "Int.to_string" (lib/numbers.ml[35,1536+20]..[35,1536+33])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (lib/numbers.ml[35,1536+34]..[35,1536+35])
+                            Pexp_ident "n" (lib/numbers.ml[35,1536+34]..[35,1536+35])
+                      ]
+            ]
+        ]
+  structure_item (lib/numbers.ml[38,1577+0]..[51,1816+3])
+    Pstr_module
+    "Int8" (lib/numbers.ml[38,1577+7]..[38,1577+11])
+      module_expr (lib/numbers.ml[38,1577+14]..[51,1816+3])
+        Pmod_structure
+        [
+          structure_item (lib/numbers.ml[39,1598+2]..[39,1598+14])
+            Pstr_type Rec
+            [
+              type_declaration "t" (lib/numbers.ml[39,1598+7]..[39,1598+8]) (lib/numbers.ml[39,1598+2]..[39,1598+14])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (lib/numbers.ml[39,1598+11]..[39,1598+14])
+                      Ptyp_constr "int" (lib/numbers.ml[39,1598+11]..[39,1598+14])
+                      []
+            ]
+          structure_item (lib/numbers.ml[41,1614+2]..[41,1614+14])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[41,1614+6]..[41,1614+10])
+                  Ppat_var "zero" (lib/numbers.ml[41,1614+6]..[41,1614+10])
+                expression (lib/numbers.ml[41,1614+13]..[41,1614+14])
+                  Pexp_constant PConst_int (0,None)
+            ]
+          structure_item (lib/numbers.ml[42,1629+2]..[42,1629+13])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[42,1629+6]..[42,1629+9])
+                  Ppat_var "one" (lib/numbers.ml[42,1629+6]..[42,1629+9])
+                expression (lib/numbers.ml[42,1629+12]..[42,1629+13])
+                  Pexp_constant PConst_int (1,None)
+            ]
+          structure_item (lib/numbers.ml[44,1644+2]..[48,1788+7])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[44,1644+6]..[44,1644+16])
+                  Ppat_var "of_int_exn" (lib/numbers.ml[44,1644+6]..[44,1644+16])
+                expression (lib/numbers.ml[44,1644+17]..[48,1788+7]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/numbers.ml[44,1644+17]..[44,1644+18])
+                      Nolabel
+                      None
+                      pattern (lib/numbers.ml[44,1644+17]..[44,1644+18])
+                        Ppat_var "i" (lib/numbers.ml[44,1644+17]..[44,1644+18])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/numbers.ml[45,1665+4]..[48,1788+7])
+                      Pexp_ifthenelse
+                      expression (lib/numbers.ml[45,1665+7]..[45,1665+44])
+                        Pexp_apply
+                        expression (lib/numbers.ml[45,1665+22]..[45,1665+24])
+                          Pexp_ident "||" (lib/numbers.ml[45,1665+22]..[45,1665+24])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[45,1665+7]..[45,1665+21])
+                              Pexp_apply
+                              expression (lib/numbers.ml[45,1665+9]..[45,1665+10])
+                                Pexp_ident "<" (lib/numbers.ml[45,1665+9]..[45,1665+10])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/numbers.ml[45,1665+7]..[45,1665+8])
+                                    Pexp_ident "i" (lib/numbers.ml[45,1665+7]..[45,1665+8])
+                                <arg>
+                                Nolabel
+                                  expression (lib/numbers.ml[45,1665+11]..[45,1665+21])
+                                    Pexp_apply
+                                    expression (lib/numbers.ml[45,1665+11]..[45,1665+12])
+                                      Pexp_ident "~-" (lib/numbers.ml[45,1665+11]..[45,1665+12])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (lib/numbers.ml[45,1665+12]..[45,1665+21])
+                                          Pexp_apply
+                                          expression (lib/numbers.ml[45,1665+15]..[45,1665+18])
+                                            Pexp_ident "lsl" (lib/numbers.ml[45,1665+15]..[45,1665+18])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (lib/numbers.ml[45,1665+13]..[45,1665+14])
+                                                Pexp_constant PConst_int (1,None)
+                                            <arg>
+                                            Nolabel
+                                              expression (lib/numbers.ml[45,1665+19]..[45,1665+20])
+                                                Pexp_constant PConst_int (7,None)
+                                          ]
+                                    ]
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[45,1665+25]..[45,1665+44])
+                              Pexp_apply
+                              expression (lib/numbers.ml[45,1665+27]..[45,1665+28])
+                                Pexp_ident ">" (lib/numbers.ml[45,1665+27]..[45,1665+28])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/numbers.ml[45,1665+25]..[45,1665+26])
+                                    Pexp_ident "i" (lib/numbers.ml[45,1665+25]..[45,1665+26])
+                                <arg>
+                                Nolabel
+                                  expression (lib/numbers.ml[45,1665+29]..[45,1665+44])
+                                    Pexp_apply
+                                    expression (lib/numbers.ml[45,1665+40]..[45,1665+41])
+                                      Pexp_ident "-" (lib/numbers.ml[45,1665+40]..[45,1665+41])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (lib/numbers.ml[45,1665+30]..[45,1665+39])
+                                          Pexp_apply
+                                          expression (lib/numbers.ml[45,1665+33]..[45,1665+36])
+                                            Pexp_ident "lsl" (lib/numbers.ml[45,1665+33]..[45,1665+36])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (lib/numbers.ml[45,1665+31]..[45,1665+32])
+                                                Pexp_constant PConst_int (1,None)
+                                            <arg>
+                                            Nolabel
+                                              expression (lib/numbers.ml[45,1665+37]..[45,1665+38])
+                                                Pexp_constant PConst_int (7,None)
+                                          ]
+                                      <arg>
+                                      Nolabel
+                                        expression (lib/numbers.ml[45,1665+42]..[45,1665+43])
+                                          Pexp_constant PConst_int (1,None)
+                                    ]
+                              ]
+                        ]
+                      expression (lib/numbers.ml[46,1715+6]..[46,1715+63])
+                        Pexp_apply
+                        expression (lib/numbers.ml[46,1715+6]..[46,1715+23])
+                          Pexp_ident "Misc.fatal_errorf" (lib/numbers.ml[46,1715+6]..[46,1715+23])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[46,1715+24]..[46,1715+61])
+                              Pexp_constant PConst_string("Int8.of_int_exn: %d is out of range",(lib/numbers.ml[46,1715+25]..[46,1715+60]),None)
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[46,1715+62]..[46,1715+63])
+                              Pexp_ident "i" (lib/numbers.ml[46,1715+62]..[46,1715+63])
+                        ]
+                      Some
+                        expression (lib/numbers.ml[48,1788+6]..[48,1788+7])
+                          Pexp_ident "i" (lib/numbers.ml[48,1788+6]..[48,1788+7])
+            ]
+          structure_item (lib/numbers.ml[50,1797+2]..[50,1797+18])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[50,1797+6]..[50,1797+12])
+                  Ppat_var "to_int" (lib/numbers.ml[50,1797+6]..[50,1797+12])
+                expression (lib/numbers.ml[50,1797+13]..[50,1797+18]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/numbers.ml[50,1797+13]..[50,1797+14])
+                      Nolabel
+                      None
+                      pattern (lib/numbers.ml[50,1797+13]..[50,1797+14])
+                        Ppat_var "i" (lib/numbers.ml[50,1797+13]..[50,1797+14])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/numbers.ml[50,1797+17]..[50,1797+18])
+                      Pexp_ident "i" (lib/numbers.ml[50,1797+17]..[50,1797+18])
+            ]
+        ]
+  structure_item (lib/numbers.ml[53,1821+0]..[74,2382+3])
+    Pstr_module
+    "Int16" (lib/numbers.ml[53,1821+7]..[53,1821+12])
+      module_expr (lib/numbers.ml[53,1821+15]..[74,2382+3])
+        Pmod_structure
+        [
+          structure_item (lib/numbers.ml[54,1843+2]..[54,1843+14])
+            Pstr_type Rec
+            [
+              type_declaration "t" (lib/numbers.ml[54,1843+7]..[54,1843+8]) (lib/numbers.ml[54,1843+2]..[54,1843+14])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (lib/numbers.ml[54,1843+11]..[54,1843+14])
+                      Ptyp_constr "int" (lib/numbers.ml[54,1843+11]..[54,1843+14])
+                      []
+            ]
+          structure_item (lib/numbers.ml[56,1859+2]..[60,2006+7])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[56,1859+6]..[56,1859+16])
+                  Ppat_var "of_int_exn" (lib/numbers.ml[56,1859+6]..[56,1859+16])
+                expression (lib/numbers.ml[56,1859+17]..[60,2006+7]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/numbers.ml[56,1859+17]..[56,1859+18])
+                      Nolabel
+                      None
+                      pattern (lib/numbers.ml[56,1859+17]..[56,1859+18])
+                        Ppat_var "i" (lib/numbers.ml[56,1859+17]..[56,1859+18])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/numbers.ml[57,1880+4]..[60,2006+7])
+                      Pexp_ifthenelse
+                      expression (lib/numbers.ml[57,1880+7]..[57,1880+46])
+                        Pexp_apply
+                        expression (lib/numbers.ml[57,1880+23]..[57,1880+25])
+                          Pexp_ident "||" (lib/numbers.ml[57,1880+23]..[57,1880+25])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[57,1880+7]..[57,1880+22])
+                              Pexp_apply
+                              expression (lib/numbers.ml[57,1880+9]..[57,1880+10])
+                                Pexp_ident "<" (lib/numbers.ml[57,1880+9]..[57,1880+10])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/numbers.ml[57,1880+7]..[57,1880+8])
+                                    Pexp_ident "i" (lib/numbers.ml[57,1880+7]..[57,1880+8])
+                                <arg>
+                                Nolabel
+                                  expression (lib/numbers.ml[57,1880+11]..[57,1880+22])
+                                    Pexp_apply
+                                    expression (lib/numbers.ml[57,1880+11]..[57,1880+12])
+                                      Pexp_ident "~-" (lib/numbers.ml[57,1880+11]..[57,1880+12])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (lib/numbers.ml[57,1880+12]..[57,1880+22])
+                                          Pexp_apply
+                                          expression (lib/numbers.ml[57,1880+15]..[57,1880+18])
+                                            Pexp_ident "lsl" (lib/numbers.ml[57,1880+15]..[57,1880+18])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (lib/numbers.ml[57,1880+13]..[57,1880+14])
+                                                Pexp_constant PConst_int (1,None)
+                                            <arg>
+                                            Nolabel
+                                              expression (lib/numbers.ml[57,1880+19]..[57,1880+21])
+                                                Pexp_constant PConst_int (15,None)
+                                          ]
+                                    ]
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[57,1880+26]..[57,1880+46])
+                              Pexp_apply
+                              expression (lib/numbers.ml[57,1880+28]..[57,1880+29])
+                                Pexp_ident ">" (lib/numbers.ml[57,1880+28]..[57,1880+29])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/numbers.ml[57,1880+26]..[57,1880+27])
+                                    Pexp_ident "i" (lib/numbers.ml[57,1880+26]..[57,1880+27])
+                                <arg>
+                                Nolabel
+                                  expression (lib/numbers.ml[57,1880+30]..[57,1880+46])
+                                    Pexp_apply
+                                    expression (lib/numbers.ml[57,1880+42]..[57,1880+43])
+                                      Pexp_ident "-" (lib/numbers.ml[57,1880+42]..[57,1880+43])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (lib/numbers.ml[57,1880+31]..[57,1880+41])
+                                          Pexp_apply
+                                          expression (lib/numbers.ml[57,1880+34]..[57,1880+37])
+                                            Pexp_ident "lsl" (lib/numbers.ml[57,1880+34]..[57,1880+37])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (lib/numbers.ml[57,1880+32]..[57,1880+33])
+                                                Pexp_constant PConst_int (1,None)
+                                            <arg>
+                                            Nolabel
+                                              expression (lib/numbers.ml[57,1880+38]..[57,1880+40])
+                                                Pexp_constant PConst_int (15,None)
+                                          ]
+                                      <arg>
+                                      Nolabel
+                                        expression (lib/numbers.ml[57,1880+44]..[57,1880+45])
+                                          Pexp_constant PConst_int (1,None)
+                                    ]
+                              ]
+                        ]
+                      expression (lib/numbers.ml[58,1932+6]..[58,1932+64])
+                        Pexp_apply
+                        expression (lib/numbers.ml[58,1932+6]..[58,1932+23])
+                          Pexp_ident "Misc.fatal_errorf" (lib/numbers.ml[58,1932+6]..[58,1932+23])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[58,1932+24]..[58,1932+62])
+                              Pexp_constant PConst_string("Int16.of_int_exn: %d is out of range",(lib/numbers.ml[58,1932+25]..[58,1932+61]),None)
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[58,1932+63]..[58,1932+64])
+                              Pexp_ident "i" (lib/numbers.ml[58,1932+63]..[58,1932+64])
+                        ]
+                      Some
+                        expression (lib/numbers.ml[60,2006+6]..[60,2006+7])
+                          Pexp_ident "i" (lib/numbers.ml[60,2006+6]..[60,2006+7])
+            ]
+          structure_item (lib/numbers.ml[62,2015+2]..[62,2015+61])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[62,2015+6]..[62,2015+17])
+                  Ppat_var "lower_int64" (lib/numbers.ml[62,2015+6]..[62,2015+17])
+                expression (lib/numbers.ml[62,2015+20]..[62,2015+61])
+                  Pexp_apply
+                  expression (lib/numbers.ml[62,2015+20]..[62,2015+29])
+                    Pexp_ident "Int64.neg" (lib/numbers.ml[62,2015+20]..[62,2015+29])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (lib/numbers.ml[62,2015+30]..[62,2015+61])
+                        Pexp_apply
+                        expression (lib/numbers.ml[62,2015+31]..[62,2015+47])
+                          Pexp_ident "Int64.shift_left" (lib/numbers.ml[62,2015+31]..[62,2015+47])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[62,2015+48]..[62,2015+57])
+                              Pexp_ident "Int64.one" (lib/numbers.ml[62,2015+48]..[62,2015+57])
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[62,2015+58]..[62,2015+60])
+                              Pexp_constant PConst_int (15,None)
+                        ]
+                  ]
+            ]
+          structure_item (lib/numbers.ml[63,2077+2]..[63,2077+71])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[63,2077+6]..[63,2077+17])
+                  Ppat_var "upper_int64" (lib/numbers.ml[63,2077+6]..[63,2077+17])
+                expression (lib/numbers.ml[63,2077+20]..[63,2077+71])
+                  Pexp_apply
+                  expression (lib/numbers.ml[63,2077+20]..[63,2077+29])
+                    Pexp_ident "Int64.sub" (lib/numbers.ml[63,2077+20]..[63,2077+29])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (lib/numbers.ml[63,2077+30]..[63,2077+61])
+                        Pexp_apply
+                        expression (lib/numbers.ml[63,2077+31]..[63,2077+47])
+                          Pexp_ident "Int64.shift_left" (lib/numbers.ml[63,2077+31]..[63,2077+47])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[63,2077+48]..[63,2077+57])
+                              Pexp_ident "Int64.one" (lib/numbers.ml[63,2077+48]..[63,2077+57])
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[63,2077+58]..[63,2077+60])
+                              Pexp_constant PConst_int (15,None)
+                        ]
+                    <arg>
+                    Nolabel
+                      expression (lib/numbers.ml[63,2077+62]..[63,2077+71])
+                        Pexp_ident "Int64.one" (lib/numbers.ml[63,2077+62]..[63,2077+71])
+                  ]
+            ]
+          structure_item (lib/numbers.ml[65,2150+2]..[71,2341+20])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[65,2150+6]..[65,2150+18])
+                  Ppat_var "of_int64_exn" (lib/numbers.ml[65,2150+6]..[65,2150+18])
+                expression (lib/numbers.ml[65,2150+19]..[71,2341+20]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/numbers.ml[65,2150+19]..[65,2150+20])
+                      Nolabel
+                      None
+                      pattern (lib/numbers.ml[65,2150+19]..[65,2150+20])
+                        Ppat_var "i" (lib/numbers.ml[65,2150+19]..[65,2150+20])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/numbers.ml[66,2173+4]..[71,2341+20])
+                      Pexp_ifthenelse
+                      expression (lib/numbers.ml[66,2173+7]..[67,2212+42])
+                        Pexp_apply
+                        expression (lib/numbers.ml[67,2212+8]..[67,2212+10])
+                          Pexp_ident "||" (lib/numbers.ml[67,2212+8]..[67,2212+10])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[66,2173+7]..[66,2173+38])
+                              Pexp_apply
+                              expression (lib/numbers.ml[66,2173+35]..[66,2173+36])
+                                Pexp_ident "<" (lib/numbers.ml[66,2173+35]..[66,2173+36])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/numbers.ml[66,2173+7]..[66,2173+34])
+                                    Pexp_apply
+                                    expression (lib/numbers.ml[66,2173+7]..[66,2173+20])
+                                      Pexp_ident "Int64.compare" (lib/numbers.ml[66,2173+7]..[66,2173+20])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (lib/numbers.ml[66,2173+21]..[66,2173+22])
+                                          Pexp_ident "i" (lib/numbers.ml[66,2173+21]..[66,2173+22])
+                                      <arg>
+                                      Nolabel
+                                        expression (lib/numbers.ml[66,2173+23]..[66,2173+34])
+                                          Pexp_ident "lower_int64" (lib/numbers.ml[66,2173+23]..[66,2173+34])
+                                    ]
+                                <arg>
+                                Nolabel
+                                  expression (lib/numbers.ml[66,2173+37]..[66,2173+38])
+                                    Pexp_constant PConst_int (0,None)
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[67,2212+11]..[67,2212+42])
+                              Pexp_apply
+                              expression (lib/numbers.ml[67,2212+39]..[67,2212+40])
+                                Pexp_ident ">" (lib/numbers.ml[67,2212+39]..[67,2212+40])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/numbers.ml[67,2212+11]..[67,2212+38])
+                                    Pexp_apply
+                                    expression (lib/numbers.ml[67,2212+11]..[67,2212+24])
+                                      Pexp_ident "Int64.compare" (lib/numbers.ml[67,2212+11]..[67,2212+24])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (lib/numbers.ml[67,2212+25]..[67,2212+26])
+                                          Pexp_ident "i" (lib/numbers.ml[67,2212+25]..[67,2212+26])
+                                      <arg>
+                                      Nolabel
+                                        expression (lib/numbers.ml[67,2212+27]..[67,2212+38])
+                                          Pexp_ident "upper_int64" (lib/numbers.ml[67,2212+27]..[67,2212+38])
+                                    ]
+                                <arg>
+                                Nolabel
+                                  expression (lib/numbers.ml[67,2212+41]..[67,2212+42])
+                                    Pexp_constant PConst_int (0,None)
+                              ]
+                        ]
+                      expression (lib/numbers.ml[69,2264+6]..[69,2264+67])
+                        Pexp_apply
+                        expression (lib/numbers.ml[69,2264+6]..[69,2264+23])
+                          Pexp_ident "Misc.fatal_errorf" (lib/numbers.ml[69,2264+6]..[69,2264+23])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[69,2264+24]..[69,2264+65])
+                              Pexp_constant PConst_string("Int16.of_int64_exn: %Ld is out of range",(lib/numbers.ml[69,2264+25]..[69,2264+64]),None)
+                          <arg>
+                          Nolabel
+                            expression (lib/numbers.ml[69,2264+66]..[69,2264+67])
+                              Pexp_ident "i" (lib/numbers.ml[69,2264+66]..[69,2264+67])
+                        ]
+                      Some
+                        expression (lib/numbers.ml[71,2341+6]..[71,2341+20])
+                          Pexp_apply
+                          expression (lib/numbers.ml[71,2341+6]..[71,2341+18])
+                            Pexp_ident "Int64.to_int" (lib/numbers.ml[71,2341+6]..[71,2341+18])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (lib/numbers.ml[71,2341+19]..[71,2341+20])
+                                Pexp_ident "i" (lib/numbers.ml[71,2341+19]..[71,2341+20])
+                          ]
+            ]
+          structure_item (lib/numbers.ml[73,2363+2]..[73,2363+18])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[73,2363+6]..[73,2363+12])
+                  Ppat_var "to_int" (lib/numbers.ml[73,2363+6]..[73,2363+12])
+                expression (lib/numbers.ml[73,2363+13]..[73,2363+18]) ghost
+                  Pexp_function
+                  [
+                    Pparam_val (lib/numbers.ml[73,2363+13]..[73,2363+14])
+                      Nolabel
+                      None
+                      pattern (lib/numbers.ml[73,2363+13]..[73,2363+14])
+                        Ppat_var "t" (lib/numbers.ml[73,2363+13]..[73,2363+14])
+                  ]
+                  None
+                  Pfunction_body
+                    expression (lib/numbers.ml[73,2363+17]..[73,2363+18])
+                      Pexp_ident "t" (lib/numbers.ml[73,2363+17]..[73,2363+18])
+            ]
+        ]
+]
+
+module Int_base =
+  (Identifiable.Make)(struct
+                        type t = int
+                        let compare x y = x - y
+                        let output oc x = Printf.fprintf oc "%i" x
+                        let hash i = i
+                        let equal (i : int) j = i = j
+                        let print = Format.pp_print_int
+                      end)
+module Int = struct type t = int
+                    let to_string n = Int.to_string n end
+module Int8 =
+  struct
+    type t = int
+    let zero = 0
+    let one = 1
+    let of_int_exn i =
+      if (i < (- (1 lsl 7))) || (i > ((1 lsl 7) - 1))
+      then Misc.fatal_errorf "Int8.of_int_exn: %d is out of range" i
+      else i
+    let to_int i = i
+  end
+module Int16 =
+  struct
+    type t = int
+    let of_int_exn i =
+      if (i < (- (1 lsl 15))) || (i > ((1 lsl 15) - 1))
+      then Misc.fatal_errorf "Int16.of_int_exn: %d is out of range" i
+      else i
+    let lower_int64 = Int64.neg (Int64.shift_left Int64.one 15)
+    let upper_int64 = Int64.sub (Int64.shift_left Int64.one 15) Int64.one
+    let of_int64_exn i =
+      if
+        ((Int64.compare i lower_int64) < 0) ||
+          ((Int64.compare i upper_int64) > 0)
+      then Misc.fatal_errorf "Int16.of_int64_exn: %Ld is out of range" i
+      else Int64.to_int i
+    let to_int t = t
+  end
+[
+  structure_item (lib/numbers.ml[17,1156+0]..lib/numbers.ml[25,1370+4])
+    Tstr_module
+    Int_base/2656
+      module_expr (lib/numbers.ml[17,1156+18]..lib/numbers.ml[25,1370+4])
+        Tmod_apply
+        module_expr (lib/numbers.ml[17,1156+18]..lib/numbers.ml[17,1156+35])
+          module_expr (lib/numbers.ml[17,1156+18]..lib/numbers.ml[17,1156+35])
+            Tmod_ident "Ocaml_ocaml_types!.Identifiable.Make"
+        module_expr (lib/numbers.ml[17,1156+37]..lib/numbers.ml[25,1370+3])
+          Tmod_structure
+          [
+            structure_item (lib/numbers.ml[18,1200+2]..lib/numbers.ml[18,1200+14])
+              Tstr_type Rec
+              [
+                type_declaration t/298 (lib/numbers.ml[18,1200+2]..lib/numbers.ml[18,1200+14])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ttype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    Some
+                      core_type (lib/numbers.ml[18,1200+11]..lib/numbers.ml[18,1200+14])
+                        Ttyp_constr "int/1!"
+                        []
+              ]
+            structure_item (lib/numbers.ml[20,1216+2]..lib/numbers.ml[20,1216+25])
+              Tstr_value Nonrec
+              [
+                <def>
+                  pattern (lib/numbers.ml[20,1216+6]..lib/numbers.ml[20,1216+13])
+                    Tpat_var "compare/299"
+                  expression (lib/numbers.ml[20,1216+14]..lib/numbers.ml[20,1216+25]) ghost
+                    Texp_function
+                    [
+                      Nolabel
+                      Param_pat
+                        pattern (lib/numbers.ml[20,1216+14]..lib/numbers.ml[20,1216+15])
+                          Tpat_var "x/300"
+                      Nolabel
+                      Param_pat
+                        pattern (lib/numbers.ml[20,1216+16]..lib/numbers.ml[20,1216+17])
+                          Tpat_var "y/301"
+                    ]
+                    Tfunction_body
+                      expression (lib/numbers.ml[20,1216+20]..lib/numbers.ml[20,1216+25])
+                        Texp_apply
+                        expression (lib/numbers.ml[20,1216+22]..lib/numbers.ml[20,1216+23])
+                          Texp_ident "Stdlib!.-"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[20,1216+20]..lib/numbers.ml[20,1216+21])
+                              Texp_ident "x/300"
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[20,1216+24]..lib/numbers.ml[20,1216+25])
+                              Texp_ident "y/301"
+                        ]
+              ]
+            structure_item (lib/numbers.ml[21,1242+2]..lib/numbers.ml[21,1242+44])
+              Tstr_value Nonrec
+              [
+                <def>
+                  pattern (lib/numbers.ml[21,1242+6]..lib/numbers.ml[21,1242+12])
+                    Tpat_var "output/302"
+                  expression (lib/numbers.ml[21,1242+13]..lib/numbers.ml[21,1242+44]) ghost
+                    Texp_function
+                    [
+                      Nolabel
+                      Param_pat
+                        pattern (lib/numbers.ml[21,1242+13]..lib/numbers.ml[21,1242+15])
+                          Tpat_var "oc/303"
+                      Nolabel
+                      Param_pat
+                        pattern (lib/numbers.ml[21,1242+16]..lib/numbers.ml[21,1242+17])
+                          Tpat_var "x/304"
+                    ]
+                    Tfunction_body
+                      expression (lib/numbers.ml[21,1242+20]..lib/numbers.ml[21,1242+44])
+                        Texp_apply
+                        expression (lib/numbers.ml[21,1242+20]..lib/numbers.ml[21,1242+34])
+                          Texp_ident "Stdlib!.Printf.fprintf"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[21,1242+35]..lib/numbers.ml[21,1242+37])
+                              Texp_ident "oc/303"
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[21,1242+38]..lib/numbers.ml[21,1242+42])
+                              Texp_construct "CamlinternalFormatBasics.Format"
+                              [
+                                expression (lib/numbers.ml[21,1242+38]..lib/numbers.ml[21,1242+42]) ghost
+                                  Texp_construct "CamlinternalFormatBasics.Int"
+                                  [
+                                    expression (lib/numbers.ml[21,1242+38]..lib/numbers.ml[21,1242+42]) ghost
+                                      Texp_construct "CamlinternalFormatBasics.Int_i"
+                                      []
+                                    expression (lib/numbers.ml[21,1242+38]..lib/numbers.ml[21,1242+42]) ghost
+                                      Texp_construct "CamlinternalFormatBasics.No_padding"
+                                      []
+                                    expression (lib/numbers.ml[21,1242+38]..lib/numbers.ml[21,1242+42]) ghost
+                                      Texp_construct "CamlinternalFormatBasics.No_precision"
+                                      []
+                                    expression (lib/numbers.ml[21,1242+38]..lib/numbers.ml[21,1242+42]) ghost
+                                      Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                      []
+                                  ]
+                                expression (lib/numbers.ml[21,1242+38]..lib/numbers.ml[21,1242+42]) ghost
+                                  Texp_constant Const_string("%i",(lib/numbers.ml[21,1242+38]..lib/numbers.ml[21,1242+42]) ghost,None)
+                              ]
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[21,1242+43]..lib/numbers.ml[21,1242+44])
+                              Texp_ident "x/304"
+                        ]
+              ]
+            structure_item (lib/numbers.ml[22,1287+2]..lib/numbers.ml[22,1287+16])
+              Tstr_value Nonrec
+              [
+                <def>
+                  pattern (lib/numbers.ml[22,1287+6]..lib/numbers.ml[22,1287+10])
+                    Tpat_var "hash/341"
+                  expression (lib/numbers.ml[22,1287+11]..lib/numbers.ml[22,1287+16]) ghost
+                    Texp_function
+                    [
+                      Nolabel
+                      Param_pat
+                        pattern (lib/numbers.ml[22,1287+11]..lib/numbers.ml[22,1287+12])
+                          Tpat_var "i/343"
+                    ]
+                    Tfunction_body
+                      expression (lib/numbers.ml[22,1287+15]..lib/numbers.ml[22,1287+16])
+                        Texp_ident "i/343"
+              ]
+            structure_item (lib/numbers.ml[23,1304+2]..lib/numbers.ml[23,1304+31])
+              Tstr_value Nonrec
+              [
+                <def>
+                  pattern (lib/numbers.ml[23,1304+6]..lib/numbers.ml[23,1304+11])
+                    Tpat_var "equal/344"
+                  expression (lib/numbers.ml[23,1304+12]..lib/numbers.ml[23,1304+31]) ghost
+                    Texp_function
+                    [
+                      Nolabel
+                      Param_pat
+                        pattern (lib/numbers.ml[23,1304+13]..lib/numbers.ml[23,1304+14])
+                          extra
+                            Tpat_extra_constraint
+                            core_type (lib/numbers.ml[23,1304+17]..lib/numbers.ml[23,1304+20])
+                              Ttyp_constr "int/1!"
+                              []
+                          Tpat_alias "i/346"
+                          pattern (lib/numbers.ml[23,1304+13]..lib/numbers.ml[23,1304+14])
+                            Tpat_any
+                      Nolabel
+                      Param_pat
+                        pattern (lib/numbers.ml[23,1304+22]..lib/numbers.ml[23,1304+23])
+                          Tpat_var "j/347"
+                    ]
+                    Tfunction_body
+                      expression (lib/numbers.ml[23,1304+26]..lib/numbers.ml[23,1304+31])
+                        Texp_apply
+                        expression (lib/numbers.ml[23,1304+28]..lib/numbers.ml[23,1304+29])
+                          Texp_ident "Stdlib!.="
+                        [
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[23,1304+26]..lib/numbers.ml[23,1304+27])
+                              Texp_ident "i/346"
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[23,1304+30]..lib/numbers.ml[23,1304+31])
+                              Texp_ident "j/347"
+                        ]
+              ]
+            structure_item (lib/numbers.ml[24,1336+2]..lib/numbers.ml[24,1336+33])
+              Tstr_value Nonrec
+              [
+                <def>
+                  pattern (lib/numbers.ml[24,1336+6]..lib/numbers.ml[24,1336+11])
+                    Tpat_var "print/348"
+                  expression (lib/numbers.ml[24,1336+14]..lib/numbers.ml[24,1336+33])
+                    Texp_ident "Stdlib!.Format.pp_print_int"
+              ]
+          ]
+  structure_item (lib/numbers.ml[27,1376+0]..lib/numbers.ml[36,1572+3])
+    Tstr_module
+    Int/2692
+      module_expr (lib/numbers.ml[27,1376+13]..lib/numbers.ml[36,1572+3])
+        Tmod_structure
+        [
+          structure_item (lib/numbers.ml[28,1396+2]..lib/numbers.ml[28,1396+14])
+            Tstr_type Rec
+            [
+              type_declaration t/2657 (lib/numbers.ml[28,1396+2]..lib/numbers.ml[28,1396+14])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ttype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (lib/numbers.ml[28,1396+11]..lib/numbers.ml[28,1396+14])
+                      Ttyp_constr "int/1!"
+                      []
+            ]
+          structure_item (lib/numbers.ml[35,1536+2]..lib/numbers.ml[35,1536+35])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[35,1536+6]..lib/numbers.ml[35,1536+15])
+                  Tpat_var "to_string/2658"
+                expression (lib/numbers.ml[35,1536+16]..lib/numbers.ml[35,1536+35]) ghost
+                  Texp_function
+                  [
+                    Nolabel
+                    Param_pat
+                      pattern (lib/numbers.ml[35,1536+16]..lib/numbers.ml[35,1536+17])
+                        Tpat_var "n/2660"
+                  ]
+                  Tfunction_body
+                    expression (lib/numbers.ml[35,1536+20]..lib/numbers.ml[35,1536+35])
+                      Texp_apply
+                      expression (lib/numbers.ml[35,1536+20]..lib/numbers.ml[35,1536+33])
+                        Texp_ident "Stdlib!.Int.to_string"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (lib/numbers.ml[35,1536+34]..lib/numbers.ml[35,1536+35])
+                            Texp_ident "n/2660"
+                      ]
+            ]
+        ]
+  structure_item (lib/numbers.ml[38,1577+0]..lib/numbers.ml[51,1816+3])
+    Tstr_module
+    Int8/2777
+      module_expr (lib/numbers.ml[38,1577+14]..lib/numbers.ml[51,1816+3])
+        Tmod_structure
+        [
+          structure_item (lib/numbers.ml[39,1598+2]..lib/numbers.ml[39,1598+14])
+            Tstr_type Rec
+            [
+              type_declaration t/2693 (lib/numbers.ml[39,1598+2]..lib/numbers.ml[39,1598+14])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ttype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (lib/numbers.ml[39,1598+11]..lib/numbers.ml[39,1598+14])
+                      Ttyp_constr "int/1!"
+                      []
+            ]
+          structure_item (lib/numbers.ml[41,1614+2]..lib/numbers.ml[41,1614+14])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[41,1614+6]..lib/numbers.ml[41,1614+10])
+                  Tpat_var "zero/2694"
+                expression (lib/numbers.ml[41,1614+13]..lib/numbers.ml[41,1614+14])
+                  Texp_constant Const_int 0
+            ]
+          structure_item (lib/numbers.ml[42,1629+2]..lib/numbers.ml[42,1629+13])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[42,1629+6]..lib/numbers.ml[42,1629+9])
+                  Tpat_var "one/2695"
+                expression (lib/numbers.ml[42,1629+12]..lib/numbers.ml[42,1629+13])
+                  Texp_constant Const_int 1
+            ]
+          structure_item (lib/numbers.ml[44,1644+2]..lib/numbers.ml[48,1788+7])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[44,1644+6]..lib/numbers.ml[44,1644+16])
+                  Tpat_var "of_int_exn/2696"
+                expression (lib/numbers.ml[44,1644+17]..lib/numbers.ml[48,1788+7]) ghost
+                  Texp_function
+                  [
+                    Nolabel
+                    Param_pat
+                      pattern (lib/numbers.ml[44,1644+17]..lib/numbers.ml[44,1644+18])
+                        Tpat_var "i/2698"
+                  ]
+                  Tfunction_body
+                    expression (lib/numbers.ml[45,1665+4]..lib/numbers.ml[48,1788+7])
+                      Texp_ifthenelse
+                      expression (lib/numbers.ml[45,1665+7]..lib/numbers.ml[45,1665+44])
+                        Texp_apply
+                        expression (lib/numbers.ml[45,1665+22]..lib/numbers.ml[45,1665+24])
+                          Texp_ident "Stdlib!.||"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[45,1665+7]..lib/numbers.ml[45,1665+21])
+                              Texp_apply
+                              expression (lib/numbers.ml[45,1665+9]..lib/numbers.ml[45,1665+10])
+                                Texp_ident "Stdlib!.<"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (lib/numbers.ml[45,1665+7]..lib/numbers.ml[45,1665+8])
+                                    Texp_ident "i/2698"
+                                <arg>
+                                  Nolabel
+                                  expression (lib/numbers.ml[45,1665+11]..lib/numbers.ml[45,1665+21])
+                                    Texp_apply
+                                    expression (lib/numbers.ml[45,1665+11]..lib/numbers.ml[45,1665+12])
+                                      Texp_ident "Stdlib!.~-"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (lib/numbers.ml[45,1665+12]..lib/numbers.ml[45,1665+21])
+                                          Texp_apply
+                                          expression (lib/numbers.ml[45,1665+15]..lib/numbers.ml[45,1665+18])
+                                            Texp_ident "Stdlib!.lsl"
+                                          [
+                                            <arg>
+                                              Nolabel
+                                              expression (lib/numbers.ml[45,1665+13]..lib/numbers.ml[45,1665+14])
+                                                Texp_constant Const_int 1
+                                            <arg>
+                                              Nolabel
+                                              expression (lib/numbers.ml[45,1665+19]..lib/numbers.ml[45,1665+20])
+                                                Texp_constant Const_int 7
+                                          ]
+                                    ]
+                              ]
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[45,1665+25]..lib/numbers.ml[45,1665+44])
+                              Texp_apply
+                              expression (lib/numbers.ml[45,1665+27]..lib/numbers.ml[45,1665+28])
+                                Texp_ident "Stdlib!.>"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (lib/numbers.ml[45,1665+25]..lib/numbers.ml[45,1665+26])
+                                    Texp_ident "i/2698"
+                                <arg>
+                                  Nolabel
+                                  expression (lib/numbers.ml[45,1665+29]..lib/numbers.ml[45,1665+44])
+                                    Texp_apply
+                                    expression (lib/numbers.ml[45,1665+40]..lib/numbers.ml[45,1665+41])
+                                      Texp_ident "Stdlib!.-"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (lib/numbers.ml[45,1665+30]..lib/numbers.ml[45,1665+39])
+                                          Texp_apply
+                                          expression (lib/numbers.ml[45,1665+33]..lib/numbers.ml[45,1665+36])
+                                            Texp_ident "Stdlib!.lsl"
+                                          [
+                                            <arg>
+                                              Nolabel
+                                              expression (lib/numbers.ml[45,1665+31]..lib/numbers.ml[45,1665+32])
+                                                Texp_constant Const_int 1
+                                            <arg>
+                                              Nolabel
+                                              expression (lib/numbers.ml[45,1665+37]..lib/numbers.ml[45,1665+38])
+                                                Texp_constant Const_int 7
+                                          ]
+                                      <arg>
+                                        Nolabel
+                                        expression (lib/numbers.ml[45,1665+42]..lib/numbers.ml[45,1665+43])
+                                          Texp_constant Const_int 1
+                                    ]
+                              ]
+                        ]
+                      expression (lib/numbers.ml[46,1715+6]..lib/numbers.ml[46,1715+63])
+                        Texp_apply
+                        expression (lib/numbers.ml[46,1715+6]..lib/numbers.ml[46,1715+23])
+                          Texp_ident "Ocaml_ocaml_types!.Misc.fatal_errorf"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[46,1715+24]..lib/numbers.ml[46,1715+61])
+                              Texp_construct "CamlinternalFormatBasics.Format"
+                              [
+                                expression (lib/numbers.ml[46,1715+24]..lib/numbers.ml[46,1715+61]) ghost
+                                  Texp_construct "CamlinternalFormatBasics.String_literal"
+                                  [
+                                    expression (lib/numbers.ml[46,1715+24]..lib/numbers.ml[46,1715+61]) ghost
+                                      Texp_constant Const_string("Int8.of_int_exn: ",(lib/numbers.ml[46,1715+24]..lib/numbers.ml[46,1715+61]) ghost,None)
+                                    expression (lib/numbers.ml[46,1715+24]..lib/numbers.ml[46,1715+61]) ghost
+                                      Texp_construct "CamlinternalFormatBasics.Int"
+                                      [
+                                        expression (lib/numbers.ml[46,1715+24]..lib/numbers.ml[46,1715+61]) ghost
+                                          Texp_construct "CamlinternalFormatBasics.Int_d"
+                                          []
+                                        expression (lib/numbers.ml[46,1715+24]..lib/numbers.ml[46,1715+61]) ghost
+                                          Texp_construct "CamlinternalFormatBasics.No_padding"
+                                          []
+                                        expression (lib/numbers.ml[46,1715+24]..lib/numbers.ml[46,1715+61]) ghost
+                                          Texp_construct "CamlinternalFormatBasics.No_precision"
+                                          []
+                                        expression (lib/numbers.ml[46,1715+24]..lib/numbers.ml[46,1715+61]) ghost
+                                          Texp_construct "CamlinternalFormatBasics.String_literal"
+                                          [
+                                            expression (lib/numbers.ml[46,1715+24]..lib/numbers.ml[46,1715+61]) ghost
+                                              Texp_constant Const_string(" is out of range",(lib/numbers.ml[46,1715+24]..lib/numbers.ml[46,1715+61]) ghost,None)
+                                            expression (lib/numbers.ml[46,1715+24]..lib/numbers.ml[46,1715+61]) ghost
+                                              Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                              []
+                                          ]
+                                      ]
+                                  ]
+                                expression (lib/numbers.ml[46,1715+24]..lib/numbers.ml[46,1715+61]) ghost
+                                  Texp_constant Const_string("Int8.of_int_exn: %d is out of range",(lib/numbers.ml[46,1715+24]..lib/numbers.ml[46,1715+61]) ghost,None)
+                              ]
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[46,1715+62]..lib/numbers.ml[46,1715+63])
+                              Texp_ident "i/2698"
+                        ]
+                      Some
+                        expression (lib/numbers.ml[48,1788+6]..lib/numbers.ml[48,1788+7])
+                          Texp_ident "i/2698"
+            ]
+          structure_item (lib/numbers.ml[50,1797+2]..lib/numbers.ml[50,1797+18])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[50,1797+6]..lib/numbers.ml[50,1797+12])
+                  Tpat_var "to_int/2774"
+                expression (lib/numbers.ml[50,1797+13]..lib/numbers.ml[50,1797+18]) ghost
+                  Texp_function
+                  [
+                    Nolabel
+                    Param_pat
+                      pattern (lib/numbers.ml[50,1797+13]..lib/numbers.ml[50,1797+14])
+                        Tpat_var "i/2776"
+                  ]
+                  Tfunction_body
+                    expression (lib/numbers.ml[50,1797+17]..lib/numbers.ml[50,1797+18])
+                      Texp_ident "i/2776"
+            ]
+        ]
+  structure_item (lib/numbers.ml[53,1821+0]..lib/numbers.ml[74,2382+3])
+    Tstr_module
+    Int16/2835
+      module_expr (lib/numbers.ml[53,1821+15]..lib/numbers.ml[74,2382+3])
+        Tmod_structure
+        [
+          structure_item (lib/numbers.ml[54,1843+2]..lib/numbers.ml[54,1843+14])
+            Tstr_type Rec
+            [
+              type_declaration t/2778 (lib/numbers.ml[54,1843+2]..lib/numbers.ml[54,1843+14])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ttype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (lib/numbers.ml[54,1843+11]..lib/numbers.ml[54,1843+14])
+                      Ttyp_constr "int/1!"
+                      []
+            ]
+          structure_item (lib/numbers.ml[56,1859+2]..lib/numbers.ml[60,2006+7])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[56,1859+6]..lib/numbers.ml[56,1859+16])
+                  Tpat_var "of_int_exn/2779"
+                expression (lib/numbers.ml[56,1859+17]..lib/numbers.ml[60,2006+7]) ghost
+                  Texp_function
+                  [
+                    Nolabel
+                    Param_pat
+                      pattern (lib/numbers.ml[56,1859+17]..lib/numbers.ml[56,1859+18])
+                        Tpat_var "i/2781"
+                  ]
+                  Tfunction_body
+                    expression (lib/numbers.ml[57,1880+4]..lib/numbers.ml[60,2006+7])
+                      Texp_ifthenelse
+                      expression (lib/numbers.ml[57,1880+7]..lib/numbers.ml[57,1880+46])
+                        Texp_apply
+                        expression (lib/numbers.ml[57,1880+23]..lib/numbers.ml[57,1880+25])
+                          Texp_ident "Stdlib!.||"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[57,1880+7]..lib/numbers.ml[57,1880+22])
+                              Texp_apply
+                              expression (lib/numbers.ml[57,1880+9]..lib/numbers.ml[57,1880+10])
+                                Texp_ident "Stdlib!.<"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (lib/numbers.ml[57,1880+7]..lib/numbers.ml[57,1880+8])
+                                    Texp_ident "i/2781"
+                                <arg>
+                                  Nolabel
+                                  expression (lib/numbers.ml[57,1880+11]..lib/numbers.ml[57,1880+22])
+                                    Texp_apply
+                                    expression (lib/numbers.ml[57,1880+11]..lib/numbers.ml[57,1880+12])
+                                      Texp_ident "Stdlib!.~-"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (lib/numbers.ml[57,1880+12]..lib/numbers.ml[57,1880+22])
+                                          Texp_apply
+                                          expression (lib/numbers.ml[57,1880+15]..lib/numbers.ml[57,1880+18])
+                                            Texp_ident "Stdlib!.lsl"
+                                          [
+                                            <arg>
+                                              Nolabel
+                                              expression (lib/numbers.ml[57,1880+13]..lib/numbers.ml[57,1880+14])
+                                                Texp_constant Const_int 1
+                                            <arg>
+                                              Nolabel
+                                              expression (lib/numbers.ml[57,1880+19]..lib/numbers.ml[57,1880+21])
+                                                Texp_constant Const_int 15
+                                          ]
+                                    ]
+                              ]
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[57,1880+26]..lib/numbers.ml[57,1880+46])
+                              Texp_apply
+                              expression (lib/numbers.ml[57,1880+28]..lib/numbers.ml[57,1880+29])
+                                Texp_ident "Stdlib!.>"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (lib/numbers.ml[57,1880+26]..lib/numbers.ml[57,1880+27])
+                                    Texp_ident "i/2781"
+                                <arg>
+                                  Nolabel
+                                  expression (lib/numbers.ml[57,1880+30]..lib/numbers.ml[57,1880+46])
+                                    Texp_apply
+                                    expression (lib/numbers.ml[57,1880+42]..lib/numbers.ml[57,1880+43])
+                                      Texp_ident "Stdlib!.-"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (lib/numbers.ml[57,1880+31]..lib/numbers.ml[57,1880+41])
+                                          Texp_apply
+                                          expression (lib/numbers.ml[57,1880+34]..lib/numbers.ml[57,1880+37])
+                                            Texp_ident "Stdlib!.lsl"
+                                          [
+                                            <arg>
+                                              Nolabel
+                                              expression (lib/numbers.ml[57,1880+32]..lib/numbers.ml[57,1880+33])
+                                                Texp_constant Const_int 1
+                                            <arg>
+                                              Nolabel
+                                              expression (lib/numbers.ml[57,1880+38]..lib/numbers.ml[57,1880+40])
+                                                Texp_constant Const_int 15
+                                          ]
+                                      <arg>
+                                        Nolabel
+                                        expression (lib/numbers.ml[57,1880+44]..lib/numbers.ml[57,1880+45])
+                                          Texp_constant Const_int 1
+                                    ]
+                              ]
+                        ]
+                      expression (lib/numbers.ml[58,1932+6]..lib/numbers.ml[58,1932+64])
+                        Texp_apply
+                        expression (lib/numbers.ml[58,1932+6]..lib/numbers.ml[58,1932+23])
+                          Texp_ident "Ocaml_ocaml_types!.Misc.fatal_errorf"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[58,1932+24]..lib/numbers.ml[58,1932+62])
+                              Texp_construct "CamlinternalFormatBasics.Format"
+                              [
+                                expression (lib/numbers.ml[58,1932+24]..lib/numbers.ml[58,1932+62]) ghost
+                                  Texp_construct "CamlinternalFormatBasics.String_literal"
+                                  [
+                                    expression (lib/numbers.ml[58,1932+24]..lib/numbers.ml[58,1932+62]) ghost
+                                      Texp_constant Const_string("Int16.of_int_exn: ",(lib/numbers.ml[58,1932+24]..lib/numbers.ml[58,1932+62]) ghost,None)
+                                    expression (lib/numbers.ml[58,1932+24]..lib/numbers.ml[58,1932+62]) ghost
+                                      Texp_construct "CamlinternalFormatBasics.Int"
+                                      [
+                                        expression (lib/numbers.ml[58,1932+24]..lib/numbers.ml[58,1932+62]) ghost
+                                          Texp_construct "CamlinternalFormatBasics.Int_d"
+                                          []
+                                        expression (lib/numbers.ml[58,1932+24]..lib/numbers.ml[58,1932+62]) ghost
+                                          Texp_construct "CamlinternalFormatBasics.No_padding"
+                                          []
+                                        expression (lib/numbers.ml[58,1932+24]..lib/numbers.ml[58,1932+62]) ghost
+                                          Texp_construct "CamlinternalFormatBasics.No_precision"
+                                          []
+                                        expression (lib/numbers.ml[58,1932+24]..lib/numbers.ml[58,1932+62]) ghost
+                                          Texp_construct "CamlinternalFormatBasics.String_literal"
+                                          [
+                                            expression (lib/numbers.ml[58,1932+24]..lib/numbers.ml[58,1932+62]) ghost
+                                              Texp_constant Const_string(" is out of range",(lib/numbers.ml[58,1932+24]..lib/numbers.ml[58,1932+62]) ghost,None)
+                                            expression (lib/numbers.ml[58,1932+24]..lib/numbers.ml[58,1932+62]) ghost
+                                              Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                              []
+                                          ]
+                                      ]
+                                  ]
+                                expression (lib/numbers.ml[58,1932+24]..lib/numbers.ml[58,1932+62]) ghost
+                                  Texp_constant Const_string("Int16.of_int_exn: %d is out of range",(lib/numbers.ml[58,1932+24]..lib/numbers.ml[58,1932+62]) ghost,None)
+                              ]
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[58,1932+63]..lib/numbers.ml[58,1932+64])
+                              Texp_ident "i/2781"
+                        ]
+                      Some
+                        expression (lib/numbers.ml[60,2006+6]..lib/numbers.ml[60,2006+7])
+                          Texp_ident "i/2781"
+            ]
+          structure_item (lib/numbers.ml[62,2015+2]..lib/numbers.ml[62,2015+61])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[62,2015+6]..lib/numbers.ml[62,2015+17])
+                  Tpat_var "lower_int64/2782"
+                expression (lib/numbers.ml[62,2015+20]..lib/numbers.ml[62,2015+61])
+                  Texp_apply
+                  expression (lib/numbers.ml[62,2015+20]..lib/numbers.ml[62,2015+29])
+                    Texp_ident "Stdlib!.Int64.neg"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (lib/numbers.ml[62,2015+30]..lib/numbers.ml[62,2015+61])
+                        Texp_apply
+                        expression (lib/numbers.ml[62,2015+31]..lib/numbers.ml[62,2015+47])
+                          Texp_ident "Stdlib!.Int64.shift_left"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[62,2015+48]..lib/numbers.ml[62,2015+57])
+                              Texp_ident "Stdlib!.Int64.one"
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[62,2015+58]..lib/numbers.ml[62,2015+60])
+                              Texp_constant Const_int 15
+                        ]
+                  ]
+            ]
+          structure_item (lib/numbers.ml[63,2077+2]..lib/numbers.ml[63,2077+71])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[63,2077+6]..lib/numbers.ml[63,2077+17])
+                  Tpat_var "upper_int64/2828"
+                expression (lib/numbers.ml[63,2077+20]..lib/numbers.ml[63,2077+71])
+                  Texp_apply
+                  expression (lib/numbers.ml[63,2077+20]..lib/numbers.ml[63,2077+29])
+                    Texp_ident "Stdlib!.Int64.sub"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (lib/numbers.ml[63,2077+30]..lib/numbers.ml[63,2077+61])
+                        Texp_apply
+                        expression (lib/numbers.ml[63,2077+31]..lib/numbers.ml[63,2077+47])
+                          Texp_ident "Stdlib!.Int64.shift_left"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[63,2077+48]..lib/numbers.ml[63,2077+57])
+                              Texp_ident "Stdlib!.Int64.one"
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[63,2077+58]..lib/numbers.ml[63,2077+60])
+                              Texp_constant Const_int 15
+                        ]
+                    <arg>
+                      Nolabel
+                      expression (lib/numbers.ml[63,2077+62]..lib/numbers.ml[63,2077+71])
+                        Texp_ident "Stdlib!.Int64.one"
+                  ]
+            ]
+          structure_item (lib/numbers.ml[65,2150+2]..lib/numbers.ml[71,2341+20])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[65,2150+6]..lib/numbers.ml[65,2150+18])
+                  Tpat_var "of_int64_exn/2829"
+                expression (lib/numbers.ml[65,2150+19]..lib/numbers.ml[71,2341+20]) ghost
+                  Texp_function
+                  [
+                    Nolabel
+                    Param_pat
+                      pattern (lib/numbers.ml[65,2150+19]..lib/numbers.ml[65,2150+20])
+                        Tpat_var "i/2831"
+                  ]
+                  Tfunction_body
+                    expression (lib/numbers.ml[66,2173+4]..lib/numbers.ml[71,2341+20])
+                      Texp_ifthenelse
+                      expression (lib/numbers.ml[66,2173+7]..lib/numbers.ml[67,2212+42])
+                        Texp_apply
+                        expression (lib/numbers.ml[67,2212+8]..lib/numbers.ml[67,2212+10])
+                          Texp_ident "Stdlib!.||"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[66,2173+7]..lib/numbers.ml[66,2173+38])
+                              Texp_apply
+                              expression (lib/numbers.ml[66,2173+35]..lib/numbers.ml[66,2173+36])
+                                Texp_ident "Stdlib!.<"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (lib/numbers.ml[66,2173+7]..lib/numbers.ml[66,2173+34])
+                                    Texp_apply
+                                    expression (lib/numbers.ml[66,2173+7]..lib/numbers.ml[66,2173+20])
+                                      Texp_ident "Stdlib!.Int64.compare"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (lib/numbers.ml[66,2173+21]..lib/numbers.ml[66,2173+22])
+                                          Texp_ident "i/2831"
+                                      <arg>
+                                        Nolabel
+                                        expression (lib/numbers.ml[66,2173+23]..lib/numbers.ml[66,2173+34])
+                                          Texp_ident "lower_int64/2782"
+                                    ]
+                                <arg>
+                                  Nolabel
+                                  expression (lib/numbers.ml[66,2173+37]..lib/numbers.ml[66,2173+38])
+                                    Texp_constant Const_int 0
+                              ]
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[67,2212+11]..lib/numbers.ml[67,2212+42])
+                              Texp_apply
+                              expression (lib/numbers.ml[67,2212+39]..lib/numbers.ml[67,2212+40])
+                                Texp_ident "Stdlib!.>"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (lib/numbers.ml[67,2212+11]..lib/numbers.ml[67,2212+38])
+                                    Texp_apply
+                                    expression (lib/numbers.ml[67,2212+11]..lib/numbers.ml[67,2212+24])
+                                      Texp_ident "Stdlib!.Int64.compare"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (lib/numbers.ml[67,2212+25]..lib/numbers.ml[67,2212+26])
+                                          Texp_ident "i/2831"
+                                      <arg>
+                                        Nolabel
+                                        expression (lib/numbers.ml[67,2212+27]..lib/numbers.ml[67,2212+38])
+                                          Texp_ident "upper_int64/2828"
+                                    ]
+                                <arg>
+                                  Nolabel
+                                  expression (lib/numbers.ml[67,2212+41]..lib/numbers.ml[67,2212+42])
+                                    Texp_constant Const_int 0
+                              ]
+                        ]
+                      expression (lib/numbers.ml[69,2264+6]..lib/numbers.ml[69,2264+67])
+                        Texp_apply
+                        expression (lib/numbers.ml[69,2264+6]..lib/numbers.ml[69,2264+23])
+                          Texp_ident "Ocaml_ocaml_types!.Misc.fatal_errorf"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[69,2264+24]..lib/numbers.ml[69,2264+65])
+                              Texp_construct "CamlinternalFormatBasics.Format"
+                              [
+                                expression (lib/numbers.ml[69,2264+24]..lib/numbers.ml[69,2264+65]) ghost
+                                  Texp_construct "CamlinternalFormatBasics.String_literal"
+                                  [
+                                    expression (lib/numbers.ml[69,2264+24]..lib/numbers.ml[69,2264+65]) ghost
+                                      Texp_constant Const_string("Int16.of_int64_exn: ",(lib/numbers.ml[69,2264+24]..lib/numbers.ml[69,2264+65]) ghost,None)
+                                    expression (lib/numbers.ml[69,2264+24]..lib/numbers.ml[69,2264+65]) ghost
+                                      Texp_construct "CamlinternalFormatBasics.Int64"
+                                      [
+                                        expression (lib/numbers.ml[69,2264+24]..lib/numbers.ml[69,2264+65]) ghost
+                                          Texp_construct "CamlinternalFormatBasics.Int_d"
+                                          []
+                                        expression (lib/numbers.ml[69,2264+24]..lib/numbers.ml[69,2264+65]) ghost
+                                          Texp_construct "CamlinternalFormatBasics.No_padding"
+                                          []
+                                        expression (lib/numbers.ml[69,2264+24]..lib/numbers.ml[69,2264+65]) ghost
+                                          Texp_construct "CamlinternalFormatBasics.No_precision"
+                                          []
+                                        expression (lib/numbers.ml[69,2264+24]..lib/numbers.ml[69,2264+65]) ghost
+                                          Texp_construct "CamlinternalFormatBasics.String_literal"
+                                          [
+                                            expression (lib/numbers.ml[69,2264+24]..lib/numbers.ml[69,2264+65]) ghost
+                                              Texp_constant Const_string(" is out of range",(lib/numbers.ml[69,2264+24]..lib/numbers.ml[69,2264+65]) ghost,None)
+                                            expression (lib/numbers.ml[69,2264+24]..lib/numbers.ml[69,2264+65]) ghost
+                                              Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                              []
+                                          ]
+                                      ]
+                                  ]
+                                expression (lib/numbers.ml[69,2264+24]..lib/numbers.ml[69,2264+65]) ghost
+                                  Texp_constant Const_string("Int16.of_int64_exn: %Ld is out of range",(lib/numbers.ml[69,2264+24]..lib/numbers.ml[69,2264+65]) ghost,None)
+                              ]
+                          <arg>
+                            Nolabel
+                            expression (lib/numbers.ml[69,2264+66]..lib/numbers.ml[69,2264+67])
+                              Texp_ident "i/2831"
+                        ]
+                      Some
+                        expression (lib/numbers.ml[71,2341+6]..lib/numbers.ml[71,2341+20])
+                          Texp_apply
+                          expression (lib/numbers.ml[71,2341+6]..lib/numbers.ml[71,2341+18])
+                            Texp_ident "Stdlib!.Int64.to_int"
+                          [
+                            <arg>
+                              Nolabel
+                              expression (lib/numbers.ml[71,2341+19]..lib/numbers.ml[71,2341+20])
+                                Texp_ident "i/2831"
+                          ]
+            ]
+          structure_item (lib/numbers.ml[73,2363+2]..lib/numbers.ml[73,2363+18])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (lib/numbers.ml[73,2363+6]..lib/numbers.ml[73,2363+12])
+                  Tpat_var "to_int/2832"
+                expression (lib/numbers.ml[73,2363+13]..lib/numbers.ml[73,2363+18]) ghost
+                  Texp_function
+                  [
+                    Nolabel
+                    Param_pat
+                      pattern (lib/numbers.ml[73,2363+13]..lib/numbers.ml[73,2363+14])
+                        Tpat_var "t/2834"
+                  ]
+                  Tfunction_body
+                    expression (lib/numbers.ml[73,2363+17]..lib/numbers.ml[73,2363+18])
+                      Texp_ident "t/2834"
+            ]
+        ]
+]
+
+{<Ocaml_ocaml_types__Numbers>
+ "Int"[module] ->
+   {<Ocaml_ocaml_types__Numbers.24>
+    "t"[type] -> <Ocaml_ocaml_types__Numbers.21>;
+    "to_string"[value] -> <Ocaml_ocaml_types__Numbers.22>;
+    };
+ "Int16"[module] ->
+   {<Ocaml_ocaml_types__Numbers.42>
+    "lower_int64"[value] -> <Ocaml_ocaml_types__Numbers.36>;
+    "of_int64_exn"[value] -> <Ocaml_ocaml_types__Numbers.38>;
+    "of_int_exn"[value] -> <Ocaml_ocaml_types__Numbers.34>;
+    "t"[type] -> <Ocaml_ocaml_types__Numbers.33>;
+    "to_int"[value] -> <Ocaml_ocaml_types__Numbers.40>;
+    "upper_int64"[value] -> <Ocaml_ocaml_types__Numbers.37>;
+    };
+ "Int8"[module] ->
+   {<Ocaml_ocaml_types__Numbers.32>
+    "of_int_exn"[value] -> <Ocaml_ocaml_types__Numbers.28>;
+    "one"[value] -> <Ocaml_ocaml_types__Numbers.27>;
+    "t"[type] -> <Ocaml_ocaml_types__Numbers.25>;
+    "to_int"[value] -> <Ocaml_ocaml_types__Numbers.30>;
+    "zero"[value] -> <Ocaml_ocaml_types__Numbers.26>;
+    };
+ "Int_base"[module] ->
+   CU Ocaml_ocaml_types . "Identifiable"[module] . "Make"[module](
+   {
+    "compare"[value] -> <Ocaml_ocaml_types__Numbers.1>;
+    "equal"[value] -> <Ocaml_ocaml_types__Numbers.9>;
+    "hash"[value] -> <Ocaml_ocaml_types__Numbers.7>;
+    "output"[value] -> <Ocaml_ocaml_types__Numbers.4>;
+    "print"[value] -> <Ocaml_ocaml_types__Numbers.12>;
+    "t"[type] -> <Ocaml_ocaml_types__Numbers.0>;
+    })<Ocaml_ocaml_types__Numbers.20>;
+ }
+
+(let
+  (Int_base/2656 =
+     (apply
+       (let
+         (let/4823 = (field_imm 4 (global Ocaml_ocaml_types__Identifiable!)))
+         (field_imm 4 (global Ocaml_ocaml_types__Identifiable!)))
+       (let
+         (compare/299 =
+            (function x/300[int] y/301[int] : int (- x/300 y/301))
+          output/302 =
+            (function oc/303 x/304[int] : int
+              (apply (field_imm 0 (global Stdlib__Printf!)) oc/303
+                [0: [4: 3 0 0 0] "%i"] x/304))
+          hash/341 = (function i/343 i/343)
+          equal/344 = (function i/346[int] j/347[int] : int (== i/346 j/347))
+          print/348 = (field_imm 18 (global Stdlib__Format!)))
+         (makeblock 0 equal/344 hash/341 compare/299 output/302 print/348))))
+  (seq
+    (setfield_ptr(root-init) 0 (global Ocaml_ocaml_types__Numbers!)
+      Int_base/2656)
+    (let
+      (to_string/2658 =
+         (function n/2660[int]
+           (apply (field_imm 11 (global Stdlib__Int!)) n/2660)))
+      (setfield_ptr(root-init) 4 (global Ocaml_ocaml_types__Numbers!)
+        to_string/2658))
+    0
+    (let
+      (Int/2692 =
+         (makeblock 0 (field_imm 4 (global Ocaml_ocaml_types__Numbers!))))
+      (seq
+        (setfield_ptr(root-init) 1 (global Ocaml_ocaml_types__Numbers!)
+          Int/2692)
+        (let (zero/2694 =[int] 0)
+          (setfield_ptr(root-init) 5 (global Ocaml_ocaml_types__Numbers!)
+            zero/2694))
+        (let (one/2695 =[int] 1)
+          (setfield_ptr(root-init) 6 (global Ocaml_ocaml_types__Numbers!)
+            one/2695))
+        (let
+          (of_int_exn/2696 =
+             (function i/2698[int] : int
+               (if (|| (< i/2698 (~ (lsl 1 7))) (> i/2698 (- (lsl 1 7) 1)))
+                 (apply (field_imm 1 (global Ocaml_ocaml_types__Misc!))
+                   [0:
+                    [11:
+                     "Int8.of_int_exn: "
+                     [4: 0 0 0 [11: " is out of range" 0]]]
+                    "Int8.of_int_exn: %d is out of range"]
+                   i/2698)
+                 i/2698)))
+          (setfield_ptr(root-init) 7 (global Ocaml_ocaml_types__Numbers!)
+            of_int_exn/2696))
+        (let (to_int/2774 = (function i/2776 i/2776))
+          (setfield_ptr(root-init) 8 (global Ocaml_ocaml_types__Numbers!)
+            to_int/2774))
+        0
+        (let
+          (Int8/2777 =
+             (makeblock 0 (field_imm 5 (global Ocaml_ocaml_types__Numbers!))
+               (field_imm 6 (global Ocaml_ocaml_types__Numbers!))
+               (field_imm 7 (global Ocaml_ocaml_types__Numbers!))
+               (field_imm 8 (global Ocaml_ocaml_types__Numbers!))))
+          (seq
+            (setfield_ptr(root-init) 2 (global Ocaml_ocaml_types__Numbers!)
+              Int8/2777)
+            (let
+              (of_int_exn/2779 =
+                 (function i/2781[int] : int
+                   (if
+                     (|| (< i/2781 (~ (lsl 1 15)))
+                       (> i/2781 (- (lsl 1 15) 1)))
+                     (apply (field_imm 1 (global Ocaml_ocaml_types__Misc!))
+                       [0:
+                        [11:
+                         "Int16.of_int_exn: "
+                         [4: 0 0 0 [11: " is out of range" 0]]]
+                        "Int16.of_int_exn: %d is out of range"]
+                       i/2781)
+                     i/2781)))
+              (setfield_ptr(root-init) 9 (global Ocaml_ocaml_types__Numbers!)
+                of_int_exn/2779))
+            (let
+              (lower_int64/2782 =[int64]
+                 (Int64.neg
+                   (Int64.lsl (field_imm 1 (global Stdlib__Int64!)) 15)))
+              (setfield_ptr(root-init) 10
+                (global Ocaml_ocaml_types__Numbers!) lower_int64/2782))
+            (let
+              (upper_int64/2828 =[int64]
+                 (Int64.sub
+                   (Int64.lsl (field_imm 1 (global Stdlib__Int64!)) 15)
+                   (field_imm 1 (global Stdlib__Int64!))))
+              (setfield_ptr(root-init) 11
+                (global Ocaml_ocaml_types__Numbers!) upper_int64/2828))
+            (let
+              (of_int64_exn/2829 =
+                 (function i/2831[int64] : int
+                   (if
+                     (||
+                       (<
+                         (apply (field_imm 14 (global Stdlib__Int64!)) i/2831
+                           (field_imm 10
+                             (global Ocaml_ocaml_types__Numbers!)))
+                         0)
+                       (>
+                         (apply (field_imm 14 (global Stdlib__Int64!)) i/2831
+                           (field_imm 11
+                             (global Ocaml_ocaml_types__Numbers!)))
+                         0))
+                     (apply (field_imm 1 (global Ocaml_ocaml_types__Misc!))
+                       [0:
+                        [11:
+                         "Int16.of_int64_exn: "
+                         [7: 0 0 0 [11: " is out of range" 0]]]
+                        "Int16.of_int64_exn: %Ld is out of range"]
+                       i/2831)
+                     (Int64.to_int i/2831))))
+              (setfield_ptr(root-init) 12
+                (global Ocaml_ocaml_types__Numbers!) of_int64_exn/2829))
+            (let (to_int/2832 = (function t/2834 t/2834))
+              (setfield_ptr(root-init) 13
+                (global Ocaml_ocaml_types__Numbers!) to_int/2832))
+            0
+            (let
+              (Int16/2835 =
+                 (makeblock 0
+                   (field_imm 9 (global Ocaml_ocaml_types__Numbers!))
+                   (field_imm 10 (global Ocaml_ocaml_types__Numbers!))
+                   (field_imm 11 (global Ocaml_ocaml_types__Numbers!))
+                   (field_imm 12 (global Ocaml_ocaml_types__Numbers!))
+                   (field_imm 13 (global Ocaml_ocaml_types__Numbers!))))
+              (seq
+                (setfield_ptr(root-init) 3
+                  (global Ocaml_ocaml_types__Numbers!) Int16/2835)
+                0))))))))
+(let
+  (Int_base/2656 =
+     (apply
+       (let
+         (let/4823 = (field_imm 4 (global Ocaml_ocaml_types__Identifiable!)))
+         (field_imm 4 (global Ocaml_ocaml_types__Identifiable!)))
+       (let
+         (compare/299 =
+            (function x/300[int] y/301[int] : int (- x/300 y/301))
+          output/302 =
+            (function oc/303 x/304[int] : int
+              (apply (field_imm 0 (global Stdlib__Printf!)) oc/303
+                [0: [4: 3 0 0 0] "%i"] x/304))
+          hash/341 = (function i/343 i/343)
+          equal/344 = (function i/346[int] j/347[int] : int (== i/346 j/347))
+          print/348 = (field_imm 18 (global Stdlib__Format!)))
+         (makeblock 0 equal/344 hash/341 compare/299 output/302 print/348))))
+  (seq
+    (setfield_ptr(root-init) 0 (global Ocaml_ocaml_types__Numbers!)
+      Int_base/2656)
+    (let
+      (to_string/2658 =
+         (function n/2660[int]
+           (apply (field_imm 11 (global Stdlib__Int!)) n/2660)))
+      (setfield_ptr(root-init) 4 (global Ocaml_ocaml_types__Numbers!)
+        to_string/2658))
+    0
+    (let
+      (Int/2692 =
+         (makeblock 0 (field_imm 4 (global Ocaml_ocaml_types__Numbers!))))
+      (seq
+        (setfield_ptr(root-init) 1 (global Ocaml_ocaml_types__Numbers!)
+          Int/2692)
+        (let (zero/2694 =[int] 0)
+          (setfield_ptr(root-init) 5 (global Ocaml_ocaml_types__Numbers!)
+            zero/2694))
+        (let (one/2695 =[int] 1)
+          (setfield_ptr(root-init) 6 (global Ocaml_ocaml_types__Numbers!)
+            one/2695))
+        (let
+          (of_int_exn/2696 =
+             (function i/2698[int] : int
+               (if (|| (< i/2698 (~ (lsl 1 7))) (> i/2698 (- (lsl 1 7) 1)))
+                 (apply (field_imm 1 (global Ocaml_ocaml_types__Misc!))
+                   [0:
+                    [11:
+                     "Int8.of_int_exn: "
+                     [4: 0 0 0 [11: " is out of range" 0]]]
+                    "Int8.of_int_exn: %d is out of range"]
+                   i/2698)
+                 i/2698)))
+          (setfield_ptr(root-init) 7 (global Ocaml_ocaml_types__Numbers!)
+            of_int_exn/2696))
+        (let (to_int/2774 = (function i/2776 i/2776))
+          (setfield_ptr(root-init) 8 (global Ocaml_ocaml_types__Numbers!)
+            to_int/2774))
+        0
+        (let
+          (Int8/2777 =
+             (makeblock 0 (field_imm 5 (global Ocaml_ocaml_types__Numbers!))
+               (field_imm 6 (global Ocaml_ocaml_types__Numbers!))
+               (field_imm 7 (global Ocaml_ocaml_types__Numbers!))
+               (field_imm 8 (global Ocaml_ocaml_types__Numbers!))))
+          (seq
+            (setfield_ptr(root-init) 2 (global Ocaml_ocaml_types__Numbers!)
+              Int8/2777)
+            (let
+              (of_int_exn/2779 =
+                 (function i/2781[int] : int
+                   (if
+                     (|| (< i/2781 (~ (lsl 1 15)))
+                       (> i/2781 (- (lsl 1 15) 1)))
+                     (apply (field_imm 1 (global Ocaml_ocaml_types__Misc!))
+                       [0:
+                        [11:
+                         "Int16.of_int_exn: "
+                         [4: 0 0 0 [11: " is out of range" 0]]]
+                        "Int16.of_int_exn: %d is out of range"]
+                       i/2781)
+                     i/2781)))
+              (setfield_ptr(root-init) 9 (global Ocaml_ocaml_types__Numbers!)
+                of_int_exn/2779))
+            (let
+              (lower_int64/2782 =[int64]
+                 (Int64.neg
+                   (Int64.lsl (field_imm 1 (global Stdlib__Int64!)) 15)))
+              (setfield_ptr(root-init) 10
+                (global Ocaml_ocaml_types__Numbers!) lower_int64/2782))
+            (let
+              (upper_int64/2828 =[int64]
+                 (Int64.sub
+                   (Int64.lsl (field_imm 1 (global Stdlib__Int64!)) 15)
+                   (field_imm 1 (global Stdlib__Int64!))))
+              (setfield_ptr(root-init) 11
+                (global Ocaml_ocaml_types__Numbers!) upper_int64/2828))
+            (let
+              (of_int64_exn/2829 =
+                 (function i/2831[int64] : int
+                   (if
+                     (||
+                       (<
+                         (apply (field_imm 14 (global Stdlib__Int64!)) i/2831
+                           (field_imm 10
+                             (global Ocaml_ocaml_types__Numbers!)))
+                         0)
+                       (>
+                         (apply (field_imm 14 (global Stdlib__Int64!)) i/2831
+                           (field_imm 11
+                             (global Ocaml_ocaml_types__Numbers!)))
+                         0))
+                     (apply (field_imm 1 (global Ocaml_ocaml_types__Misc!))
+                       [0:
+                        [11:
+                         "Int16.of_int64_exn: "
+                         [7: 0 0 0 [11: " is out of range" 0]]]
+                        "Int16.of_int64_exn: %Ld is out of range"]
+                       i/2831)
+                     (Int64.to_int i/2831))))
+              (setfield_ptr(root-init) 12
+                (global Ocaml_ocaml_types__Numbers!) of_int64_exn/2829))
+            (let (to_int/2832 = (function t/2834 t/2834))
+              (setfield_ptr(root-init) 13
+                (global Ocaml_ocaml_types__Numbers!) to_int/2832))
+            0
+            (let
+              (Int16/2835 =
+                 (makeblock 0
+                   (field_imm 9 (global Ocaml_ocaml_types__Numbers!))
+                   (field_imm 10 (global Ocaml_ocaml_types__Numbers!))
+                   (field_imm 11 (global Ocaml_ocaml_types__Numbers!))
+                   (field_imm 12 (global Ocaml_ocaml_types__Numbers!))
+                   (field_imm 13 (global Ocaml_ocaml_types__Numbers!))))
+              (seq
+                (setfield_ptr(root-init) 3
+                  (global Ocaml_ocaml_types__Numbers!) Int16/2835)
+                0))))))))

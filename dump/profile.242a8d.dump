@@ -1,0 +1,6 @@
+0.004s 5.02MB 1.91MB 1.91MB lib/sys.ml
+  0.002s 2.87MB 1.54MB 1.54MB parsing
+    0.002s 2.87MB 1.54MB 1.54MB parser
+  0.002s 0.14MB ------ ------ typing
+  ------ 2.00MB 0.37MB 1.91MB other
+0.007s ------ ------ ------ other

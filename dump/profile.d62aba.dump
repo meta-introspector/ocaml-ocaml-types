@@ -1,0 +1,8 @@
+0.094s  252MB 12.3MB 12.3MB lib/misc.ml
+  0.008s 8.76MB 2.42MB 2.42MB parsing
+    0.008s 8.76MB 2.42MB 2.42MB parser
+  0.049s  101MB 8.28MB 10.7MB typing
+  0.003s 6.28MB 0.43MB 11.1MB transl
+  0.013s 51.9MB 1.00MB 12.1MB generate
+  0.021s 84.2MB 0.25MB 12.3MB other
+0.015s ------ ------ ------ other

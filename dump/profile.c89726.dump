@@ -1,0 +1,7 @@
+0.021s 44.9MB 4.48MB 4.48MB lib/path.ml
+  0.002s 2.88MB 1.54MB 1.54MB parsing
+    0.002s 2.88MB 1.54MB 1.54MB parser
+  0.012s 17.7MB 2.65MB 4.20MB typing
+  0.002s 10.1MB 0.12MB 4.33MB generate
+  0.004s 14.1MB 0.15MB 4.48MB other
+0.004s ------ ------ ------ other

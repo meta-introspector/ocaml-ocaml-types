@@ -1,0 +1,2214 @@
+[
+  structure_item (lib/local_store.ml[16,1079+0]..[18,1163+64])
+    Pstr_type Rec
+    [
+      type_declaration "ref_and_reset" (lib/local_store.ml[16,1079+5]..[16,1079+18]) (lib/local_store.ml[16,1079+0]..[18,1163+64])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/local_store.ml[17,1100+2]..[17,1100+62])
+                "Table" (lib/local_store.ml[17,1100+4]..[17,1100+9])
+                [
+                  (lib/local_store.ml[17,1100+14]..[17,1100+26])
+                    Immutable
+                    "ref" (lib/local_store.ml[17,1100+14]..[17,1100+17])                    core_type (lib/local_store.ml[17,1100+19]..[17,1100+25])
+                      Ptyp_constr "ref" (lib/local_store.ml[17,1100+22]..[17,1100+25])
+                      [
+                        core_type (lib/local_store.ml[17,1100+19]..[17,1100+21])
+                          Ptyp_var a
+                      ]
+                  (lib/local_store.ml[17,1100+27]..[17,1100+43])
+                    Immutable
+                    "init" (lib/local_store.ml[17,1100+27]..[17,1100+31])                    core_type (lib/local_store.ml[17,1100+33]..[17,1100+43])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (lib/local_store.ml[17,1100+33]..[17,1100+37])
+                        Ptyp_constr "unit" (lib/local_store.ml[17,1100+33]..[17,1100+37])
+                        []
+                      core_type (lib/local_store.ml[17,1100+41]..[17,1100+43])
+                        Ptyp_var a
+                ]
+                Some
+                  core_type (lib/local_store.ml[17,1100+49]..[17,1100+62])
+                    Ptyp_constr "ref_and_reset" (lib/local_store.ml[17,1100+49]..[17,1100+62])
+                    []
+              (lib/local_store.ml[18,1163+2]..[18,1163+64])
+                "Ref" (lib/local_store.ml[18,1163+4]..[18,1163+7])
+                [
+                  (lib/local_store.ml[18,1163+12]..[18,1163+24])
+                    Immutable
+                    "ref" (lib/local_store.ml[18,1163+12]..[18,1163+15])                    core_type (lib/local_store.ml[18,1163+17]..[18,1163+23])
+                      Ptyp_constr "ref" (lib/local_store.ml[18,1163+20]..[18,1163+23])
+                      [
+                        core_type (lib/local_store.ml[18,1163+17]..[18,1163+19])
+                          Ptyp_var a
+                      ]
+                  (lib/local_store.ml[18,1163+25]..[18,1163+45])
+                    Mutable
+                    "snapshot" (lib/local_store.ml[18,1163+33]..[18,1163+41])                    core_type (lib/local_store.ml[18,1163+43]..[18,1163+45])
+                      Ptyp_var a
+                ]
+                Some
+                  core_type (lib/local_store.ml[18,1163+51]..[18,1163+64])
+                    Ptyp_constr "ref_and_reset" (lib/local_store.ml[18,1163+51]..[18,1163+64])
+                    []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/local_store.ml[20,1229+0]..[24,1334+1])
+    Pstr_type Rec
+    [
+      type_declaration "bindings" (lib/local_store.ml[20,1229+5]..[20,1229+13]) (lib/local_store.ml[20,1229+0]..[24,1334+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (lib/local_store.ml[21,1247+2]..[21,1247+35])
+                Mutable
+                "refs" (lib/local_store.ml[21,1247+10]..[21,1247+14])                core_type (lib/local_store.ml[21,1247+16]..[21,1247+34])
+                  Ptyp_constr "list" (lib/local_store.ml[21,1247+30]..[21,1247+34])
+                  [
+                    core_type (lib/local_store.ml[21,1247+16]..[21,1247+29])
+                      Ptyp_constr "ref_and_reset" (lib/local_store.ml[21,1247+16]..[21,1247+29])
+                      []
+                  ]
+              (lib/local_store.ml[22,1283+2]..[22,1283+24])
+                Mutable
+                "frozen" (lib/local_store.ml[22,1283+10]..[22,1283+16])                core_type (lib/local_store.ml[22,1283+19]..[22,1283+23])
+                  Ptyp_constr "bool" (lib/local_store.ml[22,1283+19]..[22,1283+23])
+                  []
+              (lib/local_store.ml[23,1308+2]..[23,1308+25])
+                Mutable
+                "is_bound" (lib/local_store.ml[23,1308+10]..[23,1308+18])                core_type (lib/local_store.ml[23,1308+20]..[23,1308+24])
+                  Ptyp_constr "bool" (lib/local_store.ml[23,1308+20]..[23,1308+24])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/local_store.ml[26,1337+0]..[27,1359+49])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/local_store.ml[26,1337+4]..[26,1337+19])
+          Ppat_var "global_bindings" (lib/local_store.ml[26,1337+4]..[26,1337+19])
+        expression (lib/local_store.ml[27,1359+2]..[27,1359+49])
+          Pexp_record
+          [
+            "refs" (lib/local_store.ml[27,1359+4]..[27,1359+8])
+              expression (lib/local_store.ml[27,1359+11]..[27,1359+13])
+                Pexp_construct "[]" (lib/local_store.ml[27,1359+11]..[27,1359+13])
+                None
+            "is_bound" (lib/local_store.ml[27,1359+15]..[27,1359+23])
+              expression (lib/local_store.ml[27,1359+26]..[27,1359+31])
+                Pexp_construct "false" (lib/local_store.ml[27,1359+26]..[27,1359+31])
+                None
+            "frozen" (lib/local_store.ml[27,1359+33]..[27,1359+39])
+              expression (lib/local_store.ml[27,1359+42]..[27,1359+47])
+                Pexp_construct "false" (lib/local_store.ml[27,1359+42]..[27,1359+47])
+                None
+          ]
+          None
+    ]
+  structure_item (lib/local_store.ml[29,1410+0]..[29,1410+42])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/local_store.ml[29,1410+4]..[29,1410+12])
+          Ppat_var "is_bound" (lib/local_store.ml[29,1410+4]..[29,1410+12])
+        expression (lib/local_store.ml[29,1410+13]..[29,1410+42]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/local_store.ml[29,1410+13]..[29,1410+15])
+              Nolabel
+              None
+              pattern (lib/local_store.ml[29,1410+13]..[29,1410+15])
+                Ppat_construct "()" (lib/local_store.ml[29,1410+13]..[29,1410+15])
+                None
+          ]
+          None
+          Pfunction_body
+            expression (lib/local_store.ml[29,1410+18]..[29,1410+42])
+              Pexp_field
+              expression (lib/local_store.ml[29,1410+18]..[29,1410+33])
+                Pexp_ident "global_bindings" (lib/local_store.ml[29,1410+18]..[29,1410+33])
+              "is_bound" (lib/local_store.ml[29,1410+34]..[29,1410+42])
+    ]
+  structure_item (lib/local_store.ml[31,1454+0]..[36,1606+24])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/local_store.ml[31,1454+4]..[31,1454+9])
+          Ppat_var "reset" (lib/local_store.ml[31,1454+4]..[31,1454+9])
+        expression (lib/local_store.ml[31,1454+10]..[36,1606+24]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/local_store.ml[31,1454+10]..[31,1454+12])
+              Nolabel
+              None
+              pattern (lib/local_store.ml[31,1454+10]..[31,1454+12])
+                Ppat_construct "()" (lib/local_store.ml[31,1454+10]..[31,1454+12])
+                None
+          ]
+          None
+          Pfunction_body
+            expression (lib/local_store.ml[32,1469+2]..[36,1606+24])
+              Pexp_sequence
+              expression (lib/local_store.ml[32,1469+2]..[32,1469+22])
+                Pexp_assert
+                expression (lib/local_store.ml[32,1469+9]..[32,1469+22])
+                  Pexp_apply
+                  expression (lib/local_store.ml[32,1469+10]..[32,1469+18])
+                    Pexp_ident "is_bound" (lib/local_store.ml[32,1469+10]..[32,1469+18])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (lib/local_store.ml[32,1469+19]..[32,1469+21])
+                        Pexp_construct "()" (lib/local_store.ml[32,1469+19]..[32,1469+21])
+                        None
+                  ]
+              expression (lib/local_store.ml[33,1493+2]..[36,1606+24])
+                Pexp_apply
+                expression (lib/local_store.ml[33,1493+2]..[33,1493+11])
+                  Pexp_ident "List.iter" (lib/local_store.ml[33,1493+2]..[33,1493+11])
+                [
+                  <arg>
+                  Nolabel
+                    expression (lib/local_store.ml[33,1493+12]..[36,1606+3])
+                      Pexp_function
+                      []
+                      None
+                      Pfunction_cases (lib/local_store.ml[33,1493+13]..[35,1559+46])
+                        [
+                          <case>
+                            pattern (lib/local_store.ml[34,1515+6]..[34,1515+25])
+                              Ppat_construct "Table" (lib/local_store.ml[34,1515+6]..[34,1515+11])
+                              Some
+                                []
+                                pattern (lib/local_store.ml[34,1515+12]..[34,1515+25])
+                                  Ppat_record Closed
+                                  [
+                                    "ref" (lib/local_store.ml[34,1515+14]..[34,1515+17]) ghost
+                                      pattern (lib/local_store.ml[34,1515+14]..[34,1515+17])
+                                        Ppat_var "ref" (lib/local_store.ml[34,1515+14]..[34,1515+17])
+                                    "init" (lib/local_store.ml[34,1515+19]..[34,1515+23]) ghost
+                                      pattern (lib/local_store.ml[34,1515+19]..[34,1515+23])
+                                        Ppat_var "init" (lib/local_store.ml[34,1515+19]..[34,1515+23])
+                                  ]
+                            expression (lib/local_store.ml[34,1515+29]..[34,1515+43])
+                              Pexp_apply
+                              expression (lib/local_store.ml[34,1515+33]..[34,1515+35])
+                                Pexp_ident ":=" (lib/local_store.ml[34,1515+33]..[34,1515+35])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/local_store.ml[34,1515+29]..[34,1515+32])
+                                    Pexp_ident "ref" (lib/local_store.ml[34,1515+29]..[34,1515+32])
+                                <arg>
+                                Nolabel
+                                  expression (lib/local_store.ml[34,1515+36]..[34,1515+43])
+                                    Pexp_apply
+                                    expression (lib/local_store.ml[34,1515+36]..[34,1515+40])
+                                      Pexp_ident "init" (lib/local_store.ml[34,1515+36]..[34,1515+40])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (lib/local_store.ml[34,1515+41]..[34,1515+43])
+                                          Pexp_construct "()" (lib/local_store.ml[34,1515+41]..[34,1515+43])
+                                          None
+                                    ]
+                              ]
+                          <case>
+                            pattern (lib/local_store.ml[35,1559+6]..[35,1559+27])
+                              Ppat_construct "Ref" (lib/local_store.ml[35,1559+6]..[35,1559+9])
+                              Some
+                                []
+                                pattern (lib/local_store.ml[35,1559+10]..[35,1559+27])
+                                  Ppat_record Closed
+                                  [
+                                    "ref" (lib/local_store.ml[35,1559+12]..[35,1559+15]) ghost
+                                      pattern (lib/local_store.ml[35,1559+12]..[35,1559+15])
+                                        Ppat_var "ref" (lib/local_store.ml[35,1559+12]..[35,1559+15])
+                                    "snapshot" (lib/local_store.ml[35,1559+17]..[35,1559+25]) ghost
+                                      pattern (lib/local_store.ml[35,1559+17]..[35,1559+25])
+                                        Ppat_var "snapshot" (lib/local_store.ml[35,1559+17]..[35,1559+25])
+                                  ]
+                            expression (lib/local_store.ml[35,1559+31]..[35,1559+46])
+                              Pexp_apply
+                              expression (lib/local_store.ml[35,1559+35]..[35,1559+37])
+                                Pexp_ident ":=" (lib/local_store.ml[35,1559+35]..[35,1559+37])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/local_store.ml[35,1559+31]..[35,1559+34])
+                                    Pexp_ident "ref" (lib/local_store.ml[35,1559+31]..[35,1559+34])
+                                <arg>
+                                Nolabel
+                                  expression (lib/local_store.ml[35,1559+38]..[35,1559+46])
+                                    Pexp_ident "snapshot" (lib/local_store.ml[35,1559+38]..[35,1559+46])
+                              ]
+                        ]
+                  <arg>
+                  Nolabel
+                    expression (lib/local_store.ml[36,1606+4]..[36,1606+24])
+                      Pexp_field
+                      expression (lib/local_store.ml[36,1606+4]..[36,1606+19])
+                        Pexp_ident "global_bindings" (lib/local_store.ml[36,1606+4]..[36,1606+19])
+                      "refs" (lib/local_store.ml[36,1606+20]..[36,1606+24])
+                ]
+    ]
+  structure_item (lib/local_store.ml[38,1632+0]..[43,1830+5])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/local_store.ml[38,1632+4]..[38,1632+11])
+          Ppat_var "s_table" (lib/local_store.ml[38,1632+4]..[38,1632+11])
+        expression (lib/local_store.ml[38,1632+12]..[43,1830+5]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/local_store.ml[38,1632+12]..[38,1632+18])
+              Nolabel
+              None
+              pattern (lib/local_store.ml[38,1632+12]..[38,1632+18])
+                Ppat_var "create" (lib/local_store.ml[38,1632+12]..[38,1632+18])
+            Pparam_val (lib/local_store.ml[38,1632+19]..[38,1632+23])
+              Nolabel
+              None
+              pattern (lib/local_store.ml[38,1632+19]..[38,1632+23])
+                Ppat_var "size" (lib/local_store.ml[38,1632+19]..[38,1632+23])
+          ]
+          None
+          Pfunction_body
+            expression (lib/local_store.ml[39,1658+2]..[43,1830+5])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (lib/local_store.ml[39,1658+6]..[39,1658+10])
+                    Ppat_var "init" (lib/local_store.ml[39,1658+6]..[39,1658+10])
+                  expression (lib/local_store.ml[39,1658+11]..[39,1658+27]) ghost
+                    Pexp_function
+                    [
+                      Pparam_val (lib/local_store.ml[39,1658+11]..[39,1658+13])
+                        Nolabel
+                        None
+                        pattern (lib/local_store.ml[39,1658+11]..[39,1658+13])
+                          Ppat_construct "()" (lib/local_store.ml[39,1658+11]..[39,1658+13])
+                          None
+                    ]
+                    None
+                    Pfunction_body
+                      expression (lib/local_store.ml[39,1658+16]..[39,1658+27])
+                        Pexp_apply
+                        expression (lib/local_store.ml[39,1658+16]..[39,1658+22])
+                          Pexp_ident "create" (lib/local_store.ml[39,1658+16]..[39,1658+22])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/local_store.ml[39,1658+23]..[39,1658+27])
+                              Pexp_ident "size" (lib/local_store.ml[39,1658+23]..[39,1658+27])
+                        ]
+              ]
+              expression (lib/local_store.ml[40,1689+2]..[43,1830+5])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (lib/local_store.ml[40,1689+6]..[40,1689+9])
+                      Ppat_var "ref" (lib/local_store.ml[40,1689+6]..[40,1689+9])
+                    expression (lib/local_store.ml[40,1689+12]..[40,1689+25])
+                      Pexp_apply
+                      expression (lib/local_store.ml[40,1689+12]..[40,1689+15])
+                        Pexp_ident "ref" (lib/local_store.ml[40,1689+12]..[40,1689+15])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (lib/local_store.ml[40,1689+16]..[40,1689+25])
+                            Pexp_apply
+                            expression (lib/local_store.ml[40,1689+17]..[40,1689+21])
+                              Pexp_ident "init" (lib/local_store.ml[40,1689+17]..[40,1689+21])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (lib/local_store.ml[40,1689+22]..[40,1689+24])
+                                  Pexp_construct "()" (lib/local_store.ml[40,1689+22]..[40,1689+24])
+                                  None
+                            ]
+                      ]
+                ]
+                expression (lib/local_store.ml[41,1718+2]..[43,1830+5])
+                  Pexp_sequence
+                  expression (lib/local_store.ml[41,1718+2]..[41,1718+37])
+                    Pexp_assert
+                    expression (lib/local_store.ml[41,1718+9]..[41,1718+37])
+                      Pexp_apply
+                      expression (lib/local_store.ml[41,1718+10]..[41,1718+13])
+                        Pexp_ident "not" (lib/local_store.ml[41,1718+10]..[41,1718+13])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (lib/local_store.ml[41,1718+14]..[41,1718+36])
+                            Pexp_field
+                            expression (lib/local_store.ml[41,1718+14]..[41,1718+29])
+                              Pexp_ident "global_bindings" (lib/local_store.ml[41,1718+14]..[41,1718+29])
+                            "frozen" (lib/local_store.ml[41,1718+30]..[41,1718+36])
+                      ]
+                  expression (lib/local_store.ml[42,1757+2]..[43,1830+5])
+                    Pexp_sequence
+                    expression (lib/local_store.ml[42,1757+2]..[42,1757+71])
+                      Pexp_setfield
+                      expression (lib/local_store.ml[42,1757+2]..[42,1757+17])
+                        Pexp_ident "global_bindings" (lib/local_store.ml[42,1757+2]..[42,1757+17])
+                      "refs" (lib/local_store.ml[42,1757+18]..[42,1757+22])
+                      expression (lib/local_store.ml[42,1757+26]..[42,1757+71])
+                        Pexp_construct "::" (lib/local_store.ml[42,1757+48]..[42,1757+50])
+                        Some
+                          expression (lib/local_store.ml[42,1757+26]..[42,1757+71]) ghost
+                            Pexp_tuple
+                            [
+                              expression (lib/local_store.ml[42,1757+26]..[42,1757+47])
+                                Pexp_construct "Table" (lib/local_store.ml[42,1757+27]..[42,1757+32])
+                                Some
+                                  expression (lib/local_store.ml[42,1757+33]..[42,1757+46])
+                                    Pexp_record
+                                    [
+                                      "ref" (lib/local_store.ml[42,1757+35]..[42,1757+38]) ghost
+                                        expression (lib/local_store.ml[42,1757+35]..[42,1757+38])
+                                          Pexp_ident "ref" (lib/local_store.ml[42,1757+35]..[42,1757+38])
+                                      "init" (lib/local_store.ml[42,1757+40]..[42,1757+44]) ghost
+                                        expression (lib/local_store.ml[42,1757+40]..[42,1757+44])
+                                          Pexp_ident "init" (lib/local_store.ml[42,1757+40]..[42,1757+44])
+                                    ]
+                                    None
+                              expression (lib/local_store.ml[42,1757+51]..[42,1757+71])
+                                Pexp_field
+                                expression (lib/local_store.ml[42,1757+51]..[42,1757+66])
+                                  Pexp_ident "global_bindings" (lib/local_store.ml[42,1757+51]..[42,1757+66])
+                                "refs" (lib/local_store.ml[42,1757+67]..[42,1757+71])
+                            ]
+                    expression (lib/local_store.ml[43,1830+2]..[43,1830+5])
+                      Pexp_ident "ref" (lib/local_store.ml[43,1830+2]..[43,1830+5])
+    ]
+  structure_item (lib/local_store.ml[45,1837+0]..[50,1994+5])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/local_store.ml[45,1837+4]..[45,1837+9])
+          Ppat_var "s_ref" (lib/local_store.ml[45,1837+4]..[45,1837+9])
+        expression (lib/local_store.ml[45,1837+10]..[50,1994+5]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/local_store.ml[45,1837+10]..[45,1837+11])
+              Nolabel
+              None
+              pattern (lib/local_store.ml[45,1837+10]..[45,1837+11])
+                Ppat_var "k" (lib/local_store.ml[45,1837+10]..[45,1837+11])
+          ]
+          None
+          Pfunction_body
+            expression (lib/local_store.ml[46,1851+2]..[50,1994+5])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (lib/local_store.ml[46,1851+6]..[46,1851+9])
+                    Ppat_var "ref" (lib/local_store.ml[46,1851+6]..[46,1851+9])
+                  expression (lib/local_store.ml[46,1851+12]..[46,1851+17])
+                    Pexp_apply
+                    expression (lib/local_store.ml[46,1851+12]..[46,1851+15])
+                      Pexp_ident "ref" (lib/local_store.ml[46,1851+12]..[46,1851+15])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (lib/local_store.ml[46,1851+16]..[46,1851+17])
+                          Pexp_ident "k" (lib/local_store.ml[46,1851+16]..[46,1851+17])
+                    ]
+              ]
+              expression (lib/local_store.ml[47,1872+2]..[50,1994+5])
+                Pexp_sequence
+                expression (lib/local_store.ml[47,1872+2]..[47,1872+37])
+                  Pexp_assert
+                  expression (lib/local_store.ml[47,1872+9]..[47,1872+37])
+                    Pexp_apply
+                    expression (lib/local_store.ml[47,1872+10]..[47,1872+13])
+                      Pexp_ident "not" (lib/local_store.ml[47,1872+10]..[47,1872+13])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (lib/local_store.ml[47,1872+14]..[47,1872+36])
+                          Pexp_field
+                          expression (lib/local_store.ml[47,1872+14]..[47,1872+29])
+                            Pexp_ident "global_bindings" (lib/local_store.ml[47,1872+14]..[47,1872+29])
+                          "frozen" (lib/local_store.ml[47,1872+30]..[47,1872+36])
+                    ]
+                expression (lib/local_store.ml[48,1911+2]..[50,1994+5])
+                  Pexp_sequence
+                  expression (lib/local_store.ml[48,1911+2]..[49,1937+55])
+                    Pexp_setfield
+                    expression (lib/local_store.ml[48,1911+2]..[48,1911+17])
+                      Pexp_ident "global_bindings" (lib/local_store.ml[48,1911+2]..[48,1911+17])
+                    "refs" (lib/local_store.ml[48,1911+18]..[48,1911+22])
+                    expression (lib/local_store.ml[49,1937+4]..[49,1937+55])
+                      Pexp_construct "::" (lib/local_store.ml[49,1937+32]..[49,1937+34])
+                      Some
+                        expression (lib/local_store.ml[49,1937+4]..[49,1937+55]) ghost
+                          Pexp_tuple
+                          [
+                            expression (lib/local_store.ml[49,1937+4]..[49,1937+31])
+                              Pexp_construct "Ref" (lib/local_store.ml[49,1937+5]..[49,1937+8])
+                              Some
+                                expression (lib/local_store.ml[49,1937+9]..[49,1937+30])
+                                  Pexp_record
+                                  [
+                                    "ref" (lib/local_store.ml[49,1937+11]..[49,1937+14]) ghost
+                                      expression (lib/local_store.ml[49,1937+11]..[49,1937+14])
+                                        Pexp_ident "ref" (lib/local_store.ml[49,1937+11]..[49,1937+14])
+                                    "snapshot" (lib/local_store.ml[49,1937+16]..[49,1937+24])
+                                      expression (lib/local_store.ml[49,1937+27]..[49,1937+28])
+                                        Pexp_ident "k" (lib/local_store.ml[49,1937+27]..[49,1937+28])
+                                  ]
+                                  None
+                            expression (lib/local_store.ml[49,1937+35]..[49,1937+55])
+                              Pexp_field
+                              expression (lib/local_store.ml[49,1937+35]..[49,1937+50])
+                                Pexp_ident "global_bindings" (lib/local_store.ml[49,1937+35]..[49,1937+50])
+                              "refs" (lib/local_store.ml[49,1937+51]..[49,1937+55])
+                          ]
+                  expression (lib/local_store.ml[50,1994+2]..[50,1994+5])
+                    Pexp_ident "ref" (lib/local_store.ml[50,1994+2]..[50,1994+5])
+    ]
+  structure_item (lib/local_store.ml[52,2001+0]..[52,2001+63])
+    Pstr_type Rec
+    [
+      type_declaration "slot" (lib/local_store.ml[52,2001+5]..[52,2001+9]) (lib/local_store.ml[52,2001+0]..[52,2001+63])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/local_store.ml[52,2001+12]..[52,2001+63])
+                "Slot" (lib/local_store.ml[52,2001+12]..[52,2001+16])
+                [
+                  (lib/local_store.ml[52,2001+21]..[52,2001+34])
+                    Immutable
+                    "ref" (lib/local_store.ml[52,2001+21]..[52,2001+24])                    core_type (lib/local_store.ml[52,2001+27]..[52,2001+33])
+                      Ptyp_constr "ref" (lib/local_store.ml[52,2001+30]..[52,2001+33])
+                      [
+                        core_type (lib/local_store.ml[52,2001+27]..[52,2001+29])
+                          Ptyp_var a
+                      ]
+                  (lib/local_store.ml[52,2001+35]..[52,2001+53])
+                    Mutable
+                    "value" (lib/local_store.ml[52,2001+43]..[52,2001+48])                    core_type (lib/local_store.ml[52,2001+51]..[52,2001+53])
+                      Ptyp_var a
+                ]
+                Some
+                  core_type (lib/local_store.ml[52,2001+59]..[52,2001+63])
+                    Ptyp_constr "slot" (lib/local_store.ml[52,2001+59]..[52,2001+63])
+                    []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/local_store.ml[53,2065+0]..[53,2065+22])
+    Pstr_type Rec
+    [
+      type_declaration "store" (lib/local_store.ml[53,2065+5]..[53,2065+10]) (lib/local_store.ml[53,2065+0]..[53,2065+22])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (lib/local_store.ml[53,2065+13]..[53,2065+22])
+              Ptyp_constr "list" (lib/local_store.ml[53,2065+18]..[53,2065+22])
+              [
+                core_type (lib/local_store.ml[53,2065+13]..[53,2065+17])
+                  Ptyp_constr "slot" (lib/local_store.ml[53,2065+13]..[53,2065+17])
+                  []
+              ]
+    ]
+  structure_item (lib/local_store.ml[55,2089+0]..[65,2403+7])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/local_store.ml[55,2089+4]..[55,2089+9])
+          Ppat_var "fresh" (lib/local_store.ml[55,2089+4]..[55,2089+9])
+        expression (lib/local_store.ml[55,2089+10]..[65,2403+7]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/local_store.ml[55,2089+10]..[55,2089+12])
+              Nolabel
+              None
+              pattern (lib/local_store.ml[55,2089+10]..[55,2089+12])
+                Ppat_construct "()" (lib/local_store.ml[55,2089+10]..[55,2089+12])
+                None
+          ]
+          None
+          Pfunction_body
+            expression (lib/local_store.ml[56,2104+2]..[65,2403+7])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (lib/local_store.ml[56,2104+6]..[56,2104+11])
+                    Ppat_var "slots" (lib/local_store.ml[56,2104+6]..[56,2104+11])
+                  expression (lib/local_store.ml[57,2118+4]..[62,2337+26])
+                    Pexp_apply
+                    expression (lib/local_store.ml[57,2118+4]..[57,2118+12])
+                      Pexp_ident "List.map" (lib/local_store.ml[57,2118+4]..[57,2118+12])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (lib/local_store.ml[57,2118+13]..[62,2337+5])
+                          Pexp_function
+                          []
+                          None
+                          Pfunction_cases (lib/local_store.ml[57,2118+14]..[61,2286+50])
+                            [
+                              <case>
+                                pattern (lib/local_store.ml[58,2141+8]..[58,2141+27])
+                                  Ppat_construct "Table" (lib/local_store.ml[58,2141+8]..[58,2141+13])
+                                  Some
+                                    []
+                                    pattern (lib/local_store.ml[58,2141+14]..[58,2141+27])
+                                      Ppat_record Closed
+                                      [
+                                        "ref" (lib/local_store.ml[58,2141+16]..[58,2141+19]) ghost
+                                          pattern (lib/local_store.ml[58,2141+16]..[58,2141+19])
+                                            Ppat_var "ref" (lib/local_store.ml[58,2141+16]..[58,2141+19])
+                                        "init" (lib/local_store.ml[58,2141+21]..[58,2141+25]) ghost
+                                          pattern (lib/local_store.ml[58,2141+21]..[58,2141+25])
+                                            Ppat_var "init" (lib/local_store.ml[58,2141+21]..[58,2141+25])
+                                      ]
+                                expression (lib/local_store.ml[58,2141+31]..[58,2141+58])
+                                  Pexp_construct "Slot" (lib/local_store.ml[58,2141+31]..[58,2141+35])
+                                  Some
+                                    expression (lib/local_store.ml[58,2141+36]..[58,2141+58])
+                                      Pexp_record
+                                      [
+                                        "ref" (lib/local_store.ml[58,2141+37]..[58,2141+40]) ghost
+                                          expression (lib/local_store.ml[58,2141+37]..[58,2141+40])
+                                            Pexp_ident "ref" (lib/local_store.ml[58,2141+37]..[58,2141+40])
+                                        "value" (lib/local_store.ml[58,2141+42]..[58,2141+47])
+                                          expression (lib/local_store.ml[58,2141+50]..[58,2141+57])
+                                            Pexp_apply
+                                            expression (lib/local_store.ml[58,2141+50]..[58,2141+54])
+                                              Pexp_ident "init" (lib/local_store.ml[58,2141+50]..[58,2141+54])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (lib/local_store.ml[58,2141+55]..[58,2141+57])
+                                                  Pexp_construct "()" (lib/local_store.ml[58,2141+55]..[58,2141+57])
+                                                  None
+                                            ]
+                                      ]
+                                      None
+                              <case>
+                                pattern (lib/local_store.ml[59,2200+8]..[59,2200+13])
+                                  Ppat_construct "Ref" (lib/local_store.ml[59,2200+8]..[59,2200+11])
+                                  Some
+                                    []
+                                    pattern (lib/local_store.ml[59,2200+12]..[59,2200+13])
+                                      Ppat_var "r" (lib/local_store.ml[59,2200+12]..[59,2200+13])
+                                expression (lib/local_store.ml[60,2217+10]..[61,2286+50])
+                                  Pexp_sequence
+                                  expression (lib/local_store.ml[60,2217+10]..[60,2217+67])
+                                    Pexp_ifthenelse
+                                    expression (lib/local_store.ml[60,2217+13]..[60,2217+39])
+                                      Pexp_apply
+                                      expression (lib/local_store.ml[60,2217+13]..[60,2217+16])
+                                        Pexp_ident "not" (lib/local_store.ml[60,2217+13]..[60,2217+16])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (lib/local_store.ml[60,2217+17]..[60,2217+39])
+                                            Pexp_field
+                                            expression (lib/local_store.ml[60,2217+17]..[60,2217+32])
+                                              Pexp_ident "global_bindings" (lib/local_store.ml[60,2217+17]..[60,2217+32])
+                                            "frozen" (lib/local_store.ml[60,2217+33]..[60,2217+39])
+                                      ]
+                                    expression (lib/local_store.ml[60,2217+45]..[60,2217+67])
+                                      Pexp_setfield
+                                      expression (lib/local_store.ml[60,2217+45]..[60,2217+46])
+                                        Pexp_ident "r" (lib/local_store.ml[60,2217+45]..[60,2217+46])
+                                      "snapshot" (lib/local_store.ml[60,2217+47]..[60,2217+55])
+                                      expression (lib/local_store.ml[60,2217+59]..[60,2217+67])
+                                        Pexp_apply
+                                        expression (lib/local_store.ml[60,2217+59]..[60,2217+60])
+                                          Pexp_ident "!" (lib/local_store.ml[60,2217+59]..[60,2217+60])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (lib/local_store.ml[60,2217+60]..[60,2217+67])
+                                              Pexp_field
+                                              expression (lib/local_store.ml[60,2217+61]..[60,2217+62])
+                                                Pexp_ident "r" (lib/local_store.ml[60,2217+61]..[60,2217+62])
+                                              "ref" (lib/local_store.ml[60,2217+63]..[60,2217+66])
+                                        ]
+                                    None
+                                  expression (lib/local_store.ml[61,2286+10]..[61,2286+50])
+                                    Pexp_construct "Slot" (lib/local_store.ml[61,2286+10]..[61,2286+14])
+                                    Some
+                                      expression (lib/local_store.ml[61,2286+15]..[61,2286+50])
+                                        Pexp_record
+                                        [
+                                          "ref" (lib/local_store.ml[61,2286+17]..[61,2286+20])
+                                            expression (lib/local_store.ml[61,2286+23]..[61,2286+28])
+                                              Pexp_field
+                                              expression (lib/local_store.ml[61,2286+23]..[61,2286+24])
+                                                Pexp_ident "r" (lib/local_store.ml[61,2286+23]..[61,2286+24])
+                                              "ref" (lib/local_store.ml[61,2286+25]..[61,2286+28])
+                                          "value" (lib/local_store.ml[61,2286+30]..[61,2286+35])
+                                            expression (lib/local_store.ml[61,2286+38]..[61,2286+48])
+                                              Pexp_field
+                                              expression (lib/local_store.ml[61,2286+38]..[61,2286+39])
+                                                Pexp_ident "r" (lib/local_store.ml[61,2286+38]..[61,2286+39])
+                                              "snapshot" (lib/local_store.ml[61,2286+40]..[61,2286+48])
+                                        ]
+                                        None
+                            ]
+                      <arg>
+                      Nolabel
+                        expression (lib/local_store.ml[62,2337+6]..[62,2337+26])
+                          Pexp_field
+                          expression (lib/local_store.ml[62,2337+6]..[62,2337+21])
+                            Pexp_ident "global_bindings" (lib/local_store.ml[62,2337+6]..[62,2337+21])
+                          "refs" (lib/local_store.ml[62,2337+22]..[62,2337+26])
+                    ]
+              ]
+              expression (lib/local_store.ml[64,2369+2]..[65,2403+7])
+                Pexp_sequence
+                expression (lib/local_store.ml[64,2369+2]..[64,2369+32])
+                  Pexp_setfield
+                  expression (lib/local_store.ml[64,2369+2]..[64,2369+17])
+                    Pexp_ident "global_bindings" (lib/local_store.ml[64,2369+2]..[64,2369+17])
+                  "frozen" (lib/local_store.ml[64,2369+18]..[64,2369+24])
+                  expression (lib/local_store.ml[64,2369+28]..[64,2369+32])
+                    Pexp_construct "true" (lib/local_store.ml[64,2369+28]..[64,2369+32])
+                    None
+                expression (lib/local_store.ml[65,2403+2]..[65,2403+7])
+                  Pexp_ident "slots" (lib/local_store.ml[65,2403+2]..[65,2403+7])
+    ]
+  structure_item (lib/local_store.ml[67,2412+0]..[74,2708+3])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/local_store.ml[67,2412+4]..[67,2412+14])
+          Ppat_var "with_store" (lib/local_store.ml[67,2412+4]..[67,2412+14])
+        expression (lib/local_store.ml[67,2412+15]..[74,2708+3]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/local_store.ml[67,2412+15]..[67,2412+20])
+              Nolabel
+              None
+              pattern (lib/local_store.ml[67,2412+15]..[67,2412+20])
+                Ppat_var "slots" (lib/local_store.ml[67,2412+15]..[67,2412+20])
+            Pparam_val (lib/local_store.ml[67,2412+21]..[67,2412+22])
+              Nolabel
+              None
+              pattern (lib/local_store.ml[67,2412+21]..[67,2412+22])
+                Ppat_var "f" (lib/local_store.ml[67,2412+21]..[67,2412+22])
+          ]
+          None
+          Pfunction_body
+            expression (lib/local_store.ml[68,2437+2]..[74,2708+3])
+              Pexp_sequence
+              expression (lib/local_store.ml[68,2437+2]..[68,2437+39])
+                Pexp_assert
+                expression (lib/local_store.ml[68,2437+9]..[68,2437+39])
+                  Pexp_apply
+                  expression (lib/local_store.ml[68,2437+10]..[68,2437+13])
+                    Pexp_ident "not" (lib/local_store.ml[68,2437+10]..[68,2437+13])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (lib/local_store.ml[68,2437+14]..[68,2437+38])
+                        Pexp_field
+                        expression (lib/local_store.ml[68,2437+14]..[68,2437+29])
+                          Pexp_ident "global_bindings" (lib/local_store.ml[68,2437+14]..[68,2437+29])
+                        "is_bound" (lib/local_store.ml[68,2437+30]..[68,2437+38])
+                  ]
+              expression (lib/local_store.ml[69,2478+2]..[74,2708+3])
+                Pexp_sequence
+                expression (lib/local_store.ml[69,2478+2]..[69,2478+34])
+                  Pexp_setfield
+                  expression (lib/local_store.ml[69,2478+2]..[69,2478+17])
+                    Pexp_ident "global_bindings" (lib/local_store.ml[69,2478+2]..[69,2478+17])
+                  "is_bound" (lib/local_store.ml[69,2478+18]..[69,2478+26])
+                  expression (lib/local_store.ml[69,2478+30]..[69,2478+34])
+                    Pexp_construct "true" (lib/local_store.ml[69,2478+30]..[69,2478+34])
+                    None
+                expression (lib/local_store.ml[70,2514+2]..[74,2708+3])
+                  Pexp_sequence
+                  expression (lib/local_store.ml[70,2514+2]..[70,2514+58])
+                    Pexp_apply
+                    expression (lib/local_store.ml[70,2514+2]..[70,2514+11])
+                      Pexp_ident "List.iter" (lib/local_store.ml[70,2514+2]..[70,2514+11])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (lib/local_store.ml[70,2514+12]..[70,2514+52])
+                          Pexp_function
+                          [
+                            Pparam_val (lib/local_store.ml[70,2514+17]..[70,2514+35])
+                              Nolabel
+                              None
+                              pattern (lib/local_store.ml[70,2514+17]..[70,2514+35])
+                                Ppat_construct "Slot" (lib/local_store.ml[70,2514+18]..[70,2514+22])
+                                Some
+                                  []
+                                  pattern (lib/local_store.ml[70,2514+23]..[70,2514+34])
+                                    Ppat_record Closed
+                                    [
+                                      "ref" (lib/local_store.ml[70,2514+24]..[70,2514+27]) ghost
+                                        pattern (lib/local_store.ml[70,2514+24]..[70,2514+27])
+                                          Ppat_var "ref" (lib/local_store.ml[70,2514+24]..[70,2514+27])
+                                      "value" (lib/local_store.ml[70,2514+28]..[70,2514+33]) ghost
+                                        pattern (lib/local_store.ml[70,2514+28]..[70,2514+33])
+                                          Ppat_var "value" (lib/local_store.ml[70,2514+28]..[70,2514+33])
+                                    ]
+                          ]
+                          None
+                          Pfunction_body
+                            expression (lib/local_store.ml[70,2514+39]..[70,2514+51])
+                              Pexp_apply
+                              expression (lib/local_store.ml[70,2514+43]..[70,2514+45])
+                                Pexp_ident ":=" (lib/local_store.ml[70,2514+43]..[70,2514+45])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/local_store.ml[70,2514+39]..[70,2514+42])
+                                    Pexp_ident "ref" (lib/local_store.ml[70,2514+39]..[70,2514+42])
+                                <arg>
+                                Nolabel
+                                  expression (lib/local_store.ml[70,2514+46]..[70,2514+51])
+                                    Pexp_ident "value" (lib/local_store.ml[70,2514+46]..[70,2514+51])
+                              ]
+                      <arg>
+                      Nolabel
+                        expression (lib/local_store.ml[70,2514+53]..[70,2514+58])
+                          Pexp_ident "slots" (lib/local_store.ml[70,2514+53]..[70,2514+58])
+                    ]
+                  expression (lib/local_store.ml[71,2574+2]..[74,2708+3])
+                    Pexp_apply
+                    expression (lib/local_store.ml[71,2574+2]..[71,2574+13])
+                      Pexp_ident "Fun.protect" (lib/local_store.ml[71,2574+2]..[71,2574+13])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (lib/local_store.ml[71,2574+14]..[71,2574+15])
+                          Pexp_ident "f" (lib/local_store.ml[71,2574+14]..[71,2574+15])
+                      <arg>
+                      Labelled "finally"
+                        expression (lib/local_store.ml[71,2574+25]..[74,2708+3])
+                          Pexp_function
+                          [
+                            Pparam_val (lib/local_store.ml[71,2574+30]..[71,2574+32])
+                              Nolabel
+                              None
+                              pattern (lib/local_store.ml[71,2574+30]..[71,2574+32])
+                                Ppat_construct "()" (lib/local_store.ml[71,2574+30]..[71,2574+32])
+                                None
+                          ]
+                          None
+                          Pfunction_body
+                            expression (lib/local_store.ml[72,2610+4]..[73,2669+38])
+                              Pexp_sequence
+                              expression (lib/local_store.ml[72,2610+4]..[72,2610+57])
+                                Pexp_apply
+                                expression (lib/local_store.ml[72,2610+4]..[72,2610+13])
+                                  Pexp_ident "List.iter" (lib/local_store.ml[72,2610+4]..[72,2610+13])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (lib/local_store.ml[72,2610+14]..[72,2610+51])
+                                      Pexp_function
+                                      [
+                                        Pparam_val (lib/local_store.ml[72,2610+19]..[72,2610+27])
+                                          Nolabel
+                                          None
+                                          pattern (lib/local_store.ml[72,2610+19]..[72,2610+27])
+                                            Ppat_construct "Slot" (lib/local_store.ml[72,2610+20]..[72,2610+24])
+                                            Some
+                                              []
+                                              pattern (lib/local_store.ml[72,2610+25]..[72,2610+26])
+                                                Ppat_var "s" (lib/local_store.ml[72,2610+25]..[72,2610+26])
+                                      ]
+                                      None
+                                      Pfunction_body
+                                        expression (lib/local_store.ml[72,2610+31]..[72,2610+50])
+                                          Pexp_setfield
+                                          expression (lib/local_store.ml[72,2610+31]..[72,2610+32])
+                                            Pexp_ident "s" (lib/local_store.ml[72,2610+31]..[72,2610+32])
+                                          "value" (lib/local_store.ml[72,2610+33]..[72,2610+38])
+                                          expression (lib/local_store.ml[72,2610+42]..[72,2610+50])
+                                            Pexp_apply
+                                            expression (lib/local_store.ml[72,2610+42]..[72,2610+43])
+                                              Pexp_ident "!" (lib/local_store.ml[72,2610+42]..[72,2610+43])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (lib/local_store.ml[72,2610+43]..[72,2610+50])
+                                                  Pexp_field
+                                                  expression (lib/local_store.ml[72,2610+44]..[72,2610+45])
+                                                    Pexp_ident "s" (lib/local_store.ml[72,2610+44]..[72,2610+45])
+                                                  "ref" (lib/local_store.ml[72,2610+46]..[72,2610+49])
+                                            ]
+                                  <arg>
+                                  Nolabel
+                                    expression (lib/local_store.ml[72,2610+52]..[72,2610+57])
+                                      Pexp_ident "slots" (lib/local_store.ml[72,2610+52]..[72,2610+57])
+                                ]
+                              expression (lib/local_store.ml[73,2669+4]..[73,2669+37])
+                                Pexp_setfield
+                                expression (lib/local_store.ml[73,2669+4]..[73,2669+19])
+                                  Pexp_ident "global_bindings" (lib/local_store.ml[73,2669+4]..[73,2669+19])
+                                "is_bound" (lib/local_store.ml[73,2669+20]..[73,2669+28])
+                                expression (lib/local_store.ml[73,2669+32]..[73,2669+37])
+                                  Pexp_construct "false" (lib/local_store.ml[73,2669+32]..[73,2669+37])
+                                  None
+                    ]
+    ]
+]
+
+type ref_and_reset =
+  | Table: {
+  ref: 'a ref ;
+  init: unit -> 'a } -> ref_and_reset 
+  | Ref: {
+  ref: 'a ref ;
+  mutable snapshot: 'a } -> ref_and_reset 
+type bindings =
+  {
+  mutable refs: ref_and_reset list ;
+  mutable frozen: bool ;
+  mutable is_bound: bool }
+let global_bindings = { refs = []; is_bound = false; frozen = false }
+let is_bound () = global_bindings.is_bound
+let reset () =
+  assert (is_bound ());
+  List.iter
+    (function
+     | Table { ref; init } -> ref := (init ())
+     | Ref { ref; snapshot } -> ref := snapshot) global_bindings.refs
+let s_table create size =
+  let init () = create size in
+  let ref = ref (init ()) in
+  assert (not global_bindings.frozen);
+  global_bindings.refs <- ((Table { ref; init }) :: (global_bindings.refs));
+  ref
+let s_ref k =
+  let ref = ref k in
+  assert (not global_bindings.frozen);
+  global_bindings.refs <- ((Ref { ref; snapshot = k }) ::
+    (global_bindings.refs));
+  ref
+type slot =
+  | Slot: {
+  ref: 'a ref ;
+  mutable value: 'a } -> slot 
+type store = slot list
+let fresh () =
+  let slots =
+    List.map
+      (function
+       | Table { ref; init } -> Slot { ref; value = (init ()) }
+       | Ref r ->
+           (if not global_bindings.frozen then r.snapshot <- (!(r.ref));
+            Slot { ref = (r.ref); value = (r.snapshot) }))
+      global_bindings.refs in
+  global_bindings.frozen <- true; slots
+let with_store slots f =
+  assert (not global_bindings.is_bound);
+  global_bindings.is_bound <- true;
+  List.iter (fun (Slot { ref; value }) -> ref := value) slots;
+  Fun.protect f
+    ~finally:(fun () ->
+                List.iter (fun (Slot s) -> s.value <- (!(s.ref))) slots;
+                global_bindings.is_bound <- false)
+[
+  structure_item (lib/local_store.ml[16,1079+0]..lib/local_store.ml[18,1163+64])
+    Tstr_type Rec
+    [
+      type_declaration ref_and_reset/291 (lib/local_store.ml[16,1079+0]..lib/local_store.ml[18,1163+64])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/local_store.ml[17,1100+2]..lib/local_store.ml[17,1100+62])
+                Table/292
+                [
+                  (lib/local_store.ml[17,1100+14]..lib/local_store.ml[17,1100+26])
+                    Immutable
+                    ref/293                    core_type (lib/local_store.ml[17,1100+19]..lib/local_store.ml[17,1100+25])
+                      Ttyp_poly
+                      core_type (lib/local_store.ml[17,1100+19]..lib/local_store.ml[17,1100+25])
+                        Ttyp_constr "Stdlib!.ref"
+                        [
+                          core_type (lib/local_store.ml[17,1100+19]..lib/local_store.ml[17,1100+21])
+                            Ttyp_var a
+                        ]
+                  (lib/local_store.ml[17,1100+27]..lib/local_store.ml[17,1100+43])
+                    Immutable
+                    init/294                    core_type (lib/local_store.ml[17,1100+33]..lib/local_store.ml[17,1100+43])
+                      Ttyp_poly
+                      core_type (lib/local_store.ml[17,1100+33]..lib/local_store.ml[17,1100+43])
+                        Ttyp_arrow
+                        Nolabel
+                        core_type (lib/local_store.ml[17,1100+33]..lib/local_store.ml[17,1100+37])
+                          Ttyp_constr "unit/6!"
+                          []
+                        core_type (lib/local_store.ml[17,1100+41]..lib/local_store.ml[17,1100+43])
+                          Ttyp_var a
+                ]
+                Some
+                  core_type (lib/local_store.ml[17,1100+49]..lib/local_store.ml[17,1100+62])
+                    Ttyp_constr "ref_and_reset/291"
+                    []
+              (lib/local_store.ml[18,1163+2]..lib/local_store.ml[18,1163+64])
+                Ref/295
+                [
+                  (lib/local_store.ml[18,1163+12]..lib/local_store.ml[18,1163+24])
+                    Immutable
+                    ref/296                    core_type (lib/local_store.ml[18,1163+17]..lib/local_store.ml[18,1163+23])
+                      Ttyp_poly
+                      core_type (lib/local_store.ml[18,1163+17]..lib/local_store.ml[18,1163+23])
+                        Ttyp_constr "Stdlib!.ref"
+                        [
+                          core_type (lib/local_store.ml[18,1163+17]..lib/local_store.ml[18,1163+19])
+                            Ttyp_var a
+                        ]
+                  (lib/local_store.ml[18,1163+25]..lib/local_store.ml[18,1163+45])
+                    Mutable
+                    snapshot/297                    core_type (lib/local_store.ml[18,1163+43]..lib/local_store.ml[18,1163+45])
+                      Ttyp_poly
+                      core_type (lib/local_store.ml[18,1163+43]..lib/local_store.ml[18,1163+45])
+                        Ttyp_var a
+                ]
+                Some
+                  core_type (lib/local_store.ml[18,1163+51]..lib/local_store.ml[18,1163+64])
+                    Ttyp_constr "ref_and_reset/291"
+                    []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/local_store.ml[20,1229+0]..lib/local_store.ml[24,1334+1])
+    Tstr_type Rec
+    [
+      type_declaration bindings/298 (lib/local_store.ml[20,1229+0]..lib/local_store.ml[24,1334+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_record
+            [
+              (lib/local_store.ml[21,1247+2]..lib/local_store.ml[21,1247+35])
+                Mutable
+                refs/299                core_type (lib/local_store.ml[21,1247+16]..lib/local_store.ml[21,1247+34])
+                  Ttyp_poly
+                  core_type (lib/local_store.ml[21,1247+16]..lib/local_store.ml[21,1247+34])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/local_store.ml[21,1247+16]..lib/local_store.ml[21,1247+29])
+                        Ttyp_constr "ref_and_reset/291"
+                        []
+                    ]
+              (lib/local_store.ml[22,1283+2]..lib/local_store.ml[22,1283+24])
+                Mutable
+                frozen/300                core_type (lib/local_store.ml[22,1283+19]..lib/local_store.ml[22,1283+23])
+                  Ttyp_poly
+                  core_type (lib/local_store.ml[22,1283+19]..lib/local_store.ml[22,1283+23])
+                    Ttyp_constr "bool/5!"
+                    []
+              (lib/local_store.ml[23,1308+2]..lib/local_store.ml[23,1308+25])
+                Mutable
+                is_bound/301                core_type (lib/local_store.ml[23,1308+20]..lib/local_store.ml[23,1308+24])
+                  Ttyp_poly
+                  core_type (lib/local_store.ml[23,1308+20]..lib/local_store.ml[23,1308+24])
+                    Ttyp_constr "bool/5!"
+                    []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/local_store.ml[26,1337+0]..lib/local_store.ml[27,1359+49])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/local_store.ml[26,1337+4]..lib/local_store.ml[26,1337+19])
+          Tpat_var "global_bindings/302"
+        expression (lib/local_store.ml[27,1359+2]..lib/local_store.ml[27,1359+49])
+          Texp_record
+            fields =
+              [
+                "refs"
+                  expression (lib/local_store.ml[27,1359+11]..lib/local_store.ml[27,1359+13])
+                    Texp_construct "[]"
+                    []
+                "frozen"
+                  expression (lib/local_store.ml[27,1359+42]..lib/local_store.ml[27,1359+47])
+                    Texp_construct "false"
+                    []
+                "is_bound"
+                  expression (lib/local_store.ml[27,1359+26]..lib/local_store.ml[27,1359+31])
+                    Texp_construct "false"
+                    []
+              ]
+            representation =
+              Record_regular
+            extended_expression =
+              None
+    ]
+  structure_item (lib/local_store.ml[29,1410+0]..lib/local_store.ml[29,1410+42])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/local_store.ml[29,1410+4]..lib/local_store.ml[29,1410+12])
+          Tpat_var "is_bound/303"
+        expression (lib/local_store.ml[29,1410+13]..lib/local_store.ml[29,1410+42]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/local_store.ml[29,1410+13]..lib/local_store.ml[29,1410+15])
+                Tpat_construct "()"
+                []
+                None
+          ]
+          Tfunction_body
+            expression (lib/local_store.ml[29,1410+18]..lib/local_store.ml[29,1410+42])
+              Texp_field
+              expression (lib/local_store.ml[29,1410+18]..lib/local_store.ml[29,1410+33])
+                Texp_ident "global_bindings/302"
+              "is_bound"
+    ]
+  structure_item (lib/local_store.ml[31,1454+0]..lib/local_store.ml[36,1606+24])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/local_store.ml[31,1454+4]..lib/local_store.ml[31,1454+9])
+          Tpat_var "reset/306"
+        expression (lib/local_store.ml[31,1454+10]..lib/local_store.ml[36,1606+24]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/local_store.ml[31,1454+10]..lib/local_store.ml[31,1454+12])
+                Tpat_construct "()"
+                []
+                None
+          ]
+          Tfunction_body
+            expression (lib/local_store.ml[32,1469+2]..lib/local_store.ml[36,1606+24])
+              Texp_sequence
+              expression (lib/local_store.ml[32,1469+2]..lib/local_store.ml[32,1469+22])
+                Texp_assert                expression (lib/local_store.ml[32,1469+9]..lib/local_store.ml[32,1469+22])
+                  Texp_apply
+                  expression (lib/local_store.ml[32,1469+10]..lib/local_store.ml[32,1469+18])
+                    Texp_ident "is_bound/303"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (lib/local_store.ml[32,1469+19]..lib/local_store.ml[32,1469+21])
+                        Texp_construct "()"
+                        []
+                  ]
+              expression (lib/local_store.ml[33,1493+2]..lib/local_store.ml[36,1606+24])
+                Texp_apply
+                expression (lib/local_store.ml[33,1493+2]..lib/local_store.ml[33,1493+11])
+                  Texp_ident "Stdlib!.List.iter"
+                [
+                  <arg>
+                    Nolabel
+                    expression (lib/local_store.ml[33,1493+12]..lib/local_store.ml[36,1606+3])
+                      Texp_function
+                      []
+                      Tfunction_cases (lib/local_store.ml[33,1493+13]..lib/local_store.ml[35,1559+46])
+                        [
+                          <case>
+                            pattern (lib/local_store.ml[34,1515+6]..lib/local_store.ml[34,1515+25])
+                              Tpat_construct "Table"
+                              [
+                                pattern (lib/local_store.ml[34,1515+12]..lib/local_store.ml[34,1515+25])
+                                  Tpat_record
+                                  [
+                                    "ref"
+                                      pattern (lib/local_store.ml[34,1515+14]..lib/local_store.ml[34,1515+17])
+                                        Tpat_var "ref/375"
+                                    "init"
+                                      pattern (lib/local_store.ml[34,1515+19]..lib/local_store.ml[34,1515+23])
+                                        Tpat_var "init/376"
+                                  ]
+                              ]
+                              None
+                            expression (lib/local_store.ml[34,1515+29]..lib/local_store.ml[34,1515+43])
+                              Texp_apply
+                              expression (lib/local_store.ml[34,1515+33]..lib/local_store.ml[34,1515+35])
+                                Texp_ident "Stdlib!.:="
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (lib/local_store.ml[34,1515+29]..lib/local_store.ml[34,1515+32])
+                                    Texp_ident "ref/375"
+                                <arg>
+                                  Nolabel
+                                  expression (lib/local_store.ml[34,1515+36]..lib/local_store.ml[34,1515+43])
+                                    Texp_apply
+                                    expression (lib/local_store.ml[34,1515+36]..lib/local_store.ml[34,1515+40])
+                                      Texp_ident "init/376"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (lib/local_store.ml[34,1515+41]..lib/local_store.ml[34,1515+43])
+                                          Texp_construct "()"
+                                          []
+                                    ]
+                              ]
+                          <case>
+                            pattern (lib/local_store.ml[35,1559+6]..lib/local_store.ml[35,1559+27])
+                              Tpat_construct "Ref"
+                              [
+                                pattern (lib/local_store.ml[35,1559+10]..lib/local_store.ml[35,1559+27])
+                                  Tpat_record
+                                  [
+                                    "ref"
+                                      pattern (lib/local_store.ml[35,1559+12]..lib/local_store.ml[35,1559+15])
+                                        Tpat_var "ref/378"
+                                    "snapshot"
+                                      pattern (lib/local_store.ml[35,1559+17]..lib/local_store.ml[35,1559+25])
+                                        Tpat_var "snapshot/379"
+                                  ]
+                              ]
+                              None
+                            expression (lib/local_store.ml[35,1559+31]..lib/local_store.ml[35,1559+46])
+                              Texp_apply
+                              expression (lib/local_store.ml[35,1559+35]..lib/local_store.ml[35,1559+37])
+                                Texp_ident "Stdlib!.:="
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (lib/local_store.ml[35,1559+31]..lib/local_store.ml[35,1559+34])
+                                    Texp_ident "ref/378"
+                                <arg>
+                                  Nolabel
+                                  expression (lib/local_store.ml[35,1559+38]..lib/local_store.ml[35,1559+46])
+                                    Texp_ident "snapshot/379"
+                              ]
+                        ]
+                  <arg>
+                    Nolabel
+                    expression (lib/local_store.ml[36,1606+4]..lib/local_store.ml[36,1606+24])
+                      Texp_field
+                      expression (lib/local_store.ml[36,1606+4]..lib/local_store.ml[36,1606+19])
+                        Texp_ident "global_bindings/302"
+                      "refs"
+                ]
+    ]
+  structure_item (lib/local_store.ml[38,1632+0]..lib/local_store.ml[43,1830+5])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/local_store.ml[38,1632+4]..lib/local_store.ml[38,1632+11])
+          Tpat_var "s_table/383"
+        expression (lib/local_store.ml[38,1632+12]..lib/local_store.ml[43,1830+5]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/local_store.ml[38,1632+12]..lib/local_store.ml[38,1632+18])
+                Tpat_var "create/385"
+            Nolabel
+            Param_pat
+              pattern (lib/local_store.ml[38,1632+19]..lib/local_store.ml[38,1632+23])
+                Tpat_var "size/386"
+          ]
+          Tfunction_body
+            expression (lib/local_store.ml[39,1658+2]..lib/local_store.ml[43,1830+5])
+              Texp_let Nonrec
+              [
+                <def>
+                  pattern (lib/local_store.ml[39,1658+6]..lib/local_store.ml[39,1658+10])
+                    Tpat_var "init/387"
+                  expression (lib/local_store.ml[39,1658+11]..lib/local_store.ml[39,1658+27]) ghost
+                    Texp_function
+                    [
+                      Nolabel
+                      Param_pat
+                        pattern (lib/local_store.ml[39,1658+11]..lib/local_store.ml[39,1658+13])
+                          Tpat_construct "()"
+                          []
+                          None
+                    ]
+                    Tfunction_body
+                      expression (lib/local_store.ml[39,1658+16]..lib/local_store.ml[39,1658+27])
+                        Texp_apply
+                        expression (lib/local_store.ml[39,1658+16]..lib/local_store.ml[39,1658+22])
+                          Texp_ident "create/385"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (lib/local_store.ml[39,1658+23]..lib/local_store.ml[39,1658+27])
+                              Texp_ident "size/386"
+                        ]
+              ]
+              expression (lib/local_store.ml[40,1689+2]..lib/local_store.ml[43,1830+5])
+                Texp_let Nonrec
+                [
+                  <def>
+                    pattern (lib/local_store.ml[40,1689+6]..lib/local_store.ml[40,1689+9])
+                      Tpat_var "ref/390"
+                    expression (lib/local_store.ml[40,1689+12]..lib/local_store.ml[40,1689+25])
+                      Texp_apply
+                      expression (lib/local_store.ml[40,1689+12]..lib/local_store.ml[40,1689+15])
+                        Texp_ident "Stdlib!.ref"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (lib/local_store.ml[40,1689+16]..lib/local_store.ml[40,1689+25])
+                            Texp_apply
+                            expression (lib/local_store.ml[40,1689+17]..lib/local_store.ml[40,1689+21])
+                              Texp_ident "init/387"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (lib/local_store.ml[40,1689+22]..lib/local_store.ml[40,1689+24])
+                                  Texp_construct "()"
+                                  []
+                            ]
+                      ]
+                ]
+                expression (lib/local_store.ml[41,1718+2]..lib/local_store.ml[43,1830+5])
+                  Texp_sequence
+                  expression (lib/local_store.ml[41,1718+2]..lib/local_store.ml[41,1718+37])
+                    Texp_assert                    expression (lib/local_store.ml[41,1718+9]..lib/local_store.ml[41,1718+37])
+                      Texp_apply
+                      expression (lib/local_store.ml[41,1718+10]..lib/local_store.ml[41,1718+13])
+                        Texp_ident "Stdlib!.not"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (lib/local_store.ml[41,1718+14]..lib/local_store.ml[41,1718+36])
+                            Texp_field
+                            expression (lib/local_store.ml[41,1718+14]..lib/local_store.ml[41,1718+29])
+                              Texp_ident "global_bindings/302"
+                            "frozen"
+                      ]
+                  expression (lib/local_store.ml[42,1757+2]..lib/local_store.ml[43,1830+5])
+                    Texp_sequence
+                    expression (lib/local_store.ml[42,1757+2]..lib/local_store.ml[42,1757+71])
+                      Texp_setfield
+                      expression (lib/local_store.ml[42,1757+2]..lib/local_store.ml[42,1757+17])
+                        Texp_ident "global_bindings/302"
+                      "refs"
+                      expression (lib/local_store.ml[42,1757+26]..lib/local_store.ml[42,1757+71])
+                        Texp_construct "::"
+                        [
+                          expression (lib/local_store.ml[42,1757+26]..lib/local_store.ml[42,1757+47])
+                            Texp_construct "Table"
+                            [
+                              expression (lib/local_store.ml[42,1757+33]..lib/local_store.ml[42,1757+46])
+                                Texp_record
+                                  fields =
+                                    [
+                                      "ref"
+                                        expression (lib/local_store.ml[42,1757+35]..lib/local_store.ml[42,1757+38])
+                                          Texp_ident "ref/390"
+                                      "init"
+                                        expression (lib/local_store.ml[42,1757+40]..lib/local_store.ml[42,1757+44])
+                                          Texp_ident "init/387"
+                                    ]
+                                  representation =
+Record_inlined 0
+                                  extended_expression =
+                                    None
+                            ]
+                          expression (lib/local_store.ml[42,1757+51]..lib/local_store.ml[42,1757+71])
+                            Texp_field
+                            expression (lib/local_store.ml[42,1757+51]..lib/local_store.ml[42,1757+66])
+                              Texp_ident "global_bindings/302"
+                            "refs"
+                        ]
+                    expression (lib/local_store.ml[43,1830+2]..lib/local_store.ml[43,1830+5])
+                      Texp_ident "ref/390"
+    ]
+  structure_item (lib/local_store.ml[45,1837+0]..lib/local_store.ml[50,1994+5])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/local_store.ml[45,1837+4]..lib/local_store.ml[45,1837+9])
+          Tpat_var "s_ref/391"
+        expression (lib/local_store.ml[45,1837+10]..lib/local_store.ml[50,1994+5]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/local_store.ml[45,1837+10]..lib/local_store.ml[45,1837+11])
+                Tpat_var "k/393"
+          ]
+          Tfunction_body
+            expression (lib/local_store.ml[46,1851+2]..lib/local_store.ml[50,1994+5])
+              Texp_let Nonrec
+              [
+                <def>
+                  pattern (lib/local_store.ml[46,1851+6]..lib/local_store.ml[46,1851+9])
+                    Tpat_var "ref/394"
+                  expression (lib/local_store.ml[46,1851+12]..lib/local_store.ml[46,1851+17])
+                    Texp_apply
+                    expression (lib/local_store.ml[46,1851+12]..lib/local_store.ml[46,1851+15])
+                      Texp_ident "Stdlib!.ref"
+                    [
+                      <arg>
+                        Nolabel
+                        expression (lib/local_store.ml[46,1851+16]..lib/local_store.ml[46,1851+17])
+                          Texp_ident "k/393"
+                    ]
+              ]
+              expression (lib/local_store.ml[47,1872+2]..lib/local_store.ml[50,1994+5])
+                Texp_sequence
+                expression (lib/local_store.ml[47,1872+2]..lib/local_store.ml[47,1872+37])
+                  Texp_assert                  expression (lib/local_store.ml[47,1872+9]..lib/local_store.ml[47,1872+37])
+                    Texp_apply
+                    expression (lib/local_store.ml[47,1872+10]..lib/local_store.ml[47,1872+13])
+                      Texp_ident "Stdlib!.not"
+                    [
+                      <arg>
+                        Nolabel
+                        expression (lib/local_store.ml[47,1872+14]..lib/local_store.ml[47,1872+36])
+                          Texp_field
+                          expression (lib/local_store.ml[47,1872+14]..lib/local_store.ml[47,1872+29])
+                            Texp_ident "global_bindings/302"
+                          "frozen"
+                    ]
+                expression (lib/local_store.ml[48,1911+2]..lib/local_store.ml[50,1994+5])
+                  Texp_sequence
+                  expression (lib/local_store.ml[48,1911+2]..lib/local_store.ml[49,1937+55])
+                    Texp_setfield
+                    expression (lib/local_store.ml[48,1911+2]..lib/local_store.ml[48,1911+17])
+                      Texp_ident "global_bindings/302"
+                    "refs"
+                    expression (lib/local_store.ml[49,1937+4]..lib/local_store.ml[49,1937+55])
+                      Texp_construct "::"
+                      [
+                        expression (lib/local_store.ml[49,1937+4]..lib/local_store.ml[49,1937+31])
+                          Texp_construct "Ref"
+                          [
+                            expression (lib/local_store.ml[49,1937+9]..lib/local_store.ml[49,1937+30])
+                              Texp_record
+                                fields =
+                                  [
+                                    "ref"
+                                      expression (lib/local_store.ml[49,1937+11]..lib/local_store.ml[49,1937+14])
+                                        Texp_ident "ref/394"
+                                    "snapshot"
+                                      expression (lib/local_store.ml[49,1937+27]..lib/local_store.ml[49,1937+28])
+                                        Texp_ident "k/393"
+                                  ]
+                                representation =
+  Record_inlined 1
+                                extended_expression =
+                                  None
+                          ]
+                        expression (lib/local_store.ml[49,1937+35]..lib/local_store.ml[49,1937+55])
+                          Texp_field
+                          expression (lib/local_store.ml[49,1937+35]..lib/local_store.ml[49,1937+50])
+                            Texp_ident "global_bindings/302"
+                          "refs"
+                      ]
+                  expression (lib/local_store.ml[50,1994+2]..lib/local_store.ml[50,1994+5])
+                    Texp_ident "ref/394"
+    ]
+  structure_item (lib/local_store.ml[52,2001+0]..lib/local_store.ml[52,2001+63])
+    Tstr_type Rec
+    [
+      type_declaration slot/395 (lib/local_store.ml[52,2001+0]..lib/local_store.ml[52,2001+63])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/local_store.ml[52,2001+12]..lib/local_store.ml[52,2001+63])
+                Slot/396
+                [
+                  (lib/local_store.ml[52,2001+21]..lib/local_store.ml[52,2001+34])
+                    Immutable
+                    ref/397                    core_type (lib/local_store.ml[52,2001+27]..lib/local_store.ml[52,2001+33])
+                      Ttyp_poly
+                      core_type (lib/local_store.ml[52,2001+27]..lib/local_store.ml[52,2001+33])
+                        Ttyp_constr "Stdlib!.ref"
+                        [
+                          core_type (lib/local_store.ml[52,2001+27]..lib/local_store.ml[52,2001+29])
+                            Ttyp_var a
+                        ]
+                  (lib/local_store.ml[52,2001+35]..lib/local_store.ml[52,2001+53])
+                    Mutable
+                    value/398                    core_type (lib/local_store.ml[52,2001+51]..lib/local_store.ml[52,2001+53])
+                      Ttyp_poly
+                      core_type (lib/local_store.ml[52,2001+51]..lib/local_store.ml[52,2001+53])
+                        Ttyp_var a
+                ]
+                Some
+                  core_type (lib/local_store.ml[52,2001+59]..lib/local_store.ml[52,2001+63])
+                    Ttyp_constr "slot/395"
+                    []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/local_store.ml[53,2065+0]..lib/local_store.ml[53,2065+22])
+    Tstr_type Rec
+    [
+      type_declaration store/399 (lib/local_store.ml[53,2065+0]..lib/local_store.ml[53,2065+22])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (lib/local_store.ml[53,2065+13]..lib/local_store.ml[53,2065+22])
+              Ttyp_constr "list/9!"
+              [
+                core_type (lib/local_store.ml[53,2065+13]..lib/local_store.ml[53,2065+17])
+                  Ttyp_constr "slot/395"
+                  []
+              ]
+    ]
+  structure_item (lib/local_store.ml[55,2089+0]..lib/local_store.ml[65,2403+7])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/local_store.ml[55,2089+4]..lib/local_store.ml[55,2089+9])
+          Tpat_var "fresh/400"
+        expression (lib/local_store.ml[55,2089+10]..lib/local_store.ml[65,2403+7]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/local_store.ml[55,2089+10]..lib/local_store.ml[55,2089+12])
+                Tpat_construct "()"
+                []
+                None
+          ]
+          Tfunction_body
+            expression (lib/local_store.ml[56,2104+2]..lib/local_store.ml[65,2403+7])
+              Texp_let Nonrec
+              [
+                <def>
+                  pattern (lib/local_store.ml[56,2104+6]..lib/local_store.ml[56,2104+11])
+                    Tpat_var "slots/402"
+                  expression (lib/local_store.ml[57,2118+4]..lib/local_store.ml[62,2337+26])
+                    Texp_apply
+                    expression (lib/local_store.ml[57,2118+4]..lib/local_store.ml[57,2118+12])
+                      Texp_ident "Stdlib!.List.map"
+                    [
+                      <arg>
+                        Nolabel
+                        expression (lib/local_store.ml[57,2118+13]..lib/local_store.ml[62,2337+5])
+                          Texp_function
+                          []
+                          Tfunction_cases (lib/local_store.ml[57,2118+14]..lib/local_store.ml[61,2286+50])
+                            [
+                              <case>
+                                pattern (lib/local_store.ml[58,2141+8]..lib/local_store.ml[58,2141+27])
+                                  Tpat_construct "Table"
+                                  [
+                                    pattern (lib/local_store.ml[58,2141+14]..lib/local_store.ml[58,2141+27])
+                                      Tpat_record
+                                      [
+                                        "ref"
+                                          pattern (lib/local_store.ml[58,2141+16]..lib/local_store.ml[58,2141+19])
+                                            Tpat_var "ref/404"
+                                        "init"
+                                          pattern (lib/local_store.ml[58,2141+21]..lib/local_store.ml[58,2141+25])
+                                            Tpat_var "init/405"
+                                      ]
+                                  ]
+                                  None
+                                expression (lib/local_store.ml[58,2141+31]..lib/local_store.ml[58,2141+58])
+                                  Texp_construct "Slot"
+                                  [
+                                    expression (lib/local_store.ml[58,2141+36]..lib/local_store.ml[58,2141+58])
+                                      Texp_record
+                                        fields =
+                                          [
+                                            "ref"
+                                              expression (lib/local_store.ml[58,2141+37]..lib/local_store.ml[58,2141+40])
+                                                Texp_ident "ref/404"
+                                            "value"
+                                              expression (lib/local_store.ml[58,2141+50]..lib/local_store.ml[58,2141+57])
+                                                Texp_apply
+                                                expression (lib/local_store.ml[58,2141+50]..lib/local_store.ml[58,2141+54])
+                                                  Texp_ident "init/405"
+                                                [
+                                                  <arg>
+                                                    Nolabel
+                                                    expression (lib/local_store.ml[58,2141+55]..lib/local_store.ml[58,2141+57])
+                                                      Texp_construct "()"
+                                                      []
+                                                ]
+                                          ]
+                                        representation =
+Record_inlined 0
+                                        extended_expression =
+                                          None
+                                  ]
+                              <case>
+                                pattern (lib/local_store.ml[59,2200+8]..lib/local_store.ml[59,2200+13])
+                                  Tpat_construct "Ref"
+                                  [
+                                    pattern (lib/local_store.ml[59,2200+12]..lib/local_store.ml[59,2200+13])
+                                      Tpat_var "r/407"
+                                  ]
+                                  None
+                                expression (lib/local_store.ml[60,2217+10]..lib/local_store.ml[61,2286+50])
+                                  Texp_sequence
+                                  expression (lib/local_store.ml[60,2217+10]..lib/local_store.ml[60,2217+67])
+                                    Texp_ifthenelse
+                                    expression (lib/local_store.ml[60,2217+13]..lib/local_store.ml[60,2217+39])
+                                      Texp_apply
+                                      expression (lib/local_store.ml[60,2217+13]..lib/local_store.ml[60,2217+16])
+                                        Texp_ident "Stdlib!.not"
+                                      [
+                                        <arg>
+                                          Nolabel
+                                          expression (lib/local_store.ml[60,2217+17]..lib/local_store.ml[60,2217+39])
+                                            Texp_field
+                                            expression (lib/local_store.ml[60,2217+17]..lib/local_store.ml[60,2217+32])
+                                              Texp_ident "global_bindings/302"
+                                            "frozen"
+                                      ]
+                                    expression (lib/local_store.ml[60,2217+45]..lib/local_store.ml[60,2217+67])
+                                      Texp_setfield
+                                      expression (lib/local_store.ml[60,2217+45]..lib/local_store.ml[60,2217+46])
+                                        Texp_ident "r/407"
+                                      "snapshot"
+                                      expression (lib/local_store.ml[60,2217+59]..lib/local_store.ml[60,2217+67])
+                                        Texp_apply
+                                        expression (lib/local_store.ml[60,2217+59]..lib/local_store.ml[60,2217+60])
+                                          Texp_ident "Stdlib!.!"
+                                        [
+                                          <arg>
+                                            Nolabel
+                                            expression (lib/local_store.ml[60,2217+60]..lib/local_store.ml[60,2217+67])
+                                              Texp_field
+                                              expression (lib/local_store.ml[60,2217+61]..lib/local_store.ml[60,2217+62])
+                                                Texp_ident "r/407"
+                                              "ref"
+                                        ]
+                                    None
+                                  expression (lib/local_store.ml[61,2286+10]..lib/local_store.ml[61,2286+50])
+                                    Texp_construct "Slot"
+                                    [
+                                      expression (lib/local_store.ml[61,2286+15]..lib/local_store.ml[61,2286+50])
+                                        Texp_record
+                                          fields =
+                                            [
+                                              "ref"
+                                                expression (lib/local_store.ml[61,2286+23]..lib/local_store.ml[61,2286+28])
+                                                  Texp_field
+                                                  expression (lib/local_store.ml[61,2286+23]..lib/local_store.ml[61,2286+24])
+                                                    Texp_ident "r/407"
+                                                  "ref"
+                                              "value"
+                                                expression (lib/local_store.ml[61,2286+38]..lib/local_store.ml[61,2286+48])
+                                                  Texp_field
+                                                  expression (lib/local_store.ml[61,2286+38]..lib/local_store.ml[61,2286+39])
+                                                    Texp_ident "r/407"
+                                                  "snapshot"
+                                            ]
+                                          representation =
+Record_inlined 0
+                                          extended_expression =
+                                            None
+                                    ]
+                            ]
+                      <arg>
+                        Nolabel
+                        expression (lib/local_store.ml[62,2337+6]..lib/local_store.ml[62,2337+26])
+                          Texp_field
+                          expression (lib/local_store.ml[62,2337+6]..lib/local_store.ml[62,2337+21])
+                            Texp_ident "global_bindings/302"
+                          "refs"
+                    ]
+              ]
+              expression (lib/local_store.ml[64,2369+2]..lib/local_store.ml[65,2403+7])
+                Texp_sequence
+                expression (lib/local_store.ml[64,2369+2]..lib/local_store.ml[64,2369+32])
+                  Texp_setfield
+                  expression (lib/local_store.ml[64,2369+2]..lib/local_store.ml[64,2369+17])
+                    Texp_ident "global_bindings/302"
+                  "frozen"
+                  expression (lib/local_store.ml[64,2369+28]..lib/local_store.ml[64,2369+32])
+                    Texp_construct "true"
+                    []
+                expression (lib/local_store.ml[65,2403+2]..lib/local_store.ml[65,2403+7])
+                  Texp_ident "slots/402"
+    ]
+  structure_item (lib/local_store.ml[67,2412+0]..lib/local_store.ml[74,2708+3])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/local_store.ml[67,2412+4]..lib/local_store.ml[67,2412+14])
+          Tpat_var "with_store/411"
+        expression (lib/local_store.ml[67,2412+15]..lib/local_store.ml[74,2708+3]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/local_store.ml[67,2412+15]..lib/local_store.ml[67,2412+20])
+                Tpat_var "slots/413"
+            Nolabel
+            Param_pat
+              pattern (lib/local_store.ml[67,2412+21]..lib/local_store.ml[67,2412+22])
+                Tpat_var "f/414"
+          ]
+          Tfunction_body
+            expression (lib/local_store.ml[68,2437+2]..lib/local_store.ml[74,2708+3])
+              Texp_sequence
+              expression (lib/local_store.ml[68,2437+2]..lib/local_store.ml[68,2437+39])
+                Texp_assert                expression (lib/local_store.ml[68,2437+9]..lib/local_store.ml[68,2437+39])
+                  Texp_apply
+                  expression (lib/local_store.ml[68,2437+10]..lib/local_store.ml[68,2437+13])
+                    Texp_ident "Stdlib!.not"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (lib/local_store.ml[68,2437+14]..lib/local_store.ml[68,2437+38])
+                        Texp_field
+                        expression (lib/local_store.ml[68,2437+14]..lib/local_store.ml[68,2437+29])
+                          Texp_ident "global_bindings/302"
+                        "is_bound"
+                  ]
+              expression (lib/local_store.ml[69,2478+2]..lib/local_store.ml[74,2708+3])
+                Texp_sequence
+                expression (lib/local_store.ml[69,2478+2]..lib/local_store.ml[69,2478+34])
+                  Texp_setfield
+                  expression (lib/local_store.ml[69,2478+2]..lib/local_store.ml[69,2478+17])
+                    Texp_ident "global_bindings/302"
+                  "is_bound"
+                  expression (lib/local_store.ml[69,2478+30]..lib/local_store.ml[69,2478+34])
+                    Texp_construct "true"
+                    []
+                expression (lib/local_store.ml[70,2514+2]..lib/local_store.ml[74,2708+3])
+                  Texp_sequence
+                  expression (lib/local_store.ml[70,2514+2]..lib/local_store.ml[70,2514+58])
+                    Texp_apply
+                    expression (lib/local_store.ml[70,2514+2]..lib/local_store.ml[70,2514+11])
+                      Texp_ident "Stdlib!.List.iter"
+                    [
+                      <arg>
+                        Nolabel
+                        expression (lib/local_store.ml[70,2514+12]..lib/local_store.ml[70,2514+52])
+                          Texp_function
+                          [
+                            Nolabel
+                            Param_pat
+                              pattern (lib/local_store.ml[70,2514+17]..lib/local_store.ml[70,2514+35])
+                                Tpat_construct "Slot"
+                                [
+                                  pattern (lib/local_store.ml[70,2514+23]..lib/local_store.ml[70,2514+34])
+                                    Tpat_record
+                                    [
+                                      "ref"
+                                        pattern (lib/local_store.ml[70,2514+24]..lib/local_store.ml[70,2514+27])
+                                          Tpat_var "ref/416"
+                                      "value"
+                                        pattern (lib/local_store.ml[70,2514+28]..lib/local_store.ml[70,2514+33])
+                                          Tpat_var "value/417"
+                                    ]
+                                ]
+                                None
+                          ]
+                          Tfunction_body
+                            expression (lib/local_store.ml[70,2514+39]..lib/local_store.ml[70,2514+51])
+                              Texp_apply
+                              expression (lib/local_store.ml[70,2514+43]..lib/local_store.ml[70,2514+45])
+                                Texp_ident "Stdlib!.:="
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (lib/local_store.ml[70,2514+39]..lib/local_store.ml[70,2514+42])
+                                    Texp_ident "ref/416"
+                                <arg>
+                                  Nolabel
+                                  expression (lib/local_store.ml[70,2514+46]..lib/local_store.ml[70,2514+51])
+                                    Texp_ident "value/417"
+                              ]
+                      <arg>
+                        Nolabel
+                        expression (lib/local_store.ml[70,2514+53]..lib/local_store.ml[70,2514+58])
+                          Texp_ident "slots/413"
+                    ]
+                  expression (lib/local_store.ml[71,2574+2]..lib/local_store.ml[74,2708+3])
+                    Texp_apply
+                    expression (lib/local_store.ml[71,2574+2]..lib/local_store.ml[71,2574+13])
+                      Texp_ident "Stdlib!.Fun.protect"
+                    [
+                      <arg>
+                        Labelled "finally"
+                        expression (lib/local_store.ml[71,2574+25]..lib/local_store.ml[74,2708+3])
+                          Texp_function
+                          [
+                            Nolabel
+                            Param_pat
+                              pattern (lib/local_store.ml[71,2574+30]..lib/local_store.ml[71,2574+32])
+                                Tpat_construct "()"
+                                []
+                                None
+                          ]
+                          Tfunction_body
+                            expression (lib/local_store.ml[72,2610+4]..lib/local_store.ml[73,2669+38])
+                              Texp_sequence
+                              expression (lib/local_store.ml[72,2610+4]..lib/local_store.ml[72,2610+57])
+                                Texp_apply
+                                expression (lib/local_store.ml[72,2610+4]..lib/local_store.ml[72,2610+13])
+                                  Texp_ident "Stdlib!.List.iter"
+                                [
+                                  <arg>
+                                    Nolabel
+                                    expression (lib/local_store.ml[72,2610+14]..lib/local_store.ml[72,2610+51])
+                                      Texp_function
+                                      [
+                                        Nolabel
+                                        Param_pat
+                                          pattern (lib/local_store.ml[72,2610+19]..lib/local_store.ml[72,2610+27])
+                                            Tpat_construct "Slot"
+                                            [
+                                              pattern (lib/local_store.ml[72,2610+25]..lib/local_store.ml[72,2610+26])
+                                                Tpat_var "s/427"
+                                            ]
+                                            None
+                                      ]
+                                      Tfunction_body
+                                        expression (lib/local_store.ml[72,2610+31]..lib/local_store.ml[72,2610+50])
+                                          Texp_setfield
+                                          expression (lib/local_store.ml[72,2610+31]..lib/local_store.ml[72,2610+32])
+                                            Texp_ident "s/427"
+                                          "value"
+                                          expression (lib/local_store.ml[72,2610+42]..lib/local_store.ml[72,2610+50])
+                                            Texp_apply
+                                            expression (lib/local_store.ml[72,2610+42]..lib/local_store.ml[72,2610+43])
+                                              Texp_ident "Stdlib!.!"
+                                            [
+                                              <arg>
+                                                Nolabel
+                                                expression (lib/local_store.ml[72,2610+43]..lib/local_store.ml[72,2610+50])
+                                                  Texp_field
+                                                  expression (lib/local_store.ml[72,2610+44]..lib/local_store.ml[72,2610+45])
+                                                    Texp_ident "s/427"
+                                                  "ref"
+                                            ]
+                                  <arg>
+                                    Nolabel
+                                    expression (lib/local_store.ml[72,2610+52]..lib/local_store.ml[72,2610+57])
+                                      Texp_ident "slots/413"
+                                ]
+                              expression (lib/local_store.ml[73,2669+4]..lib/local_store.ml[73,2669+37])
+                                Texp_setfield
+                                expression (lib/local_store.ml[73,2669+4]..lib/local_store.ml[73,2669+19])
+                                  Texp_ident "global_bindings/302"
+                                "is_bound"
+                                expression (lib/local_store.ml[73,2669+32]..lib/local_store.ml[73,2669+37])
+                                  Texp_construct "false"
+                                  []
+                      <arg>
+                        Nolabel
+                        expression (lib/local_store.ml[71,2574+14]..lib/local_store.ml[71,2574+15])
+                          Texp_ident "f/414"
+                    ]
+    ]
+]
+
+{<Ocaml_ocaml_types__Local_store>
+ "bindings"[type] -> <Ocaml_ocaml_types__Local_store.17>;
+ "fresh"[value] -> <Ocaml_ocaml_types__Local_store.49>;
+ "global_bindings"[value] -> <Ocaml_ocaml_types__Local_store.21>;
+ "is_bound"[value] -> <Ocaml_ocaml_types__Local_store.22>;
+ "ref_and_reset"[type] -> <Ocaml_ocaml_types__Local_store.0>;
+ "reset"[value] -> <Ocaml_ocaml_types__Local_store.23>;
+ "s_ref"[value] -> <Ocaml_ocaml_types__Local_store.36>;
+ "s_table"[value] -> <Ocaml_ocaml_types__Local_store.31>;
+ "slot"[type] -> <Ocaml_ocaml_types__Local_store.39>;
+ "store"[type] -> <Ocaml_ocaml_types__Local_store.48>;
+ "with_store"[value] -> <Ocaml_ocaml_types__Local_store.57>;
+ }
+
+(setglobal Ocaml_ocaml_types__Local_store!
+  (let
+    (global_bindings/302 = (makemutable 0 (*,int,int) 0 0 0)
+     is_bound/303 =
+       (function param/305[int] : int
+         (funct-body Ocaml_ocaml_types__Local_store.is_bound lib/local_store.ml(29)<ghost>:1423-1452
+           (before Ocaml_ocaml_types__Local_store.is_bound lib/local_store.ml(29):1428-1452
+             (field_int 2 global_bindings/302))))
+     reset/306 =
+       (function param/382[int] : int
+         (funct-body Ocaml_ocaml_types__Local_store.reset lib/local_store.ml(31)<ghost>:1464-1630
+           (before Ocaml_ocaml_types__Local_store.reset lib/local_store.ml(32):1471-1630
+             (seq
+               (if
+                 (after Ocaml_ocaml_types__Local_store.reset lib/local_store.ml(32):1478-1491
+                   (apply is_bound/303 0))
+                 0
+                 (raise
+                   (after Ocaml_ocaml_types__Local_store.reset lib/local_store.ml(32):1471-1491
+                     (makeblock 0 (global Assert_failure/28!)
+                       [0: "lib/local_store.ml" 32 2]))))
+               (before Ocaml_ocaml_types__Local_store.reset lib/local_store.ml(33):1495-1630
+                 (after Ocaml_ocaml_types__Local_store.reset lib/local_store.ml(33):1495-1630
+                   (apply (field_imm 17 (global Stdlib__List!))
+                     (function param/381 : int
+                       (funct-body Ocaml_ocaml_types__Local_store.reset.(fun) lib/local_store.ml(33):1505-1609
+                         (switch* param/381
+                          case tag 0:
+                           (let
+                             (init/376 =a (field_imm 1 param/381)
+                              ref/375 =a (field_imm 0 param/381))
+                             (before Ocaml_ocaml_types__Local_store.reset.(fun) lib/local_store.ml(34):1544-1558
+                               (setfield_ptr 0 ref/375
+                                 (after Ocaml_ocaml_types__Local_store.reset.(fun) lib/local_store.ml(34):1551-1558
+                                   (apply init/376 0)))))
+                          case tag 1:
+                           (let
+                             (ref/378 =a (field_imm 0 param/381)
+                              snapshot/379 =o (field_mut 1 param/381))
+                             (before Ocaml_ocaml_types__Local_store.reset.(fun) lib/local_store.ml(35):1590-1605
+                               (setfield_ptr 0 ref/378 snapshot/379))))))
+                     (field_mut 0 global_bindings/302))))))))
+     s_table/383 =
+       (function create/385 size/386
+         (funct-body Ocaml_ocaml_types__Local_store.s_table lib/local_store.ml(38)<ghost>:1644-1835
+           (before Ocaml_ocaml_types__Local_store.s_table lib/local_store.ml(39):1660-1835
+             (let
+               (init/387 =
+                  (function param/389[int]
+                    (funct-body Ocaml_ocaml_types__Local_store.s_table.init lib/local_store.ml(39)<ghost>:1669-1685
+                      (before Ocaml_ocaml_types__Local_store.s_table.init lib/local_store.ml(39):1674-1685
+                        (after Ocaml_ocaml_types__Local_store.s_table.init lib/local_store.ml(39):1674-1685
+                          (apply create/385 size/386))))))
+               (before Ocaml_ocaml_types__Local_store.s_table lib/local_store.ml(40):1691-1835
+                 (let
+                   (ref/390 =
+                      (makemutable 0
+                        (after Ocaml_ocaml_types__Local_store.s_table lib/local_store.ml(40):1705-1714
+                          (apply init/387 0))))
+                   (before Ocaml_ocaml_types__Local_store.s_table lib/local_store.ml(41):1720-1835
+                     (seq
+                       (if (not (field_int 1 global_bindings/302)) 0
+                         (raise
+                           (after Ocaml_ocaml_types__Local_store.s_table lib/local_store.ml(41):1720-1755
+                             (makeblock 0 (global Assert_failure/28!)
+                               [0: "lib/local_store.ml" 41 2]))))
+                       (before Ocaml_ocaml_types__Local_store.s_table lib/local_store.ml(42):1759-1835
+                         (seq
+                           (setfield_ptr 0 global_bindings/302
+                             (makeblock 0 (makeblock 0 ref/390 init/387)
+                               (field_mut 0 global_bindings/302)))
+                           (before Ocaml_ocaml_types__Local_store.s_table lib/local_store.ml(43):1832-1835
+                             ref/390)))))))))))
+     s_ref/391 =
+       (function k/393
+         (funct-body Ocaml_ocaml_types__Local_store.s_ref lib/local_store.ml(45)<ghost>:1847-1999
+           (before Ocaml_ocaml_types__Local_store.s_ref lib/local_store.ml(46):1853-1999
+             (let (ref/394 = (makemutable 0 k/393))
+               (before Ocaml_ocaml_types__Local_store.s_ref lib/local_store.ml(47):1874-1999
+                 (seq
+                   (if (not (field_int 1 global_bindings/302)) 0
+                     (raise
+                       (after Ocaml_ocaml_types__Local_store.s_ref lib/local_store.ml(47):1874-1909
+                         (makeblock 0 (global Assert_failure/28!)
+                           [0: "lib/local_store.ml" 47 2]))))
+                   (before Ocaml_ocaml_types__Local_store.s_ref lib/local_store.ml(48):1913-1999
+                     (seq
+                       (setfield_ptr 0 global_bindings/302
+                         (makeblock 0 (makemutable 1 ref/394 k/393)
+                           (field_mut 0 global_bindings/302)))
+                       (before Ocaml_ocaml_types__Local_store.s_ref lib/local_store.ml(50):1996-1999
+                         ref/394)))))))))
+     fresh/400 =
+       (function param/410[int]
+         (funct-body Ocaml_ocaml_types__Local_store.fresh lib/local_store.ml(55)<ghost>:2099-2410
+           (before Ocaml_ocaml_types__Local_store.fresh lib/local_store.ml(56):2106-2410
+             (let
+               (slots/402 =
+                  (after Ocaml_ocaml_types__Local_store.fresh lib/local_store.ml(57):2122-2363
+                    (apply (field_imm 19 (global Stdlib__List!))
+                      (function param/409
+                        (funct-body Ocaml_ocaml_types__Local_store.fresh.(fun) lib/local_store.ml(57):2131-2342
+                          (switch* param/409
+                           case tag 0:
+                            (let
+                              (init/405 =a (field_imm 1 param/409)
+                               ref/404 =a (field_imm 0 param/409))
+                              (before Ocaml_ocaml_types__Local_store.fresh.(fun) lib/local_store.ml(58):2172-2199
+                                (makemutable 0 ref/404
+                                  (after Ocaml_ocaml_types__Local_store.fresh.(fun) lib/local_store.ml(58):2191-2198
+                                    (apply init/405 0)))))
+                           case tag 1:
+                            (let (r/407 =a param/409)
+                              (before Ocaml_ocaml_types__Local_store.fresh.(fun) lib/local_store.ml(60):2227-2336
+                                (seq
+                                  (if (not (field_int 1 global_bindings/302))
+                                    (before Ocaml_ocaml_types__Local_store.fresh.(fun) lib/local_store.ml(60):2262-2284
+                                      (setfield_ptr 1 r/407
+                                        (field_mut 0 (field_imm 0 r/407))))
+                                    0)
+                                  (before Ocaml_ocaml_types__Local_store.fresh.(fun) lib/local_store.ml(61):2296-2336
+                                    (makemutable 0 (field_imm 0 r/407)
+                                      (field_mut 1 r/407)))))))))
+                      (field_mut 0 global_bindings/302))))
+               (before Ocaml_ocaml_types__Local_store.fresh lib/local_store.ml(64):2371-2410
+                 (seq (setfield_imm 1 global_bindings/302 1)
+                   (before Ocaml_ocaml_types__Local_store.fresh lib/local_store.ml(65):2405-2410
+                     slots/402)))))))
+     with_store/411 =
+       (function slots/413 f/414
+         (funct-body Ocaml_ocaml_types__Local_store.with_store lib/local_store.ml(67)<ghost>:2427-2711
+           (before Ocaml_ocaml_types__Local_store.with_store lib/local_store.ml(68):2439-2711
+             (seq
+               (if (not (field_int 2 global_bindings/302)) 0
+                 (raise
+                   (after Ocaml_ocaml_types__Local_store.with_store lib/local_store.ml(68):2439-2476
+                     (makeblock 0 (global Assert_failure/28!)
+                       [0: "lib/local_store.ml" 68 2]))))
+               (before Ocaml_ocaml_types__Local_store.with_store lib/local_store.ml(69):2480-2711
+                 (seq (setfield_imm 2 global_bindings/302 1)
+                   (before Ocaml_ocaml_types__Local_store.with_store lib/local_store.ml(70):2516-2711
+                     (seq
+                       (after Ocaml_ocaml_types__Local_store.with_store lib/local_store.ml(70):2516-2572
+                         (apply (field_imm 17 (global Stdlib__List!))
+                           (function param/418 : int
+                             (funct-body Ocaml_ocaml_types__Local_store.with_store.(fun) lib/local_store.ml(70):2526-2566
+                               (let
+                                 (ref/416 =a (field_imm 0 param/418)
+                                  value/417 =o (field_mut 1 param/418))
+                                 (before Ocaml_ocaml_types__Local_store.with_store.(fun) lib/local_store.ml(70):2553-2565
+                                   (setfield_ptr 0 ref/416 value/417)))))
+                           slots/413))
+                       (before Ocaml_ocaml_types__Local_store.with_store lib/local_store.ml(71):2576-2711
+                         (after Ocaml_ocaml_types__Local_store.with_store lib/local_store.ml(71):2576-2711
+                           (apply (field_imm 4 (global Stdlib__Fun!))
+                             (function param/429[int] : int
+                               (funct-body Ocaml_ocaml_types__Local_store.with_store.(fun) lib/local_store.ml(71):2599-2711
+                                 (before Ocaml_ocaml_types__Local_store.with_store.(fun) lib/local_store.ml(72):2614-2707
+                                   (seq
+                                     (after Ocaml_ocaml_types__Local_store.with_store.(fun) lib/local_store.ml(72):2614-2667
+                                       (apply
+                                         (field_imm 17
+                                           (global Stdlib__List!))
+                                         (function param/428 : int
+                                           (funct-body Ocaml_ocaml_types__Local_store.with_store.(fun) lib/local_store.ml(72):2624-2661
+                                             (let (s/427 =a param/428)
+                                               (before Ocaml_ocaml_types__Local_store.with_store.(fun) lib/local_store.ml(72):2641-2660
+                                                 (setfield_ptr 1 s/427
+                                                   (field_mut 0
+                                                     (field_imm 0 s/427)))))))
+                                         slots/413))
+                                     (before Ocaml_ocaml_types__Local_store.with_store.(fun) lib/local_store.ml(73):2673-2706
+                                       (setfield_imm 2 global_bindings/302 0))))))
+                             f/414))))))))))))
+    (pseudo <unknown location>
+      (makeblock 0 global_bindings/302 is_bound/303 reset/306 s_table/383
+        s_ref/391 fresh/400 with_store/411))))
+(setglobal Ocaml_ocaml_types__Local_store!
+  (let
+    (global_bindings/302 = (makemutable 0 (*,int,int) 0 0 0)
+     is_bound/303 =
+       (function param/305[int] : int
+         (funct-body Ocaml_ocaml_types__Local_store.is_bound lib/local_store.ml(29)<ghost>:1423-1452
+           (before Ocaml_ocaml_types__Local_store.is_bound lib/local_store.ml(29):1428-1452
+             (field_int 2 global_bindings/302))))
+     reset/306 =
+       (function param/382[int] : int
+         (funct-body Ocaml_ocaml_types__Local_store.reset lib/local_store.ml(31)<ghost>:1464-1630
+           (before Ocaml_ocaml_types__Local_store.reset lib/local_store.ml(32):1471-1630
+             (seq
+               (if
+                 (after Ocaml_ocaml_types__Local_store.reset lib/local_store.ml(32):1478-1491
+                   (apply is_bound/303 0))
+                 0
+                 (raise
+                   (after Ocaml_ocaml_types__Local_store.reset lib/local_store.ml(32):1471-1491
+                     (makeblock 0 (global Assert_failure/28!)
+                       [0: "lib/local_store.ml" 32 2]))))
+               (before Ocaml_ocaml_types__Local_store.reset lib/local_store.ml(33):1495-1630
+                 (after Ocaml_ocaml_types__Local_store.reset lib/local_store.ml(33):1495-1630
+                   (apply (field_imm 17 (global Stdlib__List!))
+                     (function param/381 : int
+                       (funct-body Ocaml_ocaml_types__Local_store.reset.(fun) lib/local_store.ml(33):1505-1609
+                         (switch* param/381
+                          case tag 0:
+                           (let
+                             (init/376 =a (field_imm 1 param/381)
+                              ref/375 =a (field_imm 0 param/381))
+                             (before Ocaml_ocaml_types__Local_store.reset.(fun) lib/local_store.ml(34):1544-1558
+                               (setfield_ptr 0 ref/375
+                                 (after Ocaml_ocaml_types__Local_store.reset.(fun) lib/local_store.ml(34):1551-1558
+                                   (apply init/376 0)))))
+                          case tag 1:
+                           (let
+                             (ref/378 =a (field_imm 0 param/381)
+                              snapshot/379 =o (field_mut 1 param/381))
+                             (before Ocaml_ocaml_types__Local_store.reset.(fun) lib/local_store.ml(35):1590-1605
+                               (setfield_ptr 0 ref/378 snapshot/379))))))
+                     (field_mut 0 global_bindings/302))))))))
+     s_table/383 =
+       (function create/385 size/386
+         (funct-body Ocaml_ocaml_types__Local_store.s_table lib/local_store.ml(38)<ghost>:1644-1835
+           (before Ocaml_ocaml_types__Local_store.s_table lib/local_store.ml(39):1660-1835
+             (let
+               (init/387 =
+                  (function param/389[int]
+                    (funct-body Ocaml_ocaml_types__Local_store.s_table.init lib/local_store.ml(39)<ghost>:1669-1685
+                      (before Ocaml_ocaml_types__Local_store.s_table.init lib/local_store.ml(39):1674-1685
+                        (after Ocaml_ocaml_types__Local_store.s_table.init lib/local_store.ml(39):1674-1685
+                          (apply create/385 size/386))))))
+               (before Ocaml_ocaml_types__Local_store.s_table lib/local_store.ml(40):1691-1835
+                 (let
+                   (ref/390 =
+                      (makemutable 0
+                        (after Ocaml_ocaml_types__Local_store.s_table lib/local_store.ml(40):1705-1714
+                          (apply init/387 0))))
+                   (before Ocaml_ocaml_types__Local_store.s_table lib/local_store.ml(41):1720-1835
+                     (seq
+                       (if (not (field_int 1 global_bindings/302)) 0
+                         (raise
+                           (after Ocaml_ocaml_types__Local_store.s_table lib/local_store.ml(41):1720-1755
+                             (makeblock 0 (global Assert_failure/28!)
+                               [0: "lib/local_store.ml" 41 2]))))
+                       (before Ocaml_ocaml_types__Local_store.s_table lib/local_store.ml(42):1759-1835
+                         (seq
+                           (setfield_ptr 0 global_bindings/302
+                             (makeblock 0 (makeblock 0 ref/390 init/387)
+                               (field_mut 0 global_bindings/302)))
+                           (before Ocaml_ocaml_types__Local_store.s_table lib/local_store.ml(43):1832-1835
+                             ref/390)))))))))))
+     s_ref/391 =
+       (function k/393
+         (funct-body Ocaml_ocaml_types__Local_store.s_ref lib/local_store.ml(45)<ghost>:1847-1999
+           (before Ocaml_ocaml_types__Local_store.s_ref lib/local_store.ml(46):1853-1999
+             (let (ref/394 = (makemutable 0 k/393))
+               (before Ocaml_ocaml_types__Local_store.s_ref lib/local_store.ml(47):1874-1999
+                 (seq
+                   (if (not (field_int 1 global_bindings/302)) 0
+                     (raise
+                       (after Ocaml_ocaml_types__Local_store.s_ref lib/local_store.ml(47):1874-1909
+                         (makeblock 0 (global Assert_failure/28!)
+                           [0: "lib/local_store.ml" 47 2]))))
+                   (before Ocaml_ocaml_types__Local_store.s_ref lib/local_store.ml(48):1913-1999
+                     (seq
+                       (setfield_ptr 0 global_bindings/302
+                         (makeblock 0 (makemutable 1 ref/394 k/393)
+                           (field_mut 0 global_bindings/302)))
+                       (before Ocaml_ocaml_types__Local_store.s_ref lib/local_store.ml(50):1996-1999
+                         ref/394)))))))))
+     fresh/400 =
+       (function param/410[int]
+         (funct-body Ocaml_ocaml_types__Local_store.fresh lib/local_store.ml(55)<ghost>:2099-2410
+           (before Ocaml_ocaml_types__Local_store.fresh lib/local_store.ml(56):2106-2410
+             (let
+               (slots/402 =
+                  (after Ocaml_ocaml_types__Local_store.fresh lib/local_store.ml(57):2122-2363
+                    (apply (field_imm 19 (global Stdlib__List!))
+                      (function param/409
+                        (funct-body Ocaml_ocaml_types__Local_store.fresh.(fun) lib/local_store.ml(57):2131-2342
+                          (switch* param/409
+                           case tag 0:
+                            (let
+                              (init/405 =a (field_imm 1 param/409)
+                               ref/404 =a (field_imm 0 param/409))
+                              (before Ocaml_ocaml_types__Local_store.fresh.(fun) lib/local_store.ml(58):2172-2199
+                                (makemutable 0 ref/404
+                                  (after Ocaml_ocaml_types__Local_store.fresh.(fun) lib/local_store.ml(58):2191-2198
+                                    (apply init/405 0)))))
+                           case tag 1:
+                            (let (r/407 =a param/409)
+                              (before Ocaml_ocaml_types__Local_store.fresh.(fun) lib/local_store.ml(60):2227-2336
+                                (seq
+                                  (if (not (field_int 1 global_bindings/302))
+                                    (before Ocaml_ocaml_types__Local_store.fresh.(fun) lib/local_store.ml(60):2262-2284
+                                      (setfield_ptr 1 r/407
+                                        (field_mut 0 (field_imm 0 r/407))))
+                                    0)
+                                  (before Ocaml_ocaml_types__Local_store.fresh.(fun) lib/local_store.ml(61):2296-2336
+                                    (makemutable 0 (field_imm 0 r/407)
+                                      (field_mut 1 r/407)))))))))
+                      (field_mut 0 global_bindings/302))))
+               (before Ocaml_ocaml_types__Local_store.fresh lib/local_store.ml(64):2371-2410
+                 (seq (setfield_imm 1 global_bindings/302 1)
+                   (before Ocaml_ocaml_types__Local_store.fresh lib/local_store.ml(65):2405-2410
+                     slots/402)))))))
+     with_store/411 =
+       (function slots/413 f/414
+         (funct-body Ocaml_ocaml_types__Local_store.with_store lib/local_store.ml(67)<ghost>:2427-2711
+           (before Ocaml_ocaml_types__Local_store.with_store lib/local_store.ml(68):2439-2711
+             (seq
+               (if (not (field_int 2 global_bindings/302)) 0
+                 (raise
+                   (after Ocaml_ocaml_types__Local_store.with_store lib/local_store.ml(68):2439-2476
+                     (makeblock 0 (global Assert_failure/28!)
+                       [0: "lib/local_store.ml" 68 2]))))
+               (before Ocaml_ocaml_types__Local_store.with_store lib/local_store.ml(69):2480-2711
+                 (seq (setfield_imm 2 global_bindings/302 1)
+                   (before Ocaml_ocaml_types__Local_store.with_store lib/local_store.ml(70):2516-2711
+                     (seq
+                       (after Ocaml_ocaml_types__Local_store.with_store lib/local_store.ml(70):2516-2572
+                         (apply (field_imm 17 (global Stdlib__List!))
+                           (function param/418 : int
+                             (funct-body Ocaml_ocaml_types__Local_store.with_store.(fun) lib/local_store.ml(70):2526-2566
+                               (let
+                                 (ref/416 =a (field_imm 0 param/418)
+                                  value/417 =o (field_mut 1 param/418))
+                                 (before Ocaml_ocaml_types__Local_store.with_store.(fun) lib/local_store.ml(70):2553-2565
+                                   (setfield_ptr 0 ref/416 value/417)))))
+                           slots/413))
+                       (before Ocaml_ocaml_types__Local_store.with_store lib/local_store.ml(71):2576-2711
+                         (after Ocaml_ocaml_types__Local_store.with_store lib/local_store.ml(71):2576-2711
+                           (apply (field_imm 4 (global Stdlib__Fun!))
+                             (function param/429[int] : int
+                               (funct-body Ocaml_ocaml_types__Local_store.with_store.(fun) lib/local_store.ml(71):2599-2711
+                                 (before Ocaml_ocaml_types__Local_store.with_store.(fun) lib/local_store.ml(72):2614-2707
+                                   (seq
+                                     (after Ocaml_ocaml_types__Local_store.with_store.(fun) lib/local_store.ml(72):2614-2667
+                                       (apply
+                                         (field_imm 17
+                                           (global Stdlib__List!))
+                                         (function param/428 : int
+                                           (funct-body Ocaml_ocaml_types__Local_store.with_store.(fun) lib/local_store.ml(72):2624-2661
+                                             (let (s/427 =a param/428)
+                                               (before Ocaml_ocaml_types__Local_store.with_store.(fun) lib/local_store.ml(72):2641-2660
+                                                 (setfield_ptr 1 s/427
+                                                   (field_mut 0
+                                                     (field_imm 0 s/427)))))))
+                                         slots/413))
+                                     (before Ocaml_ocaml_types__Local_store.with_store.(fun) lib/local_store.ml(73):2673-2706
+                                       (setfield_imm 2 global_bindings/302 0))))))
+                             f/414))))))))))))
+    (pseudo <unknown location>
+      (makeblock 0 global_bindings/302 is_bound/303 reset/306 s_table/383
+        s_ref/391 fresh/400 with_store/411))))

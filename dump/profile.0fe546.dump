@@ -1,0 +1,9 @@
+0.025s 36.6MB 6.09MB 7.85MB lib/numbers.ml
+  0.018s 27.1MB 5.40MB 7.16MB typing
+  0.004s 4.13MB 0.18MB 7.35MB generate
+    0.001s 0.13MB ------ ------ compile_phrases
+      ------ 0.13MB ------ ------ comballoc
+    0.002s ------ ------ ------ assemble
+    0.001s 4.00MB 0.18MB 7.35MB other
+  0.002s 5.39MB 0.50MB 7.85MB other
+0.006s 3.03MB 1.76MB ------ other

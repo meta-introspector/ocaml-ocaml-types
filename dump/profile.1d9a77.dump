@@ -1,0 +1,10 @@
+0.014s 24.5MB 2.66MB 4.42MB lib/arg_helper.ml
+  0.006s 9.89MB 1.78MB 3.54MB typing
+  0.005s 6.38MB 0.68MB 4.22MB generate
+    0.002s 2.33MB 0.37MB 3.91MB compile_phrases
+      ------ 2.00MB 0.37MB 3.91MB liveness
+      ------ 0.33MB ------ ------ regalloc
+    0.003s ------ ------ ------ assemble
+    0.001s 4.04MB 0.31MB 4.22MB other
+  0.002s 8.27MB 0.19MB 4.42MB other
+0.006s 3.03MB 1.76MB ------ other

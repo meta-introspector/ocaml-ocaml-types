@@ -1,0 +1,17 @@
+0.036s 76.4MB 5.70MB 7.46MB lib/docstrings.ml
+  0.001s 0.03MB ------ ------ parsing
+    0.001s 0.03MB ------ ------ parser
+  0.015s 26.2MB 3.78MB 5.54MB typing
+  0.001s 2.00MB 0.09MB 5.63MB transl
+  0.012s 18.6MB 1.31MB 6.94MB generate
+    ------ 0.09MB ------ ------ cmm
+    0.004s 8.89MB 0.75MB 6.38MB compile_phrases
+      0.001s 2.18MB 0.37MB 6.01MB liveness
+      ------ 2.29MB 0.09MB 6.10MB deadcode
+      ------ 2.00MB 0.15MB 6.26MB split
+      0.001s 2.21MB 0.12MB 6.38MB regalloc
+      0.001s 0.20MB ------ ------ other
+    0.005s ------ ------ ------ assemble
+    0.003s 9.65MB 0.56MB 6.94MB other
+  0.008s 29.5MB 0.52MB 7.46MB other
+0.005s 3.03MB 1.76MB ------ other

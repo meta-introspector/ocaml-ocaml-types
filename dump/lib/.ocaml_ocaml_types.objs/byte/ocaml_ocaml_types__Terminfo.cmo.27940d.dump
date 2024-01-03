@@ -1,0 +1,1075 @@
+[
+  structure_item (lib/terminfo.ml[16,1079+0]..[16,1079+11])
+    Pstr_open Fresh
+    module_expr (lib/terminfo.ml[16,1079+5]..[16,1079+11])
+      Pmod_ident "Printf" (lib/terminfo.ml[16,1079+5]..[16,1079+11])
+  structure_item (lib/terminfo.ml[18,1092+0]..[18,1092+57])
+    Pstr_primitive
+    value_description "isatty" (lib/terminfo.ml[18,1092+9]..[18,1092+15]) (lib/terminfo.ml[18,1092+0]..[18,1092+57])
+      core_type (lib/terminfo.ml[18,1092+18]..[18,1092+37])
+        Ptyp_arrow
+        Nolabel
+        core_type (lib/terminfo.ml[18,1092+18]..[18,1092+29])
+          Ptyp_constr "out_channel" (lib/terminfo.ml[18,1092+18]..[18,1092+29])
+          []
+        core_type (lib/terminfo.ml[18,1092+33]..[18,1092+37])
+          Ptyp_constr "bool" (lib/terminfo.ml[18,1092+33]..[18,1092+37])
+          []
+      [
+        "caml_sys_isatty"
+      ]
+  structure_item (lib/terminfo.ml[19,1150+0]..[19,1150+65])
+    Pstr_primitive
+    value_description "terminfo_rows" (lib/terminfo.ml[19,1150+9]..[19,1150+22]) (lib/terminfo.ml[19,1150+0]..[19,1150+65])
+      core_type (lib/terminfo.ml[19,1150+24]..[19,1150+42])
+        Ptyp_arrow
+        Nolabel
+        core_type (lib/terminfo.ml[19,1150+24]..[19,1150+35])
+          Ptyp_constr "out_channel" (lib/terminfo.ml[19,1150+24]..[19,1150+35])
+          []
+        core_type (lib/terminfo.ml[19,1150+39]..[19,1150+42])
+          Ptyp_constr "int" (lib/terminfo.ml[19,1150+39]..[19,1150+42])
+          []
+      [
+        "caml_terminfo_rows"
+      ]
+  structure_item (lib/terminfo.ml[21,1217+0]..[24,1262+13])
+    Pstr_type Rec
+    [
+      type_declaration "status" (lib/terminfo.ml[21,1217+5]..[21,1217+11]) (lib/terminfo.ml[21,1217+0]..[24,1262+13])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/terminfo.ml[22,1231+2]..[22,1231+17])
+                "Uninitialised" (lib/terminfo.ml[22,1231+4]..[22,1231+17])
+                []
+                None
+              (lib/terminfo.ml[23,1249+2]..[23,1249+12])
+                "Bad_term" (lib/terminfo.ml[23,1249+4]..[23,1249+12])
+                []
+                None
+              (lib/terminfo.ml[24,1262+2]..[24,1262+13])
+                "Good_term" (lib/terminfo.ml[24,1262+4]..[24,1262+13])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/terminfo.ml[26,1277+0]..[31,1476+15])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/terminfo.ml[26,1277+4]..[26,1277+9])
+          Ppat_var "setup" (lib/terminfo.ml[26,1277+4]..[26,1277+9])
+        expression (lib/terminfo.ml[26,1277+10]..[31,1476+15]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/terminfo.ml[26,1277+10]..[26,1277+12])
+              Nolabel
+              None
+              pattern (lib/terminfo.ml[26,1277+10]..[26,1277+12])
+                Ppat_var "oc" (lib/terminfo.ml[26,1277+10]..[26,1277+12])
+          ]
+          None
+          Pfunction_body
+            expression (lib/terminfo.ml[27,1292+2]..[31,1476+15])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (lib/terminfo.ml[27,1292+6]..[27,1292+10])
+                    Ppat_var "term" (lib/terminfo.ml[27,1292+6]..[27,1292+10])
+                  expression (lib/terminfo.ml[27,1292+13]..[27,1292+55])
+                    Pexp_try
+                    expression (lib/terminfo.ml[27,1292+17]..[27,1292+34])
+                      Pexp_apply
+                      expression (lib/terminfo.ml[27,1292+17]..[27,1292+27])
+                        Pexp_ident "Sys.getenv" (lib/terminfo.ml[27,1292+17]..[27,1292+27])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (lib/terminfo.ml[27,1292+28]..[27,1292+34])
+                            Pexp_constant PConst_string("TERM",(lib/terminfo.ml[27,1292+29]..[27,1292+33]),None)
+                      ]
+                    [
+                      <case>
+                        pattern (lib/terminfo.ml[27,1292+40]..[27,1292+49])
+                          Ppat_construct "Not_found" (lib/terminfo.ml[27,1292+40]..[27,1292+49])
+                          None
+                        expression (lib/terminfo.ml[27,1292+53]..[27,1292+55])
+                          Pexp_constant PConst_string("",(lib/terminfo.ml[27,1292+54]..[27,1292+54]),None)
+                    ]
+              ]
+              expression (lib/terminfo.ml[29,1412+2]..[31,1476+15])
+                Pexp_ifthenelse
+                expression (lib/terminfo.ml[29,1412+5]..[29,1412+46])
+                  Pexp_apply
+                  expression (lib/terminfo.ml[29,1412+16]..[29,1412+18])
+                    Pexp_ident "&&" (lib/terminfo.ml[29,1412+16]..[29,1412+18])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (lib/terminfo.ml[29,1412+5]..[29,1412+15])
+                        Pexp_apply
+                        expression (lib/terminfo.ml[29,1412+10]..[29,1412+12])
+                          Pexp_ident "<>" (lib/terminfo.ml[29,1412+10]..[29,1412+12])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/terminfo.ml[29,1412+5]..[29,1412+9])
+                              Pexp_ident "term" (lib/terminfo.ml[29,1412+5]..[29,1412+9])
+                          <arg>
+                          Nolabel
+                            expression (lib/terminfo.ml[29,1412+13]..[29,1412+15])
+                              Pexp_constant PConst_string("",(lib/terminfo.ml[29,1412+14]..[29,1412+14]),None)
+                        ]
+                    <arg>
+                    Nolabel
+                      expression (lib/terminfo.ml[29,1412+19]..[29,1412+46])
+                        Pexp_apply
+                        expression (lib/terminfo.ml[29,1412+34]..[29,1412+36])
+                          Pexp_ident "&&" (lib/terminfo.ml[29,1412+34]..[29,1412+36])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (lib/terminfo.ml[29,1412+19]..[29,1412+33])
+                              Pexp_apply
+                              expression (lib/terminfo.ml[29,1412+24]..[29,1412+26])
+                                Pexp_ident "<>" (lib/terminfo.ml[29,1412+24]..[29,1412+26])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/terminfo.ml[29,1412+19]..[29,1412+23])
+                                    Pexp_ident "term" (lib/terminfo.ml[29,1412+19]..[29,1412+23])
+                                <arg>
+                                Nolabel
+                                  expression (lib/terminfo.ml[29,1412+27]..[29,1412+33])
+                                    Pexp_constant PConst_string("dumb",(lib/terminfo.ml[29,1412+28]..[29,1412+32]),None)
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (lib/terminfo.ml[29,1412+37]..[29,1412+46])
+                              Pexp_apply
+                              expression (lib/terminfo.ml[29,1412+37]..[29,1412+43])
+                                Pexp_ident "isatty" (lib/terminfo.ml[29,1412+37]..[29,1412+43])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (lib/terminfo.ml[29,1412+44]..[29,1412+46])
+                                    Pexp_ident "oc" (lib/terminfo.ml[29,1412+44]..[29,1412+46])
+                              ]
+                        ]
+                  ]
+                expression (lib/terminfo.ml[30,1459+7]..[30,1459+16])
+                  Pexp_construct "Good_term" (lib/terminfo.ml[30,1459+7]..[30,1459+16])
+                  None
+                Some
+                  expression (lib/terminfo.ml[31,1476+7]..[31,1476+15])
+                    Pexp_construct "Bad_term" (lib/terminfo.ml[31,1476+7]..[31,1476+15])
+                    None
+    ]
+  structure_item (lib/terminfo.ml[33,1493+0]..[35,1545+31])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/terminfo.ml[33,1493+4]..[33,1493+13])
+          Ppat_var "num_lines" (lib/terminfo.ml[33,1493+4]..[33,1493+13])
+        expression (lib/terminfo.ml[33,1493+14]..[35,1545+31]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/terminfo.ml[33,1493+14]..[33,1493+16])
+              Nolabel
+              None
+              pattern (lib/terminfo.ml[33,1493+14]..[33,1493+16])
+                Ppat_var "oc" (lib/terminfo.ml[33,1493+14]..[33,1493+16])
+          ]
+          None
+          Pfunction_body
+            expression (lib/terminfo.ml[34,1512+2]..[35,1545+31])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (lib/terminfo.ml[34,1512+6]..[34,1512+10])
+                    Ppat_var "rows" (lib/terminfo.ml[34,1512+6]..[34,1512+10])
+                  expression (lib/terminfo.ml[34,1512+13]..[34,1512+29])
+                    Pexp_apply
+                    expression (lib/terminfo.ml[34,1512+13]..[34,1512+26])
+                      Pexp_ident "terminfo_rows" (lib/terminfo.ml[34,1512+13]..[34,1512+26])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (lib/terminfo.ml[34,1512+27]..[34,1512+29])
+                          Pexp_ident "oc" (lib/terminfo.ml[34,1512+27]..[34,1512+29])
+                    ]
+              ]
+              expression (lib/terminfo.ml[35,1545+2]..[35,1545+31])
+                Pexp_ifthenelse
+                expression (lib/terminfo.ml[35,1545+5]..[35,1545+13])
+                  Pexp_apply
+                  expression (lib/terminfo.ml[35,1545+10]..[35,1545+11])
+                    Pexp_ident ">" (lib/terminfo.ml[35,1545+10]..[35,1545+11])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (lib/terminfo.ml[35,1545+5]..[35,1545+9])
+                        Pexp_ident "rows" (lib/terminfo.ml[35,1545+5]..[35,1545+9])
+                    <arg>
+                    Nolabel
+                      expression (lib/terminfo.ml[35,1545+12]..[35,1545+13])
+                        Pexp_constant PConst_int (0,None)
+                  ]
+                expression (lib/terminfo.ml[35,1545+19]..[35,1545+23])
+                  Pexp_ident "rows" (lib/terminfo.ml[35,1545+19]..[35,1545+23])
+                Some
+                  expression (lib/terminfo.ml[35,1545+29]..[35,1545+31])
+                    Pexp_constant PConst_int (24,None)
+    ]
+  structure_item (lib/terminfo.ml[38,1642+0]..[39,1660+42])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/terminfo.ml[38,1642+4]..[38,1642+10])
+          Ppat_var "backup" (lib/terminfo.ml[38,1642+4]..[38,1642+10])
+        expression (lib/terminfo.ml[38,1642+11]..[39,1660+42]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/terminfo.ml[38,1642+11]..[38,1642+13])
+              Nolabel
+              None
+              pattern (lib/terminfo.ml[38,1642+11]..[38,1642+13])
+                Ppat_var "oc" (lib/terminfo.ml[38,1642+11]..[38,1642+13])
+            Pparam_val (lib/terminfo.ml[38,1642+14]..[38,1642+15])
+              Nolabel
+              None
+              pattern (lib/terminfo.ml[38,1642+14]..[38,1642+15])
+                Ppat_var "n" (lib/terminfo.ml[38,1642+14]..[38,1642+15])
+          ]
+          None
+          Pfunction_body
+            expression (lib/terminfo.ml[39,1660+2]..[39,1660+42])
+              Pexp_ifthenelse
+              expression (lib/terminfo.ml[39,1660+5]..[39,1660+11])
+                Pexp_apply
+                expression (lib/terminfo.ml[39,1660+7]..[39,1660+9])
+                  Pexp_ident ">=" (lib/terminfo.ml[39,1660+7]..[39,1660+9])
+                [
+                  <arg>
+                  Nolabel
+                    expression (lib/terminfo.ml[39,1660+5]..[39,1660+6])
+                      Pexp_ident "n" (lib/terminfo.ml[39,1660+5]..[39,1660+6])
+                  <arg>
+                  Nolabel
+                    expression (lib/terminfo.ml[39,1660+10]..[39,1660+11])
+                      Pexp_constant PConst_int (1,None)
+                ]
+              expression (lib/terminfo.ml[39,1660+17]..[39,1660+42])
+                Pexp_apply
+                expression (lib/terminfo.ml[39,1660+17]..[39,1660+24])
+                  Pexp_ident "fprintf" (lib/terminfo.ml[39,1660+17]..[39,1660+24])
+                [
+                  <arg>
+                  Nolabel
+                    expression (lib/terminfo.ml[39,1660+25]..[39,1660+27])
+                      Pexp_ident "oc" (lib/terminfo.ml[39,1660+25]..[39,1660+27])
+                  <arg>
+                  Nolabel
+                    expression (lib/terminfo.ml[39,1660+28]..[39,1660+40])
+                      Pexp_constant PConst_string("\027[%dA%!",(lib/terminfo.ml[39,1660+29]..[39,1660+39]),None)
+                  <arg>
+                  Nolabel
+                    expression (lib/terminfo.ml[39,1660+41]..[39,1660+42])
+                      Pexp_ident "n" (lib/terminfo.ml[39,1660+41]..[39,1660+42])
+                ]
+              None
+    ]
+  structure_item (lib/terminfo.ml[41,1704+0]..[42,1722+42])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/terminfo.ml[41,1704+4]..[41,1704+10])
+          Ppat_var "resume" (lib/terminfo.ml[41,1704+4]..[41,1704+10])
+        expression (lib/terminfo.ml[41,1704+11]..[42,1722+42]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/terminfo.ml[41,1704+11]..[41,1704+13])
+              Nolabel
+              None
+              pattern (lib/terminfo.ml[41,1704+11]..[41,1704+13])
+                Ppat_var "oc" (lib/terminfo.ml[41,1704+11]..[41,1704+13])
+            Pparam_val (lib/terminfo.ml[41,1704+14]..[41,1704+15])
+              Nolabel
+              None
+              pattern (lib/terminfo.ml[41,1704+14]..[41,1704+15])
+                Ppat_var "n" (lib/terminfo.ml[41,1704+14]..[41,1704+15])
+          ]
+          None
+          Pfunction_body
+            expression (lib/terminfo.ml[42,1722+2]..[42,1722+42])
+              Pexp_ifthenelse
+              expression (lib/terminfo.ml[42,1722+5]..[42,1722+11])
+                Pexp_apply
+                expression (lib/terminfo.ml[42,1722+7]..[42,1722+9])
+                  Pexp_ident ">=" (lib/terminfo.ml[42,1722+7]..[42,1722+9])
+                [
+                  <arg>
+                  Nolabel
+                    expression (lib/terminfo.ml[42,1722+5]..[42,1722+6])
+                      Pexp_ident "n" (lib/terminfo.ml[42,1722+5]..[42,1722+6])
+                  <arg>
+                  Nolabel
+                    expression (lib/terminfo.ml[42,1722+10]..[42,1722+11])
+                      Pexp_constant PConst_int (1,None)
+                ]
+              expression (lib/terminfo.ml[42,1722+17]..[42,1722+42])
+                Pexp_apply
+                expression (lib/terminfo.ml[42,1722+17]..[42,1722+24])
+                  Pexp_ident "fprintf" (lib/terminfo.ml[42,1722+17]..[42,1722+24])
+                [
+                  <arg>
+                  Nolabel
+                    expression (lib/terminfo.ml[42,1722+25]..[42,1722+27])
+                      Pexp_ident "oc" (lib/terminfo.ml[42,1722+25]..[42,1722+27])
+                  <arg>
+                  Nolabel
+                    expression (lib/terminfo.ml[42,1722+28]..[42,1722+40])
+                      Pexp_constant PConst_string("\027[%dB%!",(lib/terminfo.ml[42,1722+29]..[42,1722+39]),None)
+                  <arg>
+                  Nolabel
+                    expression (lib/terminfo.ml[42,1722+41]..[42,1722+42])
+                      Pexp_ident "n" (lib/terminfo.ml[42,1722+41]..[42,1722+42])
+                ]
+              None
+    ]
+  structure_item (lib/terminfo.ml[44,1766+0]..[45,1786+65])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/terminfo.ml[44,1766+4]..[44,1766+12])
+          Ppat_var "standout" (lib/terminfo.ml[44,1766+4]..[44,1766+12])
+        expression (lib/terminfo.ml[44,1766+13]..[45,1786+65]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/terminfo.ml[44,1766+13]..[44,1766+15])
+              Nolabel
+              None
+              pattern (lib/terminfo.ml[44,1766+13]..[44,1766+15])
+                Ppat_var "oc" (lib/terminfo.ml[44,1766+13]..[44,1766+15])
+            Pparam_val (lib/terminfo.ml[44,1766+16]..[44,1766+17])
+              Nolabel
+              None
+              pattern (lib/terminfo.ml[44,1766+16]..[44,1766+17])
+                Ppat_var "b" (lib/terminfo.ml[44,1766+16]..[44,1766+17])
+          ]
+          None
+          Pfunction_body
+            expression (lib/terminfo.ml[45,1786+2]..[45,1786+65])
+              Pexp_sequence
+              expression (lib/terminfo.ml[45,1786+2]..[45,1786+55])
+                Pexp_apply
+                expression (lib/terminfo.ml[45,1786+2]..[45,1786+15])
+                  Pexp_ident "output_string" (lib/terminfo.ml[45,1786+2]..[45,1786+15])
+                [
+                  <arg>
+                  Nolabel
+                    expression (lib/terminfo.ml[45,1786+16]..[45,1786+18])
+                      Pexp_ident "oc" (lib/terminfo.ml[45,1786+16]..[45,1786+18])
+                  <arg>
+                  Nolabel
+                    expression (lib/terminfo.ml[45,1786+19]..[45,1786+55])
+                      Pexp_ifthenelse
+                      expression (lib/terminfo.ml[45,1786+23]..[45,1786+24])
+                        Pexp_ident "b" (lib/terminfo.ml[45,1786+23]..[45,1786+24])
+                      expression (lib/terminfo.ml[45,1786+30]..[45,1786+39])
+                        Pexp_constant PConst_string("\027[4m",(lib/terminfo.ml[45,1786+31]..[45,1786+38]),None)
+                      Some
+                        expression (lib/terminfo.ml[45,1786+45]..[45,1786+54])
+                          Pexp_constant PConst_string("\027[0m",(lib/terminfo.ml[45,1786+46]..[45,1786+53]),None)
+                ]
+              expression (lib/terminfo.ml[45,1786+57]..[45,1786+65])
+                Pexp_apply
+                expression (lib/terminfo.ml[45,1786+57]..[45,1786+62])
+                  Pexp_ident "flush" (lib/terminfo.ml[45,1786+57]..[45,1786+62])
+                [
+                  <arg>
+                  Nolabel
+                    expression (lib/terminfo.ml[45,1786+63]..[45,1786+65])
+                      Pexp_ident "oc" (lib/terminfo.ml[45,1786+63]..[45,1786+65])
+                ]
+    ]
+]
+
+open Printf
+external isatty : out_channel -> bool = "caml_sys_isatty"
+external terminfo_rows : out_channel -> int = "caml_terminfo_rows"
+type status =
+  | Uninitialised 
+  | Bad_term 
+  | Good_term 
+let setup oc =
+  let term = try Sys.getenv "TERM" with | Not_found -> "" in
+  if (term <> "") && ((term <> "dumb") && (isatty oc))
+  then Good_term
+  else Bad_term
+let num_lines oc =
+  let rows = terminfo_rows oc in if rows > 0 then rows else 24
+let backup oc n = if n >= 1 then fprintf oc "\027[%dA%!" n
+let resume oc n = if n >= 1 then fprintf oc "\027[%dB%!" n
+let standout oc b =
+  output_string oc (if b then "\027[4m" else "\027[0m"); flush oc
+[
+  structure_item (lib/terminfo.ml[16,1079+0]..lib/terminfo.ml[16,1079+11])
+    Tstr_open Fresh
+    module_expr (lib/terminfo.ml[16,1079+5]..lib/terminfo.ml[16,1079+11])
+      Tmod_ident "Stdlib!.Printf"
+  structure_item (lib/terminfo.ml[18,1092+0]..lib/terminfo.ml[18,1092+57])
+    Tstr_primitive
+    value_description isatty/312 (lib/terminfo.ml[18,1092+0]..lib/terminfo.ml[18,1092+57])
+      core_type (lib/terminfo.ml[18,1092+18]..lib/terminfo.ml[18,1092+37])
+        Ttyp_arrow
+        Nolabel
+        core_type (lib/terminfo.ml[18,1092+18]..lib/terminfo.ml[18,1092+29])
+          Ttyp_constr "Stdlib!.out_channel"
+          []
+        core_type (lib/terminfo.ml[18,1092+33]..lib/terminfo.ml[18,1092+37])
+          Ttyp_constr "bool/5!"
+          []
+      [
+        "caml_sys_isatty"
+      ]
+  structure_item (lib/terminfo.ml[19,1150+0]..lib/terminfo.ml[19,1150+65])
+    Tstr_primitive
+    value_description terminfo_rows/313 (lib/terminfo.ml[19,1150+0]..lib/terminfo.ml[19,1150+65])
+      core_type (lib/terminfo.ml[19,1150+24]..lib/terminfo.ml[19,1150+42])
+        Ttyp_arrow
+        Nolabel
+        core_type (lib/terminfo.ml[19,1150+24]..lib/terminfo.ml[19,1150+35])
+          Ttyp_constr "Stdlib!.out_channel"
+          []
+        core_type (lib/terminfo.ml[19,1150+39]..lib/terminfo.ml[19,1150+42])
+          Ttyp_constr "int/1!"
+          []
+      [
+        "caml_terminfo_rows"
+      ]
+  structure_item (lib/terminfo.ml[21,1217+0]..lib/terminfo.ml[24,1262+13])
+    Tstr_type Rec
+    [
+      type_declaration status/314 (lib/terminfo.ml[21,1217+0]..lib/terminfo.ml[24,1262+13])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/terminfo.ml[22,1231+2]..lib/terminfo.ml[22,1231+17])
+                Uninitialised/315
+                []
+                None
+              (lib/terminfo.ml[23,1249+2]..lib/terminfo.ml[23,1249+12])
+                Bad_term/316
+                []
+                None
+              (lib/terminfo.ml[24,1262+2]..lib/terminfo.ml[24,1262+13])
+                Good_term/317
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/terminfo.ml[26,1277+0]..lib/terminfo.ml[31,1476+15])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/terminfo.ml[26,1277+4]..lib/terminfo.ml[26,1277+9])
+          Tpat_var "setup/318"
+        expression (lib/terminfo.ml[26,1277+10]..lib/terminfo.ml[31,1476+15]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/terminfo.ml[26,1277+10]..lib/terminfo.ml[26,1277+12])
+                Tpat_var "oc/320"
+          ]
+          Tfunction_body
+            expression (lib/terminfo.ml[27,1292+2]..lib/terminfo.ml[31,1476+15])
+              Texp_let Nonrec
+              [
+                <def>
+                  pattern (lib/terminfo.ml[27,1292+6]..lib/terminfo.ml[27,1292+10])
+                    Tpat_var "term/321"
+                  expression (lib/terminfo.ml[27,1292+13]..lib/terminfo.ml[27,1292+55])
+                    Texp_try
+                    expression (lib/terminfo.ml[27,1292+17]..lib/terminfo.ml[27,1292+34])
+                      Texp_apply
+                      expression (lib/terminfo.ml[27,1292+17]..lib/terminfo.ml[27,1292+27])
+                        Texp_ident "Ocaml_ocaml_types!.Sys.getenv"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (lib/terminfo.ml[27,1292+28]..lib/terminfo.ml[27,1292+34])
+                            Texp_constant Const_string("TERM",(lib/terminfo.ml[27,1292+29]..lib/terminfo.ml[27,1292+33]),None)
+                      ]
+                    [
+                      <case>
+                        pattern (lib/terminfo.ml[27,1292+40]..lib/terminfo.ml[27,1292+49])
+                          Tpat_construct "Not_found"
+                          []
+                          None
+                        expression (lib/terminfo.ml[27,1292+53]..lib/terminfo.ml[27,1292+55])
+                          Texp_constant Const_string("",(lib/terminfo.ml[27,1292+54]..lib/terminfo.ml[27,1292+54]),None)
+                    ]
+              ]
+              expression (lib/terminfo.ml[29,1412+2]..lib/terminfo.ml[31,1476+15])
+                Texp_ifthenelse
+                expression (lib/terminfo.ml[29,1412+5]..lib/terminfo.ml[29,1412+46])
+                  Texp_apply
+                  expression (lib/terminfo.ml[29,1412+16]..lib/terminfo.ml[29,1412+18])
+                    Texp_ident "Stdlib!.&&"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (lib/terminfo.ml[29,1412+5]..lib/terminfo.ml[29,1412+15])
+                        Texp_apply
+                        expression (lib/terminfo.ml[29,1412+10]..lib/terminfo.ml[29,1412+12])
+                          Texp_ident "Stdlib!.<>"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (lib/terminfo.ml[29,1412+5]..lib/terminfo.ml[29,1412+9])
+                              Texp_ident "term/321"
+                          <arg>
+                            Nolabel
+                            expression (lib/terminfo.ml[29,1412+13]..lib/terminfo.ml[29,1412+15])
+                              Texp_constant Const_string("",(lib/terminfo.ml[29,1412+14]..lib/terminfo.ml[29,1412+14]),None)
+                        ]
+                    <arg>
+                      Nolabel
+                      expression (lib/terminfo.ml[29,1412+19]..lib/terminfo.ml[29,1412+46])
+                        Texp_apply
+                        expression (lib/terminfo.ml[29,1412+34]..lib/terminfo.ml[29,1412+36])
+                          Texp_ident "Stdlib!.&&"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (lib/terminfo.ml[29,1412+19]..lib/terminfo.ml[29,1412+33])
+                              Texp_apply
+                              expression (lib/terminfo.ml[29,1412+24]..lib/terminfo.ml[29,1412+26])
+                                Texp_ident "Stdlib!.<>"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (lib/terminfo.ml[29,1412+19]..lib/terminfo.ml[29,1412+23])
+                                    Texp_ident "term/321"
+                                <arg>
+                                  Nolabel
+                                  expression (lib/terminfo.ml[29,1412+27]..lib/terminfo.ml[29,1412+33])
+                                    Texp_constant Const_string("dumb",(lib/terminfo.ml[29,1412+28]..lib/terminfo.ml[29,1412+32]),None)
+                              ]
+                          <arg>
+                            Nolabel
+                            expression (lib/terminfo.ml[29,1412+37]..lib/terminfo.ml[29,1412+46])
+                              Texp_apply
+                              expression (lib/terminfo.ml[29,1412+37]..lib/terminfo.ml[29,1412+43])
+                                Texp_ident "isatty/312"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (lib/terminfo.ml[29,1412+44]..lib/terminfo.ml[29,1412+46])
+                                    Texp_ident "oc/320"
+                              ]
+                        ]
+                  ]
+                expression (lib/terminfo.ml[30,1459+7]..lib/terminfo.ml[30,1459+16])
+                  Texp_construct "Good_term"
+                  []
+                Some
+                  expression (lib/terminfo.ml[31,1476+7]..lib/terminfo.ml[31,1476+15])
+                    Texp_construct "Bad_term"
+                    []
+    ]
+  structure_item (lib/terminfo.ml[33,1493+0]..lib/terminfo.ml[35,1545+31])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/terminfo.ml[33,1493+4]..lib/terminfo.ml[33,1493+13])
+          Tpat_var "num_lines/329"
+        expression (lib/terminfo.ml[33,1493+14]..lib/terminfo.ml[35,1545+31]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/terminfo.ml[33,1493+14]..lib/terminfo.ml[33,1493+16])
+                Tpat_var "oc/331"
+          ]
+          Tfunction_body
+            expression (lib/terminfo.ml[34,1512+2]..lib/terminfo.ml[35,1545+31])
+              Texp_let Nonrec
+              [
+                <def>
+                  pattern (lib/terminfo.ml[34,1512+6]..lib/terminfo.ml[34,1512+10])
+                    Tpat_var "rows/332"
+                  expression (lib/terminfo.ml[34,1512+13]..lib/terminfo.ml[34,1512+29])
+                    Texp_apply
+                    expression (lib/terminfo.ml[34,1512+13]..lib/terminfo.ml[34,1512+26])
+                      Texp_ident "terminfo_rows/313"
+                    [
+                      <arg>
+                        Nolabel
+                        expression (lib/terminfo.ml[34,1512+27]..lib/terminfo.ml[34,1512+29])
+                          Texp_ident "oc/331"
+                    ]
+              ]
+              expression (lib/terminfo.ml[35,1545+2]..lib/terminfo.ml[35,1545+31])
+                Texp_ifthenelse
+                expression (lib/terminfo.ml[35,1545+5]..lib/terminfo.ml[35,1545+13])
+                  Texp_apply
+                  expression (lib/terminfo.ml[35,1545+10]..lib/terminfo.ml[35,1545+11])
+                    Texp_ident "Stdlib!.>"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (lib/terminfo.ml[35,1545+5]..lib/terminfo.ml[35,1545+9])
+                        Texp_ident "rows/332"
+                    <arg>
+                      Nolabel
+                      expression (lib/terminfo.ml[35,1545+12]..lib/terminfo.ml[35,1545+13])
+                        Texp_constant Const_int 0
+                  ]
+                expression (lib/terminfo.ml[35,1545+19]..lib/terminfo.ml[35,1545+23])
+                  Texp_ident "rows/332"
+                Some
+                  expression (lib/terminfo.ml[35,1545+29]..lib/terminfo.ml[35,1545+31])
+                    Texp_constant Const_int 24
+    ]
+  structure_item (lib/terminfo.ml[38,1642+0]..lib/terminfo.ml[39,1660+42])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/terminfo.ml[38,1642+4]..lib/terminfo.ml[38,1642+10])
+          Tpat_var "backup/333"
+        expression (lib/terminfo.ml[38,1642+11]..lib/terminfo.ml[39,1660+42]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/terminfo.ml[38,1642+11]..lib/terminfo.ml[38,1642+13])
+                Tpat_var "oc/335"
+            Nolabel
+            Param_pat
+              pattern (lib/terminfo.ml[38,1642+14]..lib/terminfo.ml[38,1642+15])
+                Tpat_var "n/336"
+          ]
+          Tfunction_body
+            expression (lib/terminfo.ml[39,1660+2]..lib/terminfo.ml[39,1660+42])
+              Texp_ifthenelse
+              expression (lib/terminfo.ml[39,1660+5]..lib/terminfo.ml[39,1660+11])
+                Texp_apply
+                expression (lib/terminfo.ml[39,1660+7]..lib/terminfo.ml[39,1660+9])
+                  Texp_ident "Stdlib!.>="
+                [
+                  <arg>
+                    Nolabel
+                    expression (lib/terminfo.ml[39,1660+5]..lib/terminfo.ml[39,1660+6])
+                      Texp_ident "n/336"
+                  <arg>
+                    Nolabel
+                    expression (lib/terminfo.ml[39,1660+10]..lib/terminfo.ml[39,1660+11])
+                      Texp_constant Const_int 1
+                ]
+              expression (lib/terminfo.ml[39,1660+17]..lib/terminfo.ml[39,1660+42])
+                Texp_apply
+                expression (lib/terminfo.ml[39,1660+17]..lib/terminfo.ml[39,1660+24])
+                  Texp_ident "Stdlib!.Printf.fprintf"
+                [
+                  <arg>
+                    Nolabel
+                    expression (lib/terminfo.ml[39,1660+25]..lib/terminfo.ml[39,1660+27])
+                      Texp_ident "oc/335"
+                  <arg>
+                    Nolabel
+                    expression (lib/terminfo.ml[39,1660+28]..lib/terminfo.ml[39,1660+40])
+                      Texp_construct "CamlinternalFormatBasics.Format"
+                      [
+                        expression (lib/terminfo.ml[39,1660+28]..lib/terminfo.ml[39,1660+40]) ghost
+                          Texp_construct "CamlinternalFormatBasics.String_literal"
+                          [
+                            expression (lib/terminfo.ml[39,1660+28]..lib/terminfo.ml[39,1660+40]) ghost
+                              Texp_constant Const_string("\027[",(lib/terminfo.ml[39,1660+28]..lib/terminfo.ml[39,1660+40]) ghost,None)
+                            expression (lib/terminfo.ml[39,1660+28]..lib/terminfo.ml[39,1660+40]) ghost
+                              Texp_construct "CamlinternalFormatBasics.Int"
+                              [
+                                expression (lib/terminfo.ml[39,1660+28]..lib/terminfo.ml[39,1660+40]) ghost
+                                  Texp_construct "CamlinternalFormatBasics.Int_d"
+                                  []
+                                expression (lib/terminfo.ml[39,1660+28]..lib/terminfo.ml[39,1660+40]) ghost
+                                  Texp_construct "CamlinternalFormatBasics.No_padding"
+                                  []
+                                expression (lib/terminfo.ml[39,1660+28]..lib/terminfo.ml[39,1660+40]) ghost
+                                  Texp_construct "CamlinternalFormatBasics.No_precision"
+                                  []
+                                expression (lib/terminfo.ml[39,1660+28]..lib/terminfo.ml[39,1660+40]) ghost
+                                  Texp_construct "CamlinternalFormatBasics.Char_literal"
+                                  [
+                                    expression (lib/terminfo.ml[39,1660+28]..lib/terminfo.ml[39,1660+40]) ghost
+                                      Texp_constant Const_char 41
+                                    expression (lib/terminfo.ml[39,1660+28]..lib/terminfo.ml[39,1660+40]) ghost
+                                      Texp_construct "CamlinternalFormatBasics.Flush"
+                                      [
+                                        expression (lib/terminfo.ml[39,1660+28]..lib/terminfo.ml[39,1660+40]) ghost
+                                          Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                          []
+                                      ]
+                                  ]
+                              ]
+                          ]
+                        expression (lib/terminfo.ml[39,1660+28]..lib/terminfo.ml[39,1660+40]) ghost
+                          Texp_constant Const_string("\027[%dA%!",(lib/terminfo.ml[39,1660+28]..lib/terminfo.ml[39,1660+40]) ghost,None)
+                      ]
+                  <arg>
+                    Nolabel
+                    expression (lib/terminfo.ml[39,1660+41]..lib/terminfo.ml[39,1660+42])
+                      Texp_ident "n/336"
+                ]
+              None
+    ]
+  structure_item (lib/terminfo.ml[41,1704+0]..lib/terminfo.ml[42,1722+42])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/terminfo.ml[41,1704+4]..lib/terminfo.ml[41,1704+10])
+          Tpat_var "resume/360"
+        expression (lib/terminfo.ml[41,1704+11]..lib/terminfo.ml[42,1722+42]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/terminfo.ml[41,1704+11]..lib/terminfo.ml[41,1704+13])
+                Tpat_var "oc/362"
+            Nolabel
+            Param_pat
+              pattern (lib/terminfo.ml[41,1704+14]..lib/terminfo.ml[41,1704+15])
+                Tpat_var "n/363"
+          ]
+          Tfunction_body
+            expression (lib/terminfo.ml[42,1722+2]..lib/terminfo.ml[42,1722+42])
+              Texp_ifthenelse
+              expression (lib/terminfo.ml[42,1722+5]..lib/terminfo.ml[42,1722+11])
+                Texp_apply
+                expression (lib/terminfo.ml[42,1722+7]..lib/terminfo.ml[42,1722+9])
+                  Texp_ident "Stdlib!.>="
+                [
+                  <arg>
+                    Nolabel
+                    expression (lib/terminfo.ml[42,1722+5]..lib/terminfo.ml[42,1722+6])
+                      Texp_ident "n/363"
+                  <arg>
+                    Nolabel
+                    expression (lib/terminfo.ml[42,1722+10]..lib/terminfo.ml[42,1722+11])
+                      Texp_constant Const_int 1
+                ]
+              expression (lib/terminfo.ml[42,1722+17]..lib/terminfo.ml[42,1722+42])
+                Texp_apply
+                expression (lib/terminfo.ml[42,1722+17]..lib/terminfo.ml[42,1722+24])
+                  Texp_ident "Stdlib!.Printf.fprintf"
+                [
+                  <arg>
+                    Nolabel
+                    expression (lib/terminfo.ml[42,1722+25]..lib/terminfo.ml[42,1722+27])
+                      Texp_ident "oc/362"
+                  <arg>
+                    Nolabel
+                    expression (lib/terminfo.ml[42,1722+28]..lib/terminfo.ml[42,1722+40])
+                      Texp_construct "CamlinternalFormatBasics.Format"
+                      [
+                        expression (lib/terminfo.ml[42,1722+28]..lib/terminfo.ml[42,1722+40]) ghost
+                          Texp_construct "CamlinternalFormatBasics.String_literal"
+                          [
+                            expression (lib/terminfo.ml[42,1722+28]..lib/terminfo.ml[42,1722+40]) ghost
+                              Texp_constant Const_string("\027[",(lib/terminfo.ml[42,1722+28]..lib/terminfo.ml[42,1722+40]) ghost,None)
+                            expression (lib/terminfo.ml[42,1722+28]..lib/terminfo.ml[42,1722+40]) ghost
+                              Texp_construct "CamlinternalFormatBasics.Int"
+                              [
+                                expression (lib/terminfo.ml[42,1722+28]..lib/terminfo.ml[42,1722+40]) ghost
+                                  Texp_construct "CamlinternalFormatBasics.Int_d"
+                                  []
+                                expression (lib/terminfo.ml[42,1722+28]..lib/terminfo.ml[42,1722+40]) ghost
+                                  Texp_construct "CamlinternalFormatBasics.No_padding"
+                                  []
+                                expression (lib/terminfo.ml[42,1722+28]..lib/terminfo.ml[42,1722+40]) ghost
+                                  Texp_construct "CamlinternalFormatBasics.No_precision"
+                                  []
+                                expression (lib/terminfo.ml[42,1722+28]..lib/terminfo.ml[42,1722+40]) ghost
+                                  Texp_construct "CamlinternalFormatBasics.Char_literal"
+                                  [
+                                    expression (lib/terminfo.ml[42,1722+28]..lib/terminfo.ml[42,1722+40]) ghost
+                                      Texp_constant Const_char 42
+                                    expression (lib/terminfo.ml[42,1722+28]..lib/terminfo.ml[42,1722+40]) ghost
+                                      Texp_construct "CamlinternalFormatBasics.Flush"
+                                      [
+                                        expression (lib/terminfo.ml[42,1722+28]..lib/terminfo.ml[42,1722+40]) ghost
+                                          Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                          []
+                                      ]
+                                  ]
+                              ]
+                          ]
+                        expression (lib/terminfo.ml[42,1722+28]..lib/terminfo.ml[42,1722+40]) ghost
+                          Texp_constant Const_string("\027[%dB%!",(lib/terminfo.ml[42,1722+28]..lib/terminfo.ml[42,1722+40]) ghost,None)
+                      ]
+                  <arg>
+                    Nolabel
+                    expression (lib/terminfo.ml[42,1722+41]..lib/terminfo.ml[42,1722+42])
+                      Texp_ident "n/363"
+                ]
+              None
+    ]
+  structure_item (lib/terminfo.ml[44,1766+0]..lib/terminfo.ml[45,1786+65])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/terminfo.ml[44,1766+4]..lib/terminfo.ml[44,1766+12])
+          Tpat_var "standout/364"
+        expression (lib/terminfo.ml[44,1766+13]..lib/terminfo.ml[45,1786+65]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/terminfo.ml[44,1766+13]..lib/terminfo.ml[44,1766+15])
+                Tpat_var "oc/366"
+            Nolabel
+            Param_pat
+              pattern (lib/terminfo.ml[44,1766+16]..lib/terminfo.ml[44,1766+17])
+                Tpat_var "b/367"
+          ]
+          Tfunction_body
+            expression (lib/terminfo.ml[45,1786+2]..lib/terminfo.ml[45,1786+65])
+              Texp_sequence
+              expression (lib/terminfo.ml[45,1786+2]..lib/terminfo.ml[45,1786+55])
+                Texp_apply
+                expression (lib/terminfo.ml[45,1786+2]..lib/terminfo.ml[45,1786+15])
+                  Texp_ident "Stdlib!.output_string"
+                [
+                  <arg>
+                    Nolabel
+                    expression (lib/terminfo.ml[45,1786+16]..lib/terminfo.ml[45,1786+18])
+                      Texp_ident "oc/366"
+                  <arg>
+                    Nolabel
+                    expression (lib/terminfo.ml[45,1786+19]..lib/terminfo.ml[45,1786+55])
+                      Texp_ifthenelse
+                      expression (lib/terminfo.ml[45,1786+23]..lib/terminfo.ml[45,1786+24])
+                        Texp_ident "b/367"
+                      expression (lib/terminfo.ml[45,1786+30]..lib/terminfo.ml[45,1786+39])
+                        Texp_constant Const_string("\027[4m",(lib/terminfo.ml[45,1786+31]..lib/terminfo.ml[45,1786+38]),None)
+                      Some
+                        expression (lib/terminfo.ml[45,1786+45]..lib/terminfo.ml[45,1786+54])
+                          Texp_constant Const_string("\027[0m",(lib/terminfo.ml[45,1786+46]..lib/terminfo.ml[45,1786+53]),None)
+                ]
+              expression (lib/terminfo.ml[45,1786+57]..lib/terminfo.ml[45,1786+65])
+                Texp_apply
+                expression (lib/terminfo.ml[45,1786+57]..lib/terminfo.ml[45,1786+62])
+                  Texp_ident "Stdlib!.flush"
+                [
+                  <arg>
+                    Nolabel
+                    expression (lib/terminfo.ml[45,1786+63]..lib/terminfo.ml[45,1786+65])
+                      Texp_ident "oc/366"
+                ]
+    ]
+]
+
+{<Ocaml_ocaml_types__Terminfo>
+ "backup"[value] -> <Ocaml_ocaml_types__Terminfo.12>;
+ "isatty"[value] -> <Ocaml_ocaml_types__Terminfo.0>;
+ "num_lines"[value] -> <Ocaml_ocaml_types__Terminfo.9>;
+ "resume"[value] -> <Ocaml_ocaml_types__Terminfo.15>;
+ "setup"[value] -> <Ocaml_ocaml_types__Terminfo.6>;
+ "standout"[value] -> <Ocaml_ocaml_types__Terminfo.18>;
+ "status"[type] -> <Ocaml_ocaml_types__Terminfo.2>;
+ "terminfo_rows"[value] -> <Ocaml_ocaml_types__Terminfo.1>;
+ }
+
+(setglobal Ocaml_ocaml_types__Terminfo!
+  (let
+    (setup/318 =
+       (function oc/320 : int
+         (funct-body Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(26)<ghost>:1287-1491
+           (before Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(27):1294-1491
+             (let
+               (term/321 =
+                  (try
+                    (after Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(27):1309-1326
+                      (apply (field_imm 4 (global Ocaml_ocaml_types__Sys!))
+                        "TERM"))
+                   with exn/476
+                    (catch
+                      (if (== exn/476 (field_imm 7 (global Stdlib!)))
+                        (before Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(27):1345-1347
+                          "")
+                        (exit 1))
+                     with (1) (reraise exn/476))))
+               (before Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(29):1414-1491
+                 (if
+                   (&&
+                     (after Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(29):1417-1427
+                       (caml_string_notequal term/321 ""))
+                     (&&
+                       (after Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(29):1431-1445
+                         (caml_string_notequal term/321 "dumb"))
+                       (after Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(29):1449-1458
+                         (caml_sys_isatty oc/320))))
+                   (before Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(30):1466-1475
+                     2)
+                   (before Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(31):1483-1491
+                     1)))))))
+     num_lines/329 =
+       (function oc/331 : int
+         (funct-body Ocaml_ocaml_types__Terminfo.num_lines lib/terminfo.ml(33)<ghost>:1507-1576
+           (before Ocaml_ocaml_types__Terminfo.num_lines lib/terminfo.ml(34):1514-1576
+             (let
+               (rows/332 =[int]
+                  (after Ocaml_ocaml_types__Terminfo.num_lines lib/terminfo.ml(34):1525-1541
+                    (caml_terminfo_rows oc/331)))
+               (before Ocaml_ocaml_types__Terminfo.num_lines lib/terminfo.ml(35):1547-1576
+                 (if (> rows/332 0)
+                   (before Ocaml_ocaml_types__Terminfo.num_lines lib/terminfo.ml(35):1564-1568
+                     rows/332)
+                   (before Ocaml_ocaml_types__Terminfo.num_lines lib/terminfo.ml(35):1574-1576
+                     24)))))))
+     backup/333 =
+       (function oc/335 n/336[int] : int
+         (funct-body Ocaml_ocaml_types__Terminfo.backup lib/terminfo.ml(38)<ghost>:1653-1702
+           (before Ocaml_ocaml_types__Terminfo.backup lib/terminfo.ml(39):1662-1702
+             (if (>= n/336 1)
+               (before Ocaml_ocaml_types__Terminfo.backup lib/terminfo.ml(39):1677-1702
+                 (after Ocaml_ocaml_types__Terminfo.backup lib/terminfo.ml(39):1677-1702
+                   (apply (field_imm 0 (global Stdlib__Printf!)) oc/335
+                     [0:
+                      [11: "\027[" [4: 0 0 0 [12: 'A' [10: 0]]]] "\027[%dA%!"]
+                     n/336)))
+               0))))
+     resume/360 =
+       (function oc/362 n/363[int] : int
+         (funct-body Ocaml_ocaml_types__Terminfo.resume lib/terminfo.ml(41)<ghost>:1715-1764
+           (before Ocaml_ocaml_types__Terminfo.resume lib/terminfo.ml(42):1724-1764
+             (if (>= n/363 1)
+               (before Ocaml_ocaml_types__Terminfo.resume lib/terminfo.ml(42):1739-1764
+                 (after Ocaml_ocaml_types__Terminfo.resume lib/terminfo.ml(42):1739-1764
+                   (apply (field_imm 0 (global Stdlib__Printf!)) oc/362
+                     [0:
+                      [11: "\027[" [4: 0 0 0 [12: 'B' [10: 0]]]] "\027[%dB%!"]
+                     n/363)))
+               0))))
+     standout/364 =
+       (function oc/366 b/367[int] : int
+         (funct-body Ocaml_ocaml_types__Terminfo.standout lib/terminfo.ml(44)<ghost>:1779-1851
+           (before Ocaml_ocaml_types__Terminfo.standout lib/terminfo.ml(45):1788-1851
+             (seq
+               (after Ocaml_ocaml_types__Terminfo.standout lib/terminfo.ml(45):1788-1841
+                 (apply (field_imm 65 (global Stdlib!)) oc/366
+                   (if b/367
+                     (before Ocaml_ocaml_types__Terminfo.standout lib/terminfo.ml(45):1816-1825
+                       "\027[4m")
+                     (before Ocaml_ocaml_types__Terminfo.standout lib/terminfo.ml(45):1831-1840
+                       "\027[0m"))))
+               (before Ocaml_ocaml_types__Terminfo.standout lib/terminfo.ml(45):1843-1851
+                 (after Ocaml_ocaml_types__Terminfo.standout lib/terminfo.ml(45):1843-1851
+                   (apply (field_imm 62 (global Stdlib!)) oc/366))))))))
+    (pseudo <unknown location>
+      (makeblock 0 setup/318 num_lines/329 backup/333 resume/360
+        standout/364))))
+(setglobal Ocaml_ocaml_types__Terminfo!
+  (let
+    (setup/318 =
+       (function oc/320 : int
+         (funct-body Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(26)<ghost>:1287-1491
+           (before Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(27):1294-1491
+             (let
+               (term/321 =
+                  (try
+                    (after Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(27):1309-1326
+                      (apply (field_imm 4 (global Ocaml_ocaml_types__Sys!))
+                        "TERM"))
+                   with exn/476
+                    (if (== exn/476 (field_imm 7 (global Stdlib!)))
+                      (before Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(27):1345-1347
+                        "")
+                      (reraise exn/476))))
+               (before Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(29):1414-1491
+                 (if
+                   (&&
+                     (after Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(29):1417-1427
+                       (caml_string_notequal term/321 ""))
+                     (&&
+                       (after Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(29):1431-1445
+                         (caml_string_notequal term/321 "dumb"))
+                       (after Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(29):1449-1458
+                         (caml_sys_isatty oc/320))))
+                   (before Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(30):1466-1475
+                     2)
+                   (before Ocaml_ocaml_types__Terminfo.setup lib/terminfo.ml(31):1483-1491
+                     1)))))))
+     num_lines/329 =
+       (function oc/331 : int
+         (funct-body Ocaml_ocaml_types__Terminfo.num_lines lib/terminfo.ml(33)<ghost>:1507-1576
+           (before Ocaml_ocaml_types__Terminfo.num_lines lib/terminfo.ml(34):1514-1576
+             (let
+               (rows/332 =[int]
+                  (after Ocaml_ocaml_types__Terminfo.num_lines lib/terminfo.ml(34):1525-1541
+                    (caml_terminfo_rows oc/331)))
+               (before Ocaml_ocaml_types__Terminfo.num_lines lib/terminfo.ml(35):1547-1576
+                 (if (> rows/332 0)
+                   (before Ocaml_ocaml_types__Terminfo.num_lines lib/terminfo.ml(35):1564-1568
+                     rows/332)
+                   (before Ocaml_ocaml_types__Terminfo.num_lines lib/terminfo.ml(35):1574-1576
+                     24)))))))
+     backup/333 =
+       (function oc/335 n/336[int] : int
+         (funct-body Ocaml_ocaml_types__Terminfo.backup lib/terminfo.ml(38)<ghost>:1653-1702
+           (before Ocaml_ocaml_types__Terminfo.backup lib/terminfo.ml(39):1662-1702
+             (if (>= n/336 1)
+               (before Ocaml_ocaml_types__Terminfo.backup lib/terminfo.ml(39):1677-1702
+                 (after Ocaml_ocaml_types__Terminfo.backup lib/terminfo.ml(39):1677-1702
+                   (apply (field_imm 0 (global Stdlib__Printf!)) oc/335
+                     [0:
+                      [11: "\027[" [4: 0 0 0 [12: 'A' [10: 0]]]] "\027[%dA%!"]
+                     n/336)))
+               0))))
+     resume/360 =
+       (function oc/362 n/363[int] : int
+         (funct-body Ocaml_ocaml_types__Terminfo.resume lib/terminfo.ml(41)<ghost>:1715-1764
+           (before Ocaml_ocaml_types__Terminfo.resume lib/terminfo.ml(42):1724-1764
+             (if (>= n/363 1)
+               (before Ocaml_ocaml_types__Terminfo.resume lib/terminfo.ml(42):1739-1764
+                 (after Ocaml_ocaml_types__Terminfo.resume lib/terminfo.ml(42):1739-1764
+                   (apply (field_imm 0 (global Stdlib__Printf!)) oc/362
+                     [0:
+                      [11: "\027[" [4: 0 0 0 [12: 'B' [10: 0]]]] "\027[%dB%!"]
+                     n/363)))
+               0))))
+     standout/364 =
+       (function oc/366 b/367[int] : int
+         (funct-body Ocaml_ocaml_types__Terminfo.standout lib/terminfo.ml(44)<ghost>:1779-1851
+           (before Ocaml_ocaml_types__Terminfo.standout lib/terminfo.ml(45):1788-1851
+             (seq
+               (after Ocaml_ocaml_types__Terminfo.standout lib/terminfo.ml(45):1788-1841
+                 (apply (field_imm 65 (global Stdlib!)) oc/366
+                   (if b/367
+                     (before Ocaml_ocaml_types__Terminfo.standout lib/terminfo.ml(45):1816-1825
+                       "\027[4m")
+                     (before Ocaml_ocaml_types__Terminfo.standout lib/terminfo.ml(45):1831-1840
+                       "\027[0m"))))
+               (before Ocaml_ocaml_types__Terminfo.standout lib/terminfo.ml(45):1843-1851
+                 (after Ocaml_ocaml_types__Terminfo.standout lib/terminfo.ml(45):1843-1851
+                   (apply (field_imm 62 (global Stdlib!)) oc/366))))))))
+    (pseudo <unknown location>
+      (makeblock 0 setup/318 num_lines/329 backup/333 resume/360
+        standout/364))))

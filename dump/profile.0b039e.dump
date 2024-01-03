@@ -1,0 +1,10 @@
+0.009s 13.9MB 0.97MB 2.73MB lib/local_store.ml
+  0.003s 5.52MB 0.65MB 2.41MB typing
+  0.004s 4.04MB 0.18MB 2.60MB generate
+    0.001s 2.04MB 0.12MB 2.54MB compile_phrases
+      ------ 0.04MB ------ ------ liveness
+      ------ 2.00MB 0.12MB 2.54MB emit
+    0.002s ------ ------ ------ assemble
+    0.001s 2.00MB 0.06MB 2.60MB other
+  0.002s 4.32MB 0.13MB 2.73MB other
+0.007s 3.03MB 1.76MB ------ other

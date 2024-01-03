@@ -1,0 +1,18 @@
+0.042s 94.9MB 6.36MB 8.12MB lib/ident.ml
+  0.001s 2.02MB 0.36MB 2.12MB parsing
+    0.001s 2.02MB 0.36MB 2.12MB parser
+  0.018s 33.6MB 4.34MB 6.46MB typing
+  0.001s 2.06MB 0.06MB 6.53MB transl
+  0.012s 19.5MB 1.40MB 7.93MB generate
+    ------ 0.21MB ------ ------ cmm
+    0.005s 8.91MB 1.09MB 7.62MB compile_phrases
+      ------ 2.00MB 0.50MB 7.03MB polling
+      ------ 2.00MB 0.18MB 7.21MB spill
+      ------ 2.00MB 0.18MB 7.40MB split
+      0.001s 2.49MB 0.21MB 7.62MB regalloc
+      0.001s 0.23MB ------ ------ emit
+      0.001s 0.18MB ------ ------ other
+    0.004s ------ ------ ------ assemble
+    0.003s 10.4MB 0.31MB 7.93MB other
+  0.010s 37.5MB 0.18MB 8.12MB other
+0.006s 3.04MB 1.76MB ------ other

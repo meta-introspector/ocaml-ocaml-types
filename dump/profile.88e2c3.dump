@@ -1,0 +1,20 @@
+0.078s  183MB 10.7MB 12.4MB lib/warnings.ml
+  0.002s 3.55MB 0.56MB 2.32MB parsing
+    0.002s 3.55MB 0.56MB 2.32MB parser
+  0.030s 55.5MB 5.96MB 8.29MB typing
+  0.004s 10.2MB 0.50MB 8.79MB transl
+  0.024s 42.0MB 3.12MB 11.9MB generate
+    0.001s 2.31MB 0.06MB 8.85MB cmm
+    0.010s 18.2MB 1.75MB 10.6MB compile_phrases
+      0.001s 4.47MB 0.37MB 9.22MB selection
+      0.001s 2.00MB 0.28MB 9.51MB cse
+      0.001s 0.51MB ------ ------ liveness
+      ------ 0.18MB ------ ------ deadcode
+      0.001s 2.00MB 0.18MB 9.69MB spill
+      0.001s 0.86MB ------ ------ split
+      0.002s 6.25MB 0.50MB 10.1MB regalloc
+      0.001s 2.00MB 0.40MB 10.6MB other
+    0.007s ------ ------ ------ assemble
+    0.006s 21.5MB 1.31MB 11.9MB other
+  0.018s 71.7MB 0.56MB 12.4MB other
+0.006s 3.04MB 1.76MB ------ other

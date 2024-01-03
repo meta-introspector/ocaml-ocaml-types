@@ -1,0 +1,193 @@
+[
+  structure_item (lib/config.ml[44,2020+0]..[44,2020+34])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/config.ml[44,2020+4]..[44,2020+26])
+          Ppat_var "c_has_debug_prefix_map" (lib/config.ml[44,2020+4]..[44,2020+26])
+        expression (lib/config.ml[44,2020+29]..[44,2020+34])
+          Pexp_construct "false" (lib/config.ml[44,2020+29]..[44,2020+34])
+          None
+    ]
+  structure_item (lib/config.ml[47,2122+0]..[47,2122+34])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/config.ml[47,2122+4]..[47,2122+27])
+          Ppat_var "as_has_debug_prefix_map" (lib/config.ml[47,2122+4]..[47,2122+27])
+        expression (lib/config.ml[47,2122+29]..[47,2122+34])
+          Pexp_construct "false" (lib/config.ml[47,2122+29]..[47,2122+34])
+          None
+    ]
+  structure_item (lib/config.ml[213,7716+0]..[213,7716+18])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/config.ml[213,7716+4]..[213,7716+11])
+          Ppat_var "flambda" (lib/config.ml[213,7716+4]..[213,7716+11])
+        expression (lib/config.ml[213,7716+13]..[213,7716+18])
+          Pexp_construct "false" (lib/config.ml[213,7716+13]..[213,7716+18])
+          None
+    ]
+  structure_item (lib/config.ml[261,9163+0]..[261,9163+23])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/config.ml[261,9163+4]..[261,9163+16])
+          Ppat_var "print_config" (lib/config.ml[261,9163+4]..[261,9163+16])
+        expression (lib/config.ml[261,9163+17]..[261,9163+23]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/config.ml[261,9163+17]..[261,9163+18])
+              Nolabel
+              None
+              pattern (lib/config.ml[261,9163+17]..[261,9163+18])
+                Ppat_any
+          ]
+          None
+          Pfunction_body
+            expression (lib/config.ml[261,9163+21]..[261,9163+23])
+              Pexp_construct "()" (lib/config.ml[261,9163+21]..[261,9163+23])
+              None
+    ]
+  structure_item (lib/config.ml[263,9188+0]..[263,9188+21])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/config.ml[263,9188+4]..[263,9188+14])
+          Ppat_var "config_var" (lib/config.ml[263,9188+4]..[263,9188+14])
+        expression (lib/config.ml[263,9188+15]..[263,9188+21]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/config.ml[263,9188+15]..[263,9188+16])
+              Nolabel
+              None
+              pattern (lib/config.ml[263,9188+15]..[263,9188+16])
+                Ppat_any
+          ]
+          None
+          Pfunction_body
+            expression (lib/config.ml[263,9188+19]..[263,9188+21])
+              Pexp_construct "()" (lib/config.ml[263,9188+19]..[263,9188+21])
+              None
+    ]
+]
+
+let c_has_debug_prefix_map = false
+let as_has_debug_prefix_map = false
+let flambda = false
+let print_config _ = ()
+let config_var _ = ()
+[
+  structure_item (lib/config.ml[44,2020+0]..lib/config.ml[44,2020+34])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/config.ml[44,2020+4]..lib/config.ml[44,2020+26])
+          Tpat_var "c_has_debug_prefix_map/294"
+        expression (lib/config.ml[44,2020+29]..lib/config.ml[44,2020+34])
+          Texp_construct "false"
+          []
+    ]
+  structure_item (lib/config.ml[47,2122+0]..lib/config.ml[47,2122+34])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/config.ml[47,2122+4]..lib/config.ml[47,2122+27])
+          Tpat_var "as_has_debug_prefix_map/295"
+        expression (lib/config.ml[47,2122+29]..lib/config.ml[47,2122+34])
+          Texp_construct "false"
+          []
+    ]
+  structure_item (lib/config.ml[213,7716+0]..lib/config.ml[213,7716+18])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/config.ml[213,7716+4]..lib/config.ml[213,7716+11])
+          Tpat_var "flambda/296"
+        expression (lib/config.ml[213,7716+13]..lib/config.ml[213,7716+18])
+          Texp_construct "false"
+          []
+    ]
+  structure_item (lib/config.ml[261,9163+0]..lib/config.ml[261,9163+23])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/config.ml[261,9163+4]..lib/config.ml[261,9163+16])
+          Tpat_var "print_config/297"
+        expression (lib/config.ml[261,9163+17]..lib/config.ml[261,9163+23]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/config.ml[261,9163+17]..lib/config.ml[261,9163+18])
+                Tpat_any
+          ]
+          Tfunction_body
+            expression (lib/config.ml[261,9163+21]..lib/config.ml[261,9163+23])
+              Texp_construct "()"
+              []
+    ]
+  structure_item (lib/config.ml[263,9188+0]..lib/config.ml[263,9188+21])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/config.ml[263,9188+4]..lib/config.ml[263,9188+14])
+          Tpat_var "config_var/300"
+        expression (lib/config.ml[263,9188+15]..lib/config.ml[263,9188+21]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/config.ml[263,9188+15]..lib/config.ml[263,9188+16])
+                Tpat_any
+          ]
+          Tfunction_body
+            expression (lib/config.ml[263,9188+19]..lib/config.ml[263,9188+21])
+              Texp_construct "()"
+              []
+    ]
+]
+
+{<Ocaml_ocaml_types__Config>
+ "as_has_debug_prefix_map"[value] -> <Ocaml_ocaml_types__Config.1>;
+ "c_has_debug_prefix_map"[value] -> <Ocaml_ocaml_types__Config.0>;
+ "config_var"[value] -> <Ocaml_ocaml_types__Config.4>;
+ "flambda"[value] -> <Ocaml_ocaml_types__Config.2>;
+ "print_config"[value] -> <Ocaml_ocaml_types__Config.3>;
+ }
+
+(seq
+  (let (c_has_debug_prefix_map/294 =[int] 0)
+    (setfield_ptr(root-init) 0 (global Ocaml_ocaml_types__Config!)
+      c_has_debug_prefix_map/294))
+  (let (as_has_debug_prefix_map/295 =[int] 0)
+    (setfield_ptr(root-init) 1 (global Ocaml_ocaml_types__Config!)
+      as_has_debug_prefix_map/295))
+  (let (flambda/296 =[int] 0)
+    (setfield_ptr(root-init) 2 (global Ocaml_ocaml_types__Config!)
+      flambda/296))
+  (let (print_config/297 = (function param/299 : int 0))
+    (setfield_ptr(root-init) 3 (global Ocaml_ocaml_types__Config!)
+      print_config/297))
+  (let (config_var/300 = (function param/302 : int 0))
+    (setfield_ptr(root-init) 4 (global Ocaml_ocaml_types__Config!)
+      config_var/300))
+  0)
+(seq
+  (let (c_has_debug_prefix_map/294 =[int] 0)
+    (setfield_ptr(root-init) 0 (global Ocaml_ocaml_types__Config!)
+      c_has_debug_prefix_map/294))
+  (let (as_has_debug_prefix_map/295 =[int] 0)
+    (setfield_ptr(root-init) 1 (global Ocaml_ocaml_types__Config!)
+      as_has_debug_prefix_map/295))
+  (let (flambda/296 =[int] 0)
+    (setfield_ptr(root-init) 2 (global Ocaml_ocaml_types__Config!)
+      flambda/296))
+  (let (print_config/297 = (function param/299 : int 0))
+    (setfield_ptr(root-init) 3 (global Ocaml_ocaml_types__Config!)
+      print_config/297))
+  (let (config_var/300 = (function param/302 : int 0))
+    (setfield_ptr(root-init) 4 (global Ocaml_ocaml_types__Config!)
+      config_var/300))
+  0)

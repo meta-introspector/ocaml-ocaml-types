@@ -1,0 +1,4 @@
+0.002s ------ ------ - lib/some.ml
+  0.002s ------ ------ - generate
+    0.002s ------ ------ - assemble
+0.007s 3.03MB 1.76MB - other

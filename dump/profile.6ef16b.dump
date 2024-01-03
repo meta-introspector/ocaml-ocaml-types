@@ -1,0 +1,20 @@
+0.070s  167MB 9.18MB 10.9MB lib/location.ml
+  0.003s 3.55MB 0.59MB 2.35MB parsing
+    0.003s 3.55MB 0.59MB 2.35MB parser
+  0.026s 56.2MB 4.81MB 7.16MB typing
+  0.001s 4.06MB 0.25MB 7.41MB transl
+  0.024s 42.8MB 3.15MB 10.5MB generate
+    ------ 2.00MB 0.53MB 7.94MB cmm
+    0.011s 21.5MB 1.59MB 9.54MB compile_phrases
+      0.001s 2.11MB 0.12MB 8.07MB selection
+      0.001s 3.68MB 0.37MB 8.44MB cse
+      0.001s 2.00MB 0.06MB 8.51MB liveness
+      0.002s 2.61MB 0.15MB 8.66MB spill
+      0.001s 2.00MB 0.18MB 8.85MB split
+      0.003s 2.89MB 0.40MB 9.26MB regalloc
+      0.001s 4.20MB 0.09MB 9.35MB emit
+      0.002s 2.00MB 0.18MB 9.54MB other
+    0.007s ------ ------ ------ assemble
+    0.006s 19.3MB 1.03MB 10.5MB other
+  0.016s 60.6MB 0.37MB 10.9MB other
+0.007s 3.04MB 1.76MB ------ other

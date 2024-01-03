@@ -1,0 +1,7 @@
+0.005s 3.53MB 0.53MB 2.29MB lib/sys.ml
+  0.001s 2.00MB 0.43MB 2.19MB typing
+  0.003s 1.48MB 0.09MB 2.29MB generate
+    0.002s ------ ------ ------ assemble
+    0.001s 1.48MB 0.09MB 2.29MB other
+  ------ 0.04MB ------ ------ other
+0.006s 3.03MB 1.76MB ------ other

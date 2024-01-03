@@ -1,0 +1,8 @@
+0.059s  146MB 8.18MB 8.18MB lib/location.ml
+  0.003s 6.21MB 2.09MB 2.09MB parsing
+    0.003s 6.21MB 2.09MB 2.09MB parser
+  0.032s 58.7MB 5.15MB 7.24MB typing
+  0.002s 2.19MB 0.21MB 7.46MB transl
+  0.008s 28.5MB 0.50MB 7.96MB generate
+  0.014s 50.3MB 0.21MB 8.18MB other
+0.003s ------ ------ ------ other

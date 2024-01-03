@@ -1,0 +1,8 @@
+0.074s  193MB 9.74MB 9.74MB lib/ast_iterator.ml
+  0.003s 6.45MB 2.12MB 2.12MB parsing
+    0.003s 6.45MB 2.12MB 2.12MB parser
+  0.044s 73.9MB 7.03MB 9.15MB typing
+  0.001s 4.11MB 0.06MB 9.21MB transl
+  0.009s 42.5MB 0.21MB 9.43MB generate
+  0.017s 66.3MB 0.31MB 9.74MB other
+0.004s ------ ------ ------ other

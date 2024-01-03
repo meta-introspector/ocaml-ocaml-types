@@ -1,0 +1,2868 @@
+[
+  structure_item (lib/outcometree.ml[27,1551+0]..[27,1551+48])
+    Pstr_type Rec
+    [
+      type_declaration "out_name" (lib/outcometree.ml[27,1551+5]..[27,1551+13]) (lib/outcometree.ml[27,1551+0]..[27,1551+48])
+        attribute "ocaml.doc"
+          [
+            structure_item (lib/outcometree.ml[25,1423+0]..[26,1498+52])
+              Pstr_eval
+              expression (lib/outcometree.ml[25,1423+0]..[26,1498+52])
+                Pexp_constant PConst_string(" An [out_name] is a string representation of an identifier which can be\n    rewritten on the fly to avoid name collisions ",(lib/outcometree.ml[25,1423+0]..[26,1498+52]),None)
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (lib/outcometree.ml[27,1551+18]..[27,1551+46])
+                Mutable
+                "printed_name" (lib/outcometree.ml[27,1551+26]..[27,1551+38])                core_type (lib/outcometree.ml[27,1551+40]..[27,1551+46])
+                  Ptyp_constr "string" (lib/outcometree.ml[27,1551+40]..[27,1551+46])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/outcometree.ml[29,1601+0]..[32,1693+26])
+    Pstr_type Rec
+    [
+      type_declaration "out_ident" (lib/outcometree.ml[29,1601+5]..[29,1601+14]) (lib/outcometree.ml[29,1601+0]..[32,1693+26])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/outcometree.ml[30,1618+2]..[30,1618+39])
+                "Oide_apply" (lib/outcometree.ml[30,1618+4]..[30,1618+14])
+                [
+                  core_type (lib/outcometree.ml[30,1618+18]..[30,1618+27])
+                    Ptyp_constr "out_ident" (lib/outcometree.ml[30,1618+18]..[30,1618+27])
+                    []
+                  core_type (lib/outcometree.ml[30,1618+30]..[30,1618+39])
+                    Ptyp_constr "out_ident" (lib/outcometree.ml[30,1618+30]..[30,1618+39])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[31,1658+2]..[31,1658+34])
+                "Oide_dot" (lib/outcometree.ml[31,1658+4]..[31,1658+12])
+                [
+                  core_type (lib/outcometree.ml[31,1658+16]..[31,1658+25])
+                    Ptyp_constr "out_ident" (lib/outcometree.ml[31,1658+16]..[31,1658+25])
+                    []
+                  core_type (lib/outcometree.ml[31,1658+28]..[31,1658+34])
+                    Ptyp_constr "string" (lib/outcometree.ml[31,1658+28]..[31,1658+34])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[32,1693+2]..[32,1693+26])
+                "Oide_ident" (lib/outcometree.ml[32,1693+4]..[32,1693+14])
+                [
+                  core_type (lib/outcometree.ml[32,1693+18]..[32,1693+26])
+                    Ptyp_constr "out_name" (lib/outcometree.ml[32,1693+18]..[32,1693+26])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/outcometree.ml[34,1721+0]..[36,1755+14])
+    Pstr_type Rec
+    [
+      type_declaration "out_string" (lib/outcometree.ml[34,1721+5]..[34,1721+15]) (lib/outcometree.ml[34,1721+0]..[36,1755+14])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/outcometree.ml[35,1739+2]..[35,1739+15])
+                "Ostr_string" (lib/outcometree.ml[35,1739+4]..[35,1739+15])
+                []
+                None
+              (lib/outcometree.ml[36,1755+2]..[36,1755+14])
+                "Ostr_bytes" (lib/outcometree.ml[36,1755+4]..[36,1755+14])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/outcometree.ml[38,1771+0]..[39,1792+24])
+    Pstr_type Rec
+    [
+      type_declaration "out_attribute" (lib/outcometree.ml[38,1771+5]..[38,1771+18]) (lib/outcometree.ml[38,1771+0]..[39,1792+24])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (lib/outcometree.ml[39,1792+4]..[39,1792+22])
+                Immutable
+                "oattr_name" (lib/outcometree.ml[39,1792+4]..[39,1792+14])                core_type (lib/outcometree.ml[39,1792+16]..[39,1792+22])
+                  Ptyp_constr "string" (lib/outcometree.ml[39,1792+16]..[39,1792+22])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/outcometree.ml[41,1818+0]..[58,2388+26])
+    Pstr_type Rec
+    [
+      type_declaration "out_value" (lib/outcometree.ml[41,1818+5]..[41,1818+14]) (lib/outcometree.ml[41,1818+0]..[58,2388+26])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/outcometree.ml[42,1835+2]..[42,1835+32])
+                "Oval_array" (lib/outcometree.ml[42,1835+4]..[42,1835+14])
+                [
+                  core_type (lib/outcometree.ml[42,1835+18]..[42,1835+32])
+                    Ptyp_constr "list" (lib/outcometree.ml[42,1835+28]..[42,1835+32])
+                    [
+                      core_type (lib/outcometree.ml[42,1835+18]..[42,1835+27])
+                        Ptyp_constr "out_value" (lib/outcometree.ml[42,1835+18]..[42,1835+27])
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[43,1868+2]..[43,1868+21])
+                "Oval_char" (lib/outcometree.ml[43,1868+4]..[43,1868+13])
+                [
+                  core_type (lib/outcometree.ml[43,1868+17]..[43,1868+21])
+                    Ptyp_constr "char" (lib/outcometree.ml[43,1868+17]..[43,1868+21])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[44,1890+2]..[44,1890+45])
+                "Oval_constr" (lib/outcometree.ml[44,1890+4]..[44,1890+15])
+                [
+                  core_type (lib/outcometree.ml[44,1890+19]..[44,1890+28])
+                    Ptyp_constr "out_ident" (lib/outcometree.ml[44,1890+19]..[44,1890+28])
+                    []
+                  core_type (lib/outcometree.ml[44,1890+31]..[44,1890+45])
+                    Ptyp_constr "list" (lib/outcometree.ml[44,1890+41]..[44,1890+45])
+                    [
+                      core_type (lib/outcometree.ml[44,1890+31]..[44,1890+40])
+                        Ptyp_constr "out_value" (lib/outcometree.ml[44,1890+31]..[44,1890+40])
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[45,1936+2]..[45,1936+17])
+                "Oval_ellipsis" (lib/outcometree.ml[45,1936+4]..[45,1936+17])
+                []
+                None
+              (lib/outcometree.ml[46,1954+2]..[46,1954+23])
+                "Oval_float" (lib/outcometree.ml[46,1954+4]..[46,1954+14])
+                [
+                  core_type (lib/outcometree.ml[46,1954+18]..[46,1954+23])
+                    Ptyp_constr "float" (lib/outcometree.ml[46,1954+18]..[46,1954+23])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[47,1978+2]..[47,1978+19])
+                "Oval_int" (lib/outcometree.ml[47,1978+4]..[47,1978+12])
+                [
+                  core_type (lib/outcometree.ml[47,1978+16]..[47,1978+19])
+                    Ptyp_constr "int" (lib/outcometree.ml[47,1978+16]..[47,1978+19])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[48,1998+2]..[48,1998+23])
+                "Oval_int32" (lib/outcometree.ml[48,1998+4]..[48,1998+14])
+                [
+                  core_type (lib/outcometree.ml[48,1998+18]..[48,1998+23])
+                    Ptyp_constr "int32" (lib/outcometree.ml[48,1998+18]..[48,1998+23])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[49,2022+2]..[49,2022+23])
+                "Oval_int64" (lib/outcometree.ml[49,2022+4]..[49,2022+14])
+                [
+                  core_type (lib/outcometree.ml[49,2022+18]..[49,2022+23])
+                    Ptyp_constr "int64" (lib/outcometree.ml[49,2022+18]..[49,2022+23])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[50,2046+2]..[50,2046+31])
+                "Oval_nativeint" (lib/outcometree.ml[50,2046+4]..[50,2046+18])
+                [
+                  core_type (lib/outcometree.ml[50,2046+22]..[50,2046+31])
+                    Ptyp_constr "nativeint" (lib/outcometree.ml[50,2046+22]..[50,2046+31])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[51,2078+2]..[51,2078+31])
+                "Oval_list" (lib/outcometree.ml[51,2078+4]..[51,2078+13])
+                [
+                  core_type (lib/outcometree.ml[51,2078+17]..[51,2078+31])
+                    Ptyp_constr "list" (lib/outcometree.ml[51,2078+27]..[51,2078+31])
+                    [
+                      core_type (lib/outcometree.ml[51,2078+17]..[51,2078+26])
+                        Ptyp_constr "out_value" (lib/outcometree.ml[51,2078+17]..[51,2078+26])
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[52,2110+2]..[52,2110+46])
+                "Oval_printer" (lib/outcometree.ml[52,2110+4]..[52,2110+16])
+                [
+                  core_type (lib/outcometree.ml[52,2110+21]..[52,2110+45])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (lib/outcometree.ml[52,2110+21]..[52,2110+37])
+                      Ptyp_constr "Format.formatter" (lib/outcometree.ml[52,2110+21]..[52,2110+37])
+                      []
+                    core_type (lib/outcometree.ml[52,2110+41]..[52,2110+45])
+                      Ptyp_constr "unit" (lib/outcometree.ml[52,2110+41]..[52,2110+45])
+                      []
+                ]
+                None
+              (lib/outcometree.ml[53,2157+2]..[53,2157+47])
+                "Oval_record" (lib/outcometree.ml[53,2157+4]..[53,2157+15])
+                [
+                  core_type (lib/outcometree.ml[53,2157+19]..[53,2157+47])
+                    Ptyp_constr "list" (lib/outcometree.ml[53,2157+43]..[53,2157+47])
+                    [
+                      core_type (lib/outcometree.ml[53,2157+20]..[53,2157+41])
+                        Ptyp_tuple
+                        [
+                          core_type (lib/outcometree.ml[53,2157+20]..[53,2157+29])
+                            Ptyp_constr "out_ident" (lib/outcometree.ml[53,2157+20]..[53,2157+29])
+                            []
+                          core_type (lib/outcometree.ml[53,2157+32]..[53,2157+41])
+                            Ptyp_constr "out_value" (lib/outcometree.ml[53,2157+32]..[53,2157+41])
+                            []
+                        ]
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[54,2205+2]..[54,2205+44])
+                "Oval_string" (lib/outcometree.ml[54,2205+4]..[54,2205+15])
+                [
+                  core_type (lib/outcometree.ml[54,2205+19]..[54,2205+25])
+                    Ptyp_constr "string" (lib/outcometree.ml[54,2205+19]..[54,2205+25])
+                    []
+                  core_type (lib/outcometree.ml[54,2205+28]..[54,2205+31])
+                    Ptyp_constr "int" (lib/outcometree.ml[54,2205+28]..[54,2205+31])
+                    []
+                  core_type (lib/outcometree.ml[54,2205+34]..[54,2205+44])
+                    Ptyp_constr "out_string" (lib/outcometree.ml[54,2205+34]..[54,2205+44])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[55,2284+2]..[55,2284+24])
+                "Oval_stuff" (lib/outcometree.ml[55,2284+4]..[55,2284+14])
+                [
+                  core_type (lib/outcometree.ml[55,2284+18]..[55,2284+24])
+                    Ptyp_constr "string" (lib/outcometree.ml[55,2284+18]..[55,2284+24])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[56,2309+2]..[56,2309+32])
+                "Oval_tuple" (lib/outcometree.ml[56,2309+4]..[56,2309+14])
+                [
+                  core_type (lib/outcometree.ml[56,2309+18]..[56,2309+32])
+                    Ptyp_constr "list" (lib/outcometree.ml[56,2309+28]..[56,2309+32])
+                    [
+                      core_type (lib/outcometree.ml[56,2309+18]..[56,2309+27])
+                        Ptyp_constr "out_value" (lib/outcometree.ml[56,2309+18]..[56,2309+27])
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[57,2342+2]..[57,2342+45])
+                "Oval_variant" (lib/outcometree.ml[57,2342+4]..[57,2342+16])
+                [
+                  core_type (lib/outcometree.ml[57,2342+20]..[57,2342+26])
+                    Ptyp_constr "string" (lib/outcometree.ml[57,2342+20]..[57,2342+26])
+                    []
+                  core_type (lib/outcometree.ml[57,2342+29]..[57,2342+45])
+                    Ptyp_constr "option" (lib/outcometree.ml[57,2342+39]..[57,2342+45])
+                    [
+                      core_type (lib/outcometree.ml[57,2342+29]..[57,2342+38])
+                        Ptyp_constr "out_value" (lib/outcometree.ml[57,2342+29]..[57,2342+38])
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[58,2388+2]..[58,2388+26])
+                "Oval_lazy" (lib/outcometree.ml[58,2388+4]..[58,2388+13])
+                [
+                  core_type (lib/outcometree.ml[58,2388+17]..[58,2388+26])
+                    Ptyp_constr "out_value" (lib/outcometree.ml[58,2388+17]..[58,2388+26])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/outcometree.ml[60,2416+0]..[64,2541+1])
+    Pstr_type Rec
+    [
+      type_declaration "out_type_param" (lib/outcometree.ml[60,2416+5]..[60,2416+19]) (lib/outcometree.ml[60,2416+0]..[64,2541+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (lib/outcometree.ml[61,2440+4]..[61,2440+21])
+                Immutable
+                "ot_non_gen" (lib/outcometree.ml[61,2440+4]..[61,2440+14])                core_type (lib/outcometree.ml[61,2440+16]..[61,2440+20])
+                  Ptyp_constr "bool" (lib/outcometree.ml[61,2440+16]..[61,2440+20])
+                  []
+              (lib/outcometree.ml[62,2462+4]..[62,2462+20])
+                Immutable
+                "ot_name" (lib/outcometree.ml[62,2462+4]..[62,2462+11])                core_type (lib/outcometree.ml[62,2462+13]..[62,2462+19])
+                  Ptyp_constr "string" (lib/outcometree.ml[62,2462+13]..[62,2462+19])
+                  []
+              (lib/outcometree.ml[63,2483+4]..[63,2483+57])
+                Immutable
+                "ot_variance" (lib/outcometree.ml[63,2483+4]..[63,2483+15])                core_type (lib/outcometree.ml[63,2483+17]..[63,2483+57])
+                  Ptyp_tuple
+                  [
+                    core_type (lib/outcometree.ml[63,2483+17]..[63,2483+34])
+                      Ptyp_constr "Asttypes.variance" (lib/outcometree.ml[63,2483+17]..[63,2483+34])
+                      []
+                    core_type (lib/outcometree.ml[63,2483+37]..[63,2483+57])
+                      Ptyp_constr "Asttypes.injectivity" (lib/outcometree.ml[63,2483+37]..[63,2483+57])
+                      []
+                  ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/outcometree.ml[66,2544+0]..[93,3487+24])
+    Pstr_type Rec
+    [
+      type_declaration "out_type" (lib/outcometree.ml[66,2544+5]..[66,2544+13]) (lib/outcometree.ml[66,2544+0]..[83,3249+46])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/outcometree.ml[67,2560+2]..[67,2560+17])
+                "Otyp_abstract" (lib/outcometree.ml[67,2560+4]..[67,2560+17])
+                []
+                None
+              (lib/outcometree.ml[68,2578+2]..[68,2578+13])
+                "Otyp_open" (lib/outcometree.ml[68,2578+4]..[68,2578+13])
+                []
+                None
+              (lib/outcometree.ml[69,2592+2]..[69,2592+64])
+                "Otyp_alias" (lib/outcometree.ml[69,2592+4]..[69,2592+14])
+                [
+                  (lib/outcometree.ml[69,2592+19]..[69,2592+32])
+                    Immutable
+                    "non_gen" (lib/outcometree.ml[69,2592+19]..[69,2592+26])                    core_type (lib/outcometree.ml[69,2592+27]..[69,2592+31])
+                      Ptyp_constr "bool" (lib/outcometree.ml[69,2592+27]..[69,2592+31])
+                      []
+                  (lib/outcometree.ml[69,2592+33]..[69,2592+50])
+                    Immutable
+                    "aliased" (lib/outcometree.ml[69,2592+33]..[69,2592+40])                    core_type (lib/outcometree.ml[69,2592+41]..[69,2592+49])
+                      Ptyp_constr "out_type" (lib/outcometree.ml[69,2592+41]..[69,2592+49])
+                      []
+                  (lib/outcometree.ml[69,2592+51]..[69,2592+63])
+                    Immutable
+                    "alias" (lib/outcometree.ml[69,2592+51]..[69,2592+56])                    core_type (lib/outcometree.ml[69,2592+57]..[69,2592+63])
+                      Ptyp_constr "string" (lib/outcometree.ml[69,2592+57]..[69,2592+63])
+                      []
+                ]
+                None
+              (lib/outcometree.ml[70,2657+2]..[70,2657+58])
+                "Otyp_arrow" (lib/outcometree.ml[70,2657+4]..[70,2657+14])
+                [
+                  core_type (lib/outcometree.ml[70,2657+18]..[70,2657+36])
+                    Ptyp_constr "Asttypes.arg_label" (lib/outcometree.ml[70,2657+18]..[70,2657+36])
+                    []
+                  core_type (lib/outcometree.ml[70,2657+39]..[70,2657+47])
+                    Ptyp_constr "out_type" (lib/outcometree.ml[70,2657+39]..[70,2657+47])
+                    []
+                  core_type (lib/outcometree.ml[70,2657+50]..[70,2657+58])
+                    Ptyp_constr "out_type" (lib/outcometree.ml[70,2657+50]..[70,2657+58])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[71,2716+2]..[71,2716+43])
+                "Otyp_class" (lib/outcometree.ml[71,2716+4]..[71,2716+14])
+                [
+                  core_type (lib/outcometree.ml[71,2716+18]..[71,2716+27])
+                    Ptyp_constr "out_ident" (lib/outcometree.ml[71,2716+18]..[71,2716+27])
+                    []
+                  core_type (lib/outcometree.ml[71,2716+30]..[71,2716+43])
+                    Ptyp_constr "list" (lib/outcometree.ml[71,2716+39]..[71,2716+43])
+                    [
+                      core_type (lib/outcometree.ml[71,2716+30]..[71,2716+38])
+                        Ptyp_constr "out_type" (lib/outcometree.ml[71,2716+30]..[71,2716+38])
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[72,2760+2]..[72,2760+44])
+                "Otyp_constr" (lib/outcometree.ml[72,2760+4]..[72,2760+15])
+                [
+                  core_type (lib/outcometree.ml[72,2760+19]..[72,2760+28])
+                    Ptyp_constr "out_ident" (lib/outcometree.ml[72,2760+19]..[72,2760+28])
+                    []
+                  core_type (lib/outcometree.ml[72,2760+31]..[72,2760+44])
+                    Ptyp_constr "list" (lib/outcometree.ml[72,2760+40]..[72,2760+44])
+                    [
+                      core_type (lib/outcometree.ml[72,2760+31]..[72,2760+39])
+                        Ptyp_constr "out_type" (lib/outcometree.ml[72,2760+31]..[72,2760+39])
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[73,2805+2]..[73,2805+40])
+                "Otyp_manifest" (lib/outcometree.ml[73,2805+4]..[73,2805+17])
+                [
+                  core_type (lib/outcometree.ml[73,2805+21]..[73,2805+29])
+                    Ptyp_constr "out_type" (lib/outcometree.ml[73,2805+21]..[73,2805+29])
+                    []
+                  core_type (lib/outcometree.ml[73,2805+32]..[73,2805+40])
+                    Ptyp_constr "out_type" (lib/outcometree.ml[73,2805+32]..[73,2805+40])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[74,2846+2]..[74,2846+69])
+                "Otyp_object" (lib/outcometree.ml[74,2846+4]..[74,2846+15])
+                [
+                  (lib/outcometree.ml[74,2846+21]..[74,2846+54])
+                    Immutable
+                    "fields" (lib/outcometree.ml[74,2846+21]..[74,2846+27])                    core_type (lib/outcometree.ml[74,2846+29]..[74,2846+53])
+                      Ptyp_constr "list" (lib/outcometree.ml[74,2846+49]..[74,2846+53])
+                      [
+                        core_type (lib/outcometree.ml[74,2846+30]..[74,2846+47])
+                          Ptyp_tuple
+                          [
+                            core_type (lib/outcometree.ml[74,2846+30]..[74,2846+36])
+                              Ptyp_constr "string" (lib/outcometree.ml[74,2846+30]..[74,2846+36])
+                              []
+                            core_type (lib/outcometree.ml[74,2846+39]..[74,2846+47])
+                              Ptyp_constr "out_type" (lib/outcometree.ml[74,2846+39]..[74,2846+47])
+                              []
+                          ]
+                      ]
+                  (lib/outcometree.ml[74,2846+55]..[74,2846+68])
+                    Immutable
+                    "open_row" (lib/outcometree.ml[74,2846+55]..[74,2846+63])                    core_type (lib/outcometree.ml[74,2846+64]..[74,2846+68])
+                      Ptyp_constr "bool" (lib/outcometree.ml[74,2846+64]..[74,2846+68])
+                      []
+                ]
+                None
+              (lib/outcometree.ml[75,2916+2]..[75,2916+50])
+                "Otyp_record" (lib/outcometree.ml[75,2916+4]..[75,2916+15])
+                [
+                  core_type (lib/outcometree.ml[75,2916+19]..[75,2916+50])
+                    Ptyp_constr "list" (lib/outcometree.ml[75,2916+46]..[75,2916+50])
+                    [
+                      core_type (lib/outcometree.ml[75,2916+20]..[75,2916+44])
+                        Ptyp_tuple
+                        [
+                          core_type (lib/outcometree.ml[75,2916+20]..[75,2916+26])
+                            Ptyp_constr "string" (lib/outcometree.ml[75,2916+20]..[75,2916+26])
+                            []
+                          core_type (lib/outcometree.ml[75,2916+29]..[75,2916+33])
+                            Ptyp_constr "bool" (lib/outcometree.ml[75,2916+29]..[75,2916+33])
+                            []
+                          core_type (lib/outcometree.ml[75,2916+36]..[75,2916+44])
+                            Ptyp_constr "out_type" (lib/outcometree.ml[75,2916+36]..[75,2916+44])
+                            []
+                        ]
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[76,2967+2]..[76,2967+24])
+                "Otyp_stuff" (lib/outcometree.ml[76,2967+4]..[76,2967+14])
+                [
+                  core_type (lib/outcometree.ml[76,2967+18]..[76,2967+24])
+                    Ptyp_constr "string" (lib/outcometree.ml[76,2967+18]..[76,2967+24])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[77,2992+2]..[77,2992+36])
+                "Otyp_sum" (lib/outcometree.ml[77,2992+4]..[77,2992+12])
+                [
+                  core_type (lib/outcometree.ml[77,2992+16]..[77,2992+36])
+                    Ptyp_constr "list" (lib/outcometree.ml[77,2992+32]..[77,2992+36])
+                    [
+                      core_type (lib/outcometree.ml[77,2992+16]..[77,2992+31])
+                        Ptyp_constr "out_constructor" (lib/outcometree.ml[77,2992+16]..[77,2992+31])
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[78,3029+2]..[78,3029+31])
+                "Otyp_tuple" (lib/outcometree.ml[78,3029+4]..[78,3029+14])
+                [
+                  core_type (lib/outcometree.ml[78,3029+18]..[78,3029+31])
+                    Ptyp_constr "list" (lib/outcometree.ml[78,3029+27]..[78,3029+31])
+                    [
+                      core_type (lib/outcometree.ml[78,3029+18]..[78,3029+26])
+                        Ptyp_constr "out_type" (lib/outcometree.ml[78,3029+18]..[78,3029+26])
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[79,3061+2]..[79,3061+29])
+                "Otyp_var" (lib/outcometree.ml[79,3061+4]..[79,3061+12])
+                [
+                  core_type (lib/outcometree.ml[79,3061+16]..[79,3061+20])
+                    Ptyp_constr "bool" (lib/outcometree.ml[79,3061+16]..[79,3061+20])
+                    []
+                  core_type (lib/outcometree.ml[79,3061+23]..[79,3061+29])
+                    Ptyp_constr "string" (lib/outcometree.ml[79,3061+23]..[79,3061+29])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[80,3091+2]..[80,3091+61])
+                "Otyp_variant" (lib/outcometree.ml[80,3091+4]..[80,3091+16])
+                [
+                  core_type (lib/outcometree.ml[80,3091+20]..[80,3091+31])
+                    Ptyp_constr "out_variant" (lib/outcometree.ml[80,3091+20]..[80,3091+31])
+                    []
+                  core_type (lib/outcometree.ml[80,3091+34]..[80,3091+38])
+                    Ptyp_constr "bool" (lib/outcometree.ml[80,3091+34]..[80,3091+38])
+                    []
+                  core_type (lib/outcometree.ml[80,3091+41]..[80,3091+61])
+                    Ptyp_constr "option" (lib/outcometree.ml[80,3091+55]..[80,3091+61])
+                    [
+                      core_type (lib/outcometree.ml[80,3091+42]..[80,3091+53])
+                        Ptyp_constr "list" (lib/outcometree.ml[80,3091+49]..[80,3091+53])
+                        [
+                          core_type (lib/outcometree.ml[80,3091+42]..[80,3091+48])
+                            Ptyp_constr "string" (lib/outcometree.ml[80,3091+42]..[80,3091+48])
+                            []
+                        ]
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[81,3153+2]..[81,3153+39])
+                "Otyp_poly" (lib/outcometree.ml[81,3153+4]..[81,3153+13])
+                [
+                  core_type (lib/outcometree.ml[81,3153+17]..[81,3153+28])
+                    Ptyp_constr "list" (lib/outcometree.ml[81,3153+24]..[81,3153+28])
+                    [
+                      core_type (lib/outcometree.ml[81,3153+17]..[81,3153+23])
+                        Ptyp_constr "string" (lib/outcometree.ml[81,3153+17]..[81,3153+23])
+                        []
+                    ]
+                  core_type (lib/outcometree.ml[81,3153+31]..[81,3153+39])
+                    Ptyp_constr "out_type" (lib/outcometree.ml[81,3153+31]..[81,3153+39])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[82,3193+2]..[82,3193+55])
+                "Otyp_module" (lib/outcometree.ml[82,3193+4]..[82,3193+15])
+                [
+                  core_type (lib/outcometree.ml[82,3193+19]..[82,3193+28])
+                    Ptyp_constr "out_ident" (lib/outcometree.ml[82,3193+19]..[82,3193+28])
+                    []
+                  core_type (lib/outcometree.ml[82,3193+31]..[82,3193+55])
+                    Ptyp_constr "list" (lib/outcometree.ml[82,3193+51]..[82,3193+55])
+                    [
+                      core_type (lib/outcometree.ml[82,3193+32]..[82,3193+49])
+                        Ptyp_tuple
+                        [
+                          core_type (lib/outcometree.ml[82,3193+32]..[82,3193+38])
+                            Ptyp_constr "string" (lib/outcometree.ml[82,3193+32]..[82,3193+38])
+                            []
+                          core_type (lib/outcometree.ml[82,3193+41]..[82,3193+49])
+                            Ptyp_constr "out_type" (lib/outcometree.ml[82,3193+41]..[82,3193+49])
+                            []
+                        ]
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[83,3249+2]..[83,3249+46])
+                "Otyp_attribute" (lib/outcometree.ml[83,3249+4]..[83,3249+18])
+                [
+                  core_type (lib/outcometree.ml[83,3249+22]..[83,3249+30])
+                    Ptyp_constr "out_type" (lib/outcometree.ml[83,3249+22]..[83,3249+30])
+                    []
+                  core_type (lib/outcometree.ml[83,3249+33]..[83,3249+46])
+                    Ptyp_constr "out_attribute" (lib/outcometree.ml[83,3249+33]..[83,3249+46])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "out_constructor" (lib/outcometree.ml[85,3297+4]..[85,3297+19]) (lib/outcometree.ml[85,3297+0]..[89,3410+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (lib/outcometree.ml[86,3321+2]..[86,3321+21])
+                Immutable
+                "ocstr_name" (lib/outcometree.ml[86,3321+2]..[86,3321+12])                core_type (lib/outcometree.ml[86,3321+14]..[86,3321+20])
+                  Ptyp_constr "string" (lib/outcometree.ml[86,3321+14]..[86,3321+20])
+                  []
+              (lib/outcometree.ml[87,3343+2]..[87,3343+28])
+                Immutable
+                "ocstr_args" (lib/outcometree.ml[87,3343+2]..[87,3343+12])                core_type (lib/outcometree.ml[87,3343+14]..[87,3343+27])
+                  Ptyp_constr "list" (lib/outcometree.ml[87,3343+23]..[87,3343+27])
+                  [
+                    core_type (lib/outcometree.ml[87,3343+14]..[87,3343+22])
+                      Ptyp_constr "out_type" (lib/outcometree.ml[87,3343+14]..[87,3343+22])
+                      []
+                  ]
+              (lib/outcometree.ml[88,3372+2]..[88,3372+37])
+                Immutable
+                "ocstr_return_type" (lib/outcometree.ml[88,3372+2]..[88,3372+19])                core_type (lib/outcometree.ml[88,3372+21]..[88,3372+36])
+                  Ptyp_constr "option" (lib/outcometree.ml[88,3372+30]..[88,3372+36])
+                  [
+                    core_type (lib/outcometree.ml[88,3372+21]..[88,3372+29])
+                      Ptyp_constr "out_type" (lib/outcometree.ml[88,3372+21]..[88,3372+29])
+                      []
+                  ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "out_variant" (lib/outcometree.ml[91,3413+4]..[91,3413+15]) (lib/outcometree.ml[91,3413+0]..[93,3487+24])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/outcometree.ml[92,3431+2]..[92,3431+55])
+                "Ovar_fields" (lib/outcometree.ml[92,3431+4]..[92,3431+15])
+                [
+                  core_type (lib/outcometree.ml[92,3431+19]..[92,3431+55])
+                    Ptyp_constr "list" (lib/outcometree.ml[92,3431+51]..[92,3431+55])
+                    [
+                      core_type (lib/outcometree.ml[92,3431+20]..[92,3431+49])
+                        Ptyp_tuple
+                        [
+                          core_type (lib/outcometree.ml[92,3431+20]..[92,3431+26])
+                            Ptyp_constr "string" (lib/outcometree.ml[92,3431+20]..[92,3431+26])
+                            []
+                          core_type (lib/outcometree.ml[92,3431+29]..[92,3431+33])
+                            Ptyp_constr "bool" (lib/outcometree.ml[92,3431+29]..[92,3431+33])
+                            []
+                          core_type (lib/outcometree.ml[92,3431+36]..[92,3431+49])
+                            Ptyp_constr "list" (lib/outcometree.ml[92,3431+45]..[92,3431+49])
+                            [
+                              core_type (lib/outcometree.ml[92,3431+36]..[92,3431+44])
+                                Ptyp_constr "out_type" (lib/outcometree.ml[92,3431+36]..[92,3431+44])
+                                []
+                            ]
+                        ]
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[93,3487+2]..[93,3487+24])
+                "Ovar_typ" (lib/outcometree.ml[93,3487+4]..[93,3487+12])
+                [
+                  core_type (lib/outcometree.ml[93,3487+16]..[93,3487+24])
+                    Ptyp_constr "out_type" (lib/outcometree.ml[93,3487+16]..[93,3487+24])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/outcometree.ml[95,3513+0]..[102,3828+49])
+    Pstr_type Rec
+    [
+      type_declaration "out_class_type" (lib/outcometree.ml[95,3513+5]..[95,3513+19]) (lib/outcometree.ml[95,3513+0]..[98,3645+63])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/outcometree.ml[96,3535+2]..[96,3535+44])
+                "Octy_constr" (lib/outcometree.ml[96,3535+4]..[96,3535+15])
+                [
+                  core_type (lib/outcometree.ml[96,3535+19]..[96,3535+28])
+                    Ptyp_constr "out_ident" (lib/outcometree.ml[96,3535+19]..[96,3535+28])
+                    []
+                  core_type (lib/outcometree.ml[96,3535+31]..[96,3535+44])
+                    Ptyp_constr "list" (lib/outcometree.ml[96,3535+40]..[96,3535+44])
+                    [
+                      core_type (lib/outcometree.ml[96,3535+31]..[96,3535+39])
+                        Ptyp_constr "out_type" (lib/outcometree.ml[96,3535+31]..[96,3535+39])
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[97,3580+2]..[97,3580+64])
+                "Octy_arrow" (lib/outcometree.ml[97,3580+4]..[97,3580+14])
+                [
+                  core_type (lib/outcometree.ml[97,3580+18]..[97,3580+36])
+                    Ptyp_constr "Asttypes.arg_label" (lib/outcometree.ml[97,3580+18]..[97,3580+36])
+                    []
+                  core_type (lib/outcometree.ml[97,3580+39]..[97,3580+47])
+                    Ptyp_constr "out_type" (lib/outcometree.ml[97,3580+39]..[97,3580+47])
+                    []
+                  core_type (lib/outcometree.ml[97,3580+50]..[97,3580+64])
+                    Ptyp_constr "out_class_type" (lib/outcometree.ml[97,3580+50]..[97,3580+64])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[98,3645+2]..[98,3645+63])
+                "Octy_signature" (lib/outcometree.ml[98,3645+4]..[98,3645+18])
+                [
+                  core_type (lib/outcometree.ml[98,3645+22]..[98,3645+37])
+                    Ptyp_constr "option" (lib/outcometree.ml[98,3645+31]..[98,3645+37])
+                    [
+                      core_type (lib/outcometree.ml[98,3645+22]..[98,3645+30])
+                        Ptyp_constr "out_type" (lib/outcometree.ml[98,3645+22]..[98,3645+30])
+                        []
+                    ]
+                  core_type (lib/outcometree.ml[98,3645+40]..[98,3645+63])
+                    Ptyp_constr "list" (lib/outcometree.ml[98,3645+59]..[98,3645+63])
+                    [
+                      core_type (lib/outcometree.ml[98,3645+40]..[98,3645+58])
+                        Ptyp_constr "out_class_sig_item" (lib/outcometree.ml[98,3645+40]..[98,3645+58])
+                        []
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "out_class_sig_item" (lib/outcometree.ml[99,3709+4]..[99,3709+22]) (lib/outcometree.ml[99,3709+0]..[102,3828+49])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/outcometree.ml[100,3734+2]..[100,3734+42])
+                "Ocsg_constraint" (lib/outcometree.ml[100,3734+4]..[100,3734+19])
+                [
+                  core_type (lib/outcometree.ml[100,3734+23]..[100,3734+31])
+                    Ptyp_constr "out_type" (lib/outcometree.ml[100,3734+23]..[100,3734+31])
+                    []
+                  core_type (lib/outcometree.ml[100,3734+34]..[100,3734+42])
+                    Ptyp_constr "out_type" (lib/outcometree.ml[100,3734+34]..[100,3734+42])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[101,3777+2]..[101,3777+50])
+                "Ocsg_method" (lib/outcometree.ml[101,3777+4]..[101,3777+15])
+                [
+                  core_type (lib/outcometree.ml[101,3777+19]..[101,3777+25])
+                    Ptyp_constr "string" (lib/outcometree.ml[101,3777+19]..[101,3777+25])
+                    []
+                  core_type (lib/outcometree.ml[101,3777+28]..[101,3777+32])
+                    Ptyp_constr "bool" (lib/outcometree.ml[101,3777+28]..[101,3777+32])
+                    []
+                  core_type (lib/outcometree.ml[101,3777+35]..[101,3777+39])
+                    Ptyp_constr "bool" (lib/outcometree.ml[101,3777+35]..[101,3777+39])
+                    []
+                  core_type (lib/outcometree.ml[101,3777+42]..[101,3777+50])
+                    Ptyp_constr "out_type" (lib/outcometree.ml[101,3777+42]..[101,3777+50])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[102,3828+2]..[102,3828+49])
+                "Ocsg_value" (lib/outcometree.ml[102,3828+4]..[102,3828+14])
+                [
+                  core_type (lib/outcometree.ml[102,3828+18]..[102,3828+24])
+                    Ptyp_constr "string" (lib/outcometree.ml[102,3828+18]..[102,3828+24])
+                    []
+                  core_type (lib/outcometree.ml[102,3828+27]..[102,3828+31])
+                    Ptyp_constr "bool" (lib/outcometree.ml[102,3828+27]..[102,3828+31])
+                    []
+                  core_type (lib/outcometree.ml[102,3828+34]..[102,3828+38])
+                    Ptyp_constr "bool" (lib/outcometree.ml[102,3828+34]..[102,3828+38])
+                    []
+                  core_type (lib/outcometree.ml[102,3828+41]..[102,3828+49])
+                    Ptyp_constr "out_type" (lib/outcometree.ml[102,3828+41]..[102,3828+49])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/outcometree.ml[104,3879+0]..[155,5499+18])
+    Pstr_type Rec
+    [
+      type_declaration "out_module_type" (lib/outcometree.ml[104,3879+5]..[104,3879+20]) (lib/outcometree.ml[104,3879+0]..[109,4067+27])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/outcometree.ml[105,3902+2]..[105,3902+17])
+                "Omty_abstract" (lib/outcometree.ml[105,3902+4]..[105,3902+17])
+                []
+                None
+              (lib/outcometree.ml[106,3920+2]..[106,3920+78])
+                "Omty_functor" (lib/outcometree.ml[106,3920+4]..[106,3920+16])
+                [
+                  core_type (lib/outcometree.ml[106,3920+20]..[106,3920+60])
+                    Ptyp_constr "option" (lib/outcometree.ml[106,3920+54]..[106,3920+60])
+                    [
+                      core_type (lib/outcometree.ml[106,3920+21]..[106,3920+52])
+                        Ptyp_tuple
+                        [
+                          core_type (lib/outcometree.ml[106,3920+21]..[106,3920+34])
+                            Ptyp_constr "option" (lib/outcometree.ml[106,3920+28]..[106,3920+34])
+                            [
+                              core_type (lib/outcometree.ml[106,3920+21]..[106,3920+27])
+                                Ptyp_constr "string" (lib/outcometree.ml[106,3920+21]..[106,3920+27])
+                                []
+                            ]
+                          core_type (lib/outcometree.ml[106,3920+37]..[106,3920+52])
+                            Ptyp_constr "out_module_type" (lib/outcometree.ml[106,3920+37]..[106,3920+52])
+                            []
+                        ]
+                    ]
+                  core_type (lib/outcometree.ml[106,3920+63]..[106,3920+78])
+                    Ptyp_constr "out_module_type" (lib/outcometree.ml[106,3920+63]..[106,3920+78])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[107,3999+2]..[107,3999+27])
+                "Omty_ident" (lib/outcometree.ml[107,3999+4]..[107,3999+14])
+                [
+                  core_type (lib/outcometree.ml[107,3999+18]..[107,3999+27])
+                    Ptyp_constr "out_ident" (lib/outcometree.ml[107,3999+18]..[107,3999+27])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[108,4027+2]..[108,4027+39])
+                "Omty_signature" (lib/outcometree.ml[108,4027+4]..[108,4027+18])
+                [
+                  core_type (lib/outcometree.ml[108,4027+22]..[108,4027+39])
+                    Ptyp_constr "list" (lib/outcometree.ml[108,4027+35]..[108,4027+39])
+                    [
+                      core_type (lib/outcometree.ml[108,4027+22]..[108,4027+34])
+                        Ptyp_constr "out_sig_item" (lib/outcometree.ml[108,4027+22]..[108,4027+34])
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[109,4067+2]..[109,4067+27])
+                "Omty_alias" (lib/outcometree.ml[109,4067+4]..[109,4067+14])
+                [
+                  core_type (lib/outcometree.ml[109,4067+18]..[109,4067+27])
+                    Ptyp_constr "out_ident" (lib/outcometree.ml[109,4067+18]..[109,4067+27])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "out_sig_item" (lib/outcometree.ml[110,4095+4]..[110,4095+16]) (lib/outcometree.ml[110,4095+0]..[122,4570+17])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/outcometree.ml[111,4114+2]..[113,4193+22])
+                "Osig_class" (lib/outcometree.ml[111,4114+4]..[111,4114+14])
+                [
+                  core_type (lib/outcometree.ml[112,4132+6]..[112,4132+10])
+                    Ptyp_constr "bool" (lib/outcometree.ml[112,4132+6]..[112,4132+10])
+                    []
+                  core_type (lib/outcometree.ml[112,4132+13]..[112,4132+19])
+                    Ptyp_constr "string" (lib/outcometree.ml[112,4132+13]..[112,4132+19])
+                    []
+                  core_type (lib/outcometree.ml[112,4132+22]..[112,4132+41])
+                    Ptyp_constr "list" (lib/outcometree.ml[112,4132+37]..[112,4132+41])
+                    [
+                      core_type (lib/outcometree.ml[112,4132+22]..[112,4132+36])
+                        Ptyp_constr "out_type_param" (lib/outcometree.ml[112,4132+22]..[112,4132+36])
+                        []
+                    ]
+                  core_type (lib/outcometree.ml[112,4132+44]..[112,4132+58])
+                    Ptyp_constr "out_class_type" (lib/outcometree.ml[112,4132+44]..[112,4132+58])
+                    []
+                  core_type (lib/outcometree.ml[113,4193+8]..[113,4193+22])
+                    Ptyp_constr "out_rec_status" (lib/outcometree.ml[113,4193+8]..[113,4193+22])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[114,4216+2]..[116,4300+22])
+                "Osig_class_type" (lib/outcometree.ml[114,4216+4]..[114,4216+19])
+                [
+                  core_type (lib/outcometree.ml[115,4239+6]..[115,4239+10])
+                    Ptyp_constr "bool" (lib/outcometree.ml[115,4239+6]..[115,4239+10])
+                    []
+                  core_type (lib/outcometree.ml[115,4239+13]..[115,4239+19])
+                    Ptyp_constr "string" (lib/outcometree.ml[115,4239+13]..[115,4239+19])
+                    []
+                  core_type (lib/outcometree.ml[115,4239+22]..[115,4239+41])
+                    Ptyp_constr "list" (lib/outcometree.ml[115,4239+37]..[115,4239+41])
+                    [
+                      core_type (lib/outcometree.ml[115,4239+22]..[115,4239+36])
+                        Ptyp_constr "out_type_param" (lib/outcometree.ml[115,4239+22]..[115,4239+36])
+                        []
+                    ]
+                  core_type (lib/outcometree.ml[115,4239+44]..[115,4239+58])
+                    Ptyp_constr "out_class_type" (lib/outcometree.ml[115,4239+44]..[115,4239+58])
+                    []
+                  core_type (lib/outcometree.ml[116,4300+8]..[116,4300+22])
+                    Ptyp_constr "out_rec_status" (lib/outcometree.ml[116,4300+8]..[116,4300+22])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[117,4323+2]..[117,4323+61])
+                "Osig_typext" (lib/outcometree.ml[117,4323+4]..[117,4323+15])
+                [
+                  core_type (lib/outcometree.ml[117,4323+19]..[117,4323+44])
+                    Ptyp_constr "out_extension_constructor" (lib/outcometree.ml[117,4323+19]..[117,4323+44])
+                    []
+                  core_type (lib/outcometree.ml[117,4323+47]..[117,4323+61])
+                    Ptyp_constr "out_ext_status" (lib/outcometree.ml[117,4323+47]..[117,4323+61])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[118,4385+2]..[118,4385+44])
+                "Osig_modtype" (lib/outcometree.ml[118,4385+4]..[118,4385+16])
+                [
+                  core_type (lib/outcometree.ml[118,4385+20]..[118,4385+26])
+                    Ptyp_constr "string" (lib/outcometree.ml[118,4385+20]..[118,4385+26])
+                    []
+                  core_type (lib/outcometree.ml[118,4385+29]..[118,4385+44])
+                    Ptyp_constr "out_module_type" (lib/outcometree.ml[118,4385+29]..[118,4385+44])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[119,4430+2]..[119,4430+60])
+                "Osig_module" (lib/outcometree.ml[119,4430+4]..[119,4430+15])
+                [
+                  core_type (lib/outcometree.ml[119,4430+19]..[119,4430+25])
+                    Ptyp_constr "string" (lib/outcometree.ml[119,4430+19]..[119,4430+25])
+                    []
+                  core_type (lib/outcometree.ml[119,4430+28]..[119,4430+43])
+                    Ptyp_constr "out_module_type" (lib/outcometree.ml[119,4430+28]..[119,4430+43])
+                    []
+                  core_type (lib/outcometree.ml[119,4430+46]..[119,4430+60])
+                    Ptyp_constr "out_rec_status" (lib/outcometree.ml[119,4430+46]..[119,4430+60])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[120,4491+2]..[120,4491+47])
+                "Osig_type" (lib/outcometree.ml[120,4491+4]..[120,4491+13])
+                [
+                  core_type (lib/outcometree.ml[120,4491+17]..[120,4491+30])
+                    Ptyp_constr "out_type_decl" (lib/outcometree.ml[120,4491+17]..[120,4491+30])
+                    []
+                  core_type (lib/outcometree.ml[120,4491+33]..[120,4491+47])
+                    Ptyp_constr "out_rec_status" (lib/outcometree.ml[120,4491+33]..[120,4491+47])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[121,4539+2]..[121,4539+30])
+                "Osig_value" (lib/outcometree.ml[121,4539+4]..[121,4539+14])
+                [
+                  core_type (lib/outcometree.ml[121,4539+18]..[121,4539+30])
+                    Ptyp_constr "out_val_decl" (lib/outcometree.ml[121,4539+18]..[121,4539+30])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[122,4570+2]..[122,4570+17])
+                "Osig_ellipsis" (lib/outcometree.ml[122,4570+4]..[122,4570+17])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "out_type_decl" (lib/outcometree.ml[123,4588+4]..[123,4588+17]) (lib/outcometree.ml[123,4588+0]..[130,4803+45])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (lib/outcometree.ml[124,4608+4]..[124,4608+23])
+                Immutable
+                "otype_name" (lib/outcometree.ml[124,4608+4]..[124,4608+14])                core_type (lib/outcometree.ml[124,4608+16]..[124,4608+22])
+                  Ptyp_constr "string" (lib/outcometree.ml[124,4608+16]..[124,4608+22])
+                  []
+              (lib/outcometree.ml[125,4632+4]..[125,4632+38])
+                Immutable
+                "otype_params" (lib/outcometree.ml[125,4632+4]..[125,4632+16])                core_type (lib/outcometree.ml[125,4632+18]..[125,4632+37])
+                  Ptyp_constr "list" (lib/outcometree.ml[125,4632+33]..[125,4632+37])
+                  [
+                    core_type (lib/outcometree.ml[125,4632+18]..[125,4632+32])
+                      Ptyp_constr "out_type_param" (lib/outcometree.ml[125,4632+18]..[125,4632+32])
+                      []
+                  ]
+              (lib/outcometree.ml[126,4671+4]..[126,4671+25])
+                Immutable
+                "otype_type" (lib/outcometree.ml[126,4671+4]..[126,4671+14])                core_type (lib/outcometree.ml[126,4671+16]..[126,4671+24])
+                  Ptyp_constr "out_type" (lib/outcometree.ml[126,4671+16]..[126,4671+24])
+                  []
+              (lib/outcometree.ml[127,4697+4]..[127,4697+41])
+                Immutable
+                "otype_private" (lib/outcometree.ml[127,4697+4]..[127,4697+17])                core_type (lib/outcometree.ml[127,4697+19]..[127,4697+40])
+                  Ptyp_constr "Asttypes.private_flag" (lib/outcometree.ml[127,4697+19]..[127,4697+40])
+                  []
+              (lib/outcometree.ml[128,4739+4]..[128,4739+38])
+                Immutable
+                "otype_immediate" (lib/outcometree.ml[128,4739+4]..[128,4739+19])                core_type (lib/outcometree.ml[128,4739+21]..[128,4739+37])
+                  Ptyp_constr "Type_immediacy.t" (lib/outcometree.ml[128,4739+21]..[128,4739+37])
+                  []
+              (lib/outcometree.ml[129,4778+4]..[129,4778+24])
+                Immutable
+                "otype_unboxed" (lib/outcometree.ml[129,4778+4]..[129,4778+17])                core_type (lib/outcometree.ml[129,4778+19]..[129,4778+23])
+                  Ptyp_constr "bool" (lib/outcometree.ml[129,4778+19]..[129,4778+23])
+                  []
+              (lib/outcometree.ml[130,4803+4]..[130,4803+43])
+                Immutable
+                "otype_cstrs" (lib/outcometree.ml[130,4803+4]..[130,4803+15])                core_type (lib/outcometree.ml[130,4803+17]..[130,4803+43])
+                  Ptyp_constr "list" (lib/outcometree.ml[130,4803+39]..[130,4803+43])
+                  [
+                    core_type (lib/outcometree.ml[130,4803+18]..[130,4803+37])
+                      Ptyp_tuple
+                      [
+                        core_type (lib/outcometree.ml[130,4803+18]..[130,4803+26])
+                          Ptyp_constr "out_type" (lib/outcometree.ml[130,4803+18]..[130,4803+26])
+                          []
+                        core_type (lib/outcometree.ml[130,4803+29]..[130,4803+37])
+                          Ptyp_constr "out_type" (lib/outcometree.ml[130,4803+29]..[130,4803+37])
+                          []
+                      ]
+                  ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "out_extension_constructor" (lib/outcometree.ml[131,4849+4]..[131,4849+29]) (lib/outcometree.ml[131,4849+0]..[137,5033+41])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (lib/outcometree.ml[132,4881+4]..[132,4881+22])
+                Immutable
+                "oext_name" (lib/outcometree.ml[132,4881+4]..[132,4881+13])                core_type (lib/outcometree.ml[132,4881+15]..[132,4881+21])
+                  Ptyp_constr "string" (lib/outcometree.ml[132,4881+15]..[132,4881+21])
+                  []
+              (lib/outcometree.ml[133,4904+4]..[133,4904+27])
+                Immutable
+                "oext_type_name" (lib/outcometree.ml[133,4904+4]..[133,4904+18])                core_type (lib/outcometree.ml[133,4904+20]..[133,4904+26])
+                  Ptyp_constr "string" (lib/outcometree.ml[133,4904+20]..[133,4904+26])
+                  []
+              (lib/outcometree.ml[134,4932+4]..[134,4932+34])
+                Immutable
+                "oext_type_params" (lib/outcometree.ml[134,4932+4]..[134,4932+20])                core_type (lib/outcometree.ml[134,4932+22]..[134,4932+33])
+                  Ptyp_constr "list" (lib/outcometree.ml[134,4932+29]..[134,4932+33])
+                  [
+                    core_type (lib/outcometree.ml[134,4932+22]..[134,4932+28])
+                      Ptyp_constr "string" (lib/outcometree.ml[134,4932+22]..[134,4932+28])
+                      []
+                  ]
+              (lib/outcometree.ml[135,4967+4]..[135,4967+29])
+                Immutable
+                "oext_args" (lib/outcometree.ml[135,4967+4]..[135,4967+13])                core_type (lib/outcometree.ml[135,4967+15]..[135,4967+28])
+                  Ptyp_constr "list" (lib/outcometree.ml[135,4967+24]..[135,4967+28])
+                  [
+                    core_type (lib/outcometree.ml[135,4967+15]..[135,4967+23])
+                      Ptyp_constr "out_type" (lib/outcometree.ml[135,4967+15]..[135,4967+23])
+                      []
+                  ]
+              (lib/outcometree.ml[136,4997+4]..[136,4997+35])
+                Immutable
+                "oext_ret_type" (lib/outcometree.ml[136,4997+4]..[136,4997+17])                core_type (lib/outcometree.ml[136,4997+19]..[136,4997+34])
+                  Ptyp_constr "option" (lib/outcometree.ml[136,4997+28]..[136,4997+34])
+                  [
+                    core_type (lib/outcometree.ml[136,4997+19]..[136,4997+27])
+                      Ptyp_constr "out_type" (lib/outcometree.ml[136,4997+19]..[136,4997+27])
+                      []
+                  ]
+              (lib/outcometree.ml[137,5033+4]..[137,5033+39])
+                Immutable
+                "oext_private" (lib/outcometree.ml[137,5033+4]..[137,5033+16])                core_type (lib/outcometree.ml[137,5033+18]..[137,5033+39])
+                  Ptyp_constr "Asttypes.private_flag" (lib/outcometree.ml[137,5033+18]..[137,5033+39])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "out_type_extension" (lib/outcometree.ml[138,5075+4]..[138,5075+22]) (lib/outcometree.ml[138,5075+0]..[142,5204+43])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (lib/outcometree.ml[139,5100+4]..[139,5100+24])
+                Immutable
+                "otyext_name" (lib/outcometree.ml[139,5100+4]..[139,5100+15])                core_type (lib/outcometree.ml[139,5100+17]..[139,5100+23])
+                  Ptyp_constr "string" (lib/outcometree.ml[139,5100+17]..[139,5100+23])
+                  []
+              (lib/outcometree.ml[140,5125+4]..[140,5125+31])
+                Immutable
+                "otyext_params" (lib/outcometree.ml[140,5125+4]..[140,5125+17])                core_type (lib/outcometree.ml[140,5125+19]..[140,5125+30])
+                  Ptyp_constr "list" (lib/outcometree.ml[140,5125+26]..[140,5125+30])
+                  [
+                    core_type (lib/outcometree.ml[140,5125+19]..[140,5125+25])
+                      Ptyp_constr "string" (lib/outcometree.ml[140,5125+19]..[140,5125+25])
+                      []
+                  ]
+              (lib/outcometree.ml[141,5157+4]..[141,5157+46])
+                Immutable
+                "otyext_constructors" (lib/outcometree.ml[141,5157+4]..[141,5157+23])                core_type (lib/outcometree.ml[141,5157+25]..[141,5157+45])
+                  Ptyp_constr "list" (lib/outcometree.ml[141,5157+41]..[141,5157+45])
+                  [
+                    core_type (lib/outcometree.ml[141,5157+25]..[141,5157+40])
+                      Ptyp_constr "out_constructor" (lib/outcometree.ml[141,5157+25]..[141,5157+40])
+                      []
+                  ]
+              (lib/outcometree.ml[142,5204+4]..[142,5204+41])
+                Immutable
+                "otyext_private" (lib/outcometree.ml[142,5204+4]..[142,5204+18])                core_type (lib/outcometree.ml[142,5204+20]..[142,5204+41])
+                  Ptyp_constr "Asttypes.private_flag" (lib/outcometree.ml[142,5204+20]..[142,5204+41])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "out_val_decl" (lib/outcometree.ml[143,5248+4]..[143,5248+16]) (lib/outcometree.ml[143,5248+0]..[147,5344+41])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (lib/outcometree.ml[144,5267+4]..[144,5267+22])
+                Immutable
+                "oval_name" (lib/outcometree.ml[144,5267+4]..[144,5267+13])                core_type (lib/outcometree.ml[144,5267+15]..[144,5267+21])
+                  Ptyp_constr "string" (lib/outcometree.ml[144,5267+15]..[144,5267+21])
+                  []
+              (lib/outcometree.ml[145,5290+4]..[145,5290+24])
+                Immutable
+                "oval_type" (lib/outcometree.ml[145,5290+4]..[145,5290+13])                core_type (lib/outcometree.ml[145,5290+15]..[145,5290+23])
+                  Ptyp_constr "out_type" (lib/outcometree.ml[145,5290+15]..[145,5290+23])
+                  []
+              (lib/outcometree.ml[146,5315+4]..[146,5315+28])
+                Immutable
+                "oval_prims" (lib/outcometree.ml[146,5315+4]..[146,5315+14])                core_type (lib/outcometree.ml[146,5315+16]..[146,5315+27])
+                  Ptyp_constr "list" (lib/outcometree.ml[146,5315+23]..[146,5315+27])
+                  [
+                    core_type (lib/outcometree.ml[146,5315+16]..[146,5315+22])
+                      Ptyp_constr "string" (lib/outcometree.ml[146,5315+16]..[146,5315+22])
+                      []
+                  ]
+              (lib/outcometree.ml[147,5344+4]..[147,5344+39])
+                Immutable
+                "oval_attributes" (lib/outcometree.ml[147,5344+4]..[147,5344+19])                core_type (lib/outcometree.ml[147,5344+21]..[147,5344+39])
+                  Ptyp_constr "list" (lib/outcometree.ml[147,5344+35]..[147,5344+39])
+                  [
+                    core_type (lib/outcometree.ml[147,5344+21]..[147,5344+34])
+                      Ptyp_constr "out_attribute" (lib/outcometree.ml[147,5344+21]..[147,5344+34])
+                      []
+                  ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "out_rec_status" (lib/outcometree.ml[148,5386+4]..[148,5386+18]) (lib/outcometree.ml[148,5386+0]..[151,5435+13])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/outcometree.ml[149,5407+2]..[149,5407+12])
+                "Orec_not" (lib/outcometree.ml[149,5407+4]..[149,5407+12])
+                []
+                None
+              (lib/outcometree.ml[150,5420+2]..[150,5420+14])
+                "Orec_first" (lib/outcometree.ml[150,5420+4]..[150,5420+14])
+                []
+                None
+              (lib/outcometree.ml[151,5435+2]..[151,5435+13])
+                "Orec_next" (lib/outcometree.ml[151,5435+4]..[151,5435+13])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "out_ext_status" (lib/outcometree.ml[152,5449+4]..[152,5449+18]) (lib/outcometree.ml[152,5449+0]..[155,5499+18])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/outcometree.ml[153,5470+2]..[153,5470+14])
+                "Oext_first" (lib/outcometree.ml[153,5470+4]..[153,5470+14])
+                []
+                None
+              (lib/outcometree.ml[154,5485+2]..[154,5485+13])
+                "Oext_next" (lib/outcometree.ml[154,5485+4]..[154,5485+13])
+                []
+                None
+              (lib/outcometree.ml[155,5499+2]..[155,5499+18])
+                "Oext_exception" (lib/outcometree.ml[155,5499+4]..[155,5499+18])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/outcometree.ml[157,5519+0]..[160,5636+39])
+    Pstr_type Rec
+    [
+      type_declaration "out_phrase" (lib/outcometree.ml[157,5519+5]..[157,5519+15]) (lib/outcometree.ml[157,5519+0]..[160,5636+39])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/outcometree.ml[158,5537+2]..[158,5537+37])
+                "Ophr_eval" (lib/outcometree.ml[158,5537+4]..[158,5537+13])
+                [
+                  core_type (lib/outcometree.ml[158,5537+17]..[158,5537+26])
+                    Ptyp_constr "out_value" (lib/outcometree.ml[158,5537+17]..[158,5537+26])
+                    []
+                  core_type (lib/outcometree.ml[158,5537+29]..[158,5537+37])
+                    Ptyp_constr "out_type" (lib/outcometree.ml[158,5537+29]..[158,5537+37])
+                    []
+                ]
+                None
+              (lib/outcometree.ml[159,5575+2]..[159,5575+60])
+                "Ophr_signature" (lib/outcometree.ml[159,5575+4]..[159,5575+18])
+                [
+                  core_type (lib/outcometree.ml[159,5575+22]..[159,5575+60])
+                    Ptyp_constr "list" (lib/outcometree.ml[159,5575+56]..[159,5575+60])
+                    [
+                      core_type (lib/outcometree.ml[159,5575+23]..[159,5575+54])
+                        Ptyp_tuple
+                        [
+                          core_type (lib/outcometree.ml[159,5575+23]..[159,5575+35])
+                            Ptyp_constr "out_sig_item" (lib/outcometree.ml[159,5575+23]..[159,5575+35])
+                            []
+                          core_type (lib/outcometree.ml[159,5575+38]..[159,5575+54])
+                            Ptyp_constr "option" (lib/outcometree.ml[159,5575+48]..[159,5575+54])
+                            [
+                              core_type (lib/outcometree.ml[159,5575+38]..[159,5575+47])
+                                Ptyp_constr "out_value" (lib/outcometree.ml[159,5575+38]..[159,5575+47])
+                                []
+                            ]
+                        ]
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[160,5636+2]..[160,5636+39])
+                "Ophr_exception" (lib/outcometree.ml[160,5636+4]..[160,5636+18])
+                [
+                  core_type (lib/outcometree.ml[160,5636+23]..[160,5636+38])
+                    Ptyp_tuple
+                    [
+                      core_type (lib/outcometree.ml[160,5636+23]..[160,5636+26])
+                        Ptyp_constr "exn" (lib/outcometree.ml[160,5636+23]..[160,5636+26])
+                        []
+                      core_type (lib/outcometree.ml[160,5636+29]..[160,5636+38])
+                        Ptyp_constr "out_value" (lib/outcometree.ml[160,5636+29]..[160,5636+38])
+                        []
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+]
+
+type out_name = {
+  mutable printed_name: string }[@@ocaml.doc
+                                  " An [out_name] is a string representation of an identifier which can be\n    rewritten on the fly to avoid name collisions "]
+type out_ident =
+  | Oide_apply of out_ident * out_ident 
+  | Oide_dot of out_ident * string 
+  | Oide_ident of out_name 
+type out_string =
+  | Ostr_string 
+  | Ostr_bytes 
+type out_attribute = {
+  oattr_name: string }
+type out_value =
+  | Oval_array of out_value list 
+  | Oval_char of char 
+  | Oval_constr of out_ident * out_value list 
+  | Oval_ellipsis 
+  | Oval_float of float 
+  | Oval_int of int 
+  | Oval_int32 of int32 
+  | Oval_int64 of int64 
+  | Oval_nativeint of nativeint 
+  | Oval_list of out_value list 
+  | Oval_printer of (Format.formatter -> unit) 
+  | Oval_record of (out_ident * out_value) list 
+  | Oval_string of string * int * out_string 
+  | Oval_stuff of string 
+  | Oval_tuple of out_value list 
+  | Oval_variant of string * out_value option 
+  | Oval_lazy of out_value 
+type out_type_param =
+  {
+  ot_non_gen: bool ;
+  ot_name: string ;
+  ot_variance: (Asttypes.variance * Asttypes.injectivity) }
+type out_type =
+  | Otyp_abstract 
+  | Otyp_open 
+  | Otyp_alias of {
+  non_gen: bool ;
+  aliased: out_type ;
+  alias: string } 
+  | Otyp_arrow of Asttypes.arg_label * out_type * out_type 
+  | Otyp_class of out_ident * out_type list 
+  | Otyp_constr of out_ident * out_type list 
+  | Otyp_manifest of out_type * out_type 
+  | Otyp_object of {
+  fields: (string * out_type) list ;
+  open_row: bool } 
+  | Otyp_record of (string * bool * out_type) list 
+  | Otyp_stuff of string 
+  | Otyp_sum of out_constructor list 
+  | Otyp_tuple of out_type list 
+  | Otyp_var of bool * string 
+  | Otyp_variant of out_variant * bool * string list option 
+  | Otyp_poly of string list * out_type 
+  | Otyp_module of out_ident * (string * out_type) list 
+  | Otyp_attribute of out_type * out_attribute 
+and out_constructor =
+  {
+  ocstr_name: string ;
+  ocstr_args: out_type list ;
+  ocstr_return_type: out_type option }
+and out_variant =
+  | Ovar_fields of (string * bool * out_type list) list 
+  | Ovar_typ of out_type 
+type out_class_type =
+  | Octy_constr of out_ident * out_type list 
+  | Octy_arrow of Asttypes.arg_label * out_type * out_class_type 
+  | Octy_signature of out_type option * out_class_sig_item list 
+and out_class_sig_item =
+  | Ocsg_constraint of out_type * out_type 
+  | Ocsg_method of string * bool * bool * out_type 
+  | Ocsg_value of string * bool * bool * out_type 
+type out_module_type =
+  | Omty_abstract 
+  | Omty_functor of (string option * out_module_type) option *
+  out_module_type 
+  | Omty_ident of out_ident 
+  | Omty_signature of out_sig_item list 
+  | Omty_alias of out_ident 
+and out_sig_item =
+  | Osig_class of bool * string * out_type_param list * out_class_type *
+  out_rec_status 
+  | Osig_class_type of bool * string * out_type_param list * out_class_type *
+  out_rec_status 
+  | Osig_typext of out_extension_constructor * out_ext_status 
+  | Osig_modtype of string * out_module_type 
+  | Osig_module of string * out_module_type * out_rec_status 
+  | Osig_type of out_type_decl * out_rec_status 
+  | Osig_value of out_val_decl 
+  | Osig_ellipsis 
+and out_type_decl =
+  {
+  otype_name: string ;
+  otype_params: out_type_param list ;
+  otype_type: out_type ;
+  otype_private: Asttypes.private_flag ;
+  otype_immediate: Type_immediacy.t ;
+  otype_unboxed: bool ;
+  otype_cstrs: (out_type * out_type) list }
+and out_extension_constructor =
+  {
+  oext_name: string ;
+  oext_type_name: string ;
+  oext_type_params: string list ;
+  oext_args: out_type list ;
+  oext_ret_type: out_type option ;
+  oext_private: Asttypes.private_flag }
+and out_type_extension =
+  {
+  otyext_name: string ;
+  otyext_params: string list ;
+  otyext_constructors: out_constructor list ;
+  otyext_private: Asttypes.private_flag }
+and out_val_decl =
+  {
+  oval_name: string ;
+  oval_type: out_type ;
+  oval_prims: string list ;
+  oval_attributes: out_attribute list }
+and out_rec_status =
+  | Orec_not 
+  | Orec_first 
+  | Orec_next 
+and out_ext_status =
+  | Oext_first 
+  | Oext_next 
+  | Oext_exception 
+type out_phrase =
+  | Ophr_eval of out_value * out_type 
+  | Ophr_signature of (out_sig_item * out_value option) list 
+  | Ophr_exception of (exn * out_value) 
+[
+  structure_item (lib/outcometree.ml[27,1551+0]..lib/outcometree.ml[27,1551+48])
+    Tstr_type Rec
+    [
+      type_declaration out_name/300 (lib/outcometree.ml[27,1551+0]..lib/outcometree.ml[27,1551+48])
+        attribute "ocaml.doc"
+          [
+            structure_item (lib/outcometree.ml[25,1423+0]..[26,1498+52])
+              Pstr_eval
+              expression (lib/outcometree.ml[25,1423+0]..[26,1498+52])
+                Pexp_constant PConst_string(" An [out_name] is a string representation of an identifier which can be\n    rewritten on the fly to avoid name collisions ",(lib/outcometree.ml[25,1423+0]..[26,1498+52]),None)
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_record
+            [
+              (lib/outcometree.ml[27,1551+18]..lib/outcometree.ml[27,1551+46])
+                Mutable
+                printed_name/301                core_type (lib/outcometree.ml[27,1551+40]..lib/outcometree.ml[27,1551+46])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[27,1551+40]..lib/outcometree.ml[27,1551+46])
+                    Ttyp_constr "string/15!"
+                    []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/outcometree.ml[29,1601+0]..lib/outcometree.ml[32,1693+26])
+    Tstr_type Rec
+    [
+      type_declaration out_ident/302 (lib/outcometree.ml[29,1601+0]..lib/outcometree.ml[32,1693+26])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/outcometree.ml[30,1618+2]..lib/outcometree.ml[30,1618+39])
+                Oide_apply/303
+                [
+                  core_type (lib/outcometree.ml[30,1618+18]..lib/outcometree.ml[30,1618+27])
+                    Ttyp_constr "out_ident/302"
+                    []
+                  core_type (lib/outcometree.ml[30,1618+30]..lib/outcometree.ml[30,1618+39])
+                    Ttyp_constr "out_ident/302"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[31,1658+2]..lib/outcometree.ml[31,1658+34])
+                Oide_dot/304
+                [
+                  core_type (lib/outcometree.ml[31,1658+16]..lib/outcometree.ml[31,1658+25])
+                    Ttyp_constr "out_ident/302"
+                    []
+                  core_type (lib/outcometree.ml[31,1658+28]..lib/outcometree.ml[31,1658+34])
+                    Ttyp_constr "string/15!"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[32,1693+2]..lib/outcometree.ml[32,1693+26])
+                Oide_ident/305
+                [
+                  core_type (lib/outcometree.ml[32,1693+18]..lib/outcometree.ml[32,1693+26])
+                    Ttyp_constr "out_name/300"
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/outcometree.ml[34,1721+0]..lib/outcometree.ml[36,1755+14])
+    Tstr_type Rec
+    [
+      type_declaration out_string/306 (lib/outcometree.ml[34,1721+0]..lib/outcometree.ml[36,1755+14])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/outcometree.ml[35,1739+2]..lib/outcometree.ml[35,1739+15])
+                Ostr_string/307
+                []
+                None
+              (lib/outcometree.ml[36,1755+2]..lib/outcometree.ml[36,1755+14])
+                Ostr_bytes/308
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/outcometree.ml[38,1771+0]..lib/outcometree.ml[39,1792+24])
+    Tstr_type Rec
+    [
+      type_declaration out_attribute/309 (lib/outcometree.ml[38,1771+0]..lib/outcometree.ml[39,1792+24])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_record
+            [
+              (lib/outcometree.ml[39,1792+4]..lib/outcometree.ml[39,1792+22])
+                Immutable
+                oattr_name/310                core_type (lib/outcometree.ml[39,1792+16]..lib/outcometree.ml[39,1792+22])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[39,1792+16]..lib/outcometree.ml[39,1792+22])
+                    Ttyp_constr "string/15!"
+                    []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/outcometree.ml[41,1818+0]..lib/outcometree.ml[58,2388+26])
+    Tstr_type Rec
+    [
+      type_declaration out_value/311 (lib/outcometree.ml[41,1818+0]..lib/outcometree.ml[58,2388+26])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/outcometree.ml[42,1835+2]..lib/outcometree.ml[42,1835+32])
+                Oval_array/312
+                [
+                  core_type (lib/outcometree.ml[42,1835+18]..lib/outcometree.ml[42,1835+32])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[42,1835+18]..lib/outcometree.ml[42,1835+27])
+                        Ttyp_constr "out_value/311"
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[43,1868+2]..lib/outcometree.ml[43,1868+21])
+                Oval_char/313
+                [
+                  core_type (lib/outcometree.ml[43,1868+17]..lib/outcometree.ml[43,1868+21])
+                    Ttyp_constr "char/2!"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[44,1890+2]..lib/outcometree.ml[44,1890+45])
+                Oval_constr/314
+                [
+                  core_type (lib/outcometree.ml[44,1890+19]..lib/outcometree.ml[44,1890+28])
+                    Ttyp_constr "out_ident/302"
+                    []
+                  core_type (lib/outcometree.ml[44,1890+31]..lib/outcometree.ml[44,1890+45])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[44,1890+31]..lib/outcometree.ml[44,1890+40])
+                        Ttyp_constr "out_value/311"
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[45,1936+2]..lib/outcometree.ml[45,1936+17])
+                Oval_ellipsis/315
+                []
+                None
+              (lib/outcometree.ml[46,1954+2]..lib/outcometree.ml[46,1954+23])
+                Oval_float/316
+                [
+                  core_type (lib/outcometree.ml[46,1954+18]..lib/outcometree.ml[46,1954+23])
+                    Ttyp_constr "float/4!"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[47,1978+2]..lib/outcometree.ml[47,1978+19])
+                Oval_int/317
+                [
+                  core_type (lib/outcometree.ml[47,1978+16]..lib/outcometree.ml[47,1978+19])
+                    Ttyp_constr "int/1!"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[48,1998+2]..lib/outcometree.ml[48,1998+23])
+                Oval_int32/318
+                [
+                  core_type (lib/outcometree.ml[48,1998+18]..lib/outcometree.ml[48,1998+23])
+                    Ttyp_constr "int32/12!"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[49,2022+2]..lib/outcometree.ml[49,2022+23])
+                Oval_int64/319
+                [
+                  core_type (lib/outcometree.ml[49,2022+18]..lib/outcometree.ml[49,2022+23])
+                    Ttyp_constr "int64/13!"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[50,2046+2]..lib/outcometree.ml[50,2046+31])
+                Oval_nativeint/320
+                [
+                  core_type (lib/outcometree.ml[50,2046+22]..lib/outcometree.ml[50,2046+31])
+                    Ttyp_constr "nativeint/11!"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[51,2078+2]..lib/outcometree.ml[51,2078+31])
+                Oval_list/321
+                [
+                  core_type (lib/outcometree.ml[51,2078+17]..lib/outcometree.ml[51,2078+31])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[51,2078+17]..lib/outcometree.ml[51,2078+26])
+                        Ttyp_constr "out_value/311"
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[52,2110+2]..lib/outcometree.ml[52,2110+46])
+                Oval_printer/322
+                [
+                  core_type (lib/outcometree.ml[52,2110+21]..lib/outcometree.ml[52,2110+45])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (lib/outcometree.ml[52,2110+21]..lib/outcometree.ml[52,2110+37])
+                      Ttyp_constr "Stdlib!.Format.formatter"
+                      []
+                    core_type (lib/outcometree.ml[52,2110+41]..lib/outcometree.ml[52,2110+45])
+                      Ttyp_constr "unit/6!"
+                      []
+                ]
+                None
+              (lib/outcometree.ml[53,2157+2]..lib/outcometree.ml[53,2157+47])
+                Oval_record/481
+                [
+                  core_type (lib/outcometree.ml[53,2157+19]..lib/outcometree.ml[53,2157+47])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[53,2157+20]..lib/outcometree.ml[53,2157+41])
+                        Ttyp_tuple
+                        [
+                          core_type (lib/outcometree.ml[53,2157+20]..lib/outcometree.ml[53,2157+29])
+                            Ttyp_constr "out_ident/302"
+                            []
+                          core_type (lib/outcometree.ml[53,2157+32]..lib/outcometree.ml[53,2157+41])
+                            Ttyp_constr "out_value/311"
+                            []
+                        ]
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[54,2205+2]..lib/outcometree.ml[54,2205+44])
+                Oval_string/482
+                [
+                  core_type (lib/outcometree.ml[54,2205+19]..lib/outcometree.ml[54,2205+25])
+                    Ttyp_constr "string/15!"
+                    []
+                  core_type (lib/outcometree.ml[54,2205+28]..lib/outcometree.ml[54,2205+31])
+                    Ttyp_constr "int/1!"
+                    []
+                  core_type (lib/outcometree.ml[54,2205+34]..lib/outcometree.ml[54,2205+44])
+                    Ttyp_constr "out_string/306"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[55,2284+2]..lib/outcometree.ml[55,2284+24])
+                Oval_stuff/483
+                [
+                  core_type (lib/outcometree.ml[55,2284+18]..lib/outcometree.ml[55,2284+24])
+                    Ttyp_constr "string/15!"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[56,2309+2]..lib/outcometree.ml[56,2309+32])
+                Oval_tuple/484
+                [
+                  core_type (lib/outcometree.ml[56,2309+18]..lib/outcometree.ml[56,2309+32])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[56,2309+18]..lib/outcometree.ml[56,2309+27])
+                        Ttyp_constr "out_value/311"
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[57,2342+2]..lib/outcometree.ml[57,2342+45])
+                Oval_variant/485
+                [
+                  core_type (lib/outcometree.ml[57,2342+20]..lib/outcometree.ml[57,2342+26])
+                    Ttyp_constr "string/15!"
+                    []
+                  core_type (lib/outcometree.ml[57,2342+29]..lib/outcometree.ml[57,2342+45])
+                    Ttyp_constr "option/10!"
+                    [
+                      core_type (lib/outcometree.ml[57,2342+29]..lib/outcometree.ml[57,2342+38])
+                        Ttyp_constr "out_value/311"
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[58,2388+2]..lib/outcometree.ml[58,2388+26])
+                Oval_lazy/486
+                [
+                  core_type (lib/outcometree.ml[58,2388+17]..lib/outcometree.ml[58,2388+26])
+                    Ttyp_constr "out_value/311"
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/outcometree.ml[60,2416+0]..lib/outcometree.ml[64,2541+1])
+    Tstr_type Rec
+    [
+      type_declaration out_type_param/645 (lib/outcometree.ml[60,2416+0]..lib/outcometree.ml[64,2541+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_record
+            [
+              (lib/outcometree.ml[61,2440+4]..lib/outcometree.ml[61,2440+21])
+                Immutable
+                ot_non_gen/646                core_type (lib/outcometree.ml[61,2440+16]..lib/outcometree.ml[61,2440+20])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[61,2440+16]..lib/outcometree.ml[61,2440+20])
+                    Ttyp_constr "bool/5!"
+                    []
+              (lib/outcometree.ml[62,2462+4]..lib/outcometree.ml[62,2462+20])
+                Immutable
+                ot_name/647                core_type (lib/outcometree.ml[62,2462+13]..lib/outcometree.ml[62,2462+19])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[62,2462+13]..lib/outcometree.ml[62,2462+19])
+                    Ttyp_constr "string/15!"
+                    []
+              (lib/outcometree.ml[63,2483+4]..lib/outcometree.ml[63,2483+57])
+                Immutable
+                ot_variance/661                core_type (lib/outcometree.ml[63,2483+17]..lib/outcometree.ml[63,2483+57])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[63,2483+17]..lib/outcometree.ml[63,2483+57])
+                    Ttyp_tuple
+                    [
+                      core_type (lib/outcometree.ml[63,2483+17]..lib/outcometree.ml[63,2483+34])
+                        Ttyp_constr "Ocaml_ocaml_types!.Asttypes.variance"
+                        []
+                      core_type (lib/outcometree.ml[63,2483+37]..lib/outcometree.ml[63,2483+57])
+                        Ttyp_constr "Ocaml_ocaml_types!.Asttypes.injectivity"
+                        []
+                    ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/outcometree.ml[66,2544+0]..lib/outcometree.ml[93,3487+24])
+    Tstr_type Rec
+    [
+      type_declaration out_type/675 (lib/outcometree.ml[66,2544+0]..lib/outcometree.ml[83,3249+46])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/outcometree.ml[67,2560+2]..lib/outcometree.ml[67,2560+17])
+                Otyp_abstract/678
+                []
+                None
+              (lib/outcometree.ml[68,2578+2]..lib/outcometree.ml[68,2578+13])
+                Otyp_open/679
+                []
+                None
+              (lib/outcometree.ml[69,2592+2]..lib/outcometree.ml[69,2592+64])
+                Otyp_alias/680
+                [
+                  (lib/outcometree.ml[69,2592+19]..lib/outcometree.ml[69,2592+32])
+                    Immutable
+                    non_gen/681                    core_type (lib/outcometree.ml[69,2592+27]..lib/outcometree.ml[69,2592+31])
+                      Ttyp_poly
+                      core_type (lib/outcometree.ml[69,2592+27]..lib/outcometree.ml[69,2592+31])
+                        Ttyp_constr "bool/5!"
+                        []
+                  (lib/outcometree.ml[69,2592+33]..lib/outcometree.ml[69,2592+50])
+                    Immutable
+                    aliased/682                    core_type (lib/outcometree.ml[69,2592+41]..lib/outcometree.ml[69,2592+49])
+                      Ttyp_poly
+                      core_type (lib/outcometree.ml[69,2592+41]..lib/outcometree.ml[69,2592+49])
+                        Ttyp_constr "out_type/675"
+                        []
+                  (lib/outcometree.ml[69,2592+51]..lib/outcometree.ml[69,2592+63])
+                    Immutable
+                    alias/683                    core_type (lib/outcometree.ml[69,2592+57]..lib/outcometree.ml[69,2592+63])
+                      Ttyp_poly
+                      core_type (lib/outcometree.ml[69,2592+57]..lib/outcometree.ml[69,2592+63])
+                        Ttyp_constr "string/15!"
+                        []
+                ]
+                None
+              (lib/outcometree.ml[70,2657+2]..lib/outcometree.ml[70,2657+58])
+                Otyp_arrow/684
+                [
+                  core_type (lib/outcometree.ml[70,2657+18]..lib/outcometree.ml[70,2657+36])
+                    Ttyp_constr "Ocaml_ocaml_types!.Asttypes.arg_label"
+                    []
+                  core_type (lib/outcometree.ml[70,2657+39]..lib/outcometree.ml[70,2657+47])
+                    Ttyp_constr "out_type/675"
+                    []
+                  core_type (lib/outcometree.ml[70,2657+50]..lib/outcometree.ml[70,2657+58])
+                    Ttyp_constr "out_type/675"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[71,2716+2]..lib/outcometree.ml[71,2716+43])
+                Otyp_class/685
+                [
+                  core_type (lib/outcometree.ml[71,2716+18]..lib/outcometree.ml[71,2716+27])
+                    Ttyp_constr "out_ident/302"
+                    []
+                  core_type (lib/outcometree.ml[71,2716+30]..lib/outcometree.ml[71,2716+43])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[71,2716+30]..lib/outcometree.ml[71,2716+38])
+                        Ttyp_constr "out_type/675"
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[72,2760+2]..lib/outcometree.ml[72,2760+44])
+                Otyp_constr/686
+                [
+                  core_type (lib/outcometree.ml[72,2760+19]..lib/outcometree.ml[72,2760+28])
+                    Ttyp_constr "out_ident/302"
+                    []
+                  core_type (lib/outcometree.ml[72,2760+31]..lib/outcometree.ml[72,2760+44])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[72,2760+31]..lib/outcometree.ml[72,2760+39])
+                        Ttyp_constr "out_type/675"
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[73,2805+2]..lib/outcometree.ml[73,2805+40])
+                Otyp_manifest/687
+                [
+                  core_type (lib/outcometree.ml[73,2805+21]..lib/outcometree.ml[73,2805+29])
+                    Ttyp_constr "out_type/675"
+                    []
+                  core_type (lib/outcometree.ml[73,2805+32]..lib/outcometree.ml[73,2805+40])
+                    Ttyp_constr "out_type/675"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[74,2846+2]..lib/outcometree.ml[74,2846+69])
+                Otyp_object/688
+                [
+                  (lib/outcometree.ml[74,2846+21]..lib/outcometree.ml[74,2846+54])
+                    Immutable
+                    fields/689                    core_type (lib/outcometree.ml[74,2846+29]..lib/outcometree.ml[74,2846+53])
+                      Ttyp_poly
+                      core_type (lib/outcometree.ml[74,2846+29]..lib/outcometree.ml[74,2846+53])
+                        Ttyp_constr "list/9!"
+                        [
+                          core_type (lib/outcometree.ml[74,2846+30]..lib/outcometree.ml[74,2846+47])
+                            Ttyp_tuple
+                            [
+                              core_type (lib/outcometree.ml[74,2846+30]..lib/outcometree.ml[74,2846+36])
+                                Ttyp_constr "string/15!"
+                                []
+                              core_type (lib/outcometree.ml[74,2846+39]..lib/outcometree.ml[74,2846+47])
+                                Ttyp_constr "out_type/675"
+                                []
+                            ]
+                        ]
+                  (lib/outcometree.ml[74,2846+55]..lib/outcometree.ml[74,2846+68])
+                    Immutable
+                    open_row/690                    core_type (lib/outcometree.ml[74,2846+64]..lib/outcometree.ml[74,2846+68])
+                      Ttyp_poly
+                      core_type (lib/outcometree.ml[74,2846+64]..lib/outcometree.ml[74,2846+68])
+                        Ttyp_constr "bool/5!"
+                        []
+                ]
+                None
+              (lib/outcometree.ml[75,2916+2]..lib/outcometree.ml[75,2916+50])
+                Otyp_record/691
+                [
+                  core_type (lib/outcometree.ml[75,2916+19]..lib/outcometree.ml[75,2916+50])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[75,2916+20]..lib/outcometree.ml[75,2916+44])
+                        Ttyp_tuple
+                        [
+                          core_type (lib/outcometree.ml[75,2916+20]..lib/outcometree.ml[75,2916+26])
+                            Ttyp_constr "string/15!"
+                            []
+                          core_type (lib/outcometree.ml[75,2916+29]..lib/outcometree.ml[75,2916+33])
+                            Ttyp_constr "bool/5!"
+                            []
+                          core_type (lib/outcometree.ml[75,2916+36]..lib/outcometree.ml[75,2916+44])
+                            Ttyp_constr "out_type/675"
+                            []
+                        ]
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[76,2967+2]..lib/outcometree.ml[76,2967+24])
+                Otyp_stuff/692
+                [
+                  core_type (lib/outcometree.ml[76,2967+18]..lib/outcometree.ml[76,2967+24])
+                    Ttyp_constr "string/15!"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[77,2992+2]..lib/outcometree.ml[77,2992+36])
+                Otyp_sum/693
+                [
+                  core_type (lib/outcometree.ml[77,2992+16]..lib/outcometree.ml[77,2992+36])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[77,2992+16]..lib/outcometree.ml[77,2992+31])
+                        Ttyp_constr "out_constructor/676"
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[78,3029+2]..lib/outcometree.ml[78,3029+31])
+                Otyp_tuple/694
+                [
+                  core_type (lib/outcometree.ml[78,3029+18]..lib/outcometree.ml[78,3029+31])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[78,3029+18]..lib/outcometree.ml[78,3029+26])
+                        Ttyp_constr "out_type/675"
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[79,3061+2]..lib/outcometree.ml[79,3061+29])
+                Otyp_var/695
+                [
+                  core_type (lib/outcometree.ml[79,3061+16]..lib/outcometree.ml[79,3061+20])
+                    Ttyp_constr "bool/5!"
+                    []
+                  core_type (lib/outcometree.ml[79,3061+23]..lib/outcometree.ml[79,3061+29])
+                    Ttyp_constr "string/15!"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[80,3091+2]..lib/outcometree.ml[80,3091+61])
+                Otyp_variant/696
+                [
+                  core_type (lib/outcometree.ml[80,3091+20]..lib/outcometree.ml[80,3091+31])
+                    Ttyp_constr "out_variant/677"
+                    []
+                  core_type (lib/outcometree.ml[80,3091+34]..lib/outcometree.ml[80,3091+38])
+                    Ttyp_constr "bool/5!"
+                    []
+                  core_type (lib/outcometree.ml[80,3091+41]..lib/outcometree.ml[80,3091+61])
+                    Ttyp_constr "option/10!"
+                    [
+                      core_type (lib/outcometree.ml[80,3091+42]..lib/outcometree.ml[80,3091+53])
+                        Ttyp_constr "list/9!"
+                        [
+                          core_type (lib/outcometree.ml[80,3091+42]..lib/outcometree.ml[80,3091+48])
+                            Ttyp_constr "string/15!"
+                            []
+                        ]
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[81,3153+2]..lib/outcometree.ml[81,3153+39])
+                Otyp_poly/697
+                [
+                  core_type (lib/outcometree.ml[81,3153+17]..lib/outcometree.ml[81,3153+28])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[81,3153+17]..lib/outcometree.ml[81,3153+23])
+                        Ttyp_constr "string/15!"
+                        []
+                    ]
+                  core_type (lib/outcometree.ml[81,3153+31]..lib/outcometree.ml[81,3153+39])
+                    Ttyp_constr "out_type/675"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[82,3193+2]..lib/outcometree.ml[82,3193+55])
+                Otyp_module/698
+                [
+                  core_type (lib/outcometree.ml[82,3193+19]..lib/outcometree.ml[82,3193+28])
+                    Ttyp_constr "out_ident/302"
+                    []
+                  core_type (lib/outcometree.ml[82,3193+31]..lib/outcometree.ml[82,3193+55])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[82,3193+32]..lib/outcometree.ml[82,3193+49])
+                        Ttyp_tuple
+                        [
+                          core_type (lib/outcometree.ml[82,3193+32]..lib/outcometree.ml[82,3193+38])
+                            Ttyp_constr "string/15!"
+                            []
+                          core_type (lib/outcometree.ml[82,3193+41]..lib/outcometree.ml[82,3193+49])
+                            Ttyp_constr "out_type/675"
+                            []
+                        ]
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[83,3249+2]..lib/outcometree.ml[83,3249+46])
+                Otyp_attribute/699
+                [
+                  core_type (lib/outcometree.ml[83,3249+22]..lib/outcometree.ml[83,3249+30])
+                    Ttyp_constr "out_type/675"
+                    []
+                  core_type (lib/outcometree.ml[83,3249+33]..lib/outcometree.ml[83,3249+46])
+                    Ttyp_constr "out_attribute/309"
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration out_constructor/676 (lib/outcometree.ml[85,3297+0]..lib/outcometree.ml[89,3410+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_record
+            [
+              (lib/outcometree.ml[86,3321+2]..lib/outcometree.ml[86,3321+21])
+                Immutable
+                ocstr_name/700                core_type (lib/outcometree.ml[86,3321+14]..lib/outcometree.ml[86,3321+20])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[86,3321+14]..lib/outcometree.ml[86,3321+20])
+                    Ttyp_constr "string/15!"
+                    []
+              (lib/outcometree.ml[87,3343+2]..lib/outcometree.ml[87,3343+28])
+                Immutable
+                ocstr_args/701                core_type (lib/outcometree.ml[87,3343+14]..lib/outcometree.ml[87,3343+27])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[87,3343+14]..lib/outcometree.ml[87,3343+27])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[87,3343+14]..lib/outcometree.ml[87,3343+22])
+                        Ttyp_constr "out_type/675"
+                        []
+                    ]
+              (lib/outcometree.ml[88,3372+2]..lib/outcometree.ml[88,3372+37])
+                Immutable
+                ocstr_return_type/702                core_type (lib/outcometree.ml[88,3372+21]..lib/outcometree.ml[88,3372+36])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[88,3372+21]..lib/outcometree.ml[88,3372+36])
+                    Ttyp_constr "option/10!"
+                    [
+                      core_type (lib/outcometree.ml[88,3372+21]..lib/outcometree.ml[88,3372+29])
+                        Ttyp_constr "out_type/675"
+                        []
+                    ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration out_variant/677 (lib/outcometree.ml[91,3413+0]..lib/outcometree.ml[93,3487+24])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/outcometree.ml[92,3431+2]..lib/outcometree.ml[92,3431+55])
+                Ovar_fields/703
+                [
+                  core_type (lib/outcometree.ml[92,3431+19]..lib/outcometree.ml[92,3431+55])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[92,3431+20]..lib/outcometree.ml[92,3431+49])
+                        Ttyp_tuple
+                        [
+                          core_type (lib/outcometree.ml[92,3431+20]..lib/outcometree.ml[92,3431+26])
+                            Ttyp_constr "string/15!"
+                            []
+                          core_type (lib/outcometree.ml[92,3431+29]..lib/outcometree.ml[92,3431+33])
+                            Ttyp_constr "bool/5!"
+                            []
+                          core_type (lib/outcometree.ml[92,3431+36]..lib/outcometree.ml[92,3431+49])
+                            Ttyp_constr "list/9!"
+                            [
+                              core_type (lib/outcometree.ml[92,3431+36]..lib/outcometree.ml[92,3431+44])
+                                Ttyp_constr "out_type/675"
+                                []
+                            ]
+                        ]
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[93,3487+2]..lib/outcometree.ml[93,3487+24])
+                Ovar_typ/704
+                [
+                  core_type (lib/outcometree.ml[93,3487+16]..lib/outcometree.ml[93,3487+24])
+                    Ttyp_constr "out_type/675"
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/outcometree.ml[95,3513+0]..lib/outcometree.ml[102,3828+49])
+    Tstr_type Rec
+    [
+      type_declaration out_class_type/705 (lib/outcometree.ml[95,3513+0]..lib/outcometree.ml[98,3645+63])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/outcometree.ml[96,3535+2]..lib/outcometree.ml[96,3535+44])
+                Octy_constr/707
+                [
+                  core_type (lib/outcometree.ml[96,3535+19]..lib/outcometree.ml[96,3535+28])
+                    Ttyp_constr "out_ident/302"
+                    []
+                  core_type (lib/outcometree.ml[96,3535+31]..lib/outcometree.ml[96,3535+44])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[96,3535+31]..lib/outcometree.ml[96,3535+39])
+                        Ttyp_constr "out_type/675"
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[97,3580+2]..lib/outcometree.ml[97,3580+64])
+                Octy_arrow/708
+                [
+                  core_type (lib/outcometree.ml[97,3580+18]..lib/outcometree.ml[97,3580+36])
+                    Ttyp_constr "Ocaml_ocaml_types!.Asttypes.arg_label"
+                    []
+                  core_type (lib/outcometree.ml[97,3580+39]..lib/outcometree.ml[97,3580+47])
+                    Ttyp_constr "out_type/675"
+                    []
+                  core_type (lib/outcometree.ml[97,3580+50]..lib/outcometree.ml[97,3580+64])
+                    Ttyp_constr "out_class_type/705"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[98,3645+2]..lib/outcometree.ml[98,3645+63])
+                Octy_signature/709
+                [
+                  core_type (lib/outcometree.ml[98,3645+22]..lib/outcometree.ml[98,3645+37])
+                    Ttyp_constr "option/10!"
+                    [
+                      core_type (lib/outcometree.ml[98,3645+22]..lib/outcometree.ml[98,3645+30])
+                        Ttyp_constr "out_type/675"
+                        []
+                    ]
+                  core_type (lib/outcometree.ml[98,3645+40]..lib/outcometree.ml[98,3645+63])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[98,3645+40]..lib/outcometree.ml[98,3645+58])
+                        Ttyp_constr "out_class_sig_item/706"
+                        []
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration out_class_sig_item/706 (lib/outcometree.ml[99,3709+0]..lib/outcometree.ml[102,3828+49])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/outcometree.ml[100,3734+2]..lib/outcometree.ml[100,3734+42])
+                Ocsg_constraint/710
+                [
+                  core_type (lib/outcometree.ml[100,3734+23]..lib/outcometree.ml[100,3734+31])
+                    Ttyp_constr "out_type/675"
+                    []
+                  core_type (lib/outcometree.ml[100,3734+34]..lib/outcometree.ml[100,3734+42])
+                    Ttyp_constr "out_type/675"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[101,3777+2]..lib/outcometree.ml[101,3777+50])
+                Ocsg_method/711
+                [
+                  core_type (lib/outcometree.ml[101,3777+19]..lib/outcometree.ml[101,3777+25])
+                    Ttyp_constr "string/15!"
+                    []
+                  core_type (lib/outcometree.ml[101,3777+28]..lib/outcometree.ml[101,3777+32])
+                    Ttyp_constr "bool/5!"
+                    []
+                  core_type (lib/outcometree.ml[101,3777+35]..lib/outcometree.ml[101,3777+39])
+                    Ttyp_constr "bool/5!"
+                    []
+                  core_type (lib/outcometree.ml[101,3777+42]..lib/outcometree.ml[101,3777+50])
+                    Ttyp_constr "out_type/675"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[102,3828+2]..lib/outcometree.ml[102,3828+49])
+                Ocsg_value/712
+                [
+                  core_type (lib/outcometree.ml[102,3828+18]..lib/outcometree.ml[102,3828+24])
+                    Ttyp_constr "string/15!"
+                    []
+                  core_type (lib/outcometree.ml[102,3828+27]..lib/outcometree.ml[102,3828+31])
+                    Ttyp_constr "bool/5!"
+                    []
+                  core_type (lib/outcometree.ml[102,3828+34]..lib/outcometree.ml[102,3828+38])
+                    Ttyp_constr "bool/5!"
+                    []
+                  core_type (lib/outcometree.ml[102,3828+41]..lib/outcometree.ml[102,3828+49])
+                    Ttyp_constr "out_type/675"
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/outcometree.ml[104,3879+0]..lib/outcometree.ml[155,5499+18])
+    Tstr_type Rec
+    [
+      type_declaration out_module_type/713 (lib/outcometree.ml[104,3879+0]..lib/outcometree.ml[109,4067+27])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/outcometree.ml[105,3902+2]..lib/outcometree.ml[105,3902+17])
+                Omty_abstract/721
+                []
+                None
+              (lib/outcometree.ml[106,3920+2]..lib/outcometree.ml[106,3920+78])
+                Omty_functor/722
+                [
+                  core_type (lib/outcometree.ml[106,3920+20]..lib/outcometree.ml[106,3920+60])
+                    Ttyp_constr "option/10!"
+                    [
+                      core_type (lib/outcometree.ml[106,3920+21]..lib/outcometree.ml[106,3920+52])
+                        Ttyp_tuple
+                        [
+                          core_type (lib/outcometree.ml[106,3920+21]..lib/outcometree.ml[106,3920+34])
+                            Ttyp_constr "option/10!"
+                            [
+                              core_type (lib/outcometree.ml[106,3920+21]..lib/outcometree.ml[106,3920+27])
+                                Ttyp_constr "string/15!"
+                                []
+                            ]
+                          core_type (lib/outcometree.ml[106,3920+37]..lib/outcometree.ml[106,3920+52])
+                            Ttyp_constr "out_module_type/713"
+                            []
+                        ]
+                    ]
+                  core_type (lib/outcometree.ml[106,3920+63]..lib/outcometree.ml[106,3920+78])
+                    Ttyp_constr "out_module_type/713"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[107,3999+2]..lib/outcometree.ml[107,3999+27])
+                Omty_ident/723
+                [
+                  core_type (lib/outcometree.ml[107,3999+18]..lib/outcometree.ml[107,3999+27])
+                    Ttyp_constr "out_ident/302"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[108,4027+2]..lib/outcometree.ml[108,4027+39])
+                Omty_signature/724
+                [
+                  core_type (lib/outcometree.ml[108,4027+22]..lib/outcometree.ml[108,4027+39])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[108,4027+22]..lib/outcometree.ml[108,4027+34])
+                        Ttyp_constr "out_sig_item/714"
+                        []
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[109,4067+2]..lib/outcometree.ml[109,4067+27])
+                Omty_alias/725
+                [
+                  core_type (lib/outcometree.ml[109,4067+18]..lib/outcometree.ml[109,4067+27])
+                    Ttyp_constr "out_ident/302"
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration out_sig_item/714 (lib/outcometree.ml[110,4095+0]..lib/outcometree.ml[122,4570+17])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/outcometree.ml[111,4114+2]..lib/outcometree.ml[113,4193+22])
+                Osig_class/726
+                [
+                  core_type (lib/outcometree.ml[112,4132+6]..lib/outcometree.ml[112,4132+10])
+                    Ttyp_constr "bool/5!"
+                    []
+                  core_type (lib/outcometree.ml[112,4132+13]..lib/outcometree.ml[112,4132+19])
+                    Ttyp_constr "string/15!"
+                    []
+                  core_type (lib/outcometree.ml[112,4132+22]..lib/outcometree.ml[112,4132+41])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[112,4132+22]..lib/outcometree.ml[112,4132+36])
+                        Ttyp_constr "out_type_param/645"
+                        []
+                    ]
+                  core_type (lib/outcometree.ml[112,4132+44]..lib/outcometree.ml[112,4132+58])
+                    Ttyp_constr "out_class_type/705"
+                    []
+                  core_type (lib/outcometree.ml[113,4193+8]..lib/outcometree.ml[113,4193+22])
+                    Ttyp_constr "out_rec_status/719"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[114,4216+2]..lib/outcometree.ml[116,4300+22])
+                Osig_class_type/727
+                [
+                  core_type (lib/outcometree.ml[115,4239+6]..lib/outcometree.ml[115,4239+10])
+                    Ttyp_constr "bool/5!"
+                    []
+                  core_type (lib/outcometree.ml[115,4239+13]..lib/outcometree.ml[115,4239+19])
+                    Ttyp_constr "string/15!"
+                    []
+                  core_type (lib/outcometree.ml[115,4239+22]..lib/outcometree.ml[115,4239+41])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[115,4239+22]..lib/outcometree.ml[115,4239+36])
+                        Ttyp_constr "out_type_param/645"
+                        []
+                    ]
+                  core_type (lib/outcometree.ml[115,4239+44]..lib/outcometree.ml[115,4239+58])
+                    Ttyp_constr "out_class_type/705"
+                    []
+                  core_type (lib/outcometree.ml[116,4300+8]..lib/outcometree.ml[116,4300+22])
+                    Ttyp_constr "out_rec_status/719"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[117,4323+2]..lib/outcometree.ml[117,4323+61])
+                Osig_typext/728
+                [
+                  core_type (lib/outcometree.ml[117,4323+19]..lib/outcometree.ml[117,4323+44])
+                    Ttyp_constr "out_extension_constructor/716"
+                    []
+                  core_type (lib/outcometree.ml[117,4323+47]..lib/outcometree.ml[117,4323+61])
+                    Ttyp_constr "out_ext_status/720"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[118,4385+2]..lib/outcometree.ml[118,4385+44])
+                Osig_modtype/729
+                [
+                  core_type (lib/outcometree.ml[118,4385+20]..lib/outcometree.ml[118,4385+26])
+                    Ttyp_constr "string/15!"
+                    []
+                  core_type (lib/outcometree.ml[118,4385+29]..lib/outcometree.ml[118,4385+44])
+                    Ttyp_constr "out_module_type/713"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[119,4430+2]..lib/outcometree.ml[119,4430+60])
+                Osig_module/730
+                [
+                  core_type (lib/outcometree.ml[119,4430+19]..lib/outcometree.ml[119,4430+25])
+                    Ttyp_constr "string/15!"
+                    []
+                  core_type (lib/outcometree.ml[119,4430+28]..lib/outcometree.ml[119,4430+43])
+                    Ttyp_constr "out_module_type/713"
+                    []
+                  core_type (lib/outcometree.ml[119,4430+46]..lib/outcometree.ml[119,4430+60])
+                    Ttyp_constr "out_rec_status/719"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[120,4491+2]..lib/outcometree.ml[120,4491+47])
+                Osig_type/731
+                [
+                  core_type (lib/outcometree.ml[120,4491+17]..lib/outcometree.ml[120,4491+30])
+                    Ttyp_constr "out_type_decl/715"
+                    []
+                  core_type (lib/outcometree.ml[120,4491+33]..lib/outcometree.ml[120,4491+47])
+                    Ttyp_constr "out_rec_status/719"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[121,4539+2]..lib/outcometree.ml[121,4539+30])
+                Osig_value/732
+                [
+                  core_type (lib/outcometree.ml[121,4539+18]..lib/outcometree.ml[121,4539+30])
+                    Ttyp_constr "out_val_decl/718"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[122,4570+2]..lib/outcometree.ml[122,4570+17])
+                Osig_ellipsis/733
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration out_type_decl/715 (lib/outcometree.ml[123,4588+0]..lib/outcometree.ml[130,4803+45])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_record
+            [
+              (lib/outcometree.ml[124,4608+4]..lib/outcometree.ml[124,4608+23])
+                Immutable
+                otype_name/734                core_type (lib/outcometree.ml[124,4608+16]..lib/outcometree.ml[124,4608+22])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[124,4608+16]..lib/outcometree.ml[124,4608+22])
+                    Ttyp_constr "string/15!"
+                    []
+              (lib/outcometree.ml[125,4632+4]..lib/outcometree.ml[125,4632+38])
+                Immutable
+                otype_params/735                core_type (lib/outcometree.ml[125,4632+18]..lib/outcometree.ml[125,4632+37])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[125,4632+18]..lib/outcometree.ml[125,4632+37])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[125,4632+18]..lib/outcometree.ml[125,4632+32])
+                        Ttyp_constr "out_type_param/645"
+                        []
+                    ]
+              (lib/outcometree.ml[126,4671+4]..lib/outcometree.ml[126,4671+25])
+                Immutable
+                otype_type/736                core_type (lib/outcometree.ml[126,4671+16]..lib/outcometree.ml[126,4671+24])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[126,4671+16]..lib/outcometree.ml[126,4671+24])
+                    Ttyp_constr "out_type/675"
+                    []
+              (lib/outcometree.ml[127,4697+4]..lib/outcometree.ml[127,4697+41])
+                Immutable
+                otype_private/737                core_type (lib/outcometree.ml[127,4697+19]..lib/outcometree.ml[127,4697+40])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[127,4697+19]..lib/outcometree.ml[127,4697+40])
+                    Ttyp_constr "Ocaml_ocaml_types!.Asttypes.private_flag"
+                    []
+              (lib/outcometree.ml[128,4739+4]..lib/outcometree.ml[128,4739+38])
+                Immutable
+                otype_immediate/742                core_type (lib/outcometree.ml[128,4739+21]..lib/outcometree.ml[128,4739+37])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[128,4739+21]..lib/outcometree.ml[128,4739+37])
+                    Ttyp_constr "Ocaml_ocaml_types!.Type_immediacy.t"
+                    []
+              (lib/outcometree.ml[129,4778+4]..lib/outcometree.ml[129,4778+24])
+                Immutable
+                otype_unboxed/743                core_type (lib/outcometree.ml[129,4778+19]..lib/outcometree.ml[129,4778+23])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[129,4778+19]..lib/outcometree.ml[129,4778+23])
+                    Ttyp_constr "bool/5!"
+                    []
+              (lib/outcometree.ml[130,4803+4]..lib/outcometree.ml[130,4803+43])
+                Immutable
+                otype_cstrs/744                core_type (lib/outcometree.ml[130,4803+17]..lib/outcometree.ml[130,4803+43])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[130,4803+17]..lib/outcometree.ml[130,4803+43])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[130,4803+18]..lib/outcometree.ml[130,4803+37])
+                        Ttyp_tuple
+                        [
+                          core_type (lib/outcometree.ml[130,4803+18]..lib/outcometree.ml[130,4803+26])
+                            Ttyp_constr "out_type/675"
+                            []
+                          core_type (lib/outcometree.ml[130,4803+29]..lib/outcometree.ml[130,4803+37])
+                            Ttyp_constr "out_type/675"
+                            []
+                        ]
+                    ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration out_extension_constructor/716 (lib/outcometree.ml[131,4849+0]..lib/outcometree.ml[137,5033+41])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_record
+            [
+              (lib/outcometree.ml[132,4881+4]..lib/outcometree.ml[132,4881+22])
+                Immutable
+                oext_name/745                core_type (lib/outcometree.ml[132,4881+15]..lib/outcometree.ml[132,4881+21])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[132,4881+15]..lib/outcometree.ml[132,4881+21])
+                    Ttyp_constr "string/15!"
+                    []
+              (lib/outcometree.ml[133,4904+4]..lib/outcometree.ml[133,4904+27])
+                Immutable
+                oext_type_name/746                core_type (lib/outcometree.ml[133,4904+20]..lib/outcometree.ml[133,4904+26])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[133,4904+20]..lib/outcometree.ml[133,4904+26])
+                    Ttyp_constr "string/15!"
+                    []
+              (lib/outcometree.ml[134,4932+4]..lib/outcometree.ml[134,4932+34])
+                Immutable
+                oext_type_params/747                core_type (lib/outcometree.ml[134,4932+22]..lib/outcometree.ml[134,4932+33])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[134,4932+22]..lib/outcometree.ml[134,4932+33])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[134,4932+22]..lib/outcometree.ml[134,4932+28])
+                        Ttyp_constr "string/15!"
+                        []
+                    ]
+              (lib/outcometree.ml[135,4967+4]..lib/outcometree.ml[135,4967+29])
+                Immutable
+                oext_args/748                core_type (lib/outcometree.ml[135,4967+15]..lib/outcometree.ml[135,4967+28])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[135,4967+15]..lib/outcometree.ml[135,4967+28])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[135,4967+15]..lib/outcometree.ml[135,4967+23])
+                        Ttyp_constr "out_type/675"
+                        []
+                    ]
+              (lib/outcometree.ml[136,4997+4]..lib/outcometree.ml[136,4997+35])
+                Immutable
+                oext_ret_type/749                core_type (lib/outcometree.ml[136,4997+19]..lib/outcometree.ml[136,4997+34])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[136,4997+19]..lib/outcometree.ml[136,4997+34])
+                    Ttyp_constr "option/10!"
+                    [
+                      core_type (lib/outcometree.ml[136,4997+19]..lib/outcometree.ml[136,4997+27])
+                        Ttyp_constr "out_type/675"
+                        []
+                    ]
+              (lib/outcometree.ml[137,5033+4]..lib/outcometree.ml[137,5033+39])
+                Immutable
+                oext_private/750                core_type (lib/outcometree.ml[137,5033+18]..lib/outcometree.ml[137,5033+39])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[137,5033+18]..lib/outcometree.ml[137,5033+39])
+                    Ttyp_constr "Ocaml_ocaml_types!.Asttypes.private_flag"
+                    []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration out_type_extension/717 (lib/outcometree.ml[138,5075+0]..lib/outcometree.ml[142,5204+43])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_record
+            [
+              (lib/outcometree.ml[139,5100+4]..lib/outcometree.ml[139,5100+24])
+                Immutable
+                otyext_name/751                core_type (lib/outcometree.ml[139,5100+17]..lib/outcometree.ml[139,5100+23])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[139,5100+17]..lib/outcometree.ml[139,5100+23])
+                    Ttyp_constr "string/15!"
+                    []
+              (lib/outcometree.ml[140,5125+4]..lib/outcometree.ml[140,5125+31])
+                Immutable
+                otyext_params/752                core_type (lib/outcometree.ml[140,5125+19]..lib/outcometree.ml[140,5125+30])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[140,5125+19]..lib/outcometree.ml[140,5125+30])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[140,5125+19]..lib/outcometree.ml[140,5125+25])
+                        Ttyp_constr "string/15!"
+                        []
+                    ]
+              (lib/outcometree.ml[141,5157+4]..lib/outcometree.ml[141,5157+46])
+                Immutable
+                otyext_constructors/753                core_type (lib/outcometree.ml[141,5157+25]..lib/outcometree.ml[141,5157+45])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[141,5157+25]..lib/outcometree.ml[141,5157+45])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[141,5157+25]..lib/outcometree.ml[141,5157+40])
+                        Ttyp_constr "out_constructor/676"
+                        []
+                    ]
+              (lib/outcometree.ml[142,5204+4]..lib/outcometree.ml[142,5204+41])
+                Immutable
+                otyext_private/754                core_type (lib/outcometree.ml[142,5204+20]..lib/outcometree.ml[142,5204+41])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[142,5204+20]..lib/outcometree.ml[142,5204+41])
+                    Ttyp_constr "Ocaml_ocaml_types!.Asttypes.private_flag"
+                    []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration out_val_decl/718 (lib/outcometree.ml[143,5248+0]..lib/outcometree.ml[147,5344+41])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_record
+            [
+              (lib/outcometree.ml[144,5267+4]..lib/outcometree.ml[144,5267+22])
+                Immutable
+                oval_name/755                core_type (lib/outcometree.ml[144,5267+15]..lib/outcometree.ml[144,5267+21])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[144,5267+15]..lib/outcometree.ml[144,5267+21])
+                    Ttyp_constr "string/15!"
+                    []
+              (lib/outcometree.ml[145,5290+4]..lib/outcometree.ml[145,5290+24])
+                Immutable
+                oval_type/756                core_type (lib/outcometree.ml[145,5290+15]..lib/outcometree.ml[145,5290+23])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[145,5290+15]..lib/outcometree.ml[145,5290+23])
+                    Ttyp_constr "out_type/675"
+                    []
+              (lib/outcometree.ml[146,5315+4]..lib/outcometree.ml[146,5315+28])
+                Immutable
+                oval_prims/757                core_type (lib/outcometree.ml[146,5315+16]..lib/outcometree.ml[146,5315+27])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[146,5315+16]..lib/outcometree.ml[146,5315+27])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[146,5315+16]..lib/outcometree.ml[146,5315+22])
+                        Ttyp_constr "string/15!"
+                        []
+                    ]
+              (lib/outcometree.ml[147,5344+4]..lib/outcometree.ml[147,5344+39])
+                Immutable
+                oval_attributes/758                core_type (lib/outcometree.ml[147,5344+21]..lib/outcometree.ml[147,5344+39])
+                  Ttyp_poly
+                  core_type (lib/outcometree.ml[147,5344+21]..lib/outcometree.ml[147,5344+39])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[147,5344+21]..lib/outcometree.ml[147,5344+34])
+                        Ttyp_constr "out_attribute/309"
+                        []
+                    ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration out_rec_status/719 (lib/outcometree.ml[148,5386+0]..lib/outcometree.ml[151,5435+13])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/outcometree.ml[149,5407+2]..lib/outcometree.ml[149,5407+12])
+                Orec_not/759
+                []
+                None
+              (lib/outcometree.ml[150,5420+2]..lib/outcometree.ml[150,5420+14])
+                Orec_first/760
+                []
+                None
+              (lib/outcometree.ml[151,5435+2]..lib/outcometree.ml[151,5435+13])
+                Orec_next/761
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration out_ext_status/720 (lib/outcometree.ml[152,5449+0]..lib/outcometree.ml[155,5499+18])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/outcometree.ml[153,5470+2]..lib/outcometree.ml[153,5470+14])
+                Oext_first/762
+                []
+                None
+              (lib/outcometree.ml[154,5485+2]..lib/outcometree.ml[154,5485+13])
+                Oext_next/763
+                []
+                None
+              (lib/outcometree.ml[155,5499+2]..lib/outcometree.ml[155,5499+18])
+                Oext_exception/764
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/outcometree.ml[157,5519+0]..lib/outcometree.ml[160,5636+39])
+    Tstr_type Rec
+    [
+      type_declaration out_phrase/769 (lib/outcometree.ml[157,5519+0]..lib/outcometree.ml[160,5636+39])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/outcometree.ml[158,5537+2]..lib/outcometree.ml[158,5537+37])
+                Ophr_eval/770
+                [
+                  core_type (lib/outcometree.ml[158,5537+17]..lib/outcometree.ml[158,5537+26])
+                    Ttyp_constr "out_value/311"
+                    []
+                  core_type (lib/outcometree.ml[158,5537+29]..lib/outcometree.ml[158,5537+37])
+                    Ttyp_constr "out_type/675"
+                    []
+                ]
+                None
+              (lib/outcometree.ml[159,5575+2]..lib/outcometree.ml[159,5575+60])
+                Ophr_signature/771
+                [
+                  core_type (lib/outcometree.ml[159,5575+22]..lib/outcometree.ml[159,5575+60])
+                    Ttyp_constr "list/9!"
+                    [
+                      core_type (lib/outcometree.ml[159,5575+23]..lib/outcometree.ml[159,5575+54])
+                        Ttyp_tuple
+                        [
+                          core_type (lib/outcometree.ml[159,5575+23]..lib/outcometree.ml[159,5575+35])
+                            Ttyp_constr "out_sig_item/714"
+                            []
+                          core_type (lib/outcometree.ml[159,5575+38]..lib/outcometree.ml[159,5575+54])
+                            Ttyp_constr "option/10!"
+                            [
+                              core_type (lib/outcometree.ml[159,5575+38]..lib/outcometree.ml[159,5575+47])
+                                Ttyp_constr "out_value/311"
+                                []
+                            ]
+                        ]
+                    ]
+                ]
+                None
+              (lib/outcometree.ml[160,5636+2]..lib/outcometree.ml[160,5636+39])
+                Ophr_exception/772
+                [
+                  core_type (lib/outcometree.ml[160,5636+23]..lib/outcometree.ml[160,5636+38])
+                    Ttyp_tuple
+                    [
+                      core_type (lib/outcometree.ml[160,5636+23]..lib/outcometree.ml[160,5636+26])
+                        Ttyp_constr "exn/7!"
+                        []
+                      core_type (lib/outcometree.ml[160,5636+29]..lib/outcometree.ml[160,5636+38])
+                        Ttyp_constr "out_value/311"
+                        []
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+]
+
+{<Ocaml_ocaml_types__Outcometree>
+ "out_attribute"[type] -> <Ocaml_ocaml_types__Outcometree.9>;
+ "out_class_sig_item"[type] -> <Ocaml_ocaml_types__Outcometree.74>;
+ "out_class_type"[type] -> <Ocaml_ocaml_types__Outcometree.73>;
+ "out_constructor"[type] -> <Ocaml_ocaml_types__Outcometree.34>;
+ "out_ext_status"[type] -> <Ocaml_ocaml_types__Outcometree.88>;
+ "out_extension_constructor"[type] -> <Ocaml_ocaml_types__Outcometree.84>;
+ "out_ident"[type] -> <Ocaml_ocaml_types__Outcometree.2>;
+ "out_module_type"[type] -> <Ocaml_ocaml_types__Outcometree.81>;
+ "out_name"[type] -> <Ocaml_ocaml_types__Outcometree.0>;
+ "out_phrase"[type] -> <Ocaml_ocaml_types__Outcometree.129>;
+ "out_rec_status"[type] -> <Ocaml_ocaml_types__Outcometree.87>;
+ "out_sig_item"[type] -> <Ocaml_ocaml_types__Outcometree.82>;
+ "out_string"[type] -> <Ocaml_ocaml_types__Outcometree.6>;
+ "out_type"[type] -> <Ocaml_ocaml_types__Outcometree.33>;
+ "out_type_decl"[type] -> <Ocaml_ocaml_types__Outcometree.83>;
+ "out_type_extension"[type] -> <Ocaml_ocaml_types__Outcometree.85>;
+ "out_type_param"[type] -> <Ocaml_ocaml_types__Outcometree.29>;
+ "out_val_decl"[type] -> <Ocaml_ocaml_types__Outcometree.86>;
+ "out_value"[type] -> <Ocaml_ocaml_types__Outcometree.11>;
+ "out_variant"[type] -> <Ocaml_ocaml_types__Outcometree.35>;
+ }
+
+0
+0

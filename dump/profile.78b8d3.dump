@@ -1,0 +1,14 @@
+0.029s 62.2MB 5.97MB 7.73MB lib/shape.ml
+  0.001s 2.04MB 0.35MB 2.11MB parsing
+    0.001s 2.04MB 0.35MB 2.11MB parser
+  0.014s 23.7MB 4.37MB 6.48MB typing
+  0.009s 14.9MB 1.12MB 7.61MB generate
+    0.003s 8.60MB 0.71MB 7.20MB compile_phrases
+      0.001s 4.00MB 0.37MB 6.86MB selection
+      ------ 0.20MB ------ ------ cse
+      ------ 0.20MB ------ ------ spill
+      0.001s 4.20MB 0.34MB 7.20MB regalloc
+    0.004s ------ ------ ------ assemble
+    0.002s 6.38MB 0.40MB 7.61MB other
+  0.005s 21.4MB 0.12MB 7.73MB other
+0.005s 3.04MB 1.76MB ------ other

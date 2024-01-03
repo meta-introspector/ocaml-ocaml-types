@@ -1,0 +1,23 @@
+0.116s  297MB 14.8MB 16.4MB lib/misc.ml
+  0.003s 5.92MB 1.00MB 2.61MB parsing
+    0.003s 5.92MB 1.00MB 2.61MB parser
+  0.044s 98.8MB 7.93MB 10.5MB typing
+  0.003s 6.36MB 0.50MB 11.0MB transl
+  0.040s 79.3MB 4.71MB 15.7MB generate
+    0.001s 2.52MB 0.43MB 11.4MB cmm
+    0.020s 45.4MB 3.34MB 14.8MB compile_phrases
+      0.002s 4.58MB 0.43MB 11.9MB selection
+      ------ 0.57MB ------ ------ comballoc
+      0.001s 6.00MB 0.46MB 12.3MB cse
+      0.002s 2.38MB 0.15MB 12.5MB liveness
+      0.001s 0.16MB ------ ------ deadcode
+      0.002s 8.51MB 0.71MB 13.2MB spill
+      0.002s 3.19MB 0.15MB 13.4MB split
+      0.006s 11.3MB 0.93MB 14.3MB regalloc
+      ------ 2.00MB ------ ------ linearize
+      0.001s 2.34MB 0.15MB 14.5MB emit
+      0.002s 4.41MB 0.31MB 14.8MB other
+    0.010s ------ ------ ------ assemble
+    0.009s 31.3MB 0.93MB 15.7MB other
+  0.026s  106MB 0.71MB 16.4MB other
+0.006s 2.96MB 1.60MB ------ other

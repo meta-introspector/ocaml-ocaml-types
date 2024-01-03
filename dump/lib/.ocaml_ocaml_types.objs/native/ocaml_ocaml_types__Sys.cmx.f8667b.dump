@@ -1,0 +1,304 @@
+[
+  structure_item (lib/sys.ml[35,1975+0]..[35,1975+25])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/sys.ml[35,1975+4]..[35,1975+15])
+          Ppat_var "file_exists" (lib/sys.ml[35,1975+4]..[35,1975+15])
+        expression (lib/sys.ml[35,1975+16]..[35,1975+25]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/sys.ml[35,1975+16]..[35,1975+17])
+              Nolabel
+              None
+              pattern (lib/sys.ml[35,1975+16]..[35,1975+17])
+                Ppat_any
+          ]
+          None
+          Pfunction_body
+            expression (lib/sys.ml[35,1975+20]..[35,1975+25])
+              Pexp_construct "false" (lib/sys.ml[35,1975+20]..[35,1975+25])
+              None
+    ]
+  structure_item (lib/sys.ml[46,2420+0]..[46,2420+29])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/sys.ml[46,2420+4]..[46,2420+19])
+          Ppat_var "is_regular_file" (lib/sys.ml[46,2420+4]..[46,2420+19])
+        expression (lib/sys.ml[46,2420+20]..[46,2420+29]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/sys.ml[46,2420+20]..[46,2420+21])
+              Nolabel
+              None
+              pattern (lib/sys.ml[46,2420+20]..[46,2420+21])
+                Ppat_any
+          ]
+          None
+          Pfunction_body
+            expression (lib/sys.ml[46,2420+24]..[46,2420+29])
+              Pexp_construct "false" (lib/sys.ml[46,2420+24]..[46,2420+29])
+              None
+    ]
+  structure_item (lib/sys.ml[53,2674+0]..[53,2674+17])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/sys.ml[53,2674+4]..[53,2674+10])
+          Ppat_var "remove" (lib/sys.ml[53,2674+4]..[53,2674+10])
+        expression (lib/sys.ml[53,2674+11]..[53,2674+17]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/sys.ml[53,2674+11]..[53,2674+12])
+              Nolabel
+              None
+              pattern (lib/sys.ml[53,2674+11]..[53,2674+12])
+                Ppat_any
+          ]
+          None
+          Pfunction_body
+            expression (lib/sys.ml[53,2674+15]..[53,2674+17])
+              Pexp_construct "()" (lib/sys.ml[53,2674+15]..[53,2674+17])
+              None
+    ]
+  structure_item (lib/sys.ml[56,2757+0]..[56,2757+19])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/sys.ml[56,2757+4]..[56,2757+10])
+          Ppat_var "rename" (lib/sys.ml[56,2757+4]..[56,2757+10])
+        expression (lib/sys.ml[56,2757+11]..[56,2757+19]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/sys.ml[56,2757+11]..[56,2757+12])
+              Nolabel
+              None
+              pattern (lib/sys.ml[56,2757+11]..[56,2757+12])
+                Ppat_any
+            Pparam_val (lib/sys.ml[56,2757+13]..[56,2757+14])
+              Nolabel
+              None
+              pattern (lib/sys.ml[56,2757+13]..[56,2757+14])
+                Ppat_any
+          ]
+          None
+          Pfunction_body
+            expression (lib/sys.ml[56,2757+17]..[56,2757+19])
+              Pexp_construct "()" (lib/sys.ml[56,2757+17]..[56,2757+19])
+              None
+    ]
+  structure_item (lib/sys.ml[67,3368+0]..[67,3368+23])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/sys.ml[67,3368+4]..[67,3368+10])
+          Ppat_var "getenv" (lib/sys.ml[67,3368+4]..[67,3368+10])
+        expression (lib/sys.ml[67,3368+11]..[67,3368+23]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/sys.ml[67,3368+11]..[67,3368+12])
+              Nolabel
+              None
+              pattern (lib/sys.ml[67,3368+11]..[67,3368+12])
+                Ppat_any
+          ]
+          None
+          Pfunction_body
+            expression (lib/sys.ml[67,3368+16]..[67,3368+23])
+              Pexp_constant PConst_string("FIXME",(lib/sys.ml[67,3368+17]..[67,3368+22]),None)
+    ]
+  structure_item (lib/sys.ml[138,6495+0]..[138,6495+22])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/sys.ml[138,6495+4]..[138,6495+11])
+          Ppat_var "os_type" (lib/sys.ml[138,6495+4]..[138,6495+11])
+        expression (lib/sys.ml[138,6495+14]..[138,6495+22])
+          Pexp_constant PConst_string("lennox",(lib/sys.ml[138,6495+15]..[138,6495+21]),None)
+    ]
+  structure_item (lib/sys.ml[172,7550+0]..[172,7550+17])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/sys.ml[172,7550+4]..[172,7550+13])
+          Ppat_var "word_size" (lib/sys.ml[172,7550+4]..[172,7550+13])
+        expression (lib/sys.ml[172,7550+16]..[172,7550+17])
+          Pexp_constant PConst_int (4,None)
+    ]
+]
+
+let file_exists _ = false
+let is_regular_file _ = false
+let remove _ = ()
+let rename _ _ = ()
+let getenv _ = "FIXME"
+let os_type = "lennox"
+let word_size = 4
+[
+  structure_item (lib/sys.ml[35,1975+0]..lib/sys.ml[35,1975+25])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/sys.ml[35,1975+4]..lib/sys.ml[35,1975+15])
+          Tpat_var "file_exists/297"
+        expression (lib/sys.ml[35,1975+16]..lib/sys.ml[35,1975+25]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/sys.ml[35,1975+16]..lib/sys.ml[35,1975+17])
+                Tpat_any
+          ]
+          Tfunction_body
+            expression (lib/sys.ml[35,1975+20]..lib/sys.ml[35,1975+25])
+              Texp_construct "false"
+              []
+    ]
+  structure_item (lib/sys.ml[46,2420+0]..lib/sys.ml[46,2420+29])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/sys.ml[46,2420+4]..lib/sys.ml[46,2420+19])
+          Tpat_var "is_regular_file/300"
+        expression (lib/sys.ml[46,2420+20]..lib/sys.ml[46,2420+29]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/sys.ml[46,2420+20]..lib/sys.ml[46,2420+21])
+                Tpat_any
+          ]
+          Tfunction_body
+            expression (lib/sys.ml[46,2420+24]..lib/sys.ml[46,2420+29])
+              Texp_construct "false"
+              []
+    ]
+  structure_item (lib/sys.ml[53,2674+0]..lib/sys.ml[53,2674+17])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/sys.ml[53,2674+4]..lib/sys.ml[53,2674+10])
+          Tpat_var "remove/303"
+        expression (lib/sys.ml[53,2674+11]..lib/sys.ml[53,2674+17]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/sys.ml[53,2674+11]..lib/sys.ml[53,2674+12])
+                Tpat_any
+          ]
+          Tfunction_body
+            expression (lib/sys.ml[53,2674+15]..lib/sys.ml[53,2674+17])
+              Texp_construct "()"
+              []
+    ]
+  structure_item (lib/sys.ml[56,2757+0]..lib/sys.ml[56,2757+19])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/sys.ml[56,2757+4]..lib/sys.ml[56,2757+10])
+          Tpat_var "rename/306"
+        expression (lib/sys.ml[56,2757+11]..lib/sys.ml[56,2757+19]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/sys.ml[56,2757+11]..lib/sys.ml[56,2757+12])
+                Tpat_any
+            Nolabel
+            Param_pat
+              pattern (lib/sys.ml[56,2757+13]..lib/sys.ml[56,2757+14])
+                Tpat_any
+          ]
+          Tfunction_body
+            expression (lib/sys.ml[56,2757+17]..lib/sys.ml[56,2757+19])
+              Texp_construct "()"
+              []
+    ]
+  structure_item (lib/sys.ml[67,3368+0]..lib/sys.ml[67,3368+23])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/sys.ml[67,3368+4]..lib/sys.ml[67,3368+10])
+          Tpat_var "getenv/310"
+        expression (lib/sys.ml[67,3368+11]..lib/sys.ml[67,3368+23]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/sys.ml[67,3368+11]..lib/sys.ml[67,3368+12])
+                Tpat_any
+          ]
+          Tfunction_body
+            expression (lib/sys.ml[67,3368+16]..lib/sys.ml[67,3368+23])
+              Texp_constant Const_string("FIXME",(lib/sys.ml[67,3368+17]..lib/sys.ml[67,3368+22]),None)
+    ]
+  structure_item (lib/sys.ml[138,6495+0]..lib/sys.ml[138,6495+22])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/sys.ml[138,6495+4]..lib/sys.ml[138,6495+11])
+          Tpat_var "os_type/313"
+        expression (lib/sys.ml[138,6495+14]..lib/sys.ml[138,6495+22])
+          Texp_constant Const_string("lennox",(lib/sys.ml[138,6495+15]..lib/sys.ml[138,6495+21]),None)
+    ]
+  structure_item (lib/sys.ml[172,7550+0]..lib/sys.ml[172,7550+17])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/sys.ml[172,7550+4]..lib/sys.ml[172,7550+13])
+          Tpat_var "word_size/314"
+        expression (lib/sys.ml[172,7550+16]..lib/sys.ml[172,7550+17])
+          Texp_constant Const_int 4
+    ]
+]
+
+{<Ocaml_ocaml_types__Sys>
+ "file_exists"[value] -> <Ocaml_ocaml_types__Sys.0>;
+ "getenv"[value] -> <Ocaml_ocaml_types__Sys.4>;
+ "is_regular_file"[value] -> <Ocaml_ocaml_types__Sys.1>;
+ "os_type"[value] -> <Ocaml_ocaml_types__Sys.5>;
+ "remove"[value] -> <Ocaml_ocaml_types__Sys.2>;
+ "rename"[value] -> <Ocaml_ocaml_types__Sys.3>;
+ "word_size"[value] -> <Ocaml_ocaml_types__Sys.6>;
+ }
+
+(seq
+  (let (file_exists/297 = (function param/299 : int 0))
+    (setfield_ptr(root-init) 0 (global Ocaml_ocaml_types__Sys!)
+      file_exists/297))
+  (let (is_regular_file/300 = (function param/302 : int 0))
+    (setfield_ptr(root-init) 1 (global Ocaml_ocaml_types__Sys!)
+      is_regular_file/300))
+  (let (remove/303 = (function param/305 : int 0))
+    (setfield_ptr(root-init) 2 (global Ocaml_ocaml_types__Sys!) remove/303))
+  (let (rename/306 = (function param/309 param/308 : int 0))
+    (setfield_ptr(root-init) 3 (global Ocaml_ocaml_types__Sys!) rename/306))
+  (let (getenv/310 = (function param/312 "FIXME"))
+    (setfield_ptr(root-init) 4 (global Ocaml_ocaml_types__Sys!) getenv/310))
+  (let (os_type/313 = "lennox")
+    (setfield_ptr(root-init) 5 (global Ocaml_ocaml_types__Sys!) os_type/313))
+  (let (word_size/314 =[int] 4)
+    (setfield_ptr(root-init) 6 (global Ocaml_ocaml_types__Sys!)
+      word_size/314))
+  0)
+(seq
+  (let (file_exists/297 = (function param/299 : int 0))
+    (setfield_ptr(root-init) 0 (global Ocaml_ocaml_types__Sys!)
+      file_exists/297))
+  (let (is_regular_file/300 = (function param/302 : int 0))
+    (setfield_ptr(root-init) 1 (global Ocaml_ocaml_types__Sys!)
+      is_regular_file/300))
+  (let (remove/303 = (function param/305 : int 0))
+    (setfield_ptr(root-init) 2 (global Ocaml_ocaml_types__Sys!) remove/303))
+  (let (rename/306 = (function param/309 param/308 : int 0))
+    (setfield_ptr(root-init) 3 (global Ocaml_ocaml_types__Sys!) rename/306))
+  (let (getenv/310 = (function param/312 "FIXME"))
+    (setfield_ptr(root-init) 4 (global Ocaml_ocaml_types__Sys!) getenv/310))
+  (let (os_type/313 = "lennox")
+    (setfield_ptr(root-init) 5 (global Ocaml_ocaml_types__Sys!) os_type/313))
+  (let (word_size/314 =[int] 4)
+    (setfield_ptr(root-init) 6 (global Ocaml_ocaml_types__Sys!)
+      word_size/314))
+  0)

@@ -1,0 +1,7 @@
+0.034s 53.9MB 6.35MB 6.35MB lib/shape.ml
+  0.003s 2.90MB 1.57MB 1.57MB parsing
+    0.003s 2.90MB 1.57MB 1.57MB parser
+  0.023s 24.7MB 4.43MB 6.01MB typing
+  0.002s 10.1MB 0.12MB 6.14MB generate
+  0.006s 16.2MB 0.21MB 6.35MB other
+0.005s ------ ------ ------ other

@@ -1,0 +1,725 @@
+[
+  structure_item (lib/type_immediacy.ml[15,1002+0]..[18,1034+20])
+    Pstr_type Rec
+    [
+      type_declaration "t" (lib/type_immediacy.ml[15,1002+5]..[15,1002+6]) (lib/type_immediacy.ml[15,1002+0]..[18,1034+20])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/type_immediacy.ml[16,1011+2]..[16,1011+11])
+                "Unknown" (lib/type_immediacy.ml[16,1011+4]..[16,1011+11])
+                []
+                None
+              (lib/type_immediacy.ml[17,1023+2]..[17,1023+10])
+                "Always" (lib/type_immediacy.ml[17,1023+4]..[17,1023+10])
+                []
+                None
+              (lib/type_immediacy.ml[18,1034+2]..[18,1034+20])
+                "Always_on_64bits" (lib/type_immediacy.ml[18,1034+4]..[18,1034+20])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/type_immediacy.ml[20,1056+0]..[24,1157+3])
+    Pstr_module
+    "Violation" (lib/type_immediacy.ml[20,1056+7]..[20,1056+16])
+      module_expr (lib/type_immediacy.ml[20,1056+19]..[24,1157+3])
+        Pmod_structure
+        [
+          structure_item (lib/type_immediacy.ml[21,1082+2]..[23,1120+36])
+            Pstr_type Rec
+            [
+              type_declaration "t" (lib/type_immediacy.ml[21,1082+7]..[21,1082+8]) (lib/type_immediacy.ml[21,1082+2]..[23,1120+36])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_variant
+                    [
+                      (lib/type_immediacy.ml[22,1093+4]..[22,1093+26])
+                        "Not_always_immediate" (lib/type_immediacy.ml[22,1093+6]..[22,1093+26])
+                        []
+                        None
+                      (lib/type_immediacy.ml[23,1120+4]..[23,1120+36])
+                        "Not_always_immediate_on_64bits" (lib/type_immediacy.ml[23,1120+6]..[23,1120+36])
+                        []
+                        None
+                    ]
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+        ]
+  structure_item (lib/type_immediacy.ml[26,1162+0]..[34,1415+52])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/type_immediacy.ml[26,1162+4]..[26,1162+10])
+          Ppat_var "coerce" (lib/type_immediacy.ml[26,1162+4]..[26,1162+10])
+        expression (lib/type_immediacy.ml[26,1162+11]..[34,1415+52]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/type_immediacy.ml[26,1162+11]..[26,1162+12])
+              Nolabel
+              None
+              pattern (lib/type_immediacy.ml[26,1162+11]..[26,1162+12])
+                Ppat_var "t" (lib/type_immediacy.ml[26,1162+11]..[26,1162+12])
+            Pparam_val (lib/type_immediacy.ml[26,1162+13]..[26,1162+17])
+              Labelled "as_"
+              None
+              pattern (lib/type_immediacy.ml[26,1162+14]..[26,1162+17])
+                Ppat_var "as_" (lib/type_immediacy.ml[26,1162+14]..[26,1162+17])
+          ]
+          None
+          Pfunction_body
+            expression (lib/type_immediacy.ml[27,1182+2]..[34,1415+52])
+              Pexp_match
+              expression (lib/type_immediacy.ml[27,1182+8]..[27,1182+14])
+                Pexp_tuple
+                [
+                  expression (lib/type_immediacy.ml[27,1182+8]..[27,1182+9])
+                    Pexp_ident "t" (lib/type_immediacy.ml[27,1182+8]..[27,1182+9])
+                  expression (lib/type_immediacy.ml[27,1182+11]..[27,1182+14])
+                    Pexp_ident "as_" (lib/type_immediacy.ml[27,1182+11]..[27,1182+14])
+                ]
+              [
+                <case>
+                  pattern (lib/type_immediacy.ml[28,1202+4]..[30,1236+49])
+                    Ppat_or
+                    pattern (lib/type_immediacy.ml[28,1202+4]..[29,1217+18])
+                      Ppat_or
+                      pattern (lib/type_immediacy.ml[28,1202+4]..[28,1202+14])
+                        Ppat_tuple
+                        [
+                          pattern (lib/type_immediacy.ml[28,1202+4]..[28,1202+5])
+                            Ppat_any
+                          pattern (lib/type_immediacy.ml[28,1202+7]..[28,1202+14])
+                            Ppat_construct "Unknown" (lib/type_immediacy.ml[28,1202+7]..[28,1202+14])
+                            None
+                        ]
+                      pattern (lib/type_immediacy.ml[29,1217+4]..[29,1217+18])
+                        Ppat_tuple
+                        [
+                          pattern (lib/type_immediacy.ml[29,1217+4]..[29,1217+10])
+                            Ppat_construct "Always" (lib/type_immediacy.ml[29,1217+4]..[29,1217+10])
+                            None
+                          pattern (lib/type_immediacy.ml[29,1217+12]..[29,1217+18])
+                            Ppat_construct "Always" (lib/type_immediacy.ml[29,1217+12]..[29,1217+18])
+                            None
+                        ]
+                    pattern (lib/type_immediacy.ml[30,1236+4]..[30,1236+49])
+                      Ppat_tuple
+                      [
+                        pattern (lib/type_immediacy.ml[30,1236+4]..[30,1236+31])
+                          Ppat_or
+                          pattern (lib/type_immediacy.ml[30,1236+5]..[30,1236+11])
+                            Ppat_construct "Always" (lib/type_immediacy.ml[30,1236+5]..[30,1236+11])
+                            None
+                          pattern (lib/type_immediacy.ml[30,1236+14]..[30,1236+30])
+                            Ppat_construct "Always_on_64bits" (lib/type_immediacy.ml[30,1236+14]..[30,1236+30])
+                            None
+                        pattern (lib/type_immediacy.ml[30,1236+33]..[30,1236+49])
+                          Ppat_construct "Always_on_64bits" (lib/type_immediacy.ml[30,1236+33]..[30,1236+49])
+                          None
+                      ]
+                  expression (lib/type_immediacy.ml[30,1236+53]..[30,1236+58])
+                    Pexp_construct "Ok" (lib/type_immediacy.ml[30,1236+53]..[30,1236+55])
+                    Some
+                      expression (lib/type_immediacy.ml[30,1236+56]..[30,1236+58])
+                        Pexp_construct "()" (lib/type_immediacy.ml[30,1236+56]..[30,1236+58])
+                        None
+                <case>
+                  pattern (lib/type_immediacy.ml[31,1295+4]..[31,1295+40])
+                    Ppat_tuple
+                    [
+                      pattern (lib/type_immediacy.ml[31,1295+4]..[31,1295+32])
+                        Ppat_or
+                        pattern (lib/type_immediacy.ml[31,1295+5]..[31,1295+12])
+                          Ppat_construct "Unknown" (lib/type_immediacy.ml[31,1295+5]..[31,1295+12])
+                          None
+                        pattern (lib/type_immediacy.ml[31,1295+15]..[31,1295+31])
+                          Ppat_construct "Always_on_64bits" (lib/type_immediacy.ml[31,1295+15]..[31,1295+31])
+                          None
+                      pattern (lib/type_immediacy.ml[31,1295+34]..[31,1295+40])
+                        Ppat_construct "Always" (lib/type_immediacy.ml[31,1295+34]..[31,1295+40])
+                        None
+                    ]
+                  expression (lib/type_immediacy.ml[32,1339+6]..[32,1339+42])
+                    Pexp_construct "Error" (lib/type_immediacy.ml[32,1339+6]..[32,1339+11])
+                    Some
+                      expression (lib/type_immediacy.ml[32,1339+12]..[32,1339+42])
+                        Pexp_construct "Violation.Not_always_immediate" (lib/type_immediacy.ml[32,1339+12]..[32,1339+42])
+                        None
+                <case>
+                  pattern (lib/type_immediacy.ml[33,1382+4]..[33,1382+29])
+                    Ppat_tuple
+                    [
+                      pattern (lib/type_immediacy.ml[33,1382+4]..[33,1382+11])
+                        Ppat_construct "Unknown" (lib/type_immediacy.ml[33,1382+4]..[33,1382+11])
+                        None
+                      pattern (lib/type_immediacy.ml[33,1382+13]..[33,1382+29])
+                        Ppat_construct "Always_on_64bits" (lib/type_immediacy.ml[33,1382+13]..[33,1382+29])
+                        None
+                    ]
+                  expression (lib/type_immediacy.ml[34,1415+6]..[34,1415+52])
+                    Pexp_construct "Error" (lib/type_immediacy.ml[34,1415+6]..[34,1415+11])
+                    Some
+                      expression (lib/type_immediacy.ml[34,1415+12]..[34,1415+52])
+                        Pexp_construct "Violation.Not_always_immediate_on_64bits" (lib/type_immediacy.ml[34,1415+12]..[34,1415+52])
+                        None
+              ]
+    ]
+  structure_item (lib/type_immediacy.ml[36,1469+0]..[43,1649+27])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/type_immediacy.ml[36,1469+4]..[36,1469+17])
+          Ppat_var "of_attributes" (lib/type_immediacy.ml[36,1469+4]..[36,1469+17])
+        expression (lib/type_immediacy.ml[36,1469+18]..[43,1649+27]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/type_immediacy.ml[36,1469+18]..[36,1469+23])
+              Nolabel
+              None
+              pattern (lib/type_immediacy.ml[36,1469+18]..[36,1469+23])
+                Ppat_var "attrs" (lib/type_immediacy.ml[36,1469+18]..[36,1469+23])
+          ]
+          None
+          Pfunction_body
+            expression (lib/type_immediacy.ml[37,1495+2]..[43,1649+27])
+              Pexp_match
+              expression (lib/type_immediacy.ml[38,1503+4]..[39,1543+40])
+                Pexp_tuple
+                [
+                  expression (lib/type_immediacy.ml[38,1503+4]..[38,1503+38])
+                    Pexp_apply
+                    expression (lib/type_immediacy.ml[38,1503+4]..[38,1503+32])
+                      Pexp_ident "Builtin_attributes.immediate" (lib/type_immediacy.ml[38,1503+4]..[38,1503+32])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (lib/type_immediacy.ml[38,1503+33]..[38,1503+38])
+                          Pexp_ident "attrs" (lib/type_immediacy.ml[38,1503+33]..[38,1503+38])
+                    ]
+                  expression (lib/type_immediacy.ml[39,1543+4]..[39,1543+40])
+                    Pexp_apply
+                    expression (lib/type_immediacy.ml[39,1543+4]..[39,1543+34])
+                      Pexp_ident "Builtin_attributes.immediate64" (lib/type_immediacy.ml[39,1543+4]..[39,1543+34])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (lib/type_immediacy.ml[39,1543+35]..[39,1543+40])
+                          Pexp_ident "attrs" (lib/type_immediacy.ml[39,1543+35]..[39,1543+40])
+                    ]
+                ]
+              [
+                <case>
+                  pattern (lib/type_immediacy.ml[41,1591+4]..[41,1591+11])
+                    Ppat_tuple
+                    [
+                      pattern (lib/type_immediacy.ml[41,1591+4]..[41,1591+8])
+                        Ppat_construct "true" (lib/type_immediacy.ml[41,1591+4]..[41,1591+8])
+                        None
+                      pattern (lib/type_immediacy.ml[41,1591+10]..[41,1591+11])
+                        Ppat_any
+                    ]
+                  expression (lib/type_immediacy.ml[41,1591+15]..[41,1591+21])
+                    Pexp_construct "Always" (lib/type_immediacy.ml[41,1591+15]..[41,1591+21])
+                    None
+                <case>
+                  pattern (lib/type_immediacy.ml[42,1613+4]..[42,1613+15])
+                    Ppat_tuple
+                    [
+                      pattern (lib/type_immediacy.ml[42,1613+4]..[42,1613+9])
+                        Ppat_construct "false" (lib/type_immediacy.ml[42,1613+4]..[42,1613+9])
+                        None
+                      pattern (lib/type_immediacy.ml[42,1613+11]..[42,1613+15])
+                        Ppat_construct "true" (lib/type_immediacy.ml[42,1613+11]..[42,1613+15])
+                        None
+                    ]
+                  expression (lib/type_immediacy.ml[42,1613+19]..[42,1613+35])
+                    Pexp_construct "Always_on_64bits" (lib/type_immediacy.ml[42,1613+19]..[42,1613+35])
+                    None
+                <case>
+                  pattern (lib/type_immediacy.ml[43,1649+4]..[43,1649+16])
+                    Ppat_tuple
+                    [
+                      pattern (lib/type_immediacy.ml[43,1649+4]..[43,1649+9])
+                        Ppat_construct "false" (lib/type_immediacy.ml[43,1649+4]..[43,1649+9])
+                        None
+                      pattern (lib/type_immediacy.ml[43,1649+11]..[43,1649+16])
+                        Ppat_construct "false" (lib/type_immediacy.ml[43,1649+11]..[43,1649+16])
+                        None
+                    ]
+                  expression (lib/type_immediacy.ml[43,1649+20]..[43,1649+27])
+                    Pexp_construct "Unknown" (lib/type_immediacy.ml[43,1649+20]..[43,1649+27])
+                    None
+              ]
+    ]
+]
+
+type t =
+  | Unknown 
+  | Always 
+  | Always_on_64bits 
+module Violation =
+  struct type t =
+           | Not_always_immediate 
+           | Not_always_immediate_on_64bits  end
+let coerce t ~as_ =
+  match (t, as_) with
+  | (_, Unknown) | (Always, Always)
+    | ((Always | Always_on_64bits), Always_on_64bits) -> Ok ()
+  | ((Unknown | Always_on_64bits), Always) ->
+      Error Violation.Not_always_immediate
+  | (Unknown, Always_on_64bits) ->
+      Error Violation.Not_always_immediate_on_64bits
+let of_attributes attrs =
+  match ((Builtin_attributes.immediate attrs),
+          (Builtin_attributes.immediate64 attrs))
+  with
+  | (true, _) -> Always
+  | (false, true) -> Always_on_64bits
+  | (false, false) -> Unknown
+[
+  structure_item (lib/type_immediacy.ml[15,1002+0]..lib/type_immediacy.ml[18,1034+20])
+    Tstr_type Rec
+    [
+      type_declaration t/300 (lib/type_immediacy.ml[15,1002+0]..lib/type_immediacy.ml[18,1034+20])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/type_immediacy.ml[16,1011+2]..lib/type_immediacy.ml[16,1011+11])
+                Unknown/301
+                []
+                None
+              (lib/type_immediacy.ml[17,1023+2]..lib/type_immediacy.ml[17,1023+10])
+                Always/302
+                []
+                None
+              (lib/type_immediacy.ml[18,1034+2]..lib/type_immediacy.ml[18,1034+20])
+                Always_on_64bits/303
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/type_immediacy.ml[20,1056+0]..lib/type_immediacy.ml[24,1157+3])
+    Tstr_module
+    Violation/307
+      module_expr (lib/type_immediacy.ml[20,1056+19]..lib/type_immediacy.ml[24,1157+3])
+        Tmod_structure
+        [
+          structure_item (lib/type_immediacy.ml[21,1082+2]..lib/type_immediacy.ml[23,1120+36])
+            Tstr_type Rec
+            [
+              type_declaration t/304 (lib/type_immediacy.ml[21,1082+2]..lib/type_immediacy.ml[23,1120+36])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ttype_variant
+                    [
+                      (lib/type_immediacy.ml[22,1093+4]..lib/type_immediacy.ml[22,1093+26])
+                        Not_always_immediate/305
+                        []
+                        None
+                      (lib/type_immediacy.ml[23,1120+4]..lib/type_immediacy.ml[23,1120+36])
+                        Not_always_immediate_on_64bits/306
+                        []
+                        None
+                    ]
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+        ]
+  structure_item (lib/type_immediacy.ml[26,1162+0]..lib/type_immediacy.ml[34,1415+52])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/type_immediacy.ml[26,1162+4]..lib/type_immediacy.ml[26,1162+10])
+          Tpat_var "coerce/308"
+        expression (lib/type_immediacy.ml[26,1162+11]..lib/type_immediacy.ml[34,1415+52]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/type_immediacy.ml[26,1162+11]..lib/type_immediacy.ml[26,1162+12])
+                Tpat_var "t/310"
+            Labelled "as_"
+            Param_pat
+              pattern (lib/type_immediacy.ml[26,1162+14]..lib/type_immediacy.ml[26,1162+17])
+                Tpat_var "as_/311"
+          ]
+          Tfunction_body
+            expression (lib/type_immediacy.ml[27,1182+2]..lib/type_immediacy.ml[34,1415+52])
+              Texp_match
+              expression (lib/type_immediacy.ml[27,1182+8]..lib/type_immediacy.ml[27,1182+14])
+                Texp_tuple
+                [
+                  expression (lib/type_immediacy.ml[27,1182+8]..lib/type_immediacy.ml[27,1182+9])
+                    Texp_ident "t/310"
+                  expression (lib/type_immediacy.ml[27,1182+11]..lib/type_immediacy.ml[27,1182+14])
+                    Texp_ident "as_/311"
+                ]
+              [
+                <case>
+                  pattern (lib/type_immediacy.ml[28,1202+4]..lib/type_immediacy.ml[30,1236+49])
+                    Tpat_or
+                    pattern (lib/type_immediacy.ml[28,1202+4]..lib/type_immediacy.ml[29,1217+18])
+                      Tpat_or
+                      pattern (lib/type_immediacy.ml[28,1202+4]..lib/type_immediacy.ml[28,1202+14])
+                        Tpat_value
+                        pattern (lib/type_immediacy.ml[28,1202+4]..lib/type_immediacy.ml[28,1202+14])
+                          Tpat_tuple
+                          [
+                            pattern (lib/type_immediacy.ml[28,1202+4]..lib/type_immediacy.ml[28,1202+5])
+                              Tpat_any
+                            pattern (lib/type_immediacy.ml[28,1202+7]..lib/type_immediacy.ml[28,1202+14])
+                              Tpat_construct "Unknown"
+                              []
+                              None
+                          ]
+                      pattern (lib/type_immediacy.ml[29,1217+4]..lib/type_immediacy.ml[29,1217+18])
+                        Tpat_value
+                        pattern (lib/type_immediacy.ml[29,1217+4]..lib/type_immediacy.ml[29,1217+18])
+                          Tpat_tuple
+                          [
+                            pattern (lib/type_immediacy.ml[29,1217+4]..lib/type_immediacy.ml[29,1217+10])
+                              Tpat_construct "Always"
+                              []
+                              None
+                            pattern (lib/type_immediacy.ml[29,1217+12]..lib/type_immediacy.ml[29,1217+18])
+                              Tpat_construct "Always"
+                              []
+                              None
+                          ]
+                    pattern (lib/type_immediacy.ml[30,1236+4]..lib/type_immediacy.ml[30,1236+49])
+                      Tpat_value
+                      pattern (lib/type_immediacy.ml[30,1236+4]..lib/type_immediacy.ml[30,1236+49])
+                        Tpat_tuple
+                        [
+                          pattern (lib/type_immediacy.ml[30,1236+4]..lib/type_immediacy.ml[30,1236+31])
+                            Tpat_or
+                            pattern (lib/type_immediacy.ml[30,1236+5]..lib/type_immediacy.ml[30,1236+11])
+                              Tpat_construct "Always"
+                              []
+                              None
+                            pattern (lib/type_immediacy.ml[30,1236+14]..lib/type_immediacy.ml[30,1236+30])
+                              Tpat_construct "Always_on_64bits"
+                              []
+                              None
+                          pattern (lib/type_immediacy.ml[30,1236+33]..lib/type_immediacy.ml[30,1236+49])
+                            Tpat_construct "Always_on_64bits"
+                            []
+                            None
+                        ]
+                  expression (lib/type_immediacy.ml[30,1236+53]..lib/type_immediacy.ml[30,1236+58])
+                    Texp_construct "Ok"
+                    [
+                      expression (lib/type_immediacy.ml[30,1236+56]..lib/type_immediacy.ml[30,1236+58])
+                        Texp_construct "()"
+                        []
+                    ]
+                <case>
+                  pattern (lib/type_immediacy.ml[31,1295+4]..lib/type_immediacy.ml[31,1295+40])
+                    Tpat_value
+                    pattern (lib/type_immediacy.ml[31,1295+4]..lib/type_immediacy.ml[31,1295+40])
+                      Tpat_tuple
+                      [
+                        pattern (lib/type_immediacy.ml[31,1295+4]..lib/type_immediacy.ml[31,1295+32])
+                          Tpat_or
+                          pattern (lib/type_immediacy.ml[31,1295+5]..lib/type_immediacy.ml[31,1295+12])
+                            Tpat_construct "Unknown"
+                            []
+                            None
+                          pattern (lib/type_immediacy.ml[31,1295+15]..lib/type_immediacy.ml[31,1295+31])
+                            Tpat_construct "Always_on_64bits"
+                            []
+                            None
+                        pattern (lib/type_immediacy.ml[31,1295+34]..lib/type_immediacy.ml[31,1295+40])
+                          Tpat_construct "Always"
+                          []
+                          None
+                      ]
+                  expression (lib/type_immediacy.ml[32,1339+6]..lib/type_immediacy.ml[32,1339+42])
+                    Texp_construct "Error"
+                    [
+                      expression (lib/type_immediacy.ml[32,1339+12]..lib/type_immediacy.ml[32,1339+42])
+                        Texp_construct "Violation.Not_always_immediate"
+                        []
+                    ]
+                <case>
+                  pattern (lib/type_immediacy.ml[33,1382+4]..lib/type_immediacy.ml[33,1382+29])
+                    Tpat_value
+                    pattern (lib/type_immediacy.ml[33,1382+4]..lib/type_immediacy.ml[33,1382+29])
+                      Tpat_tuple
+                      [
+                        pattern (lib/type_immediacy.ml[33,1382+4]..lib/type_immediacy.ml[33,1382+11])
+                          Tpat_construct "Unknown"
+                          []
+                          None
+                        pattern (lib/type_immediacy.ml[33,1382+13]..lib/type_immediacy.ml[33,1382+29])
+                          Tpat_construct "Always_on_64bits"
+                          []
+                          None
+                      ]
+                  expression (lib/type_immediacy.ml[34,1415+6]..lib/type_immediacy.ml[34,1415+52])
+                    Texp_construct "Error"
+                    [
+                      expression (lib/type_immediacy.ml[34,1415+12]..lib/type_immediacy.ml[34,1415+52])
+                        Texp_construct "Violation.Not_always_immediate_on_64bits"
+                        []
+                    ]
+              ]
+    ]
+  structure_item (lib/type_immediacy.ml[36,1469+0]..lib/type_immediacy.ml[43,1649+27])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/type_immediacy.ml[36,1469+4]..lib/type_immediacy.ml[36,1469+17])
+          Tpat_var "of_attributes/312"
+        expression (lib/type_immediacy.ml[36,1469+18]..lib/type_immediacy.ml[43,1649+27]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/type_immediacy.ml[36,1469+18]..lib/type_immediacy.ml[36,1469+23])
+                Tpat_var "attrs/314"
+          ]
+          Tfunction_body
+            expression (lib/type_immediacy.ml[37,1495+2]..lib/type_immediacy.ml[43,1649+27])
+              Texp_match
+              expression (lib/type_immediacy.ml[38,1503+4]..lib/type_immediacy.ml[39,1543+40])
+                Texp_tuple
+                [
+                  expression (lib/type_immediacy.ml[38,1503+4]..lib/type_immediacy.ml[38,1503+38])
+                    Texp_apply
+                    expression (lib/type_immediacy.ml[38,1503+4]..lib/type_immediacy.ml[38,1503+32])
+                      Texp_ident "Ocaml_ocaml_types!.Builtin_attributes.immediate"
+                    [
+                      <arg>
+                        Nolabel
+                        expression (lib/type_immediacy.ml[38,1503+33]..lib/type_immediacy.ml[38,1503+38])
+                          Texp_ident "attrs/314"
+                    ]
+                  expression (lib/type_immediacy.ml[39,1543+4]..lib/type_immediacy.ml[39,1543+40])
+                    Texp_apply
+                    expression (lib/type_immediacy.ml[39,1543+4]..lib/type_immediacy.ml[39,1543+34])
+                      Texp_ident "Ocaml_ocaml_types!.Builtin_attributes.immediate64"
+                    [
+                      <arg>
+                        Nolabel
+                        expression (lib/type_immediacy.ml[39,1543+35]..lib/type_immediacy.ml[39,1543+40])
+                          Texp_ident "attrs/314"
+                    ]
+                ]
+              [
+                <case>
+                  pattern (lib/type_immediacy.ml[41,1591+4]..lib/type_immediacy.ml[41,1591+11])
+                    Tpat_value
+                    pattern (lib/type_immediacy.ml[41,1591+4]..lib/type_immediacy.ml[41,1591+11])
+                      Tpat_tuple
+                      [
+                        pattern (lib/type_immediacy.ml[41,1591+4]..lib/type_immediacy.ml[41,1591+8])
+                          Tpat_construct "true"
+                          []
+                          None
+                        pattern (lib/type_immediacy.ml[41,1591+10]..lib/type_immediacy.ml[41,1591+11])
+                          Tpat_any
+                      ]
+                  expression (lib/type_immediacy.ml[41,1591+15]..lib/type_immediacy.ml[41,1591+21])
+                    Texp_construct "Always"
+                    []
+                <case>
+                  pattern (lib/type_immediacy.ml[42,1613+4]..lib/type_immediacy.ml[42,1613+15])
+                    Tpat_value
+                    pattern (lib/type_immediacy.ml[42,1613+4]..lib/type_immediacy.ml[42,1613+15])
+                      Tpat_tuple
+                      [
+                        pattern (lib/type_immediacy.ml[42,1613+4]..lib/type_immediacy.ml[42,1613+9])
+                          Tpat_construct "false"
+                          []
+                          None
+                        pattern (lib/type_immediacy.ml[42,1613+11]..lib/type_immediacy.ml[42,1613+15])
+                          Tpat_construct "true"
+                          []
+                          None
+                      ]
+                  expression (lib/type_immediacy.ml[42,1613+19]..lib/type_immediacy.ml[42,1613+35])
+                    Texp_construct "Always_on_64bits"
+                    []
+                <case>
+                  pattern (lib/type_immediacy.ml[43,1649+4]..lib/type_immediacy.ml[43,1649+16])
+                    Tpat_value
+                    pattern (lib/type_immediacy.ml[43,1649+4]..lib/type_immediacy.ml[43,1649+16])
+                      Tpat_tuple
+                      [
+                        pattern (lib/type_immediacy.ml[43,1649+4]..lib/type_immediacy.ml[43,1649+9])
+                          Tpat_construct "false"
+                          []
+                          None
+                        pattern (lib/type_immediacy.ml[43,1649+11]..lib/type_immediacy.ml[43,1649+16])
+                          Tpat_construct "false"
+                          []
+                          None
+                      ]
+                  expression (lib/type_immediacy.ml[43,1649+20]..lib/type_immediacy.ml[43,1649+27])
+                    Texp_construct "Unknown"
+                    []
+              ]
+    ]
+]
+
+{<Ocaml_ocaml_types__Type_immediacy>
+ "Violation"[module] ->
+   {<Ocaml_ocaml_types__Type_immediacy.7>
+    "t"[type] -> <Ocaml_ocaml_types__Type_immediacy.4>;
+    };
+ "coerce"[value] -> <Ocaml_ocaml_types__Type_immediacy.8>;
+ "of_attributes"[value] -> <Ocaml_ocaml_types__Type_immediacy.11>;
+ "t"[type] -> <Ocaml_ocaml_types__Type_immediacy.0>;
+ }
+
+(setglobal Ocaml_ocaml_types__Type_immediacy!
+  (let
+    (Violation/307 =
+       (pseudo Ocaml_ocaml_types__Type_immediacy.Violation lib/type_immediacy.ml(20):1075-1160
+         (makeblock 0))
+     coerce/308 =
+       (function t/310[int] as_/311[int]
+         (funct-body Ocaml_ocaml_types__Type_immediacy.coerce lib/type_immediacy.ml(26)<ghost>:1173-1467
+           (before Ocaml_ocaml_types__Type_immediacy.coerce lib/type_immediacy.ml(27):1184-1467
+             (catch
+               (catch
+                 (catch
+                   (catch
+                     (catch
+                       (switch* t/310
+                        case int 0:
+                         (switch* as_/311
+                          case int 0: (exit 6)
+                          case int 1: (exit 5)
+                          case int 2:
+                           (before Ocaml_ocaml_types__Type_immediacy.coerce lib/type_immediacy.ml(34):1421-1467
+                             [1: 1]))
+                        case int 1:
+                         (switch* as_/311
+                          case int 0: (exit 6)
+                          case int 1: (exit 1)
+                          case int 2: (exit 3))
+                        case int 2: (exit 6))
+                      with (6) (if as_/311 (exit 5) (exit 1)))
+                    with (5) (exit 4))
+                  with (4)
+                   (if (>= as_/311 2) (exit 3)
+                     (before Ocaml_ocaml_types__Type_immediacy.coerce lib/type_immediacy.ml(32):1345-1381
+                       [1: 0])))
+                with (3) (exit 1))
+              with (1)
+               (before Ocaml_ocaml_types__Type_immediacy.coerce lib/type_immediacy.ml(30):1289-1294
+                 [0: 0])))))
+     of_attributes/312 =
+       (function attrs/314 : int
+         (funct-body Ocaml_ocaml_types__Type_immediacy.of_attributes lib/type_immediacy.ml(36)<ghost>:1487-1676
+           (before Ocaml_ocaml_types__Type_immediacy.of_attributes lib/type_immediacy.ml(37):1497-1676
+             (let
+               (*match*/946 =
+                  (after Ocaml_ocaml_types__Type_immediacy.of_attributes lib/type_immediacy.ml(38):1507-1541
+                    (apply
+                      (field_imm 40
+                        (global Ocaml_ocaml_types__Builtin_attributes!))
+                      attrs/314))
+                *match*/947 =
+                  (after Ocaml_ocaml_types__Type_immediacy.of_attributes lib/type_immediacy.ml(39):1547-1583
+                    (apply
+                      (field_imm 41
+                        (global Ocaml_ocaml_types__Builtin_attributes!))
+                      attrs/314)))
+               (if *match*/946
+                 (before Ocaml_ocaml_types__Type_immediacy.of_attributes lib/type_immediacy.ml(41):1606-1612
+                   1)
+                 (if *match*/947
+                   (before Ocaml_ocaml_types__Type_immediacy.of_attributes lib/type_immediacy.ml(42):1632-1648
+                     2)
+                   (before Ocaml_ocaml_types__Type_immediacy.of_attributes lib/type_immediacy.ml(43):1669-1676
+                     0))))))))
+    (pseudo <unknown location>
+      (makeblock 0 Violation/307 coerce/308 of_attributes/312))))
+(setglobal Ocaml_ocaml_types__Type_immediacy!
+  (let
+    (Violation/307 =
+       (pseudo Ocaml_ocaml_types__Type_immediacy.Violation lib/type_immediacy.ml(20):1075-1160
+         (makeblock 0))
+     coerce/308 =
+       (function t/310[int] as_/311[int]
+         (funct-body Ocaml_ocaml_types__Type_immediacy.coerce lib/type_immediacy.ml(26)<ghost>:1173-1467
+           (before Ocaml_ocaml_types__Type_immediacy.coerce lib/type_immediacy.ml(27):1184-1467
+             (catch
+               (catch
+                 (catch
+                   (switch* t/310
+                    case int 0:
+                     (switch* as_/311
+                      case int 0: (exit 6)
+                      case int 1: (exit 4)
+                      case int 2:
+                       (before Ocaml_ocaml_types__Type_immediacy.coerce lib/type_immediacy.ml(34):1421-1467
+                         [1: 1]))
+                    case int 1:
+                     (switch* as_/311
+                      case int 0: (exit 6)
+                      case int 1: (exit 1)
+                      case int 2: (exit 1))
+                    case int 2: (exit 6))
+                  with (6) (if as_/311 (exit 4) (exit 1)))
+                with (4)
+                 (if (>= as_/311 2) (exit 1)
+                   (before Ocaml_ocaml_types__Type_immediacy.coerce lib/type_immediacy.ml(32):1345-1381
+                     [1: 0])))
+              with (1)
+               (before Ocaml_ocaml_types__Type_immediacy.coerce lib/type_immediacy.ml(30):1289-1294
+                 [0: 0])))))
+     of_attributes/312 =
+       (function attrs/314 : int
+         (funct-body Ocaml_ocaml_types__Type_immediacy.of_attributes lib/type_immediacy.ml(36)<ghost>:1487-1676
+           (before Ocaml_ocaml_types__Type_immediacy.of_attributes lib/type_immediacy.ml(37):1497-1676
+             (let
+               (*match*/946 =
+                  (after Ocaml_ocaml_types__Type_immediacy.of_attributes lib/type_immediacy.ml(38):1507-1541
+                    (apply
+                      (field_imm 40
+                        (global Ocaml_ocaml_types__Builtin_attributes!))
+                      attrs/314))
+                *match*/947 =
+                  (after Ocaml_ocaml_types__Type_immediacy.of_attributes lib/type_immediacy.ml(39):1547-1583
+                    (apply
+                      (field_imm 41
+                        (global Ocaml_ocaml_types__Builtin_attributes!))
+                      attrs/314)))
+               (if *match*/946
+                 (before Ocaml_ocaml_types__Type_immediacy.of_attributes lib/type_immediacy.ml(41):1606-1612
+                   1)
+                 (if *match*/947
+                   (before Ocaml_ocaml_types__Type_immediacy.of_attributes lib/type_immediacy.ml(42):1632-1648
+                     2)
+                   (before Ocaml_ocaml_types__Type_immediacy.of_attributes lib/type_immediacy.ml(43):1669-1676
+                     0))))))))
+    (pseudo <unknown location>
+      (makeblock 0 Violation/307 coerce/308 of_attributes/312))))

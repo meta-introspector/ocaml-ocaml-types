@@ -1,0 +1,755 @@
+[
+  structure_item (lib/syntaxerr.ml[18,1129+0]..[23,1239+36])
+    Pstr_type Rec
+    [
+      type_declaration "invalid_package_type" (lib/syntaxerr.ml[18,1129+5]..[18,1129+25]) (lib/syntaxerr.ml[18,1129+0]..[23,1239+36])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/syntaxerr.ml[19,1157+2]..[19,1157+23])
+                "Parameterized_types" (lib/syntaxerr.ml[19,1157+4]..[19,1157+23])
+                []
+                None
+              (lib/syntaxerr.ml[20,1181+2]..[20,1181+21])
+                "Constrained_types" (lib/syntaxerr.ml[20,1181+4]..[20,1181+21])
+                []
+                None
+              (lib/syntaxerr.ml[21,1203+2]..[21,1203+17])
+                "Private_types" (lib/syntaxerr.ml[21,1203+4]..[21,1203+17])
+                []
+                None
+              (lib/syntaxerr.ml[22,1221+2]..[22,1221+17])
+                "Not_with_type" (lib/syntaxerr.ml[22,1221+4]..[22,1221+17])
+                []
+                None
+              (lib/syntaxerr.ml[23,1239+2]..[23,1239+36])
+                "Neither_identifier_nor_with_type" (lib/syntaxerr.ml[23,1239+4]..[23,1239+36])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/syntaxerr.ml[25,1277+0]..[34,1634+36])
+    Pstr_type Rec
+    [
+      type_declaration "error" (lib/syntaxerr.ml[25,1277+5]..[25,1277+10]) (lib/syntaxerr.ml[25,1277+0]..[34,1634+36])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lib/syntaxerr.ml[26,1290+4]..[26,1290+57])
+                "Unclosed" (lib/syntaxerr.ml[26,1290+4]..[26,1290+12])
+                [
+                  core_type (lib/syntaxerr.ml[26,1290+16]..[26,1290+26])
+                    Ptyp_constr "Location.t" (lib/syntaxerr.ml[26,1290+16]..[26,1290+26])
+                    []
+                  core_type (lib/syntaxerr.ml[26,1290+29]..[26,1290+35])
+                    Ptyp_constr "string" (lib/syntaxerr.ml[26,1290+29]..[26,1290+35])
+                    []
+                  core_type (lib/syntaxerr.ml[26,1290+38]..[26,1290+48])
+                    Ptyp_constr "Location.t" (lib/syntaxerr.ml[26,1290+38]..[26,1290+48])
+                    []
+                  core_type (lib/syntaxerr.ml[26,1290+51]..[26,1290+57])
+                    Ptyp_constr "string" (lib/syntaxerr.ml[26,1290+51]..[26,1290+57])
+                    []
+                ]
+                None
+              (lib/syntaxerr.ml[27,1348+2]..[27,1348+36])
+                "Expecting" (lib/syntaxerr.ml[27,1348+4]..[27,1348+13])
+                [
+                  core_type (lib/syntaxerr.ml[27,1348+17]..[27,1348+27])
+                    Ptyp_constr "Location.t" (lib/syntaxerr.ml[27,1348+17]..[27,1348+27])
+                    []
+                  core_type (lib/syntaxerr.ml[27,1348+30]..[27,1348+36])
+                    Ptyp_constr "string" (lib/syntaxerr.ml[27,1348+30]..[27,1348+36])
+                    []
+                ]
+                None
+              (lib/syntaxerr.ml[28,1385+2]..[28,1385+40])
+                "Not_expecting" (lib/syntaxerr.ml[28,1385+4]..[28,1385+17])
+                [
+                  core_type (lib/syntaxerr.ml[28,1385+21]..[28,1385+31])
+                    Ptyp_constr "Location.t" (lib/syntaxerr.ml[28,1385+21]..[28,1385+31])
+                    []
+                  core_type (lib/syntaxerr.ml[28,1385+34]..[28,1385+40])
+                    Ptyp_constr "string" (lib/syntaxerr.ml[28,1385+34]..[28,1385+40])
+                    []
+                ]
+                None
+              (lib/syntaxerr.ml[29,1426+2]..[29,1426+34])
+                "Applicative_path" (lib/syntaxerr.ml[29,1426+4]..[29,1426+20])
+                [
+                  core_type (lib/syntaxerr.ml[29,1426+24]..[29,1426+34])
+                    Ptyp_constr "Location.t" (lib/syntaxerr.ml[29,1426+24]..[29,1426+34])
+                    []
+                ]
+                None
+              (lib/syntaxerr.ml[30,1461+2]..[30,1461+44])
+                "Variable_in_scope" (lib/syntaxerr.ml[30,1461+4]..[30,1461+21])
+                [
+                  core_type (lib/syntaxerr.ml[30,1461+25]..[30,1461+35])
+                    Ptyp_constr "Location.t" (lib/syntaxerr.ml[30,1461+25]..[30,1461+35])
+                    []
+                  core_type (lib/syntaxerr.ml[30,1461+38]..[30,1461+44])
+                    Ptyp_constr "string" (lib/syntaxerr.ml[30,1461+38]..[30,1461+44])
+                    []
+                ]
+                None
+              (lib/syntaxerr.ml[31,1506+2]..[31,1506+23])
+                "Other" (lib/syntaxerr.ml[31,1506+4]..[31,1506+9])
+                [
+                  core_type (lib/syntaxerr.ml[31,1506+13]..[31,1506+23])
+                    Ptyp_constr "Location.t" (lib/syntaxerr.ml[31,1506+13]..[31,1506+23])
+                    []
+                ]
+                None
+              (lib/syntaxerr.ml[32,1530+2]..[32,1530+41])
+                "Ill_formed_ast" (lib/syntaxerr.ml[32,1530+4]..[32,1530+18])
+                [
+                  core_type (lib/syntaxerr.ml[32,1530+22]..[32,1530+32])
+                    Ptyp_constr "Location.t" (lib/syntaxerr.ml[32,1530+22]..[32,1530+32])
+                    []
+                  core_type (lib/syntaxerr.ml[32,1530+35]..[32,1530+41])
+                    Ptyp_constr "string" (lib/syntaxerr.ml[32,1530+35]..[32,1530+41])
+                    []
+                ]
+                None
+              (lib/syntaxerr.ml[33,1572+2]..[33,1572+61])
+                "Invalid_package_type" (lib/syntaxerr.ml[33,1572+4]..[33,1572+24])
+                [
+                  core_type (lib/syntaxerr.ml[33,1572+28]..[33,1572+38])
+                    Ptyp_constr "Location.t" (lib/syntaxerr.ml[33,1572+28]..[33,1572+38])
+                    []
+                  core_type (lib/syntaxerr.ml[33,1572+41]..[33,1572+61])
+                    Ptyp_constr "invalid_package_type" (lib/syntaxerr.ml[33,1572+41]..[33,1572+61])
+                    []
+                ]
+                None
+              (lib/syntaxerr.ml[34,1634+2]..[34,1634+36])
+                "Removed_string_set" (lib/syntaxerr.ml[34,1634+4]..[34,1634+22])
+                [
+                  core_type (lib/syntaxerr.ml[34,1634+26]..[34,1634+36])
+                    Ptyp_constr "Location.t" (lib/syntaxerr.ml[34,1634+26]..[34,1634+36])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/syntaxerr.ml[36,1672+0]..[36,1672+24])
+    Pstr_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (lib/syntaxerr.ml[36,1672+0]..[36,1672+24])
+          pext_name = "Error"
+          pext_kind =
+            Pext_decl
+              [
+                core_type (lib/syntaxerr.ml[36,1672+19]..[36,1672+24])
+                  Ptyp_constr "error" (lib/syntaxerr.ml[36,1672+19]..[36,1672+24])
+                  []
+              ]
+              None
+  structure_item (lib/syntaxerr.ml[37,1697+0]..[37,1697+22])
+    Pstr_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (lib/syntaxerr.ml[37,1697+0]..[37,1697+22])
+          pext_name = "Escape_error"
+          pext_kind =
+            Pext_decl
+              []
+              None
+  structure_item (lib/syntaxerr.ml[39,1721+0]..[48,1942+29])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/syntaxerr.ml[39,1721+4]..[39,1721+21])
+          Ppat_var "location_of_error" (lib/syntaxerr.ml[39,1721+4]..[39,1721+21])
+        expression (lib/syntaxerr.ml[39,1721+24]..[48,1942+29])
+          Pexp_function
+          []
+          None
+          Pfunction_cases (lib/syntaxerr.ml[39,1721+24]..[48,1942+29])
+            [
+              <case>
+                pattern (lib/syntaxerr.ml[40,1754+4]..[48,1942+24])
+                  Ppat_or
+                  pattern (lib/syntaxerr.ml[40,1754+4]..[47,1921+20])
+                    Ppat_or
+                    pattern (lib/syntaxerr.ml[40,1754+4]..[46,1889+31])
+                      Ppat_or
+                      pattern (lib/syntaxerr.ml[40,1754+4]..[45,1863+25])
+                        Ppat_or
+                        pattern (lib/syntaxerr.ml[40,1754+4]..[44,1838+24])
+                          Ppat_or
+                          pattern (lib/syntaxerr.ml[40,1754+4]..[43,1826+11])
+                            Ppat_or
+                            pattern (lib/syntaxerr.ml[40,1754+4]..[42,1799+26])
+                              Ppat_or
+                              pattern (lib/syntaxerr.ml[40,1754+4]..[41,1776+22])
+                                Ppat_or
+                                pattern (lib/syntaxerr.ml[40,1754+4]..[40,1754+21])
+                                  Ppat_construct "Unclosed" (lib/syntaxerr.ml[40,1754+4]..[40,1754+12])
+                                  Some
+                                    []
+                                    pattern (lib/syntaxerr.ml[40,1754+12]..[40,1754+21])
+                                      Ppat_tuple
+                                      [
+                                        pattern (lib/syntaxerr.ml[40,1754+13]..[40,1754+14])
+                                          Ppat_var "l" (lib/syntaxerr.ml[40,1754+13]..[40,1754+14])
+                                        pattern (lib/syntaxerr.ml[40,1754+15]..[40,1754+16])
+                                          Ppat_any
+                                        pattern (lib/syntaxerr.ml[40,1754+17]..[40,1754+18])
+                                          Ppat_any
+                                        pattern (lib/syntaxerr.ml[40,1754+19]..[40,1754+20])
+                                          Ppat_any
+                                      ]
+                                pattern (lib/syntaxerr.ml[41,1776+4]..[41,1776+22])
+                                  Ppat_construct "Applicative_path" (lib/syntaxerr.ml[41,1776+4]..[41,1776+20])
+                                  Some
+                                    []
+                                    pattern (lib/syntaxerr.ml[41,1776+21]..[41,1776+22])
+                                      Ppat_var "l" (lib/syntaxerr.ml[41,1776+21]..[41,1776+22])
+                              pattern (lib/syntaxerr.ml[42,1799+4]..[42,1799+26])
+                                Ppat_construct "Variable_in_scope" (lib/syntaxerr.ml[42,1799+4]..[42,1799+21])
+                                Some
+                                  []
+                                  pattern (lib/syntaxerr.ml[42,1799+21]..[42,1799+26])
+                                    Ppat_tuple
+                                    [
+                                      pattern (lib/syntaxerr.ml[42,1799+22]..[42,1799+23])
+                                        Ppat_var "l" (lib/syntaxerr.ml[42,1799+22]..[42,1799+23])
+                                      pattern (lib/syntaxerr.ml[42,1799+24]..[42,1799+25])
+                                        Ppat_any
+                                    ]
+                            pattern (lib/syntaxerr.ml[43,1826+4]..[43,1826+11])
+                              Ppat_construct "Other" (lib/syntaxerr.ml[43,1826+4]..[43,1826+9])
+                              Some
+                                []
+                                pattern (lib/syntaxerr.ml[43,1826+10]..[43,1826+11])
+                                  Ppat_var "l" (lib/syntaxerr.ml[43,1826+10]..[43,1826+11])
+                          pattern (lib/syntaxerr.ml[44,1838+4]..[44,1838+24])
+                            Ppat_construct "Not_expecting" (lib/syntaxerr.ml[44,1838+4]..[44,1838+17])
+                            Some
+                              []
+                              pattern (lib/syntaxerr.ml[44,1838+18]..[44,1838+24])
+                                Ppat_tuple
+                                [
+                                  pattern (lib/syntaxerr.ml[44,1838+19]..[44,1838+20])
+                                    Ppat_var "l" (lib/syntaxerr.ml[44,1838+19]..[44,1838+20])
+                                  pattern (lib/syntaxerr.ml[44,1838+22]..[44,1838+23])
+                                    Ppat_any
+                                ]
+                        pattern (lib/syntaxerr.ml[45,1863+4]..[45,1863+25])
+                          Ppat_construct "Ill_formed_ast" (lib/syntaxerr.ml[45,1863+4]..[45,1863+18])
+                          Some
+                            []
+                            pattern (lib/syntaxerr.ml[45,1863+19]..[45,1863+25])
+                              Ppat_tuple
+                              [
+                                pattern (lib/syntaxerr.ml[45,1863+20]..[45,1863+21])
+                                  Ppat_var "l" (lib/syntaxerr.ml[45,1863+20]..[45,1863+21])
+                                pattern (lib/syntaxerr.ml[45,1863+23]..[45,1863+24])
+                                  Ppat_any
+                              ]
+                      pattern (lib/syntaxerr.ml[46,1889+4]..[46,1889+31])
+                        Ppat_construct "Invalid_package_type" (lib/syntaxerr.ml[46,1889+4]..[46,1889+24])
+                        Some
+                          []
+                          pattern (lib/syntaxerr.ml[46,1889+25]..[46,1889+31])
+                            Ppat_tuple
+                            [
+                              pattern (lib/syntaxerr.ml[46,1889+26]..[46,1889+27])
+                                Ppat_var "l" (lib/syntaxerr.ml[46,1889+26]..[46,1889+27])
+                              pattern (lib/syntaxerr.ml[46,1889+29]..[46,1889+30])
+                                Ppat_any
+                            ]
+                    pattern (lib/syntaxerr.ml[47,1921+4]..[47,1921+20])
+                      Ppat_construct "Expecting" (lib/syntaxerr.ml[47,1921+4]..[47,1921+13])
+                      Some
+                        []
+                        pattern (lib/syntaxerr.ml[47,1921+14]..[47,1921+20])
+                          Ppat_tuple
+                          [
+                            pattern (lib/syntaxerr.ml[47,1921+15]..[47,1921+16])
+                              Ppat_var "l" (lib/syntaxerr.ml[47,1921+15]..[47,1921+16])
+                            pattern (lib/syntaxerr.ml[47,1921+18]..[47,1921+19])
+                              Ppat_any
+                          ]
+                  pattern (lib/syntaxerr.ml[48,1942+4]..[48,1942+24])
+                    Ppat_construct "Removed_string_set" (lib/syntaxerr.ml[48,1942+4]..[48,1942+22])
+                    Some
+                      []
+                      pattern (lib/syntaxerr.ml[48,1942+23]..[48,1942+24])
+                        Ppat_var "l" (lib/syntaxerr.ml[48,1942+23]..[48,1942+24])
+                expression (lib/syntaxerr.ml[48,1942+28]..[48,1942+29])
+                  Pexp_ident "l" (lib/syntaxerr.ml[48,1942+28]..[48,1942+29])
+            ]
+    ]
+  structure_item (lib/syntaxerr.ml[51,1974+0]..[52,2001+41])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (lib/syntaxerr.ml[51,1974+4]..[51,1974+18])
+          Ppat_var "ill_formed_ast" (lib/syntaxerr.ml[51,1974+4]..[51,1974+18])
+        expression (lib/syntaxerr.ml[51,1974+19]..[52,2001+41]) ghost
+          Pexp_function
+          [
+            Pparam_val (lib/syntaxerr.ml[51,1974+19]..[51,1974+22])
+              Nolabel
+              None
+              pattern (lib/syntaxerr.ml[51,1974+19]..[51,1974+22])
+                Ppat_var "loc" (lib/syntaxerr.ml[51,1974+19]..[51,1974+22])
+            Pparam_val (lib/syntaxerr.ml[51,1974+23]..[51,1974+24])
+              Nolabel
+              None
+              pattern (lib/syntaxerr.ml[51,1974+23]..[51,1974+24])
+                Ppat_var "s" (lib/syntaxerr.ml[51,1974+23]..[51,1974+24])
+          ]
+          None
+          Pfunction_body
+            expression (lib/syntaxerr.ml[52,2001+2]..[52,2001+41])
+              Pexp_apply
+              expression (lib/syntaxerr.ml[52,2001+2]..[52,2001+7])
+                Pexp_ident "raise" (lib/syntaxerr.ml[52,2001+2]..[52,2001+7])
+              [
+                <arg>
+                Nolabel
+                  expression (lib/syntaxerr.ml[52,2001+8]..[52,2001+41])
+                    Pexp_construct "Error" (lib/syntaxerr.ml[52,2001+9]..[52,2001+14])
+                    Some
+                      expression (lib/syntaxerr.ml[52,2001+15]..[52,2001+40])
+                        Pexp_construct "Ill_formed_ast" (lib/syntaxerr.ml[52,2001+16]..[52,2001+30])
+                        Some
+                          expression (lib/syntaxerr.ml[52,2001+31]..[52,2001+39])
+                            Pexp_tuple
+                            [
+                              expression (lib/syntaxerr.ml[52,2001+32]..[52,2001+35])
+                                Pexp_ident "loc" (lib/syntaxerr.ml[52,2001+32]..[52,2001+35])
+                              expression (lib/syntaxerr.ml[52,2001+37]..[52,2001+38])
+                                Pexp_ident "s" (lib/syntaxerr.ml[52,2001+37]..[52,2001+38])
+                            ]
+              ]
+    ]
+]
+
+type invalid_package_type =
+  | Parameterized_types 
+  | Constrained_types 
+  | Private_types 
+  | Not_with_type 
+  | Neither_identifier_nor_with_type 
+type error =
+  | Unclosed of Location.t * string * Location.t * string 
+  | Expecting of Location.t * string 
+  | Not_expecting of Location.t * string 
+  | Applicative_path of Location.t 
+  | Variable_in_scope of Location.t * string 
+  | Other of Location.t 
+  | Ill_formed_ast of Location.t * string 
+  | Invalid_package_type of Location.t * invalid_package_type 
+  | Removed_string_set of Location.t 
+exception Error of error 
+exception Escape_error 
+let location_of_error =
+  function
+  | Unclosed (l, _, _, _) | Applicative_path l | Variable_in_scope (l, _)
+    | Other l | Not_expecting (l, _) | Ill_formed_ast (l, _)
+    | Invalid_package_type (l, _) | Expecting (l, _) | Removed_string_set l
+      -> l
+let ill_formed_ast loc s = raise (Error (Ill_formed_ast (loc, s)))
+[
+  structure_item (lib/syntaxerr.ml[18,1129+0]..lib/syntaxerr.ml[23,1239+36])
+    Tstr_type Rec
+    [
+      type_declaration invalid_package_type/300 (lib/syntaxerr.ml[18,1129+0]..lib/syntaxerr.ml[23,1239+36])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/syntaxerr.ml[19,1157+2]..lib/syntaxerr.ml[19,1157+23])
+                Parameterized_types/301
+                []
+                None
+              (lib/syntaxerr.ml[20,1181+2]..lib/syntaxerr.ml[20,1181+21])
+                Constrained_types/302
+                []
+                None
+              (lib/syntaxerr.ml[21,1203+2]..lib/syntaxerr.ml[21,1203+17])
+                Private_types/303
+                []
+                None
+              (lib/syntaxerr.ml[22,1221+2]..lib/syntaxerr.ml[22,1221+17])
+                Not_with_type/304
+                []
+                None
+              (lib/syntaxerr.ml[23,1239+2]..lib/syntaxerr.ml[23,1239+36])
+                Neither_identifier_nor_with_type/305
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/syntaxerr.ml[25,1277+0]..lib/syntaxerr.ml[34,1634+36])
+    Tstr_type Rec
+    [
+      type_declaration error/306 (lib/syntaxerr.ml[25,1277+0]..lib/syntaxerr.ml[34,1634+36])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (lib/syntaxerr.ml[26,1290+4]..lib/syntaxerr.ml[26,1290+57])
+                Unclosed/307
+                [
+                  core_type (lib/syntaxerr.ml[26,1290+16]..lib/syntaxerr.ml[26,1290+26])
+                    Ttyp_constr "Ocaml_ocaml_types!.Location.t"
+                    []
+                  core_type (lib/syntaxerr.ml[26,1290+29]..lib/syntaxerr.ml[26,1290+35])
+                    Ttyp_constr "string/15!"
+                    []
+                  core_type (lib/syntaxerr.ml[26,1290+38]..lib/syntaxerr.ml[26,1290+48])
+                    Ttyp_constr "Ocaml_ocaml_types!.Location.t"
+                    []
+                  core_type (lib/syntaxerr.ml[26,1290+51]..lib/syntaxerr.ml[26,1290+57])
+                    Ttyp_constr "string/15!"
+                    []
+                ]
+                None
+              (lib/syntaxerr.ml[27,1348+2]..lib/syntaxerr.ml[27,1348+36])
+                Expecting/385
+                [
+                  core_type (lib/syntaxerr.ml[27,1348+17]..lib/syntaxerr.ml[27,1348+27])
+                    Ttyp_constr "Ocaml_ocaml_types!.Location.t"
+                    []
+                  core_type (lib/syntaxerr.ml[27,1348+30]..lib/syntaxerr.ml[27,1348+36])
+                    Ttyp_constr "string/15!"
+                    []
+                ]
+                None
+              (lib/syntaxerr.ml[28,1385+2]..lib/syntaxerr.ml[28,1385+40])
+                Not_expecting/386
+                [
+                  core_type (lib/syntaxerr.ml[28,1385+21]..lib/syntaxerr.ml[28,1385+31])
+                    Ttyp_constr "Ocaml_ocaml_types!.Location.t"
+                    []
+                  core_type (lib/syntaxerr.ml[28,1385+34]..lib/syntaxerr.ml[28,1385+40])
+                    Ttyp_constr "string/15!"
+                    []
+                ]
+                None
+              (lib/syntaxerr.ml[29,1426+2]..lib/syntaxerr.ml[29,1426+34])
+                Applicative_path/387
+                [
+                  core_type (lib/syntaxerr.ml[29,1426+24]..lib/syntaxerr.ml[29,1426+34])
+                    Ttyp_constr "Ocaml_ocaml_types!.Location.t"
+                    []
+                ]
+                None
+              (lib/syntaxerr.ml[30,1461+2]..lib/syntaxerr.ml[30,1461+44])
+                Variable_in_scope/388
+                [
+                  core_type (lib/syntaxerr.ml[30,1461+25]..lib/syntaxerr.ml[30,1461+35])
+                    Ttyp_constr "Ocaml_ocaml_types!.Location.t"
+                    []
+                  core_type (lib/syntaxerr.ml[30,1461+38]..lib/syntaxerr.ml[30,1461+44])
+                    Ttyp_constr "string/15!"
+                    []
+                ]
+                None
+              (lib/syntaxerr.ml[31,1506+2]..lib/syntaxerr.ml[31,1506+23])
+                Other/389
+                [
+                  core_type (lib/syntaxerr.ml[31,1506+13]..lib/syntaxerr.ml[31,1506+23])
+                    Ttyp_constr "Ocaml_ocaml_types!.Location.t"
+                    []
+                ]
+                None
+              (lib/syntaxerr.ml[32,1530+2]..lib/syntaxerr.ml[32,1530+41])
+                Ill_formed_ast/390
+                [
+                  core_type (lib/syntaxerr.ml[32,1530+22]..lib/syntaxerr.ml[32,1530+32])
+                    Ttyp_constr "Ocaml_ocaml_types!.Location.t"
+                    []
+                  core_type (lib/syntaxerr.ml[32,1530+35]..lib/syntaxerr.ml[32,1530+41])
+                    Ttyp_constr "string/15!"
+                    []
+                ]
+                None
+              (lib/syntaxerr.ml[33,1572+2]..lib/syntaxerr.ml[33,1572+61])
+                Invalid_package_type/391
+                [
+                  core_type (lib/syntaxerr.ml[33,1572+28]..lib/syntaxerr.ml[33,1572+38])
+                    Ttyp_constr "Ocaml_ocaml_types!.Location.t"
+                    []
+                  core_type (lib/syntaxerr.ml[33,1572+41]..lib/syntaxerr.ml[33,1572+61])
+                    Ttyp_constr "invalid_package_type/300"
+                    []
+                ]
+                None
+              (lib/syntaxerr.ml[34,1634+2]..lib/syntaxerr.ml[34,1634+36])
+                Removed_string_set/392
+                [
+                  core_type (lib/syntaxerr.ml[34,1634+26]..lib/syntaxerr.ml[34,1634+36])
+                    Ttyp_constr "Ocaml_ocaml_types!.Location.t"
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (lib/syntaxerr.ml[36,1672+0]..lib/syntaxerr.ml[36,1672+24])
+    Tstr_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (lib/syntaxerr.ml[36,1672+0]..lib/syntaxerr.ml[36,1672+24])
+          pext_name = "Error/483"
+          pext_kind =
+            Text_decl
+              [
+                core_type (lib/syntaxerr.ml[36,1672+19]..lib/syntaxerr.ml[36,1672+24])
+                  Ttyp_constr "error/306"
+                  []
+              ]
+              None
+  structure_item (lib/syntaxerr.ml[37,1697+0]..lib/syntaxerr.ml[37,1697+22])
+    Tstr_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (lib/syntaxerr.ml[37,1697+0]..lib/syntaxerr.ml[37,1697+22])
+          pext_name = "Escape_error/484"
+          pext_kind =
+            Text_decl
+              []
+              None
+  structure_item (lib/syntaxerr.ml[39,1721+0]..lib/syntaxerr.ml[48,1942+29])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/syntaxerr.ml[39,1721+4]..lib/syntaxerr.ml[39,1721+21])
+          Tpat_var "location_of_error/485"
+        expression (lib/syntaxerr.ml[39,1721+24]..lib/syntaxerr.ml[48,1942+29])
+          Texp_function
+          []
+          Tfunction_cases (lib/syntaxerr.ml[39,1721+24]..lib/syntaxerr.ml[48,1942+29])
+            [
+              <case>
+                pattern (lib/syntaxerr.ml[40,1754+4]..lib/syntaxerr.ml[48,1942+24])
+                  Tpat_or
+                  pattern (lib/syntaxerr.ml[40,1754+4]..lib/syntaxerr.ml[47,1921+20])
+                    Tpat_or
+                    pattern (lib/syntaxerr.ml[40,1754+4]..lib/syntaxerr.ml[46,1889+31])
+                      Tpat_or
+                      pattern (lib/syntaxerr.ml[40,1754+4]..lib/syntaxerr.ml[45,1863+25])
+                        Tpat_or
+                        pattern (lib/syntaxerr.ml[40,1754+4]..lib/syntaxerr.ml[44,1838+24])
+                          Tpat_or
+                          pattern (lib/syntaxerr.ml[40,1754+4]..lib/syntaxerr.ml[43,1826+11])
+                            Tpat_or
+                            pattern (lib/syntaxerr.ml[40,1754+4]..lib/syntaxerr.ml[42,1799+26])
+                              Tpat_or
+                              pattern (lib/syntaxerr.ml[40,1754+4]..lib/syntaxerr.ml[41,1776+22])
+                                Tpat_or
+                                pattern (lib/syntaxerr.ml[40,1754+4]..lib/syntaxerr.ml[40,1754+21])
+                                  Tpat_construct "Unclosed"
+                                  [
+                                    pattern (lib/syntaxerr.ml[40,1754+13]..lib/syntaxerr.ml[40,1754+14])
+                                      Tpat_var "l/487"
+                                    pattern (lib/syntaxerr.ml[40,1754+15]..lib/syntaxerr.ml[40,1754+16])
+                                      Tpat_any
+                                    pattern (lib/syntaxerr.ml[40,1754+17]..lib/syntaxerr.ml[40,1754+18])
+                                      Tpat_any
+                                    pattern (lib/syntaxerr.ml[40,1754+19]..lib/syntaxerr.ml[40,1754+20])
+                                      Tpat_any
+                                  ]
+                                  None
+                                pattern (lib/syntaxerr.ml[41,1776+4]..lib/syntaxerr.ml[41,1776+22])
+                                  Tpat_construct "Applicative_path"
+                                  [
+                                    pattern (lib/syntaxerr.ml[41,1776+21]..lib/syntaxerr.ml[41,1776+22])
+                                      Tpat_var "l/487"
+                                  ]
+                                  None
+                              pattern (lib/syntaxerr.ml[42,1799+4]..lib/syntaxerr.ml[42,1799+26])
+                                Tpat_construct "Variable_in_scope"
+                                [
+                                  pattern (lib/syntaxerr.ml[42,1799+22]..lib/syntaxerr.ml[42,1799+23])
+                                    Tpat_var "l/487"
+                                  pattern (lib/syntaxerr.ml[42,1799+24]..lib/syntaxerr.ml[42,1799+25])
+                                    Tpat_any
+                                ]
+                                None
+                            pattern (lib/syntaxerr.ml[43,1826+4]..lib/syntaxerr.ml[43,1826+11])
+                              Tpat_construct "Other"
+                              [
+                                pattern (lib/syntaxerr.ml[43,1826+10]..lib/syntaxerr.ml[43,1826+11])
+                                  Tpat_var "l/487"
+                              ]
+                              None
+                          pattern (lib/syntaxerr.ml[44,1838+4]..lib/syntaxerr.ml[44,1838+24])
+                            Tpat_construct "Not_expecting"
+                            [
+                              pattern (lib/syntaxerr.ml[44,1838+19]..lib/syntaxerr.ml[44,1838+20])
+                                Tpat_var "l/487"
+                              pattern (lib/syntaxerr.ml[44,1838+22]..lib/syntaxerr.ml[44,1838+23])
+                                Tpat_any
+                            ]
+                            None
+                        pattern (lib/syntaxerr.ml[45,1863+4]..lib/syntaxerr.ml[45,1863+25])
+                          Tpat_construct "Ill_formed_ast"
+                          [
+                            pattern (lib/syntaxerr.ml[45,1863+20]..lib/syntaxerr.ml[45,1863+21])
+                              Tpat_var "l/487"
+                            pattern (lib/syntaxerr.ml[45,1863+23]..lib/syntaxerr.ml[45,1863+24])
+                              Tpat_any
+                          ]
+                          None
+                      pattern (lib/syntaxerr.ml[46,1889+4]..lib/syntaxerr.ml[46,1889+31])
+                        Tpat_construct "Invalid_package_type"
+                        [
+                          pattern (lib/syntaxerr.ml[46,1889+26]..lib/syntaxerr.ml[46,1889+27])
+                            Tpat_var "l/487"
+                          pattern (lib/syntaxerr.ml[46,1889+29]..lib/syntaxerr.ml[46,1889+30])
+                            Tpat_any
+                        ]
+                        None
+                    pattern (lib/syntaxerr.ml[47,1921+4]..lib/syntaxerr.ml[47,1921+20])
+                      Tpat_construct "Expecting"
+                      [
+                        pattern (lib/syntaxerr.ml[47,1921+15]..lib/syntaxerr.ml[47,1921+16])
+                          Tpat_var "l/487"
+                        pattern (lib/syntaxerr.ml[47,1921+18]..lib/syntaxerr.ml[47,1921+19])
+                          Tpat_any
+                      ]
+                      None
+                  pattern (lib/syntaxerr.ml[48,1942+4]..lib/syntaxerr.ml[48,1942+24])
+                    Tpat_construct "Removed_string_set"
+                    [
+                      pattern (lib/syntaxerr.ml[48,1942+23]..lib/syntaxerr.ml[48,1942+24])
+                        Tpat_var "l/487"
+                    ]
+                    None
+                expression (lib/syntaxerr.ml[48,1942+28]..lib/syntaxerr.ml[48,1942+29])
+                  Texp_ident "l/487"
+            ]
+    ]
+  structure_item (lib/syntaxerr.ml[51,1974+0]..lib/syntaxerr.ml[52,2001+41])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (lib/syntaxerr.ml[51,1974+4]..lib/syntaxerr.ml[51,1974+18])
+          Tpat_var "ill_formed_ast/497"
+        expression (lib/syntaxerr.ml[51,1974+19]..lib/syntaxerr.ml[52,2001+41]) ghost
+          Texp_function
+          [
+            Nolabel
+            Param_pat
+              pattern (lib/syntaxerr.ml[51,1974+19]..lib/syntaxerr.ml[51,1974+22])
+                Tpat_var "loc/499"
+            Nolabel
+            Param_pat
+              pattern (lib/syntaxerr.ml[51,1974+23]..lib/syntaxerr.ml[51,1974+24])
+                Tpat_var "s/500"
+          ]
+          Tfunction_body
+            expression (lib/syntaxerr.ml[52,2001+2]..lib/syntaxerr.ml[52,2001+41])
+              Texp_apply
+              expression (lib/syntaxerr.ml[52,2001+2]..lib/syntaxerr.ml[52,2001+7])
+                Texp_ident "Stdlib!.raise"
+              [
+                <arg>
+                  Nolabel
+                  expression (lib/syntaxerr.ml[52,2001+8]..lib/syntaxerr.ml[52,2001+41])
+                    Texp_construct "Error"
+                    [
+                      expression (lib/syntaxerr.ml[52,2001+15]..lib/syntaxerr.ml[52,2001+40])
+                        Texp_construct "Ill_formed_ast"
+                        [
+                          expression (lib/syntaxerr.ml[52,2001+32]..lib/syntaxerr.ml[52,2001+35])
+                            Texp_ident "loc/499"
+                          expression (lib/syntaxerr.ml[52,2001+37]..lib/syntaxerr.ml[52,2001+38])
+                            Texp_ident "s/500"
+                        ]
+                    ]
+              ]
+    ]
+]
+
+{<Ocaml_ocaml_types__Syntaxerr>
+ "Error"[extension constructor] -> <Ocaml_ocaml_types__Syntaxerr.16>;
+ "Escape_error"[extension constructor] -> <Ocaml_ocaml_types__Syntaxerr.17>;
+ "error"[type] -> <Ocaml_ocaml_types__Syntaxerr.6>;
+ "ill_formed_ast"[value] -> <Ocaml_ocaml_types__Syntaxerr.20>;
+ "invalid_package_type"[type] -> <Ocaml_ocaml_types__Syntaxerr.0>;
+ "location_of_error"[value] -> <Ocaml_ocaml_types__Syntaxerr.18>;
+ }
+
+(setglobal Ocaml_ocaml_types__Syntaxerr!
+  (let
+    (Error/483 =
+       (makeblock 248 "Ocaml_ocaml_types.Syntaxerr.Error"
+         (caml_fresh_oo_id 0))
+     Escape_error/484 =
+       (makeblock 248 "Ocaml_ocaml_types.Syntaxerr.Escape_error"
+         (caml_fresh_oo_id 0))
+     location_of_error/485 =
+       (function param/496
+         (funct-body Ocaml_ocaml_types__Syntaxerr.location_of_error lib/syntaxerr.ml(39):1745-1971
+           (let (l/487 =a (field_imm 0 param/496))
+             (before Ocaml_ocaml_types__Syntaxerr.location_of_error lib/syntaxerr.ml(48):1970-1971
+               l/487))))
+     ill_formed_ast/497 =
+       (function loc/499 s/500
+         (funct-body Ocaml_ocaml_types__Syntaxerr.ill_formed_ast lib/syntaxerr.ml(51)<ghost>:1993-2042
+           (before Ocaml_ocaml_types__Syntaxerr.ill_formed_ast lib/syntaxerr.ml(52):2003-2042
+             (raise
+               (after Ocaml_ocaml_types__Syntaxerr.ill_formed_ast lib/syntaxerr.ml(52):2003-2042
+                 (makeblock 0 Error/483 (makeblock 6 loc/499 s/500))))))))
+    (pseudo <unknown location>
+      (makeblock 0 Error/483 Escape_error/484 location_of_error/485
+        ill_formed_ast/497))))
+(setglobal Ocaml_ocaml_types__Syntaxerr!
+  (let
+    (Error/483 =
+       (makeblock 248 "Ocaml_ocaml_types.Syntaxerr.Error"
+         (caml_fresh_oo_id 0))
+     Escape_error/484 =
+       (makeblock 248 "Ocaml_ocaml_types.Syntaxerr.Escape_error"
+         (caml_fresh_oo_id 0))
+     location_of_error/485 =
+       (function param/496
+         (funct-body Ocaml_ocaml_types__Syntaxerr.location_of_error lib/syntaxerr.ml(39):1745-1971
+           (let (l/487 =a (field_imm 0 param/496))
+             (before Ocaml_ocaml_types__Syntaxerr.location_of_error lib/syntaxerr.ml(48):1970-1971
+               l/487))))
+     ill_formed_ast/497 =
+       (function loc/499 s/500
+         (funct-body Ocaml_ocaml_types__Syntaxerr.ill_formed_ast lib/syntaxerr.ml(51)<ghost>:1993-2042
+           (before Ocaml_ocaml_types__Syntaxerr.ill_formed_ast lib/syntaxerr.ml(52):2003-2042
+             (raise
+               (after Ocaml_ocaml_types__Syntaxerr.ill_formed_ast lib/syntaxerr.ml(52):2003-2042
+                 (makeblock 0 Error/483 (makeblock 6 loc/499 s/500))))))))
+    (pseudo <unknown location>
+      (makeblock 0 Error/483 Escape_error/484 location_of_error/485
+        ill_formed_ast/497))))

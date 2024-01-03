@@ -1,0 +1,8 @@
+0.046s 98.0MB 10.0MB 10.0MB lib/builtin_attributes.ml
+  0.002s 2.90MB 1.59MB 1.59MB parsing
+    0.002s 2.90MB 1.59MB 1.59MB parser
+  0.031s 48.3MB 7.81MB 9.40MB typing
+  0.001s 4.04MB 0.21MB 9.62MB transl
+  0.005s 18.3MB 0.18MB 9.81MB generate
+  0.007s 24.3MB 0.28MB 10.0MB other
+0.004s ------ ------ ------ other
