@@ -1,0 +1,6 @@
+0.041s 2.73MB 1.40MB 1.40MB test/test_ocaml_ocaml_types.exe
+  0.001s 2.73MB 1.40MB 1.40MB regalloc
+  0.002s ------ ------ ------ assemble
+  0.036s ------ ------ ------ c-linker
+  0.001s ------ ------ ------ other
+0.004s ------ ------ ------ other

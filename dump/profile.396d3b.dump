@@ -1,0 +1,20 @@
+0.062s  162MB 7.38MB 9.01MB lib/set.ml
+  0.002s 3.52MB 0.56MB 2.20MB parsing
+    0.002s 3.52MB 0.56MB 2.20MB parser
+  0.017s 36.9MB 2.78MB 4.98MB typing
+  0.001s 6.09MB 0.25MB 5.23MB transl
+  0.026s 53.0MB 3.43MB 8.67MB generate
+    0.014s 36.9MB 2.46MB 7.70MB compile_phrases
+      0.001s 2.19MB 0.06MB 5.29MB selection
+      0.001s 6.20MB 0.28MB 5.57MB cse
+      0.001s 2.00MB 0.06MB 5.64MB liveness
+      ------ 0.20MB ------ ------ deadcode
+      0.001s 2.00MB 0.03MB 5.67MB spill
+      0.001s 0.18MB ------ ------ split
+      0.009s 22.1MB 1.96MB 7.64MB regalloc
+      ------ 2.00MB 0.06MB 7.70MB emit
+      0.001s ------ ------ ------ other
+    0.005s ------ ------ ------ assemble
+    0.006s 16.1MB 0.96MB 8.67MB other
+  0.016s 62.5MB 0.34MB 9.01MB other
+0.008s 2.95MB 1.63MB ------ other

@@ -1,0 +1,8 @@
+0.047s  131MB 6.03MB 6.03MB lib/set.ml
+  0.003s 6.18MB 2.03MB 2.03MB parsing
+    0.003s 6.18MB 2.03MB 2.03MB parser
+  0.021s 37.3MB 3.09MB 5.12MB typing
+  0.001s 3.24MB 0.21MB 5.34MB transl
+  0.007s 30.3MB 0.46MB 5.81MB generate
+  0.015s 54.3MB 0.21MB 6.03MB other
+0.006s ------ ------ ------ other

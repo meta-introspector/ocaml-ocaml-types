@@ -1,0 +1,4 @@
+(env
+ (dev
+  (flags
+   (:standard -warn-error -9-27-26 -dtypedtree -dparsetree -dump-dir /home/mdupont/2024/01/03/ocaml_ocaml_types/dump/ -dlambda -annot -dlocations -dsource -dshape -drawlambda  -dprofile))))
