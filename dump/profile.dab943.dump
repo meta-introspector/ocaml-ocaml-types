@@ -1,0 +1,4 @@
+0.004s 6.45MB 2.20MB 2.20MB lib/asttypes.ml
+  0.002s 2.08MB 0.59MB 0.59MB typing
+  0.002s 4.36MB 1.60MB 2.20MB other
+0.004s ------ ------ ------ other

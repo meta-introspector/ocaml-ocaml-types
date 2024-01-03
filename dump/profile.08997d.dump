@@ -1,0 +1,9 @@
+0.006s 5.63MB 0.62MB 2.21MB lib/terminfo.ml
+  0.002s 3.41MB 0.62MB 2.21MB typing
+  0.003s 2.05MB ------ ------ generate
+    ------ 0.05MB ------ ------ compile_phrases
+      ------ 0.05MB ------ ------ selection
+    0.002s ------ ------ ------ assemble
+    ------ 2.00MB ------ ------ other
+  0.001s 0.16MB ------ ------ other
+0.005s 2.95MB 1.59MB ------ other

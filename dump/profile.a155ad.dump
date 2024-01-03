@@ -1,0 +1,8 @@
+0.004s 3.48MB 0.59MB 2.18MB lib/sys.ml
+  0.001s 2.00MB 0.59MB 2.18MB typing
+  0.003s 1.45MB ------ ------ generate
+    0.001s 1.45MB ------ ------ compile_phrases
+      ------ 1.45MB ------ ------ selection
+    0.002s ------ ------ ------ assemble
+  ------ 0.03MB ------ ------ other
+0.006s 2.95MB 1.59MB ------ other

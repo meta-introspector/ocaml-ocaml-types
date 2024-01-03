@@ -1,0 +1,5 @@
+0.003s 0.14MB ------ - bin/main.ml
+  0.002s 0.14MB ------ - generate
+    0.002s ------ ------ - assemble
+    ------ 0.14MB ------ - other
+0.005s 3.04MB 1.76MB - other

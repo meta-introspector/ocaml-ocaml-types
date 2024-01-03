@@ -1,0 +1,6 @@
+0.021s 8.31MB 1.94MB 1.94MB lib/ocaml_ocaml_types.cmxs
+  0.003s 6.93MB 1.81MB 1.81MB regalloc
+  0.003s ------ ------ ------ assemble
+  0.012s ------ ------ ------ c-linker
+  0.002s 1.37MB 0.13MB 1.94MB other
+0.004s ------ ------ ------ other
