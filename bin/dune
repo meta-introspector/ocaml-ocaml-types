@@ -1,0 +1,4 @@
+(executable
+ (public_name ocaml_ocaml_types)
+ (name main)
+ (libraries ocaml_ocaml_types))
