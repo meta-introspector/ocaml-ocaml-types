@@ -86,7 +86,7 @@ let exists_free ids p =
 let rec scope = function
     Pident id -> Ident.scope id
   | Pdot(p, _) | Pextra_ty (p, _) -> scope p
-  | Papply(p1, p2) -> Int.max (scope p1) (scope p2)
+  | Papply(p1, p2) ->  (scope p1) 
 
 let kfalse _ = false
 

@@ -527,15 +527,9 @@ let highlight_quote ppf
             Format.fprintf ppf "@}"
         done;
         Format.fprintf ppf "@}@,"
-    | _ ->
+    | _ ->()
         (* Multi-line error *)
-        Misc.pp_two_columns ~sep:"|" ~max_lines ppf
-        @@ List.map (fun (line, line_nb, line_start_cnum) ->
-          let line = String.mapi (fun i car ->
-            if ISet.mem iset ~pos:(line_start_cnum + i) then car else '.'
-          ) line in
-          (line_nb, line)
-        ) lines
+        
     end;
     Format.fprintf ppf "@]"
 
