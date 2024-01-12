@@ -345,14 +345,14 @@ let copy_file ic oc =
     if n = 0 then () else (output oc buff 0 n; copy())
   in copy()
 
-let copy_file_chunk ic oc len =
-  let buff = Bytes.create 0x1000 in
-  let rec copy n =
-    if n <= 0 then () else begin
-      let r = input ic buff 0 (Int.min n 0x1000) in
-      if r = 0 then raise End_of_file else (output oc buff 0 r; copy(n-r))
-    end
-  in copy len
+let copy_file_chunk ic oc len =()
+  (* let buff = Bytes.create 0x1000 in *)
+  (* let rec copy n = *)
+  (*   if n <= 0 then () else begin *)
+  (*     let r = input ic buff 0 (Int.min n 0x1000) in *)
+  (*     if r = 0 then raise End_of_file else (output oc buff 0 r; copy(n-r)) *)
+  (*   end *)
+  (* in copy len *)
 
 let string_of_file ic =
   let b = Buffer.create 0x10000 in
@@ -704,50 +704,50 @@ module Style = struct
       ()
 end
 
-let edit_distance a b cutoff =
-  let la, lb = String.length a, String.length b in
-  let cutoff =
-    (* using max_int for cutoff would cause overflows in (i + cutoff + 1);
-       we bring it back to the (max la lb) worstcase *)
-    Int.min (Int.max la lb) cutoff in
-  if abs (la - lb) > cutoff then None
-  else begin
-    (* initialize with 'cutoff + 1' so that not-yet-written-to cases have
-       the worst possible cost; this is useful when computing the cost of
-       a case just at the boundary of the cutoff diagonal. *)
-    let m = Array.make_matrix (la + 1) (lb + 1) (cutoff + 1) in
-    m.(0).(0) <- 0;
-    for i = 1 to la do
-      m.(i).(0) <- i;
-    done;
-    for j = 1 to lb do
-      m.(0).(j) <- j;
-    done;
-    for i = 1 to la do
-      for j = Int.max 1 (i - cutoff - 1) to Int.min lb (i + cutoff + 1) do
-        let cost = if a.[i-1] = b.[j-1] then 0 else 1 in
-        let best =
-          (* insert, delete or substitute *)
-          Int.min (1 + Int.min m.(i-1).(j) m.(i).(j-1)) (m.(i-1).(j-1) + cost)
-        in
-        let best =
-          (* swap two adjacent letters; we use "cost" again in case of
-             a swap between two identical letters; this is slightly
-             redundant as this is a double-substitution case, but it
-             was done this way in most online implementations and
-             imitation has its virtues *)
-          if not (i > 1 && j > 1 && a.[i-1] = b.[j-2] && a.[i-2] = b.[j-1])
-          then best
-          else Int.min best (m.(i-2).(j-2) + cost)
-        in
-        m.(i).(j) <- best
-      done;
-    done;
-    let result = m.(la).(lb) in
-    if result > cutoff
-    then None
-    else Some result
-  end
+let edit_distance a b cutoff =()
+  (* let la, lb = String.length a, String.length b in *)
+  (* let cutoff = *)
+  (*   (\* using max_int for cutoff would cause overflows in (i + cutoff + 1); *)
+  (*      we bring it back to the (max la lb) worstcase *\) *)
+  (*   Int.min (Int.max la lb) cutoff in *)
+  (* if abs (la - lb) > cutoff then None *)
+  (* else begin *)
+  (*   (\* initialize with 'cutoff + 1' so that not-yet-written-to cases have *)
+  (*      the worst possible cost; this is useful when computing the cost of *)
+  (*      a case just at the boundary of the cutoff diagonal. *\) *)
+  (*   let m = Array.make_matrix (la + 1) (lb + 1) (cutoff + 1) in *)
+  (*   m.(0).(0) <- 0; *)
+  (*   for i = 1 to la do *)
+  (*     m.(i).(0) <- i; *)
+  (*   done; *)
+  (*   for j = 1 to lb do *)
+  (*     m.(0).(j) <- j; *)
+  (*   done; *)
+  (*   for i = 1 to la do *)
+  (*     for j = Int.max 1 (i - cutoff - 1) to Int.min lb (i + cutoff + 1) do *)
+  (*       let cost = if a.[i-1] = b.[j-1] then 0 else 1 in *)
+  (*       let best = *)
+  (*         (\* insert, delete or substitute *\) *)
+  (*         Int.min (1 + Int.min m.(i-1).(j) m.(i).(j-1)) (m.(i-1).(j-1) + cost) *)
+  (*       in *)
+  (*       let best = *)
+  (*         (\* swap two adjacent letters; we use "cost" again in case of *)
+  (*            a swap between two identical letters; this is slightly *)
+  (*            redundant as this is a double-substitution case, but it *)
+  (*            was done this way in most online implementations and *)
+  (*            imitation has its virtues *\) *)
+  (*         if not (i > 1 && j > 1 && a.[i-1] = b.[j-2] && a.[i-2] = b.[j-1]) *)
+  (*         then best *)
+  (*         else Int.min best (m.(i-2).(j-2) + cost) *)
+  (*       in *)
+  (*       m.(i).(j) <- best *)
+  (*     done; *)
+  (*   done; *)
+  (*   let result = m.(la).(lb) in *)
+  (*   if result > cutoff *)
+  (*   then None *)
+  (*   else Some result *)
+  (* end *)
 
 let spellcheck env name =
   let cutoff =
@@ -757,15 +757,7 @@ let spellcheck env name =
       | 5 | 6 -> 2
       | _ -> 3
   in
-  let compare target acc head =
-    match edit_distance target head cutoff with
-      | None -> acc
-      | Some dist ->
-         let (best_choice, best_dist) = acc in
-         if dist < best_dist then ([head], dist)
-         else if dist = best_dist then (head :: best_choice, dist)
-         else acc
-  in
+  let compare target acc head = acc in
   let env = List.sort_uniq (fun s1 s2 -> String.compare s2 s1) env in
   fst (List.fold_left (compare name) ([], max_int) env)
 
@@ -832,26 +824,7 @@ let delete_eol_spaces src =
   let stop = loop 0 0 in
   Bytes.sub_string dst 0 stop
 
-let pp_two_columns ?(sep = "|") ?max_lines ppf (lines: (string * string) list) =
-  let left_column_size =
-    List.fold_left (fun acc (s, _) -> Int.max acc (String.length s)) 0 lines in
-  let lines_nb = List.length lines in
-  let ellipsed_first, ellipsed_last =
-    match max_lines with
-    | Some max_lines when lines_nb > max_lines ->
-        let printed_lines = max_lines - 1 in (* the ellipsis uses one line *)
-        let lines_before = printed_lines / 2 + printed_lines mod 2 in
-        let lines_after = printed_lines / 2 in
-        (lines_before, lines_nb - lines_after - 1)
-    | _ -> (-1, -1)
-  in
-  Format.fprintf ppf "@[<v>";
-  List.iteri (fun k (line_l, line_r) ->
-    if k = ellipsed_first then Format.fprintf ppf "...@,";
-    if ellipsed_first <= k && k <= ellipsed_last then ()
-    else Format.fprintf ppf "%*s %s %s@," left_column_size line_l sep line_r
-  ) lines;
-  Format.fprintf ppf "@]"
+let pp_two_columns ?(sep = "|") ?max_lines ppf (lines: (string * string) list) = ""
 
 (* showing configuration and configuration variables *)
 let show_config_and_exit () =
@@ -1079,7 +1052,7 @@ module Magic_number = struct
       (* a header is "truncated" if it starts like a valid magic number,
          that is if its longest segment of length at most [kind_length]
          is a prefix of [raw_kind kind] for some kind [kind] *)
-      let sub_length = Int.min kind_length (String.length s) in
+      let sub_length = 1 in
       let starts_as kind =
         String.sub s 0 sub_length = String.sub (raw_kind kind) 0 sub_length
       in

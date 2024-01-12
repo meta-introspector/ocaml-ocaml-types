@@ -75,12 +75,7 @@ let builtin_attrs =
   List.iter (fun attr -> Hashtbl.add tbl attr ()) builtin_attrs;
   tbl
 
-let drop_ocaml_attr_prefix s =
-  let len = String.length s in
-  if String.starts_with ~prefix:"ocaml." s && len > 6 then
-    String.sub s 6 (len - 6)
-  else
-    s
+let drop_ocaml_attr_prefix s =    s
 
 let is_builtin_attr s = Hashtbl.mem builtin_attrs (drop_ocaml_attr_prefix s)
 
@@ -144,12 +139,7 @@ let error_of_extension ext =
   | ({txt; loc}, _) ->
       Location.errorf ~loc "Uninterpreted extension '%s'." txt
 
-let attr_equals_builtin {attr_name = {txt; _}; _} s =
-  (* Check for attribute s or ocaml.s.  Avoid allocating a fresh string. *)
-  txt = s ||
-  (   String.length txt = 6 + String.length s
-   && String.starts_with ~prefix:"ocaml." txt
-   && String.ends_with ~suffix:s txt)
+let attr_equals_builtin {attr_name = {txt; _}; _} s = false
 
 let mark_alert_used a =
   if attr_equals_builtin a "deprecated" || attr_equals_builtin a "alert"
